@@ -1,0 +1,627 @@
+MODEL> FuhrerMoore_discr 
+ 
+ENDOG> 
+        q           _NOTD 
+        lagq1       _NOTD 
+        cwp         _NOTD 
+        ldvindex1   _NOTD 
+        ldvindex2   _NOTD 
+        ldq1        _NOTD 
+        ldq2        _NOTD 
+        vindex      _NOTD 
+        lagcwp1     _NOTD 
+        lagcwp2     _NOTD 
+        pi1         _NOTD 
+        lagpi1      _NOTD 
+        lagpi2      _NOTD 
+        pi4         _NOTD 
+        is          _NOTD 
+        dis         _NOTD 
+        il          _NOTD 
+        ldis1       _NOTD 
+        ldis2       _NOTD 
+        ldis3       _NOTD 
+        ldis4       _NOTD 
+        ldis5       _NOTD 
+        ldis6       _NOTD 
+        rl          _NOTD 
+        ldpi1       _NOTD 
+        ldpi2       _NOTD 
+        ldpi3       _NOTD 
+        ldpi4       _NOTD 
+        ldpi5       _NOTD 
+        ldpi6       _NOTD 
+        ldpi7       _NOTD 
+        control     _NOTD 
+        one         _NOTD 
+        e_d         _NOTD 
+        e_cw        _NOTD 
+ 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       q =        delta1*LAG(q,1) 
+                   + delta2*LAG(lagq1,1) 
+                   + delta3*(  LAG(rl,1) 
+                             - rlbar*0*one) 
+                   + sigma_e_d*e_d 
+ 
+EQUATION> EQ1a 
+EQTYPE>   IMPOSED 
+EQ>       lagq1 = LAG(q,1) 
+ 
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       cwp =      f0*vindex 
+                   + f1*ldvindex1 
+                   + f2*ldvindex2 
+                   + f3*LEAD(ldvindex2,1) 
+                   + gamma*(  f0*q 
+                            + f1*ldq1 
+                            + f2*ldq2 
+                            + f3*LEAD(ldq2,1) 
+                           ) 
+                   + sigma_e_cw*e_cw 
+ 
+ 
+EQUATION> EQ2a 
+EQTYPE>   IMPOSED 
+EQ>       ldvindex1  = LEAD(vindex,1) 
+ 
+EQUATION> EQ2b 
+EQTYPE>   IMPOSED 
+EQ>       ldvindex2  = LEAD(ldvindex1,1) 
+ 
+EQUATION> EQ2c 
+EQTYPE>   IMPOSED 
+EQ>       ldq1      = LEAD(q,1) 
+ 
+EQUATION> EQ2d 
+EQTYPE>   IMPOSED 
+EQ>       ldq2      = LEAD(ldq1,1) 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       vindex =   f0*cwp 
+                   + f1*lagcwp1 
+                   + f2*lagcwp2 
+                   + f3*LAG(lagcwp2,1) 
+ 
+EQUATION> EQ3a 
+EQTYPE>   IMPOSED 
+EQ>       lagcwp1 = LAG(cwp,1) 
+ 
+EQUATION> EQ3b 
+EQTYPE>   IMPOSED 
+EQ>       lagcwp2 = LAG(lagcwp1,1) 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       pi1 =    (  f0*cwp 
+                    + f1*lagcwp1 
+                    + f2*lagcwp2 
+                    + f3*LAG(lagcwp2,1) 
+                    - (f2+f3)*lagpi1 
+                    - f3*lagpi2 
+                   )/(f1+f2+f3) 
+ 
+EQUATION> EQ4a 
+EQTYPE>   IMPOSED 
+EQ>       lagpi1 = LAG(pi1,1) 
+ 
+EQUATION> EQ4b 
+EQTYPE>   IMPOSED 
+EQ>       lagpi2 = LAG(lagpi1,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   IMPOSED 
+EQ>       pi4 =      pi1 
+                   + lagpi1 
+                   + lagpi2 
+                   + LAG(lagpi2,1) 
+ 
+EQUATION> EQ6 
+EQTYPE>   IMPOSED 
+EQ>       is =     control 
+ 
+EQUATION> EQ7 
+EQTYPE>   IMPOSED 
+EQ>       dis =      is 
+                   - LAG(is,1) 
+ 
+EQUATION> EQ8 
+EQTYPE>   IMPOSED 
+EQ>   il =      (  is 
+                     + ldis1 
+                     + ldis2 
+                     + ldis3 
+                     + ldis4 
+                     + ldis5 
+                     + ldis6 
+                     + LEAD(ldis6,1) 
+                    )/8 
+ 
+EQUATION> EQ8a 
+EQTYPE>   IMPOSED 
+EQ>       ldis1     = LEAD(is,1) 
+ 
+EQUATION> EQ8b 
+EQTYPE>   IMPOSED 
+EQ>       ldis2     = LEAD(ldis1,1) 
+ 
+EQUATION> EQ8c 
+EQTYPE>   IMPOSED 
+EQ>       ldis3     = LEAD(ldis2,1) 
+ 
+EQUATION> EQ8d 
+EQTYPE>   IMPOSED 
+EQ>       ldis4     = LEAD(ldis3,1) 
+ 
+EQUATION> EQ8e 
+EQTYPE>   IMPOSED 
+EQ>       ldis5     = LEAD(ldis4,1) 
+ 
+EQUATION> EQ8f 
+EQTYPE>   IMPOSED 
+EQ>       ldis6     = LEAD(ldis5,1) 
+ 
+ 
+EQUATION> EQ9 
+EQTYPE>   IMPOSED 
+EQ>       rl =        il 
+                    - (   ldpi1 
+                        + ldpi2 
+                        + ldpi3 
+                        + ldpi4 
+                        + ldpi5 
+                        + ldpi6 
+                        + ldpi7 
+                        + LEAD(ldpi7,1) 
+                      )/2 
+EQUATION> EQ9a 
+EQTYPE>   IMPOSED 
+EQ>       ldpi1     = LEAD(pi1,1) 
+ 
+EQUATION> EQ9b 
+EQTYPE>   IMPOSED 
+EQ>       ldpi2     = LEAD(ldpi1,1) 
+ 
+EQUATION> EQ9c 
+EQTYPE>   IMPOSED 
+EQ>       ldpi3     = LEAD(ldpi2,1) 
+ 
+EQUATION> EQ9d 
+EQTYPE>   IMPOSED 
+EQ>       ldpi4     = LEAD(ldpi3,1) 
+ 
+EQUATION> EQ9e 
+EQTYPE>   IMPOSED 
+EQ>       ldpi5     = LEAD(ldpi4,1) 
+ 
+EQUATION> EQ9f 
+EQTYPE>   IMPOSED 
+EQ>       ldpi6     = LEAD(ldpi5,1) 
+ 
+EQUATION> EQ9g 
+EQTYPE>   IMPOSED 
+EQ>       ldpi7     = LEAD(ldpi6,1) 
+ 
+EQUATION> control 
+EQTYPE>   IMPOSED 
+EQ>       control   =     rho*LAG(is,1) 
+                        + (1-rho)*rlbar*one*0 
+                        + alpha*(pi4-pitarget*one*0) 
+                        + beta*q 
+ 
+EQUATION> EQ10 
+EQTYPE>   IMPOSED 
+EQ>       one =    0*LAG(one,1) 
+ 
+EQUATION> EQ11 
+EQTYPE>   IMPOSED 
+EQ>       e_d =    0*one 
+ 
+EQUATION> EQ12 
+EQTYPE>   IMPOSED 
+EQ>       e_cw =   0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+
+param_ =
+
+delta1    
+delta2    
+delta3    
+rlbar     
+sigma_e_d 
+f0        
+f1        
+f2        
+f3        
+gamma     
+sigma_e_cw
+rho       
+alpha     
+pitarget  
+beta      
+
+
+np =
+
+    15
+
+
+modname =
+
+FuhrerMoore_discr
+
+
+neq =
+
+    35
+
+
+nlag =
+
+     1
+
+
+nlead =
+
+     1
+
+
+eqname_ =
+
+EQ1    
+EQ1a   
+EQ2    
+EQ2a   
+EQ2b   
+EQ2c   
+EQ2d   
+EQ3    
+EQ3a   
+EQ3b   
+EQ4    
+EQ4a   
+EQ4b   
+EQ5    
+EQ6    
+EQ7    
+EQ8    
+EQ8a   
+EQ8b   
+EQ8c   
+EQ8d   
+EQ8e   
+EQ8f   
+EQ9    
+EQ9a   
+EQ9b   
+EQ9c   
+EQ9d   
+EQ9e   
+EQ9f   
+EQ9g   
+control
+EQ10   
+EQ11   
+EQ12   
+
+
+eqtype_ =
+
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+
+
+endog_ =
+
+q        
+lagq1    
+cwp      
+ldvindex1
+ldvindex2
+ldq1     
+ldq2     
+vindex   
+lagcwp1  
+lagcwp2  
+pi1      
+lagpi1   
+lagpi2   
+pi4      
+is       
+dis      
+il       
+ldis1    
+ldis2    
+ldis3    
+ldis4    
+ldis5    
+ldis6    
+rl       
+ldpi1    
+ldpi2    
+ldpi3    
+ldpi4    
+ldpi5    
+ldpi6    
+ldpi7    
+control  
+one      
+e_d      
+e_cw     
+
+
+delay_ =
+
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+
+
+vtype_ =
+
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+
+ 
+Parameter names
+__________________
+                  
+    1   delta1    
+    2   delta2    
+    3   delta3    
+    4   rlbar     
+    5   sigma_e_d 
+    6   f0        
+    7   f1        
+    8   f2        
+    9   f3        
+    10  gamma     
+    11  sigma_e_cw
+    12  rho       
+    13  alpha     
+    14  pitarget  
+    15  beta      
+__________________
+ 
+Number of equations = 35
+Number of lags      = 1
+Number of leads     = 1
+ 
+ 
+endog_    delay_ vtype_ eqname_     eqtype_
+_______________________________________
+                                       
+q              0      1  EQ1          1
+lagq1          0      1  EQ1a         1
+cwp            0      1  EQ2          1
+ldvindex1      0      1  EQ2a         1
+ldvindex2      0      1  EQ2b         1
+ldq1           0      1  EQ2c         1
+ldq2           0      1  EQ2d         1
+vindex         0      1  EQ3          1
+lagcwp1        0      1  EQ3a         1
+lagcwp2        0      1  EQ3b         1
+pi1            0      1  EQ4          1
+lagpi1         0      1  EQ4a         1
+lagpi2         0      1  EQ4b         1
+pi4            0      1  EQ5          1
+is             0      1  EQ6          1
+dis            0      1  EQ7          1
+il             0      1  EQ8          1
+ldis1          0      1  EQ8a         1
+ldis2          0      1  EQ8b         1
+ldis3          0      1  EQ8c         1
+ldis4          0      1  EQ8d         1
+ldis5          0      1  EQ8e         1
+ldis6          0      1  EQ8f         1
+rl             0      1  EQ9          1
+ldpi1          0      1  EQ9a         1
+ldpi2          0      1  EQ9b         1
+ldpi3          0      1  EQ9c         1
+ldpi4          0      1  EQ9d         1
+ldpi5          0      1  EQ9e         1
+ldpi6          0      1  EQ9f         1
+ldpi7          0      1  EQ9g         1
+control        0      1  control      1
+one            0      1  EQ10         1
+e_d            0      1  EQ11         1
+e_cw           0      1  EQ12         1
+_______________________________________
+
+ans =
+
+  1.0000e-016
+
+ 
+Numerical Tolerances:
+ 
+ epsi       = 2.2e-016
+ condn      = 1e-012
+ uprbnd - 1 = 1e-006
+ 
+ 
+ 
+Parameter values:
+ 
+Name          Value
+________________________
+                        
+delta1          1.1807  
+delta2         -0.2045  
+delta3         -0.0947  
+rlbar           0       
+sigma_e_d       1       
+f0              0.3613  
+f1              0.2871  
+f2              0.2129  
+f3              0.1387  
+gamma           0.0212  
+sigma_e_cw      1       
+rho             0.6585  
+alpha           0.65909 
+pitarget        0       
+beta            0.095619
+________________________
+ 
+ 
+Aim: unique solution.
+ 
+Elapsed time                         = 0.02
+Warning: Flop counts are no longer available.
+> In C:\MATLAB6p1\toolbox\matlab\elmat\flops.m at line 11
+  In c:\aim\vwaimprocs\vwsolve.m at line 117
+  In C:\Wieland_project\Diagnostics\FuhrerMoore_simulate.m at line 54
+Flops                                = 0
+ 
+Number of exact shiftrights (nex)    = 15
+Number of numeric shiftrights (nnum) = 10
+Number of large roots (lgrts)        = 10
+(nex + nnum + lgrts) - neq*nlead     = 0
+Dimension of companion matrix (ia)   = 30
+ 
+                 Roots               Amplitude       Period
+____________________________________________________________________
+                                                                    
+    1      -3.1737      + 0i                3.1737           2      
+    2       0.30436     + 2.8233i           2.8397           4.2935 
+    3       0.30436     - 2.8233i           2.8397           4.2935 
+    4      -2.2586      + 1.5617i           2.746            2.477  
+    5      -2.2586      - 1.5617i           2.746            2.477  
+    6      -1.1986      + 2.4156i           2.6966           3.093  
+    7      -1.1986      - 2.4156i           2.6966           3.093  
+    8       1.7171      + 1.343i            2.1799           9.4664 
+    9       1.7171      - 1.343i            2.1799           9.4664 
+    10      1.1265      + 0i                1.1265           Inf    
+    11      0.89909     + 0.18829i          0.9186           30.4359
+    12      0.89909     - 0.18829i          0.9186           30.4359
+    13      0.63132     + 0i                0.63132          Inf    
+    14     -0.27532     + 0.37607i          0.46608          2.8524 
+    15     -0.27532     - 0.37607i          0.46608          2.8524 
+    16     -0.19903     + 0.24821i          0.31816          2.7967 
+    17     -0.19903     - 0.24821i          0.31816          2.7967 
+    18      0.21146     + 0i                0.21146          Inf    
+    19      0.0069057   + 0i                0.0069057        Inf    
+    20      0.0048663   + 0.0048901i        0.0068988        7.9752 
+    21      0.0048663   - 0.0048901i        0.0068988        7.9752 
+    22     -2.4246e-005 + 0.006882i         0.006882         3.991  
+    23     -2.4246e-005 - 0.006882i         0.006882         3.991  
+    24     -0.0048663   + 0.0048416i        0.0068646        2.6638 
+    25     -0.0048663   - 0.0048416i        0.0068646        2.6638 
+    26     -0.0068571   + 0i                0.0068571        2      
+    27      8.3175e-017 + 5.2287e-009i      5.2287e-009      Inf    
+    28      8.3175e-017 - 5.2287e-009i      5.2287e-009      Inf    
+    29      1.1033e-015 + 0i                1.1033e-015      Inf    
+    30     -1.878e-016  + 0i                1.878e-016       Inf    
+____________________________________________________________________
+ 
+Checkaim: maximum absolute error = 1.2657e-014

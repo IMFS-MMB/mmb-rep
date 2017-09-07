@@ -1,0 +1,397 @@
+MODEL> ms97jcw
+
+ENDOG>
+        ygap    _NOTD
+        pdot    _NOTD
+        rff	_DATA
+        drff	_NOTD
+        pinf    _NOTD
+        plevel  _DATA
+        rl      _NOTD
+        rrl     _NOTD
+	ec	_DATA
+        efi	_DATA
+        eii     _DATA
+        eg      _DATA
+        ex      _DATA
+        yp      _NOTD
+        cwage   _NOTD
+        vindex  _NOTD
+        pitarg  _NOTD
+	rho1	_NOTD
+	rho16	_NOTD
+	rho28	_NOTD
+	rho40	_NOTD
+	dygap	_NOTD
+        one	_DTRM
+        cwage1  _NOTD
+        cwage2  _NOTD
+        plevel1 _NOTD
+        plevel2 _NOTD
+        plevel3 _NOTD
+	rff1    _NOTD
+        efi1    _NOTD
+        efi2    _NOTD
+        eii1    _NOTD
+        eii2    _NOTD
+        ygap1   _NOTD
+        ygap2   _NOTD
+	pdot1	_NOTD
+	pdot2	_NOTD
+	pdot3	_NOTD
+	pdot4	_NOTD
+	pdot5	_NOTD
+	pdot6	_NOTD
+	pdot7	_NOTD
+	pdot8	_NOTD
+	pdot9	_NOTD
+	pdot10	_NOTD
+	pdot11	_NOTD
+        rffsh   _NOTD
+        ecsh    _NOTD
+        efish   _NOTD
+        eiish   _NOTD
+        egsh    _NOTD
+        exsh    _NOTD
+	cwsh	_NOTD
+
+EQUATION> rff
+EQTYPE>   IMPOSED
+EQ>	  rff    =  (1-tayr1)*(rrlbar*one)
+                  + tayr1*LAG(rff,1)
+                  + (1-tayr1)*(leadpi20*LEAD(pdot,20)
+                    + leadpi19*LEAD(pdot,19)
+                    + leadpi18*LEAD(pdot,18)
+                    + leadpi17*LEAD(pdot,17)
+                    + leadpi16*LEAD(pdot,16)
+                    + leadpi15*LEAD(pdot,15)
+                    + leadpi14*LEAD(pdot,14)
+                    + leadpi13*LEAD(pdot,13)
+                    + leadpi12*LEAD(pdot,12)
+                    + leadpi11*LEAD(pdot,11)
+                    + leadpi10*LEAD(pdot,10)
+                    + leadpi9*LEAD(pdot,9)   
+                    + leadpi8*LEAD(pdot,8)
+                    + leadpi7*LEAD(pdot,7)
+                    + leadpi6*LEAD(pdot,6)
+                    + leadpi5*LEAD(pdot,5)
+                    + leadpi4*LEAD(pdot,4)
+                    + leadpi3*LEAD(pdot,3)
+                    + leadpi2*LEAD(pdot,2)
+                    + leadpi1*LEAD(pdot,1)
+                    + leadpi0*pdot
+                    + lagpi1*LAG(pdot,1)
+                    + lagpi2*LAG(pdot1,1)
+                    + lagpi3*LAG(pdot2,1)
+                    + lagpi4*LAG(pdot3,1)   )  
+                   + taypl20*(LEAD(pdot,20)-pitarg)
+                   + taypl19*(LEAD(pdot,19)-pitarg)
+                   + taypl18*(LEAD(pdot,18)-pitarg)
+                   + taypl17*(LEAD(pdot,17)-pitarg)
+                   + taypl16*(LEAD(pdot,16)-pitarg)
+                   + taypl15*(LEAD(pdot,15)-pitarg)
+                   + taypl14*(LEAD(pdot,14)-pitarg)
+                   + taypl13*(LEAD(pdot,13)-pitarg)
+                   + taypl12*(LEAD(pdot,12)-pitarg)
+                   + taypl11*(LEAD(pdot,11)-pitarg)
+                   + taypl10*(LEAD(pdot,10)-pitarg)
+                   + taypl9*(LEAD(pdot,9) -pitarg)                                       
+                        + taypl8*(LEAD(pdot,8)-pitarg)
+                        + taypl7*(LEAD(pdot,7)-pitarg)
+                        + taypl6*(LEAD(pdot,6)-pitarg)
+                        + taypl5*(LEAD(pdot,5)-pitarg)
+                        + taypl4*(LEAD(pdot,4)-pitarg)
+                        + taypl3*(LEAD(pdot,3)-pitarg)
+                        + taypl2*(LEAD(pdot,2)-pitarg)
+                        + taypl1*(LEAD(pdot,1)-pitarg)
+                        + tayp0*(pdot-pitarg)
+                        + tayp1*(LAG(pdot,1)-pitarg)
+                        + tayp2*(LAG(pdot1,1)-pitarg)
+                        + tayp3*(LAG(pdot2,1)-pitarg)
+                        + tayp4*(LAG(pdot3,1)-pitarg)
+                        + tayp8*(LAG(pdot3,1)+LAG(pdot4,1)+LAG(pdot5,1)+LAG(pdot6,1)-4*pitarg)
+                        + tayp12*(LAG(pdot7,1)+LAG(pdot8,1)+LAG(pdot9,1)+LAG(pdot10,1)-4*pitarg)
+			+ tayxl8*LEAD(ygap,8)
+			+ tayxl7*LEAD(ygap,7)
+			+ tayxl6*LEAD(ygap,6)
+			+ tayxl5*LEAD(ygap,5)
+ 			+ tayxl4*LEAD(ygap,4)
+			+ tayxl3*LEAD(ygap,3)
+			+ tayxl2*LEAD(ygap,2)
+			+ tayxl1*LEAD(ygap,1)
+			+ tayx0*ygap
+			+ tayx1*LAG(ygap,1)
+			+ tayx2*LAG(ygap1,1)
+                        + rffsh
+ 
+EQUATION> drff
+EQTYPE>   IMPOSED
+EQ>	   drff =       rff-LAG(rff,1)
+
+
+EQUATION > dygap
+EQTYPE >   IMPOSED
+EQ >       dygap   = ygap - LAG(ygap,1)
+ 
+EQUATION > rho1
+EQTYPE >   IMPOSED
+EQ >       rho1 = rff - LEAD(pdot,1)
+
+EQUATION > rho16
+EQTYPE >   IMPOSED
+EQ >       rff - LEAD(pdot,1) = rho16 - 16.0*(LEAD(rho16,1) - rho16)
+
+EQUATION > rho28
+EQTYPE >   IMPOSED
+EQ >       rff - LEAD(pdot,1) = rho28 - 28.0*(LEAD(rho28,1) - rho28)
+ 
+EQUATION > rho40
+EQTYPE >   IMPOSED
+EQ >       rff - LEAD(pdot,1) = rho40 - 40.0*(LEAD(rho40,1) - rho40)
+
+EQUATION> pinf
+EQTYPE>   IMPOSED
+EQ>       pinf =       plevel - LAG(plevel3,1)
+
+EQUATION> pdot
+EQTYPE>   IMPOSED
+EQ>       pdot =   4*(plevel - LAG(plevel,1))
+
+EQUATION> pdot1
+EQTYPE>   IMPOSED
+EQ>       pdot1 =       LAG(pdot,1)
+
+EQUATION> pdot2
+EQTYPE>   IMPOSED
+EQ>       pdot2 =       LAG(pdot1,1)
+
+EQUATION> pdot3
+EQTYPE>   IMPOSED
+EQ>       pdot3 =      LAG(pdot2,1)
+
+EQUATION> pdot4
+EQTYPE>   IMPOSED
+EQ>       pdot4 =      LAG(pdot3,1)
+
+EQUATION> pdot5
+EQTYPE>   IMPOSED
+EQ>       pdot5 =      LAG(pdot4,1)
+
+EQUATION> pdot6
+EQTYPE>   IMPOSED
+EQ>       pdot6 =      LAG(pdot5,1)
+
+EQUATION> pdot7
+EQTYPE>   IMPOSED
+EQ>       pdot7 =      LAG(pdot6,1)
+
+EQUATION> pdot8
+EQTYPE>   IMPOSED
+EQ>       pdot8 =      LAG(pdot7,1)
+
+EQUATION> pdot9
+EQTYPE>   IMPOSED
+EQ>       pdot9 =      LAG(pdot8,1)
+
+EQUATION> pdot10
+EQTYPE>   IMPOSED
+EQ>       pdot10 =      LAG(pdot9,1)
+
+EQUATION> pdot11
+EQTYPE>   IMPOSED
+EQ>       pdot11 =      LAG(pdot10,1)
+
+EQUATION> ygap
+EQTYPE>   IMPOSED
+EQ>       ygap =           ec + efi + eii + eg + ex -1*one
+
+EQUATION> rl
+EQTYPE>   IMPOSED
+EQ>	   rl =        0.0*one
+                        + (rff + LEAD(rff,1)
+                        + LEAD(rff,2)
+                        + LEAD(rff,3)
+                        + LEAD(rff,4)
+                        + LEAD(rff,5)
+                        + LEAD(rff,6)
+                        + LEAD(rff,7)
+                        )/8
+
+EQUATION> rrl
+EQTYPE>   IMPOSED
+EQ>       rrl =        rl - (LEAD(plevel,8) - plevel)/2
+                  
+EQUATION> ec
+EQTYPE>   IMPOSED
+EQ>       ec =         0.229884093*one 
+                        + 0.665229981*LAG(ec,1)
+                        + 0.286404154*yp
+                        -0.102064840*rrl 
+                        + ecsh
+
+EQUATION> efi
+EQTYPE>   IMPOSED
+EQ>       efi =        0.001837149*one 
+                        + 0.987517671*LAG(efi,1)
+                        + 0.171053677*LAG(efi1,1)
+                        - 0.168815275*LAG(efi2,1)
+                        + 0.133783338*ygap
+                        - 0.050027010*LAG(ygap,1)
+                        - 0.128116183*LAG(ygap1,1)
+			- 0.032573147*rrl
+                        + efish
+
+EQUATION> eii
+EQTYPE>   IMPOSED
+EQ>       eii =         0.001874640*one
+                        + 0.324042437*LAG(eii,1)
+                        + 0.032234045*LAG(eii1,1)
+                        + 0.168077466*LAG(eii2,1)
+			+ 0.115940167*ygap
+                        + 0.186708319*LAG(ygap,1)
+                        -0.285688047*LAG(ygap1,1)
+                        + eiish
+
+EQUATION> eg
+EQTYPE>   IMPOSED
+EQ>        eg      =    0.0033254101*one
+                        +0.9821910468*LAG(eg,1)
+			+ egsh
+
+EQUATION> ex                                                         
+EQTYPE>  IMPOSED
+EQ>       ex =          exbar*one
+			+ exsh
+
+EQUATION> yp                             
+EQTYPE>   IMPOSED
+EQ>       yp =         (1.0-.9)*(ygap
+                        + 0.9*LEAD(ygap,1)
+                        + (0.9**2)*LEAD(ygap,2)
+                        + (0.9**3)*LEAD(ygap,3)
+                        + (0.9**4)*LEAD(ygap,4)
+                        + (0.9**5)*LEAD(ygap,5)
+                        + (0.9**6)*LEAD(ygap,6)
+                        + (0.9**7)*LEAD(ygap,7)
+                        + (0.9**8)*LEAD(ygap,8))/(1.0-(0.9**9))
+                  
+
+EQUATION> cwage 
+EQTYPE>  IMPOSED
+EQ>       -plevel   =            0*one - cwage
+                        + (0.25+1.5*0.0803)*vindex
+                        + (0.25+0.5*0.0803)*LEAD(vindex,1)
+                        + (0.25-0.5*0.0803)*LEAD(vindex,2)
+                        + (0.25-1.5*0.0803)*LEAD(vindex,3) 
+                        + 0.0055*((0.25+1.5*0.0803)*(ygap+0.00535*one*0.0)
+                        + (0.25+0.5*0.0803)*(LEAD(ygap,1)+0.00535*one*0.0)
+                        + (0.25-0.5*0.0803)*(LEAD(ygap,2)+0.00535*one*0.0)
+                        + (0.25-1.5*0.0803)*(LEAD(ygap,3)+0.00535*one*0.0))
+                         +cwsh
+
+EQUATION> plevel
+EQTYPE>   IMPOSED
+EQ>       plevel =            0*one
+                        + (0.25+1.5*0.0803)*cwage
+                        + (0.25+0.5*0.0803)*LAG(cwage,1)
+                        + (0.25-0.5*0.0803)*LAG(cwage1,1)
+                        + (0.25-1.5*0.0803)*LAG(cwage2,1)
+
+EQUATION> vindex
+EQTYPE>   IMPOSED
+EQ>       vindex =      0*one
+                        + (0.25+1.5*0.0803)*(cwage - plevel)
+                        + (0.25+0.5*0.0803)*(LAG(cwage,1)
+			 - LAG(plevel,1))
+                        + (0.25-0.5*0.0803)*(LAG(cwage1,1)
+			 - LAG(plevel1,1))
+                        + (0.25-1.5*0.0803)*(LAG(cwage2,1)
+			 - LAG(plevel2,1))
+                  
+EQUATION> pitarg  
+EQTYPE >  IMPOSED
+EQ>       pitarg  =  pinfbar*one
+
+
+EQUATION> one
+EQTYPE>   IMPOSED
+EQ>       one = LAG(one,1)
+
+
+EQUATION> cwage1  
+EQTYPE >  IMPOSED
+EQ>       cwage1  =  LAG(cwage,1)
+
+EQUATION> cwage2  
+EQTYPE >  IMPOSED
+EQ>       cwage2  =  LAG(cwage1,1)
+
+EQUATION> plevel1  
+EQTYPE >  IMPOSED
+EQ>       plevel1  =  LAG(plevel,1)
+
+EQUATION> plevel2  
+EQTYPE >  IMPOSED
+EQ>       plevel2  =  LAG(plevel1,1)
+
+EQUATION> plevel3  
+EQTYPE >  IMPOSED
+EQ>       plevel3  =  LAG(plevel2,1)
+
+EQUATION> rff1  
+EQTYPE >  IMPOSED
+EQ>       rff1  =  LAG(rff,1)
+
+EQUATION> efi1  
+EQTYPE >  IMPOSED
+EQ>       efi1  =  LAG(efi,1)
+
+EQUATION> efi2  
+EQTYPE >  IMPOSED
+EQ>       efi2  =  LAG(efi1,1)
+
+EQUATION> eii1  
+EQTYPE >  IMPOSED
+EQ>       eii1  =  LAG(eii,1)
+
+EQUATION> eii2  
+EQTYPE >  IMPOSED
+EQ>       eii2  =  LAG(eii1,1)
+
+EQUATION> ygap1  
+EQTYPE >  IMPOSED
+EQ>       ygap1  =  LAG(ygap,1)
+
+EQUATION> ygap2  
+EQTYPE >  IMPOSED
+EQ>       ygap2  =  LAG(ygap1,1)
+
+EQUATION> rffsh
+EQTYPE>   STOCH
+EQ>       rffsh = 0*one
+
+EQUATION> ecsh
+EQTYPE>   STOCH
+EQ>       ecsh = 0*one
+
+EQUATION> efish
+EQTYPE>   STOCH
+EQ>       efish = 0*one
+
+EQUATION> eiish
+EQTYPE>   STOCH
+EQ>       eiish = 0*one
+
+EQUATION> egsh
+EQTYPE>   STOCH
+EQ>       egsh = 0*one
+
+EQUATION> exsh
+EQTYPE>   STOCH
+EQ>       exsh = 0*one
+
+EQUATION> cwsh
+EQTYPE>   STOCH
+EQ>       cwsh   = 0*one
+
+END

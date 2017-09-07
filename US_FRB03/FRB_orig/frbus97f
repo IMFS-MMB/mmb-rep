@@ -1,0 +1,2247 @@
+MODEL > FRBUS97F
+
+ENDOG >
+	xgap2	_NOTD
+	picnia	_NOTD
+	rffe    _NOTD
+	drffe	_NOTD
+	xgap	_NOTD
+	lur	_NOTD
+	fpxr	_DATA
+        dlfpxr	_NOTD
+	dlfpx	_NOTD	
+	pcr	_DATA
+	qec	_NOTD
+	ec	_DATA
+	qsdv	_NOTD
+        ecdv    _DATA
+	ecdo	_DATA
+	eh	_DATA
+	kcd	_NOTD
+	kh	_NOTD
+	epd	_DATA
+	kpd	_NOTD
+	vpd	_NOTD
+	eps	_DATA
+	kps	_NOTD
+	kimt	_DATA
+	kio	_DATA
+	ex	_DATA
+	hgxemo  _NOTD
+	emo	_DATA
+	fninr	_NOTD
+	xgdp	_NOTD
+	xp	_NOTD
+	xb	_NOTD
+        vpda    _NOTD
+	veoa	_NOTD
+        lhp	_DATA
+	lep	_DATA
+	lf	_DATA
+	leor	_DATA
+        lurnat  _NOTD
+        xgpot   _NOTD
+	xgdpt	_NOTD
+	xgdpnr	_NOTD
+	jccanr	_NOTD
+	yhibnr	_DATA
+	ynicpnr	_NOTD
+	ynidnr	_DATA
+	yhpntnr _NOTD
+	ypnr	_NOTD
+	qpxpr	_NOTD
+	dlpxp	_DATA
+	qplr	_NOTD
+	plr	_NOTD
+	dlpl	_DATA
+	pmor	_DATA
+	pcengr	_DATA
+	pgasr	_DATA
+	pxbr	_NOTD
+	plminr	_NOTD
+        pxp     _NOTD
+	gftrd	_DATA
+	rgfint	_DATA
+	gfdefnr	_NOTD
+	gfdbtnr	_NOTD
+	gstrd	_DATA
+	gsdbtnr	_NOTD
+        trsci   _DATA
+        trssi   _DATA
+        trsib   _DATA
+        trfci   _DATA
+	rtbe	_DATA
+	rme	_DATA
+	rcar	_DATA
+	rg5es	_DATA
+	rg10es	_DATA
+	rcbes	_DATA
+	rdp	_DATA
+	lwpss	_DATA
+	fgdp	_DATA
+	dlfpc	_DATA
+	poilr	_NOTD
+        trfpt   _NOTD
+	trfp	_DATA
+        trspt   _NOTD
+	trsp	_DATA
+	egfi	_DATA
+	egfo	_NOTD
+	egfos	_DATA
+	egfl	_DATA
+	egsi	_DATA
+	egso	_DATA
+	egsl	_DATA
+	rfftay  _DATA
+	rffvar  _DATA
+	rstar	_NOTD
+	rtr	_DATA
+	pitarg	_NOTD
+	ptr	_DATA
+	zertay	_NOTD
+	zervar	_NOTD
+	zec1	_NOTD
+	lzec1	_NOTD
+	zgapc1	_NOTD
+	lzgapc1	_NOTD
+	zec2	_NOTD
+	lzec2	_NOTD
+	zgapc2	_NOTD
+	lzgapc2	_NOTD
+        zsdv    _NOTD
+	lzsdv	_NOTD
+	zrccdv	_NOTD
+	lzrccdv	_NOTD
+	zec3	_NOTD
+	lzec3	_NOTD
+	zgapc3	_NOTD
+	lzgapc3	_NOTD
+	zrccdo	_NOTD
+	lzrccdo	_NOTD
+	zec4	_NOTD
+	lzec4	_NOTD 
+	zrcch	_NOTD
+	lzrcch	_NOTD 
+	zvpd	_NOTD
+	lzvpd	_NOTD
+	zvpdl2	_NOTD
+	zxb	_NOTD
+	lzxb	_NOTD
+	zxbl2	_NOTD
+	zdxb	_NOTD
+	lzdxb	_NOTD
+	zdxbl2	_NOTD
+	zpib5	_NOTD
+	lzpib5	_NOTD
+	zkimt	_NOTD
+	lzkimt	_NOTD
+	zlhp	_NOTD
+	lzlhp	_NOTD
+	zyh	_NOTD
+        zyhp    _NOTD
+	zyht	_NOTD
+	zynid	_NOTD
+	lzynid	_NOTD
+	zpl	_NOTD
+	lzpl	_NOTD
+	zpxp	_NOTD
+	lzpxp	_NOTD
+	zpxpl2	_NOTD
+        zlur1   _NOTD
+        lzlur1	_NOTD
+	zlur1l2	_NOTD
+        zlur2	_NOTD
+        lzlur2	_NOTD
+	zgap05	_NOTD
+	zgap10	_NOTD
+	zgap30	_NOTD
+        zpi05   _NOTD
+        zpi10   _NOTD
+        zpi30   _NOTD
+        zrff05  _NOTD
+        zrff10  _NOTD
+        zrff30  _NOTD
+	zdivgr	_NOTD
+        one	_DTRM
+	cashfl	_NOTD
+	qecl2	_NOTD
+	qecl4	_NOTD
+	picnial2 _NOTD
+	picnial4 _NOTD
+	picnial6 _NOTD
+	picnial8 _NOTD
+	picnia10 _NOTD
+	rffel2	_NOTD
+	pcl2	_NOTD	
+	xgap2l2	_NOTD
+	epdl2	_NOTD
+	epsl2	_NOTD
+	dxbl1	_NOTD
+	dxbl3	_NOTD
+	dxbl5	_NOTD
+	kimtl2	_NOTD
+	vpdl2	_NOTD
+	vpdl4	_NOTD
+	vpdl6	_NOTD
+	vpdl8	_NOTD
+	vpdl10	_NOTD
+	pcengrl2	_NOTD
+	pcengrl4	_NOTD
+	pcengrl6	_NOTD
+	pcengrl8	_NOTD
+	pcengr10	_NOTD
+	dlepl1	_NOTD
+	dlepl3	_NOTD
+	dlepl5	_NOTD
+	dlpll2	_NOTD
+	dlpxpl2	_NOTD
+	pmorl2	_NOTD
+	pxbrl2	_NOTD
+	dlfpcl2	_NOTD
+	dlfpxl2	_NOTD
+	egfil2	_NOTD
+	egfll2	_NOTD
+	egfol2	_NOTD
+	egsil2	_NOTD
+	egsll2	_NOTD
+	egsol2	_NOTD
+	xgapl2	_NOTD
+	fgdpl2	_NOTD
+	fgdpl4	_NOTD
+	fgdpl6	_NOTD
+	pgasrl2	_NOTD
+	pcrl2	_NOTD
+	gfdbtyl2	_NOTD
+	gfdbtyl4	_NOTD
+	gsdbtyl2	_NOTD
+	gsdbtyl4	_NOTD
+	xothtl2	_NOTD
+	xothtl4	_NOTD
+	xothtl6	_NOTD
+	xothtl8	_NOTD
+	xothtl10	_NOTD
+	pcf2	_NOTD	
+	xgap2f2	_NOTD
+	xgap2f4	_NOTD
+	xgap2f6	_NOTD
+        picniaf2 _NOTD
+	picniaf4 _NOTD
+	picniaf6 _NOTD
+	qplrf2	_NOTD
+	dlpxpf2	_NOTD
+	xbf2	_NOTD
+        ltfpt   _NOTD
+        poilrs  _DATA
+	zkimtl2	_NOTD
+	zpll2	_NOTD
+	zlur2l2	_NOTD
+	pxgr	_NOTD
+	yhp	_NOTD
+	gsintnr	_NOTD
+	tfpnr	_NOTD
+	ecnd    _NOTD
+        ei      _NOTD
+	fcbnr	_NOTD
+        leh     _NOTD
+	yht	_NOTD
+	rg5e	_NOTD
+	rg10e	_NOTD
+	rcbe	_NOTD
+	lwps	_NOTD
+        egf	_NOTD
+        egs	_NOTD
+        ecd	_NOTD
+        em	_NOTD
+	lprdgt	_NOTD
+        qlhp    _NOTD
+	qyhibnr	_NOTD
+	yniinr	_NOTD
+	qynidnr	_NOTD
+	qpxgr	_NOTD
+	qpmor	_NOTD
+	rgsint	_NOTD
+	eg	_NOTD
+	xg	_NOTD
+	ecnia	_NOTD
+	xbnr	_NOTD
+	xgnr	_NOTD
+	yninr	_NOTD
+	yhinr	_NOTD
+	tryh	_NOTD
+	yhl	_NOTD
+	yh	_NOTD
+	pgdpr   _NOTD
+	gfintnr	_NOTD
+	tspnr	_NOTD
+	gssrpnr	_NOTD
+	wpo	_NOTD
+        ec_     _NOTD
+	ecdo_	_NOTD
+	ecdv_	_NOTD
+	eh_	_NOTD
+	epd_	_NOTD
+	eps_	_NOTD
+	kimt_	_NOTD
+	kio_	_NOTD
+	ex_   	_NOTD
+	emo_	_NOTD
+	lhp_	_NOTD
+	lep_	_NOTD
+	lf_	_NOTD
+	leor_	_NOTD
+	yhibnr_	_NOTD
+	ynidnr_	_NOTD
+	dlpxp_	_NOTD
+	dlpl_	_NOTD
+	pmor_	_NOTD
+	pcr_	_NOTD
+	pcengr_	_NOTD
+	pgasr_	_NOTD
+	gftrd_	_NOTD
+	rgfint_	_NOTD
+	trfp_	_NOTD
+        trfci_  _NOTD
+	gstrd_	_NOTD
+	trsp_	_NOTD
+        trsci_  _NOTD
+        trsib_  _NOTD
+        trssi_  _NOTD
+	rg5e_	_NOTD
+	rg10e_	_NOTD
+	rcbe_	_NOTD
+	rtbe_	_NOTD
+	rme_	_NOTD
+	rcar_	_NOTD
+	lwps_	_NOTD
+	rdp_	_NOTD
+	dlfgdp_	_NOTD
+	dlfpc_	_NOTD
+	poilr_	_NOTD	
+	egfi_	_NOTD
+	egfl_	_NOTD
+	egfo_	_NOTD
+	egsi_	_NOTD
+	egsl_	_NOTD
+	egso_	_NOTD
+	dlfpxr_	_NOTD
+	rffvar_	_NOTD
+	rfftay_	_NOTD
+	ptr_	_NOTD
+	rtr_	_NOTD
+
+EQUATION > EQR1
+EQTYPE >   IMPOSED
+EQ >       rfftay =  (1-tayr1-tayr2-tayr3-tayr4)*rstar 
+                   + tayr1*LAG(rffe,1)
+                   + tayr2*LAG(rffe,2)
+                   + tayr3*LAG(rffel2,1)
+                   + tayr4*LAG(rffel2,2)
+                   + (1-tayr1-tayr2-tayr3-tayr4)*(
+                     leadpi8*LEAD(picniaf6,2)
+                   + leadpi7*LEAD(picniaf6,1)
+                   + leadpi6*LEAD(picniaf4,2)
+                   + leadpi5*LEAD(picniaf4,1)
+                   + leadpi4*LEAD(picniaf2,2)
+                   + leadpi3*LEAD(picniaf2,1)
+                   + leadpi2*LEAD(picnia,2)
+                   + leadpi1*LEAD(picnia,1)
+                   + leadpi0*picnia
+                   + lagpi1*LAG(picnia,1)
+                   + lagpi2*LAG(picnia,2)
+                   + lagpi3*LAG(picnial2,1)
+                   + lagpi4*LAG(picnial2,2))
+                   + taypm8*LEAD(picniaf6,2)
+                   + taypm7*LEAD(picniaf6,1)
+                   + taypm6*LEAD(picniaf4,2)
+                   + taypm5*LEAD(picniaf4,1)
+                   + taypm4*LEAD(picniaf2,2)
+                   + taypm3*LEAD(picniaf2,1)
+                   + taypm2*LEAD(picnia,2)
+                   + taypm1*LEAD(picnia,1)
+                   + tayp0*picnia  
+                   + tayp1*LAG(picnia,1) 
+                   + tayp2*LAG(picnia,2) 
+                   + tayp3*LAG(picnial2,1) 
+                   + tayp4*LAG(picnial2,2) 
+                   + tayp8*(LAG(picnial2,2)+LAG(picnial4,1)+LAG(picnial4,2)+LAG(picnial6,1))
+                   + tayp12*(LAG(picnial6,2)+LAG(picnial8,1)+LAG(picnial8,2)+LAG(picnia10,1))
+                   - (taypm8+taypm7+taypm6+taypm5+taypm4+taypm3+taypm2+taypm1
+                   +  tayp0+tayp1+tayp2+tayp3+tayp4+4*tayp8+4*tayp12)*pitarg
+                   + tayplm4*LEAD(pcf2,2)
+                   + tayplm3*LEAD(pcf2,1)
+                   + tayplm2*(LEAD(pcr,2) + LEAD(pxp,2))
+                   + tayplm1*(LEAD(pcr,1) + LEAD(pxp,1))
+                   + taypl0*(pcr + pxp)
+                   + taypl1*(LAG(pcr,1)+LAG(pxp,1))
+                   + taypl2*pcl2
+                   + taypl3*LAG(pcl2,1)
+                   + taypl4*LAG(pcl2,2)
+                   + tayxm8*LEAD(xgap2f6,2) 
+                   + tayxm7*LEAD(xgap2f6,1) 
+                   + tayxm6*LEAD(xgap2f4,2) 
+                   + tayxm5*LEAD(xgap2f4,1) 
+                   + tayxm4*LEAD(xgap2f2,2) 
+                   + tayxm3*LEAD(xgap2f2,1) 
+                   + tayxm2*LEAD(xgap2,2) 
+                   + tayxm1*LEAD(xgap2,1) 
+                   + tayx0*xgap2 
+                   + tayx1*LAG(xgap2,1) 
+                   + tayx2*LAG(xgap2,2) 
+                   + tayx3*LAG(xgap2l2,1) 
+                   + tayx4*LAG(xgap2l2,2) 
+                   + tayu0*(lur-lurnat)
+                   + tayu1*(LAG(lur,1)-LAG(lurnat,1))
+                   + tayre0*100*(fpxr-LAG(fpxr,1))
+                   + taymu0*100*qpxpr
+                   + taymu1*100*LAG(qpxpr,1)
+                   + taye0*100*(pcengr-LAG(pcengr,1))
+                   + tayc0*100*ecnia*xgdp1
+                   + tayfi0*100*(epd*xgdp3+eps*xgdp4+eh*xgdp2)
+                   + tayii0*100*(xgdp5*(ki1*kimt + ki2*kio) + xgdp6*(ki1*LAG(kimt,1) + ki2*LAG(kio,1)))
+                   + tayg0*100*(xgdp9*(egf1*egfo + egf2*egfi + egf3*egfl)
+                          + xgdp10*(egs1*egso + egs2*egsi + egs3*egsl)) 
+                   + taysp0*(rg10e-rtbe)                     
+                   + rfftay_
+ 
+EQUATION > EQW23
+EQTYPE >   IMPOSED
+EQ >       drffe   = rffe - LAG(rffe,1)
+
+EQUATION > EQA1
+EQTYPE >   IMPOSED
+EQ >       qec    =   zyh 
+                   +  0.0584068790054*(zyht-zyh)
+                   -  0.0655950765465*(zyhp-zyh)
+                   +  0.0325302560675*(1+iscurve*.5)*(lwps + pxgr - pcr - zyh)
+                   +  0.1440652972670*(wpo-zyh) 
+
+EQUATION > EQA2
+EQTYPE >   IMPOSED
+EQ >       ec  =    LAG(ec,1)
+                  + 0.154173479486*(LAG(qec,1)-LAG(ec,1))
+                  + 0.207837076245*(LAG(ec,1)-LAG(ec,2))
+                  + datet*zec1 + (1-datet)*LAG(lzec1,1)  
+                  + 0.0080074377742*(datet*zgapc1 + (1-datet)*LAG(lzgapc1,1))
+                  + 0.0995119731721*(yh-LAG(yh,1)
+                       -(datet*zec1+ (1-datet)*LAG(lzec1,1)))
+                  - 0.0229678540295*(LAG(yh,1)-LAG(yh,2))
+                  + ec_
+
+EQUATION > EQA3
+EQTYPE >   IMPOSED
+EQ >       qsdv  =  -0.263228678243*0.25*(pgasr
+                        +LAG(pgasr,1)+LAG(pgasr,2)+LAG(pgasrl2,1))
+
+EQUATION > EQA4
+EQTYPE >   IMPOSED
+EQ >       ecdv =     LAG(ecdv,1)
+                   +  .339759596749*(LAG(qsdv,1)+LAG(qec,1)-LAG(ecdv,1))
+                   -  .257457530254*(LAG(ecdv,1)-LAG(ecdv,2))
+                   +  3.03323716171*(datet*zec2 + (1-datet)*LAG(lzec2,1))
+                   +  3.03323716171*(datet*zsdv + (1-datet)*LAG(lzsdv,1)) 
+                   +  3.03323716171*0.008*(datet*zgapc2 + (1-datet)*LAG(lzgapc2,1))
+                   -  0.029831192544*(1+iscurve/2.67)*(datet*zrccdv + (1-datet)*LAG(lzrccdv,1))     
+		   +  1.97908433908*(LAG(qec,1)-LAG(qec,2))
+		   +  4.72167026462*(LAG(qec,2)-LAG(qecl2,1))
+		   +  1.73447532682*(LAG(qecl2,1)-LAG(qecl2,2))
+		   +  2.41236583958*(LAG(qecl2,2)-LAG(qecl4,1))
+                   +  ecdv_
+
+EQUATION > EQA5
+EQTYPE >   IMPOSED
+EQ >       ecdo =     LAG(ecdo,1)
+                   +  0.0978812349793*(LAG(qec,1)-LAG(ecdo,1))
+                   +  0.0762268913328*(LAG(ecdo,1)-LAG(ecdo,2))
+                   +  3.17577973362*(datet*zec3 + (1-datet)*LAG(lzec3,1)) 
+                   +  3.17577973362*0.008*(datet*zgapc3 + (1-datet)*LAG(lzgapc3,1))
+                   -  0.018364159583*(1+iscurve/3.33)*(datet*zrccdo + (1-datet)*LAG(lzrccdo,1))
+		   +  0.762178056319*(LAG(qec,1)-LAG(qec,2))
+		   +  0.483710408941*(LAG(qec,2)-LAG(qecl2,1))
+		   -  0.257987551449*(LAG(qecl2,1)-LAG(qecl2,2))
+		   +  0.637934053208*(LAG(qecl2,2)-LAG(qecl4,1))
+                   +  ecdo_
+
+EQUATION > EQA6
+EQTYPE >   IMPOSED
+EQ >       eh     =   LAG(eh,1)
+                   +  0.112177343577*(LAG(qec,1)-LAG(eh,1))
+                   +  0.30940588957*(LAG(eh,1)-LAG(eh,2))
+                   +  14.1861305056*(datet*zec4+ (1-datet)*LAG(lzec4,1))
+                   -  0.116556799251*(1+iscurve/2.58)*(datet*zrcch+ (1-datet)*LAG(lzrcch,1))
+		   +  5.33425802988*(LAG(qec,1)-LAG(qec,2))
+		   +  2.61720944263*(LAG(qec,2)-LAG(qecl2,1))
+		   +  1.26676734391*(LAG(qecl2,1)-LAG(qecl2,2))
+		   +  2.37472643623*(LAG(qecl2,2)-LAG(qecl4,1))
+                   +  eh_
+
+EQUATION > EQA7
+EQTYPE >   IMPOSED
+EQ >       kcd    =  kcd1*LAG(kcd,1) + kcd2*(ecd1*ecdv + ecd2*ecdo)   
+
+EQUATION > EQA8
+EQTYPE >   IMPOSED
+EQ >       kh     =  kh1*LAG(kh,1) + kh2*eh
+
+EQUATION > EQB1
+EQTYPE >   IMPOSED
+EQ >       epd    =  LAG(epd,1)
+                   + 0.0654821916769*(LAG(xb,2)+LAG(vpd,2)-LAG(epd,2))
+                   + 0.0077433484769*(LAG(epd,1)-LAG(epd,2))
+                   + 0.254415299022*(LAG(epd,2)-LAG(epdl2,1))
+                   + 0.782307027592*(datet*(zxb+(1+iscurve/13.635)*zvpd) 
+                         + (1-datet)*(LAG(lzxb,1)+(1+iscurve/13.635)*LAG(lzvpd,1)) )
+                   + 0.151555911273*cashfl
+                   + 0.0661370611345*LAG(cashfl,1)
+                   + 19.4767730841*(datet*zdxb+ (1-datet)*LAG(lzdxb,1))
+                   + epd_
+
+EQUATION > EQB2
+EQTYPE >   IMPOSED
+EQ >       kpd    = kpd1*LAG(kpd,1) + kpd2*epd
+
+EQUATION > EQB3
+EQTYPE >   IMPOSED
+EQ >       vpd    = - 0.05055*(0.8*((1-.35*taxon)*rg5e 
+                                     - (datet*zpib5+(1-datet)*LAG(lzpib5,1)) )
+                      + 0.2*2*rdp )
+                    - 0.00897*(0.8*((1-.35*taxon)*rg5e 
+                                     - (datet*zpib5+(1-datet)*LAG(lzpib5,1)) )
+                      + 0.2*2*rdp  + taxon*(datet*zpib5 + (1-datet)*LAG(lzpib5,1))) 
+
+EQUATION > EQC1
+EQTYPE >   IMPOSED
+EQ >       eps    =   LAG(eps,1)
+                    - 0.0355252237239*(LAG(eps,1)-LAG(xb,1))
+                    + 0.145094529937*(LAG(eps,1)-LAG(eps,2))
+                    + 0.0971793341412*(LAG(eps,2)-LAG(epsl2,1))
+                    + 0.380504419177*dxbl1
+                    + 0.24901951649*LAG(dxbl1,1)
+                    + 0.284404961332*LAG(dxbl1,2)
+                    + 0.312474129243*LAG(dxbl3,1)
+                    + 0.159040395765*LAG(dxbl3,2)
+                    - 0.350082863562*LAG(dxbl5,1)
+                    + eps_             
+ 
+EQUATION > EQC2
+EQTYPE >   IMPOSED
+EQ >       kps    =  kps1*LAG(kps,1) + kps2*eps
+
+EQUATION > EQD1
+EQTYPE >   IMPOSED
+EQ >       kimt   =    LAG(kimt,1)
+                     + .15032750476*(LAG(xb,1)-LAG(kimt,1))
+                     + .23061958751*(LAG(kimt,1)-LAG(kimt,2))
+                     + .118300982384*(LAG(kimt,2)-LAG(kimtl2,1))
+                     + .121631744703*(LAG(kimtl2,1)-LAG(kimtl2,2))
+                     + datet*zkimt+ (1-datet)*LAG(lzkimt,1)
+                     + kimt_ 
+
+EQUATION > EQD2
+EQTYPE >   IMPOSED
+EQ >       kio    =  LAG(kio,1)
+		    +  .0387389192555*(LAG(xb,1)-LAG(kio,1))
+		    +  .507651578953*(LAG(kio,1)-LAG(kio,2))
+		    +  .122173935168*(LAG(xb,1)-LAG(xb,2))	
+                    + kio_
+
+EQUATION > EQE1
+EQTYPE >   IMPOSED
+EQ >       ex     =  LAG(ex,1)
+                   + 0.143161888685*((LAG(fgdp,1)-LAG(fpxr,1))-LAG(ex,1))
+                   - 0.367783875925*(LAG(ex,1)-LAG(ex,2))
+                   + 1.39918761877*(fgdp-LAG(fgdp,1)) 
+                   - 0.1*(fpxr-LAG(fpxr,1)) 
+                   - 0.05*(LAG(fpxr,1)-LAG(fpxr,2)) 
+                   + ex_
+
+EQUATION > EQE2
+EQTYPE >   IMPOSED
+EQ >       hgxemo =  .775*LAG(hgxemo,1)
+		   + .225*(xgdp-LAG(xgdp,1))
+
+EQUATION > EQE3
+EQTYPE >   IMPOSED
+EQ >       emo    =  LAG(emo,1)
+                   - 0.426416797406*(LAG(emo,1)-(LAG(xgdp,1)+LAG(pxbr,1)-LAG(pmor,1)))
+                   - 0.156189507787*(LAG(emo,1)-LAG(emo,2))   
+                   + 4.25725755003*hgxemo
+		   - 0.219943167475*(pmor-pxbr-(LAG(pmor,1)-LAG(pxbr,1)))
+                   +  emo_
+                                
+EQUATION > EQE4
+EQTYPE >   IMPOSED                                       
+EQ>        fninr  =  fnin1*LAG(fninr,1) + fnin2*fcbnr   
+                              
+EQUATION > EQE5
+EQTYPE >   IMPOSED
+EQ >       fpxr   =  0.04*(rg10e-zpi10)
+                   + 0.2*fpxr1*(fninr  - (xgdp + pgdpr))
+                   + dlfpxr_  
+
+EQUATION > EQE6
+EQTYPE >   IMPOSED
+EQ >       dlfpx  =   fpxr - LAG(fpxr,1) 
+                   + dlfpc 
+                   - dlpxp 
+                   - (pxbr - LAG(pxbr,1))
+
+EQUATION > EQE7
+EQTYPE >   IMPOSED
+EQ >       dlfpxr  =  fpxr - LAG(fpxr,1) 
+
+EQUATION > EQF1
+EQTYPE >   IMPOSED
+EQ >	   xgdp   =   xgdp1*ecnia
+                    + xgdp2*eh
+                    + xgdp3*epd
+                    + xgdp4*eps
+                    + xgdp5*(ki1*kimt + ki2*kio)
+                    + xgdp6*(ki1*LAG(kimt,1) + ki2*LAG(kio,1))
+                    + xgdp7*ex
+                    + xgdp8*(em1*emo  + em2*(emp1*xg + emp2*xgpot))
+                    + xgdp9*(egf1*egfo + egf2*egfi + egf3*egfl)
+                    + xgdp10*(egs1*egso + egs2*egsi + egs3*egsl) 
+
+EQUATION > EQF2
+EQTYPE >   IMPOSED
+EQ >	   xp     =  xp1*ecnia
+                   + xp2*eh
+                   + xp3*epd
+                   + xp4*eps
+                   + xp5*ex
+                   + xp6*egfi
+                   + xp7*egfo
+                   + xp8*egsi
+                   + xp9*egso
+
+EQUATION > EQF3
+EQTYPE >   IMPOSED
+EQ >       xb     =  xb1*xgdp 
+                   + xb2*(xgv1*egfl + xgv2*egsl) 
+                   + xb3*xgpot  
+
+EQUATION > EQF4
+EQTYPE >   IMPOSED
+EQ >	   xgap   =  100*(xg - xgpot) 
+
+EQUATION > EQF5
+EQTYPE >   IMPOSED
+EQ >	   xgap2  =  100*(xgdp - xgdpt)
+
+EQUATION > EQG1
+EQTYPE >   IMPOSED
+EQ >       vpda   =  vpda1*LAG(vpda,1) 
+                   + vpda2*(.1*(LAG(vpd,2)+LAG(vpdl2,1)+LAG(vpdl2,2)+LAG(vpdl4,1)
+                            +LAG(vpdl4,2)+LAG(vpdl6,1)+LAG(vpdl6,2)+LAG(vpdl8,1)
+                            +LAG(vpdl8,2)+LAG(vpdl10,1)) )
+
+EQUATION > EQG2
+EQTYPE >   IMPOSED
+EQ >       veoa   =  vpda1*LAG(veoa,1) 
+                   + vpda2*(-.1*(LAG(pcengr,2)+LAG(pcengrl2,1)+LAG(pcengrl2,2)
+                            +LAG(pcengrl4,1)+LAG(pcengrl4,2)+LAG(pcengrl6,1)
+                            +LAG(pcengrl6,2)+LAG(pcengrl8,1)+LAG(pcengrl8,2)
+                            +LAG(pcengr10,1)) )
+  
+EQUATION > EQG3
+EQTYPE >   IMPOSED
+EQ >       ltfpt =  ltfpt1*LAG(ltfpt,1) 
+
+EQUATION > EQG4
+EQTYPE >   IMPOSED
+EQ >       lhp    =  LAG(lhp,1)
+                   + 0.151503615812*(LAG(qlhp,1)-LAG(lhp,1))
+                   + 0.37950418465*(LAG(lhp,1)-LAG(lhp,2))
+                   + 0.689067964742*(datet*zlhp+ (1-datet)*LAG(lzlhp,1))
+                   + 0.310932035258*(qlhp-LAG(qlhp,1))
+                   - 0.118000008522*(LAG(qlhp,1)-LAG(qlhp,2))
+                   + lhp_
+
+EQUATION > EQG5
+EQTYPE >   IMPOSED
+EQ >       lep    =  LAG(lep,1)
+                   + 0.11414*(LAG(lhp,1)-LAG(lep,1))
+                   + 0.17067*(LAG(lep,1)-LAG(lep,2))
+                   + 0.63607*(lhp-LAG(lhp,1))
+                   + lep_
+
+EQUATION > EQH1
+EQTYPE >   IMPOSED
+EQ >       lf     =  LAG(lf,1)
+		   + 0.250725221905*(-LAG(lf,1))
+		   + 0.0366539399533*(lep-LAG(lep,1))
+		   + 0.0330173044951*dlepl1
+		   + 0.030274916672*LAG(dlepl1,1)
+		   + 0.0284267764838*LAG(dlepl1,2)
+		   + 0.0274728839308*LAG(dlepl3,1)
+		   + 0.0274132390127*LAG(dlepl3,2)
+		   + 0.0282478417297*LAG(dlepl5,1)
+		   + 0.0299766920818*LAG(dlepl5,2)
+                   + lf_
+
+EQUATION > EQH2
+EQTYPE >   IMPOSED
+EQ >       leor   =  0.750172970581*LAG(leor,1)
+                   - 0.00035090025639*LAG(xgap,1)
+                   + leor_
+
+EQUATION > EQH3
+EQTYPE >   IMPOSED
+EQ >       lurnat    =  lurnat1*LAG(lurnat,1)
+
+EQUATION > EQI1
+EQTYPE >   IMPOSED
+EQ >       xgpot  =  lprdgt
+                   + xgpot1*leh
+                   + xgpot2*egfl 
+                   + xgpot3*egsl
+                   + xgpot4*lurnat
+
+EQUATION > EQI2
+EQTYPE >   IMPOSED
+EQ >       xgdpt  =   xgdpt1*xgpot 
+                   + (xgdpt2/12)*(  
+                       xotht1*(xgv1*egfl + xgv2*egsl + xgv1*LAG(egfl,1)+ xgv2*LAG(egsl,1)) 
+                     + xotht2*(xgpot+LAG(xgpot,1))
+                     + xotht3*(kh+LAG(kh,1))
+                     + xothtl2 + LAG(xothtl2,1) + LAG(xothtl2,2) + LAG(xothtl4,1)
+                     + LAG(xothtl4,2)+ LAG(xothtl6,1) + LAG(xothtl6,2)+ LAG(xothtl8,1)
+                     + LAG(xothtl8,2) + LAG(xothtl10,1))
+
+EQUATION > EQJ1
+EQTYPE >   IMPOSED
+EQ >       xgdpnr =  xgdpn1*xp 
+                   + xgdpn2*(pxbr + ki1*kimt + ki2*kio)
+                   + xgdpn3*(pxbr + ki1*LAG(kimt,1) + ki2*LAG(kio,1))
+                   + xgdpn4*(em1*(pmor + emo) 
+                           + em2*(poilr + pxbr + emp1*xg + emp2*xgpot)) 
+                   + xgdpn5*(plr  + egfl)
+                   + xgdpn6*(plr  + egsl) 
+                   + xgdpn7*(ecnia + pcr) 
+                   + xgdpn8*(trsib1*trsib + ecnia + pcr)
+
+EQUATION > EQJ2
+EQTYPE >   IMPOSED
+EQ >       jccanr =  pxbr
+                   + jccan1*LAG(kh,1)
+                   + jccan2*LAG(kpd,1)
+                   + jccan3*LAG(kps,1)
+
+EQUATION > EQJ3
+EQTYPE >   IMPOSED
+EQ >       yhibnr =  LAG(yhibnr,1)
+                   - 0.0569590277246*(LAG(yhibnr,1) - LAG(qyhibnr,1))
+                   + 0.671295777924*(LAG(yhibnr,1) - LAG(yhibnr,2))
+                   + 0.0829844820244*(pcr + dlpxp + ecd1*ecdv + ecd2*ecdo
+                      - (LAG(pcr,1)+ecd1*LAG(ecdv,1) + ecd2*LAG(ecdo,1)))    
+                   + yhibnr_	
+ 
+EQUATION > EQJ4
+EQTYPE >   IMPOSED
+EQ >       ynicpnr =   ynicpn1*yninr
+                    +  ynicpn2*(plr + yniln1*lhp + yniln2*egfl + yniln3*egsl)
+                    +  ynicpn3*yniinr
+                    +  ynicpn4*(xb + pxbr)
+
+EQUATION > EQJ5
+EQTYPE >   IMPOSED
+EQ >       ynidnr  =   LAG(ynidnr,1)
+                     + 0.0915371212941*(LAG(qynidnr,1)-LAG(ynidnr,1)) 
+		     + 0.481011899739*(LAG(ynidnr,1)-LAG(ynidnr,2)
+                              - (LAG(pxbr,1) - LAG(pxbr,2)))
+		     + datet*zynid+(1-datet)*LAG(lzynid,1)
+                     + pxbr - LAG(pxbr,1)
+                     + ynidnr_                      
+
+EQUATION > EQJ6
+EQTYPE >   IMPOSED
+EQ >       ypnr   =  ypn1*yninr
+                   + ypn2*ynicpnr
+                   + ypn3*ynidnr
+                   + ypn4*(plr + yniln1*lhp + yniln2*egfl + yniln3*egsl) 
+                   + ypn5*(plr + trssi1*trssi + yniln1*lhp + yniln2*egfl + yniln3*egsl)
+                   + ypn6*(xgdpt + gfptn1*gftrd + pcr)
+                   + ypn7*(xgdpt + gsptn1*gstrd + pcr)
+                   + ypn8*gfintnr
+                   + ypn9*gsintnr
+                   + ypn10*yhibnr
+
+
+EQUATION > EQJ7
+EQTYPE >   IMPOSED
+EQ >       yhpntnr =   yhpntn1*(pcr + LAG(kcd,1))
+                     + yhpntn2*yhibnr
+                     + yhpntn3*ynicpnr
+                     + yhpntn4*(trfci1*trfci + ynicpnr)
+                     + yhpntn5*(trsci1*trsci + ynicpnr)
+                     + yhpntn6*ynidnr
+                     + yhpntn7*gfdbtnr
+                     + yhpntn8*gsdbtnr
+                     + (1-yhpntfix)*yhpntn9*(pcr-LAG(pcrl2,2)
+                           +0.25*(dlpxp+LAG(dlpxp,1)+LAG(dlpxp,2)+LAG(dlpxpl2,1)))
+
+EQUATION > EQK1
+EQTYPE >   IMPOSED
+EQ >       qpxpr  =  qpxp1*(qpxgr + xg)
+		   + qpxp2*(pxbr + kh)
+		   + qpxp3*(plr + xgv1*egfl + xgv2*egsl)
+		   + qpxp4*(pxbr + xgpot)
+		   + qpxp5*(emp1*xg + emp2*xgpot + poilr + pxbr)
+		   + qpxp6*(pxbr + ki1*kimt + ki2*kio)
+                   + qpxp7*(pxbr + ki1*LAG(kimt,1) + ki2*LAG(kio,1))
+		   + qpxp8*(em1*(pmor + emo) 
+                          + em2*(poilr + pxbr +  emp1*xg + emp2*xgpot))
+		   + qpxp9*(plr + egfl)
+		   + qpxp10*(plr + egsl)
+		   - xp 
+
+EQUATION > EQK2
+EQTYPE >   IMPOSED
+EQ >       dlpxp  =  0.101323198072*LAG(qpxpr,1)
+		   + 0.375610047295*LAG(dlpxp,1)
+		   + 0.1906564348288402*LAG(dlpxp,2)
+		   + 0.271258122587*dlpxp1*0.0424*(pcengr-LAG(pcengr,1)
+                                   + dlpxp2*LAG(pcengr,1))
+		   - 0.0470874139451*dlpxp1*0.0424*(LAG(pcengr,1)-LAG(pcengr,2)
+                                    + dlpxp2*LAG(pcengr,2))
+		   + datet*zpxp + (1-datet)*LAG(lzpxp,1)
+		   - (1 + pwfix/1.58)*0.00307479678461*(datet*zlur1+ (1-datet)*LAG(lzlur1,1))
+                   + dlpxp_        
+
+EQUATION > EQK3
+EQTYPE >   IMPOSED
+EQ >       qplr   =  lprdgt	
+	           + 1.02040816327*(pxgr)
+		   - 0.02040816327*(pcengr + pxbr)
+ 
+EQUATION > EQK4
+EQTYPE >   IMPOSED
+EQ >       plr    =  LAG(plr,1) + dlpl - dlpxp 
+
+EQUATION > EQK5
+EQTYPE >   IMPOSED
+EQ >       dlpl   =  0.0298564306096*(LAG(qplr,1)-LAG(plr,1))
+		   + 0.231414207389*LAG(dlpl,1)
+		   + 0.210488499183*LAG(dlpl,2)
+                   + 0.2673366641778989*LAG(dlpll2,1)
+		   + datet*zpl+ (1-datet)*LAG(lzpl,1)
+		   - (1 + pwfix/1.41)*0.0110869464785*(datet*zlur2+ (1-datet)*LAG(lzlur2,1))
+		   + 0.0226916552639*(plminr - LAG(plminr,1) + pxbr - LAG(pxbr,1) + dlpxp 
+                          - .25*(LAG(dlpl,1)+LAG(dlpl,2)+LAG(dlpll2,1)+LAG(dlpll2,2))
+                                        )
+                   + dlpl_
+  	             
+EQUATION > EQK6
+EQTYPE >   IMPOSED
+EQ >       pmor   =  LAG(pmor,1) 
+                   + pxbr - LAG(pxbr,1)
+                   + 0.122770433843*(LAG(qpmor,1) - LAG(pmor,1))
+		   + 0.364224968853*(LAG(pmor,1)-LAG(pxbr,1)-(LAG(pmor,2)-LAG(pxbr,2)))
+		   + 0.152572766338*(LAG(pmor,2)-LAG(pxbr,2)-(LAG(pmorl2,1)-LAG(pxbrl2,1)))
+	           + 0.820102224398*(dlfpc
+                         -.25*(LAG(dlfpc,1)+LAG(dlfpc,2)+LAG(dlfpcl2,1)+LAG(dlfpcl2,2)))
+		   - 0.21894291106*(dlfpx
+                         -.25*(LAG(dlfpx,1)+LAG(dlfpx,2)+LAG(dlfpxl2,1)+LAG(dlfpxl2,2)))
+                   + pmor_                
+ 
+
+EQUATION > EQK7
+EQTYPE >   IMPOSED
+EQ >       pcr    =  LAG(pcr,1)
+                   - pcrec*LAG(pcr,1)
+                   + 0.328778501444*(LAG(pcr,1)-LAG(pcr,2)) 
+                   - 0.671221498556*(dlpcr1*(trsib-LAG(trsib,1)))
+                   + pcr_
+
+EQUATION > EQK8
+EQTYPE >   IMPOSED
+EQ >       picnia = 400*(pcr - LAG(pcr,1) + dlpxp)
+
+EQUATION > EQK9
+EQTYPE >   IMPOSED
+EQ >       pcengr =    LAG(pcengr,1)
+                     - 0.132995794168*(LAG(pcengr,1)-LAG(pcengr,2))
+		     - 0.0791398065385*LAG(pcengr,1)
+		     + 0.0709795052728*LAG(poilr,1)
+		     + 0.73643556277*(poilr-LAG(poilr,1))
+                     + pcengr_
+
+EQUATION > EQK10
+EQTYPE >   IMPOSED
+EQ >       pgasr  =   LAG(pgasr,1)
+                     - pgasrec*LAG(pgasr,1)
+                     + 0.104506774375*(LAG(pgasr,1)-LAG(pgasr,2))
+		     + 0.284297987947*(poilr-LAG(poilr,1)) 
+                     + pgasr_
+
+EQUATION > EQK11
+EQTYPE >   IMPOSED
+EQ >       pxbr   =  xbnr - xb
+
+EQUATION > EQK12
+EQTYPE >   IMPOSED
+EQ >       plminr = plminr1*LAG(plminr,1) 
+
+EQUATION > EQK13
+EQTYPE >   IMPOSED
+EQ >       pxp = LAG(pxp,1) + dlpxp 
+
+EQUATION > EQL1
+EQTYPE >   IMPOSED
+EQ >       gftrd  =  0.590828651494*LAG(gftrd,1)
+                   - 0.000220510973853*xgap2  
+                   + gftrd_
+
+EQUATION > EQL2
+EQTYPE >   IMPOSED
+EQ >       rgfint  = .95*(LAG(rgfint) 
+                    + 0.33/100*(rtb1*rtbe-rtb1*LAG(rtbe,1)))
+                    + 0.05/100*(0.67*rg51*rg5e + 0.33*rtb1*rtbe)  
+                    + rgfint_
+
+EQUATION > EQL3
+EQTYPE >   IMPOSED
+EQ >       gfdefnr =  gfdefn1*tfpnr 
+                    + gfdefn2*(trfci1*trfci + ynicpnr)
+                    + gfdefn3*(ecnia + pcr)
+                    + gfdefn4*(plr + yniln1*lhp + yniln2*egfl + yniln3*egsl)
+                    + gfdefn5*(plr + egfl)
+                    + gfdefn6*(pxbr + egfo)
+                    + gfdefn7*(xgdpt + gfptn1*gftrd + pcr)
+                    + gfdefn8*(pgdpr + xgpot)
+                    + gfdefn9*gfintnr
+                    + gfdefn10*(pgdpr + xgpot)
+                    + gfdefn11*(pgdpr + xgpot) 
+
+
+EQUATION > EQL4
+EQTYPE >   IMPOSED
+EQ >       gfdbtnr =  gfdbtn1*LAG(gfdbtnr,1)
+                    + gfdbtn2*gfdefnr
+                    + gfdbtn3*(pxbr + egfi)
+
+EQUATION > EQL5
+EQTYPE >   IMPOSED
+EQ >       gstrd  =  0.868665070992*LAG(gstrd,1)
+                   - 0.0000208722728777*xgap2  
+                   + gstrd_
+
+
+EQUATION > EQL6
+EQTYPE >   IMPOSED
+EQ >       gsdbtnr =  gsdbtn1*LAG(gsdbtnr,1) 
+                    + gsdbtn2*gssrpnr
+                    + gsdbtn3*(pxbr + egsi)
+
+EQUATION > EQL7
+EQTYPE >   IMPOSED
+EQ >       trsci =  0.689972923252*LAG(trsci,1)
+                  - 0.000994932583632*xgap2
+                  + 0.000775585371179*LAG(xgap2,1)
+                  + 0.151968645333*(trfci-LAG(trfci,1))
+                  + trsci_
+
+EQUATION > EQL8
+EQTYPE >   IMPOSED
+EQ >       trssi =  1.01974921383*LAG(trssi,1)
+                  - 0.258873658191*LAG(trssi,2)
+                  - 0.0000175095693154*xgap2
+                  + trssi_
+
+EQUATION > EQL9
+EQTYPE >   IMPOSED
+EQ >       trsib =  0.770695168907*LAG(trsib,1)
+                  - 0.0000569254831607*xgap2
+                  + trsib_
+
+EQUATION > EQL10
+EQTYPE >   IMPOSED
+EQ >       trfci =  0.567384382892*LAG(trfci,1)
+                  + 0.00202396979478*xgap2
+                  + 0.00521346564087*picnia
+                  +trfci_
+
+EQUATION > EQM1
+EQTYPE >   IMPOSED
+EQ >       rtbe   =  rffe
+                   - 0.221154289471*(rffe-LAG(rffe,1))
+                   - 0.139857827355*(LAG(rtbe,1)-LAG(rtbe,2))
+                   + 0.86006333688*(LAG(rtbe,1)-LAG(rffe,1))
+                   + rtbe_                 
+  
+EQUATION > EQM5
+EQTYPE >   IMPOSED
+EQ >       rme    =  (1 - 0.23624262847)*LAG(rme,1)
+                   + 0.23624262847*(
+                      (1-0.47896)*LAG(rg10e,1) + 0.47896*LAG(rtbe,1) 
+                   + 0.3262*(LAG(lur,1)-LAG(lurnat,1)))
+                   + (0.737093726763- 0.0870651579706)*(rg10e-LAG(rg10e,1))
+                   + 0.142601547171*(LAG(rme,1)-LAG(rme,2))
+                   + 0.0870651579706*(rtbe-LAG(rtbe,1))
+                   + rme_
+
+EQUATION > EQM6
+EQTYPE >   IMPOSED
+EQ >       rcar   =   (1- 0.354780575489)*LAG(rcar,1)
+		    + 0.354780575489*rg51*LAG(rg5e,1)
+                    + 0.208176943453*(rg51*rg5e-rg51*LAG(rg5e,1))
+                    + 0.0918891467196*(LAG(rcar,1)-LAG(rcar,2))
+                    + rcar_                
+
+EQUATION > EQM7
+EQTYPE >   IMPOSED
+EQ >       rg5es  =  rg5e1*LAG(rg5es,1) + rg5e_
+
+EQUATION > EQM8
+EQTYPE >   IMPOSED
+EQ >       rg10es =  rg10e1*LAG(rg10es,1) + rg10e_
+
+EQUATION > EQM9
+EQTYPE >   IMPOSED
+EQ >       rcbes  =  rcbe1*LAG(rcbes,1) + rcbe_
+
+EQUATION > EQN2
+EQTYPE >   IMPOSED
+EQ >       rdp    =  0.39008463852*4.01*(ynidnr-(lwps + pxgr))
+		   - 0.259329399006*4.01*(LAG(ynidnr,1)-
+                         (LAG(lwps,1)+LAG(pxgr,1)))
+		     + 0.869244760486*LAG(rdp,1)
+                     + rdp_
+
+EQUATION > EQN3
+EQTYPE >   IMPOSED
+EQ >       lwpss  =  lwps1*LAG(lwpss,1) + lwps_ 
+
+EQUATION > EQQ1
+EQTYPE >   IMPOSED
+EQ >       fgdp    =  qsector*(LAG(fgdp,1)
+		      - 0.0809494989281*LAG(fgdp,1) 
+		      + 0.000970693267156*xgap2
+		      + 0.154305911514*(LAG(fgdp,1)-LAG(fgdp,2))
+		      ) + dlfgdp_
+
+EQUATION > EQQ2
+EQTYPE >   IMPOSED
+EQ >       dlfpc   =    qsector*( 
+		        0.25*(LAG(dlfpc,1)+LAG(dlfpc,2)+LAG(dlfpcl2,1)+LAG(dlfpcl2,2))
+		      + 0.333258755084*0.125*(fgdp-LAG(fgdpl6,2))
+		      + 0.0191493302666*(LAG(fpxr,1)-LAG(fpxr,2))
+		      + 0.0117184776036*(poilr-LAG(poilr,1))
+                      ) + dlfpc_
+	
+EQUATION > EQQ3
+EQTYPE >   IMPOSED
+EQ >       poilr   =    qsector*(LAG(poilr,1)
+		      - 0.255883836726*LAG(poilr,1)
+		      + 0.394001699237*(LAG(poilr,1)-LAG(poilr,2))) 
+                      + (1-qsector)*poilr1*LAG(poilr,1)
+                      + poilrs - poilr4*LAG(poilrs,1)
+
+EQUATION > EQQ10
+EQTYPE >   IMPOSED
+EQ >       poilrs  =  0*one + poilr_
+
+EQUATION > EQQ4
+EQTYPE >   IMPOSED
+EQ >       trfpt  =  LAG(trfpt,1)
+                     + trfpt1*(LAG(gfdbtnr,1)-LAG(xgdpnr,1))
+                     + trfpt2*(LAG(gfdbtnr,1)-LAG(xgdpnr,1)
+                             - LAG(gfdbtyl4,1))
+
+EQUATION > EQQ5
+EQTYPE >   IMPOSED
+EQ >       trfp   =  trfp1*trfpt
+                   + 0.531149977846*(LAG(trfp,1)-trfp1*LAG(trfpt,1))
+		   + 0.278195990818*(LAG(trfp,2)-trfp1*LAG(trfpt,2))
+		   + 0.000461604246182*LAG(xgap2,1)
+                   + trfp_
+
+EQUATION > EQQ6
+EQTYPE >   IMPOSED
+EQ >       trspt  =  LAG(trspt,1)
+                     + trspt1*(LAG(gsdbtnr,1)-LAG(xgdpnr,1))
+                     + trspt2*(LAG(gsdbtnr,1)-LAG(xgdpnr,1)
+                             - LAG(gsdbtyl4,1))
+EQUATION > EQQ7
+EQTYPE >   IMPOSED
+EQ >       trsp   =  	0.730539188266*LAG(trsp,1)
+                      + 1.01604935879*trsp1*trspt
+                      - 0.746588547058*trsp1*LAG(trspt,1)
+		      - 0.0000421560050313*LAG(xgap2,1)
+		      + 0.0190800121832*(trfp-LAG(trfp,1))
+                    + trsp_
+
+EQUATION > EQQ8
+EQTYPE >   IMPOSED
+EQ >       egfi   =  gsector*(LAG(egfi,1)
+		   - 0.377061398783*LAG(egfi,1)
+		   - 0.132195649068*(LAG(egfi,1)-LAG(egfi,2))
+		   + 0.0456246902781*(LAG(egfi,2)-LAG(egfil2,1))
+		   + 0.0103283511414*xgap2
+		   - 0.00861206503463*LAG(xgap2,1)
+                      ) + egfi_
+
+EQUATION > EQQ9
+EQTYPE >   IMPOSED
+EQ >       egfo   =  gsector*(LAG(egfo,1)
+		   - 0.260684258075*LAG(egfo,1)
+		   - 0.144159643547*(LAG(egfo,1)-LAG(egfo,2))
+		   - 0.220362386808*(LAG(egfo,2)-LAG(egfol2,1))
+		   - 0.0019609669422*xgap2
+		   + 0.00326472002188*LAG(xgap2,1)) 
+                   + (1-gsector)*egfo1*LAG(egfo,1)
+                   + egfos - gshock4*LAG(egfos,1)
+
+EQUATION > EQQ10
+EQTYPE >   IMPOSED
+EQ >       egfos  =  0*one + egfo_
+
+EQUATION > EQQ11
+EQTYPE >   IMPOSED
+EQ >       egfl  =  gsector*(LAG(egfl,1)+
+		      - 0.111217107631*LAG(egfl,1)
+		      + 0.329389469448*(LAG(egfl,1)-LAG(egfl,2))
+		      - 0.0631534124906*(LAG(egfl,2)-LAG(egfll2,1))
+		      - 0.0003987074422*xgap2
+		      + 0.000639016169256*LAG(xgap2,1)
+                      ) + egfl_
+
+
+EQUATION > EQQ12
+EQTYPE >   IMPOSED
+EQ >       egsi    =  gsector*(LAG(egsi,1)
+		      - 0.308315775954*LAG(egsi,1)
+		      + 0.0480696288261*(LAG(egsi,1)-LAG(egsi,2))
+		      - 0.0952812353267*(LAG(egsi,2)-LAG(egsil2,1))
+		      + 0.00982878490768*xgap2
+		      - 0.00651765223808*LAG(xgap2,1)
+                      ) + egsi_
+
+EQUATION > EQQ13
+EQTYPE >   IMPOSED
+EQ >       egso  =  gsector*(LAG(egso,1)
+		      - 0.155542033952*LAG(egso,1)
+		      + 0.347413651457*(LAG(egso,1)-LAG(egso,2))
+		      + 0.356797187808*(LAG(egso,2)-LAG(egsol2,1))
+		      - 0.00063221659304*xgap2
+		      + 0.000649024461471*LAG(xgap2,1)
+                       ) + egso_
+
+EQUATION > EQQ14
+EQTYPE >   IMPOSED
+EQ >       egsl  =  gsector*(LAG(egsl,1)
+		      - 0.225318312325*LAG(egsl,1)
+		      + 0.258184643069*(LAG(egsl,1)-LAG(egsl,2))
+		      - 0.00328948799931*(LAG(egsl,2)-LAG(egsll2,1))
+		      - 0.000441199608342*xgap2
+		      + 0.000764796265076*LAG(xgap2,1)
+                      ) + egsl_
+
+EQUATION > EQR2
+EQTYPE >   IMPOSED
+EQ >       rffvar =    0.141521309909*(LAG(picnia,1)-LAG(pitarg,1))
+                     - 0.027351055434*(LAG(picnia,2)-LAG(pitarg,1))
+                     + 0.053734862375*(LAG(picnial2,1)-LAG(pitarg,1))
+                     - 0.137787267452*(LAG(picnial2,2)-LAG(pitarg,1))
+                     + 0.992110641812*(LAG(rffe,1)-LAG(rstar,1)-LAG(ptr,1))
+                     - 0.446416858945*(LAG(rffe,2)-LAG(rstar,1)-LAG(ptr,1))
+                     + 0.488158237787*(LAG(rffel2,1)-LAG(rstar,1)-LAG(ptr,1))
+                     - 0.0877896495076*(LAG(rffel2,2)-LAG(rstar,1)-LAG(ptr,1))
+                     + LAG(rstar,1)+LAG(ptr,1)
+                     + 0.295954271439*LAG(xgap,1) 
+                     - 0.0837857095338*LAG(xgap,2)
+                     - 0.136291571338*LAG(xgapl2,1)
+                     + 0.043304922611*LAG(xgapl2,2)                           
+                     + rffvar_                 
+
+EQUATION > EQR3
+EQTYPE >   IMPOSED
+EQ >       rffe   =  dmptay*rfftay + dmpvar*rffvar 
+
+EQUATION > EQR4
+EQTYPE >   IMPOSED
+EQ >       rstar  =  rstar1*LAG(rstar,1) + (1-rstar1)*(rffe-picnia)
+                    + rstarsh*(rtr-(ptr+ rtr1*(LAG(rtr,1) - LAG(ptr,1))
+	                 + (1-rtr1)*(rffe-picnia)))
+
+EQUATION > EQR5
+EQTYPE >   IMPOSED
+EQ >	   rtr    =  ptr + rtr1*(LAG(rtr,1) - LAG(ptr,1))
+	           + (1-rtr1)*(rffe-picnia) + rtr_
+
+EQUATION > EQR6
+EQTYPE >   IMPOSED
+EQ >       pitarg =  pitarg1*LAG(pitarg,1) + (1-pitarg1)*ptr
+
+EQUATION > EQR7
+EQTYPE >   IMPOSED
+EQ >       ptr    =  LAG(ptr)
+                   + dptr*ptr1*(LAG(picnia,1) - LAG(ptr,1))
+                   + ptr_
+
+EQUATION > EQR8
+EQTYPE >   IMPOSED
+EQ >       zertay =  0*rffe 
+  
+EQUATION > EQR9
+EQTYPE >   IMPOSED
+EQ >       zervar =  rffe - (
+                       0.141521309909*(LAG(picnia,1)-LAG(ptr,1))
+                     - 0.027351055434*(LAG(picnia,2)-LAG(ptr,1))
+                     + 0.053734862375*(LAG(picnial2,1)-LAG(ptr,1))
+                     - 0.137787267452*(LAG(picnial2,2)-LAG(ptr,1))
+                     + 0.992110641812*(LAG(rffe,1)-LAG(rstar,1)-LAG(ptr,1))
+                     - 0.446416858945*(LAG(rffe,2)-LAG(rstar,1)-LAG(ptr,1))
+                     + 0.488158237787*(LAG(rffel2,1)-LAG(rstar,1)-LAG(ptr,1))
+                     - 0.0877896495076*(LAG(rffel2,2)-LAG(rstar,1)-LAG(ptr,1))
+                     + LAG(rstar,1)+LAG(ptr,1)
+                     + 0.295954271439*LAG(xgap,1) 
+                     - 0.0837857095338*LAG(xgap,2)
+                     - 0.136291571338*LAG(xgapl2,1)
+                     + 0.043304922611*LAG(xgapl2,2) )
+
+EQUATION > EQZA1
+EQTYPE >   IMPOSED
+EQ >       zec1   =  0.154173479486*(qec-LAG(qec,1))
+                   - 0.0307740637878*(LEAD(qec,1)-qec)
+                   + 1.03259032482*LEAD(zec1,1)
+                   - 0.199606728022*LEAD(zec1,2) 
+
+EQUATION > EQZA2
+EQTYPE >   IMPOSED
+EQ >       lzec1  =   LEAD(zec1,1)
+
+EQUATION > EQZA3
+EQTYPE >   IMPOSED
+EQ >       zgapc1 =   0.0257495000128*xgap2
+                    + 1.03259032482*LEAD(zgapc1,1)
+                    - 0.199606728026*LEAD(zgapc1,2)
+
+
+EQUATION > EQZA4
+EQTYPE >   IMPOSED
+EQ >       lzgapc1  =  LEAD(zgapc1,1)
+
+EQUATION > EQZA5
+EQTYPE >   IMPOSED
+EQ >       zec2   =  0.339759596749*(qec-LAG(qec,1))
+                    + 0.0840097094593*(LEAD(qec,1)-qec)
+                    + 0.394727215537*LEAD(zec2,1)
+                    + 0.247262212056*LEAD(zec2,2)
+
+EQUATION > EQZA6
+EQTYPE >   IMPOSED
+EQ >       lzec2  =  LEAD(zec2,1)
+
+EQUATION > EQZA7
+EQTYPE >   IMPOSED
+EQ >       zgapc2  =  0.121637527713*xgap2
+                    + 0.394727215538*LEAD(zgapc2,1)
+                    + 0.247262212056*LEAD(zgapc2,2)
+
+EQUATION > EQZA8
+EQTYPE >   IMPOSED
+EQ >       lzgapc2 = LEAD(zgapc2,1)
+
+EQUATION > EQZA9
+EQTYPE >   IMPOSED
+EQ >       zsdv   =  0.339759596749*(qsdv-LAG(qsdv,1))
+                    + 0.0840097094593*(LEAD(qsdv,1)-qsdv)
+                    + 0.394727215537*LEAD(zsdv,1)
+                    + 0.247262212056*LEAD(zsdv,2)
+
+EQUATION > EQZA10
+EQTYPE >   IMPOSED
+EQ >       lzsdv  = LEAD(zsdv,1)
+
+EQUATION > EQZA11
+EQTYPE >   IMPOSED
+EQ >       zrccdv  =  0.121637527713*(rcar - zpi05)
+                    + 0.394727215538*LEAD(zrccdv,1)
+                    - 0.247262212056*LEAD(zrccdv,2)
+EQUATION > EQZA12
+EQTYPE >   IMPOSED
+EQ >       lzrccdv = LEAD(zrccdv,1)
+
+EQUATION > EQZA13
+EQTYPE >   IMPOSED
+EQ >       zec3   =   0.178489847984*(qec-LAG(qec,1))
+                    - 0.0167789628047*(LEAD(qec,1)-qec)
+                    + 0.901003559256*LEAD(zec3,1)
+                    - 0.0940051380753*LEAD(zec3,2)
+EQUATION > EQZA14
+EQTYPE >   IMPOSED
+EQ >       lzec3  = LEAD(zec3,1)
+
+EQUATION > EQZA15
+EQTYPE >   IMPOSED
+EQ >       zgapc3  =  0.0344488224641*xgap2
+                    + 0.901003559255*LEAD(zgapc3,1)
+                    - 0.094005138074*LEAD(zgapc3,2)
+EQUATION > EQZA16
+EQTYPE >   IMPOSED
+EQ >       lzgapc3 = LEAD(zgapc3,1)
+
+EQUATION > EQZA17
+EQTYPE >   IMPOSED
+EQ >       zrccdo  =  0.0344488224641*(rcar - zpi05)
+                    + 0.901003559255*LEAD(zrccdo,1)
+                    - 0.0940051380741*LEAD(zrccdo,2)
+EQUATION > EQZA18
+EQTYPE >   IMPOSED
+EQ >       lzrccdo = LEAD(zrccdo,1)
+
+EQUATION > EQZA19
+EQTYPE >   IMPOSED
+EQ >       zec4   =  0.112177343577*(qec-LAG(qec,1))
+                   - 0.0333338808792*(LEAD(qec,1)-qec)
+                   + 1.17328397508*LEAD(zec4,1)
+                   - 0.297153416346*LEAD(zec4,2)
+EQUATION > EQZA20
+EQTYPE >   IMPOSED
+EQ >       lzec4  = LEAD(zec4,1)
+
+EQUATION > EQZA21
+EQTYPE >   IMPOSED
+EQ >       zrcch  =   0.0138953448721*((1-0.3*taxon)*rme - zpi10)
+                   + 1.1732839751*LEAD(zrcch,1)
+                   - 0.297153416367*LEAD(zrcch,2)
+EQUATION > EQZA22
+EQTYPE >   IMPOSED
+EQ >       lzrcch = LEAD(zrcch,1)
+
+EQUATION> EQZB1
+EQTYPE >  IMPOSED
+EQ >      zvpd   =   0.0654822044827*(vpd-LAG(vpd,1)) 
+                  - 0.000166173491039*(LEAD(vpd,1)-vpd)
+                  - 0.0156805900825*(LEAD(vpd,2)-LEAD(vpd,1))
+                  + 0.923403855288*LEAD(zvpd,1)  
+                  + 0.236924386007*LEAD(zvpd,2)
+                  - 0.239462516617*LEAD(zvpdl2,1)
+EQUATION > EQZB2
+EQTYPE >   IMPOSED
+EQ >       lzvpd  =  LEAD(zvpd,1)
+
+EQUATION> EQZB3
+EQTYPE >  IMPOSED
+EQ >      zxb    =  0.0654822044827*(xb-LAG(xb,1)) 
+                  - 0.000166173491039*(LEAD(xb,1)-xb)
+                  - 0.0156805900825*(LEAD(xb,2)-LEAD(xb,1))
+                  + 0.923403855288*LEAD(zxb,1)  
+                  + 0.236924386007*LEAD(zxb,2)
+                  - 0.239462516617*LEAD(zxbl2,1)
+EQUATION > EQZB4
+EQTYPE >   IMPOSED
+EQ >       lzxb   =  LEAD(zxb,1)
+
+EQUATION > EQZB5
+EQTYPE >   IMPOSED
+EQ >       zdxb   =  0.00518186709502*(xb-LAG(xb,1))
+		    + 0.923416081303*LEAD(zdxb,1)
+		    + 0.236903312103*LEAD(zdxb,2)
+		    - 0.239453408793*LEAD(zdxbl2,2)
+EQUATION > EQZB6
+EQTYPE >   IMPOSED
+EQ >       lzdxb  =  LEAD(zdxb,1)
+
+EQUATION > EQZB7
+EQTYPE >   IMPOSED
+EQ>        zpib5  =  0.0588235294118*400*(pxbr - LAG(pxbr,1) + dlpxp)
+                   + (1-0.0588235294118)*LEAD(zpib5,1)
+EQUATION > EQZB8
+EQTYPE >   IMPOSED
+EQ>        lzpib5 =  LEAD(zpib5,1)
+
+EQUATION > EQZD1
+EQTYPE >   IMPOSED
+EQ > 	   zkimt  =  0.15032750476*(xb-LAG(xb,1))
+                     - 0.0326098165361*(LEAD(xb,1)-xb)
+		     - 0.0163938700686*(LEAD(xb,2)-LEAD(xb,1))
+		     - 0.016865129801*(LEAD(xbf2,1)-LEAD(xb,2))
+                     + 1.05868624113*LEAD(zkimt,1)  
+                     - 0.107870788459*LEAD(zkimt,2)
+		     + 0.00313488692336*LEAD(zkimtl2,1)
+		     - 0.112189248584*LEAD(zkimtl2,2)
+EQUATION > EQZD2
+EQTYPE >   IMPOSED
+EQ >       lzkimt = LEAD(zkimt,1) 
+
+EQUATION>  EQZG1
+EQTYPE >   IMPOSED
+EQ > 	   zlhp   =  0.151503615812*(qlhp-LAG(qlhp,1))
+                     - 0.0552194044451*(LEAD(qlhp,1)-qlhp)
+                     + 1.20344055746*LEAD(zlhp,1) 
+                     - 0.364475818937*LEAD(zlhp,2) 
+EQUATION>  EQZG2
+EQTYPE >   IMPOSED
+EQ>        lzlhp   = LEAD(zlhp,1)
+
+EQUATION > EQZJ1
+EQTYPE >   IMPOSED
+EQ >       zyh    = (1-0.930604859102)*yh 
+                    + 0.930604859102*LEAD(zyh,1)
+EQUATION > EQZJ3
+EQTYPE >   IMPOSED
+EQ >       zyhp   = (1-0.930604859102)*yhp 
+                    + 0.930604859102*LEAD(zyhp,1)
+EQUATION > EQZJ6
+EQTYPE >   IMPOSED
+EQ >       zyht   =  (1-0.930604859102)*yht
+                   + 0.930604859102*LEAD(zyht,1)
+EQUATION > EQJ8
+EQTYPE >   IMPOSED
+EQ >       zynid  =  0.0915371212941*(qynidnr-LAG(qynidnr,1)-(pxbr-LAG(pxbr,1)))
+		     - 0.0422868390037*(LEAD(qynidnr,1)-qynidnr-(LEAD(pxbr,1)-pxbr))
+                     + 1.36168528288*LEAD(zynid,1)  
+		     - 0.461963828509*LEAD(zynid,2)
+EQUATION > EQJ9
+EQTYPE >   IMPOSED
+EQ >       lzynid  =  LEAD(zynid,1)
+
+EQUATION>  EQZK1
+EQTYPE >   IMPOSED
+EQ>        zpl   =    0.0298563916098*(qplr-LAG(qplr,1)+dlpxp)
+                   - 0.00635206734457*(LEAD(qplr,1)-qplr+LEAD(dlpxp,1))        
+                   - 0.00577131624186*(LEAD(qplr,2)-LEAD(qplr,1)+LEAD(dlpxp,2))
+                   - 0.00736492314809*(LEAD(qplrf2,1)-LEAD(qplr,2)+LEAD(dlpxpf2,1))
+                   + 1.17710578781*LEAD(zpl,1)                                
+                   - 0.0194638751273*LEAD(zpl,2)         
+                   + 0.0533774719806*LEAD(zpll2,1)                
+                   - 0.246677874267*LEAD(zpll2,2)
+
+EQUATION > EQZK2
+EQTYPE >   IMPOSED
+EQ>        lzpl   =  LEAD(zpl,1)                               
+
+EQUATION> EQZK3
+EQTYPE >  IMPOSED
+EQ>       zpxp   =   0.101323198072*(qpxpr-LAG(qpxpr,1)+dlpxp)
+                  - 0.0361798554854*(LEAD(qpxpr,1)-qpxpr+LEAD(dlpxp,1))
+                  - 0.018181865365*(LEAD(qpxpr,2)-LEAD(qpxpr,1)+LEAD(dlpxp,2))
+                  + 1.2488011121*LEAD(zpxp,1)                               
+                  - 0.177629510974*LEAD(zpxp,2)                               
+                  - 0.179444250774*LEAD(zpxpl2,1)
+EQUATION> EQZK4
+EQTYPE >  IMPOSED
+EQ>       lzpxp  =  LEAD(zpxp,1)
+
+EQUATION> EQZK5
+EQTYPE >  IMPOSED
+EQ>       zlur1  =   0.0109705311231*(lur-lurnat)
+                  + 1.24880111224*LEAD(zlur1,1)                             
+                  - 0.177629511165*LEAD(zlur1,2)                      
+                  - 0.179444250696*LEAD(zlur1l2,1)
+EQUATION> EQZK6
+EQTYPE >  IMPOSED
+EQ>       lzlur1 =  LEAD(zlur1,1) 
+
+EQUATION> EQZK7
+EQTYPE >  IMPOSED
+EQ>       zlur2  =  0.00106432642675*(lur-lurnat)
+                  + 1.17752584206*LEAD(zlur2,1)     
+                  - 0.0200926352835*LEAD(zlur2,2)       
+                  + 0.0535007491989*LEAD(zlur2l2,1)                      
+                  - 0.246582176612*LEAD(zlur2l2,2)
+EQUATION> EQZK8
+EQTYPE >  IMPOSED
+EQ>       lzlur2 =  LEAD(zlur2,1)  
+
+EQUATION>  EQZM1
+EQTYPE >   IMPOSED
+EQ>        zgap05  =  0.0588235294118*xgap 
+                    + (1-0.0588235294118)*LEAD(zgap05,1)
+EQUATION > EQZM2
+EQTYPE >   IMPOSED
+EQ >       zgap10 =   0.0344827586207*xgap 
+                   + (1-0.0344827586207)*LEAD(zgap10,1)
+
+EQUATION > EQZM3
+EQTYPE >   IMPOSED
+EQ >       zgap30 =  0.0243902439024*xgap 
+                   + (1-0.0243902439024)*LEAD(zgap30,1)
+EQUATION>  EQZM4
+EQTYPE >   IMPOSED
+EQ>        zpi05  =  0.0588235294118*picnia 
+                   + (1-0.0588235294118)*LEAD(zpi05,1)
+EQUATION>  EQZM5   
+EQTYPE >   IMPOSED
+EQ > 	   zpi10  =  0.0344827586207*picnia 
+                   + (1-0.0344827586207)*LEAD(zpi10,1)
+EQUATION > EQZM6
+EQTYPE >   IMPOSED
+EQ >       zpi30  =  0.0243902439024*picnia 
+                   + (1-0.0243902439024)*LEAD(zpi30,1)
+EQUATION>  EQZM7  
+EQTYPE >   IMPOSED
+EQ>        zrff05  =  0.0588235294118*rffe 
+                    + (1-0.0588235294118)*LEAD(zrff05,1)
+EQUATION>  EQZM8
+EQTYPE >   IMPOSED
+EQ>        zrff10  =  0.0344827586207*rffe  
+                    + (1-0.0344827586207)*LEAD(zrff10,1)
+EQUATION>  EQZM9  
+EQTYPE >   IMPOSED
+EQ>        zrff30  =  0.0243902439024*rffe 
+                    + (1-0.0243902439024)*LEAD(zrff30,1)
+EQUATION > EQZN1
+EQTYPE >   IMPOSED
+EQ >       zdivgr =   ynidnr - (pxgr) 
+                   - (LAG(ynidnr,1) - LAG(pxgr,1)) 
+                   + 0.98*LEAD(zdivgr,1)
+
+EQUATION > EQSUP1
+EQTYPE >   IMPOSED
+EQ >       one    =   LAG(one,1)
+
+EQUATION > EQID1
+EQTYPE >   IMPOSED
+EQ >       qecl2  = LAG(qec,2)
+
+EQUATION > EQID2
+EQTYPE >   IMPOSED
+EQ >       qecl4  = LAG(qecl2,2)
+
+EQUATION > EQID3a
+EQTYPE >   IMPOSED
+EQ >       picniaf2  = LEAD(picnia,2)
+
+EQUATION > EQID3b
+EQTYPE >   IMPOSED
+EQ >       picniaf4  = LEAD(picniaf2,2)
+
+EQUATION > EQID3c
+EQTYPE >   IMPOSED
+EQ >       picniaf6  = LEAD(picniaf4,2)
+
+EQUATION > EQID3
+EQTYPE >   IMPOSED
+EQ >       picnial2  = LAG(picnia,2)
+
+EQUATION > EQID4
+EQTYPE >   IMPOSED
+EQ >       picnial4  = LAG(picnial2,2)
+
+EQUATION > EQID5
+EQTYPE >   IMPOSED
+EQ >       picnial6  = LAG(picnial4,2)
+
+EQUATION > EQID6
+EQTYPE >   IMPOSED
+EQ >       picnial8  = LAG(picnial6,2)
+
+EQUATION > EQID7
+EQTYPE >   IMPOSED
+EQ >       picnia10  = LAG(picnial8,2)
+
+EQUATION > EQID8
+EQTYPE >   IMPOSED
+EQ >       rffel2  = LAG(rffe,2)
+
+EQUATION > EQID9
+EQTYPE >   IMPOSED
+EQ >       pcl2    = LAG(pcr,2) + LAG(pxp,2)
+
+EQUATION > EQID10
+EQTYPE >   IMPOSED
+EQ >       xgap2l2  = LAG(xgap2,2)
+
+EQUATION > EQID11
+EQTYPE >   IMPOSED
+EQ >       epdl2  = LAG(epd,2)
+
+EQUATION > EQID12
+EQTYPE >   IMPOSED
+EQ >       epsl2  = LAG(eps,2)
+
+EQUATION > EQID13
+EQTYPE >   IMPOSED
+EQ >       cashfl  =  profit1*(LAG(jccanr,1) - LAG(jccanr,2))
+                              - (LAG(pxbr,1)-LAG(pxbr,2))
+                    + profit2*(LAG(ynicpnr,1)-LAG(ynicpnr,2))
+                    + profit3*(trfci1*LAG(trfci,1)+LAG(ynicpnr,1)
+                               - (trfci1*LAG(trfci,2)+LAG(ynicpnr,2)))
+                    + profit4*(trsci1*LAG(trsci,1)+LAG(ynicpnr,1)
+                               - (trsci1*LAG(trsci,2)+LAG(ynicpnr,2)))
+
+EQUATION > EQID14
+EQTYPE >   IMPOSED
+EQ >       dxbl1   = LAG(xb,1) - LAG(xb,2)
+
+EQUATION > EQID15
+EQTYPE >   IMPOSED
+EQ >       dxbl3   =  LAG(dxbl1,2)
+
+EQUATION > EQID16
+EQTYPE >   IMPOSED
+EQ >       dxbl5   =  LAG(dxbl3,2)
+
+EQUATION > EQID17
+EQTYPE >   IMPOSED
+EQ >       kimtl2   = LAG(kimt,2)
+
+EQUATION > EQID18
+EQTYPE >   IMPOSED
+EQ >       vpdl2  = LAG(vpd,2)
+
+EQUATION > EQID19
+EQTYPE >   IMPOSED
+EQ >       vpdl4  = LAG(vpdl2,2)
+
+EQUATION > EQID20
+EQTYPE >   IMPOSED
+EQ >       vpdl6  = LAG(vpdl4,2)
+
+EQUATION > EQID21
+EQTYPE >   IMPOSED
+EQ >       vpdl8  = LAG(vpdl6,2)
+
+EQUATION > EQID22
+EQTYPE >   IMPOSED
+EQ >       vpdl10  = LAG(vpdl8,2)
+
+EQUATION > EQID23
+EQTYPE >   IMPOSED
+EQ >       pcengrl2  = LAG(pcengr,2)
+
+EQUATION > EQID24
+EQTYPE >   IMPOSED
+EQ >       pcengrl4  = LAG(pcengrl2,2)
+
+EQUATION > EQID25
+EQTYPE >   IMPOSED
+EQ >       pcengrl6  = LAG(pcengrl4,2)
+
+EQUATION > EQID26
+EQTYPE >   IMPOSED
+EQ >       pcengrl8  = LAG(pcengrl6,2)
+
+EQUATION > EQID27
+EQTYPE >   IMPOSED
+EQ >       pcengr10  = LAG(pcengrl8,2)
+
+EQUATION > EQID28
+EQTYPE >   IMPOSED
+EQ >       dlepl1 = LAG(lep,1) - LAG(lep,2)
+
+EQUATION > EQID29
+EQTYPE >   IMPOSED
+EQ >       dlepl3 = LAG(dlepl1,2)
+
+EQUATION > EQID30
+EQTYPE >   IMPOSED
+EQ >       dlepl5 = LAG(dlepl3,2) 
+
+EQUATION > EQID31
+EQTYPE >   IMPOSED
+EQ >       dlpll2 = LAG(dlpl,2) 
+
+EQUATION > EQID32
+EQTYPE >   IMPOSED
+EQ >       dlpxpl2 = LAG(dlpxp,2) 
+
+EQUATION > EQID33
+EQTYPE >   IMPOSED
+EQ >       pmorl2  = LAG(pmor,2)
+
+EQUATION > EQID34
+EQTYPE >   IMPOSED
+EQ >       pxbrl2  =  LAG(pxbr,2)
+
+EQUATION > EQID35
+EQTYPE >   IMPOSED
+EQ >       dlfpcl2  =  LAG(dlfpc,2)
+
+EQUATION > EQID36
+EQTYPE >   IMPOSED
+EQ >       dlfpxl2  =  LAG(dlfpx,2)
+
+EQUATION > EQID37
+EQTYPE >   IMPOSED
+EQ >       egfil2   = LAG(egfi,2)
+
+EQUATION > EQID38
+EQTYPE >   IMPOSED
+EQ >       egfll2   = LAG(egfl,2)
+
+EQUATION > EQID39
+EQTYPE >   IMPOSED
+EQ >       egfol2   = LAG(egfo,2)
+
+EQUATION > EQID40
+EQTYPE >   IMPOSED
+EQ >       egsil2   = LAG(egsi,2)
+
+EQUATION > EQID41
+EQTYPE >   IMPOSED
+EQ >       egsll2   = LAG(egsl,2)
+
+EQUATION > EQID42
+EQTYPE >   IMPOSED
+EQ >       egsol2   = LAG(egso,2)
+
+EQUATION > EQID43
+EQTYPE >   IMPOSED
+EQ >       xgapl2   =  LAG(xgap,2)
+
+EQUATION > EQID44
+EQTYPE >   IMPOSED
+EQ >       fgdpl2 = LAG(fgdp,2)
+
+EQUATION > EQID45
+EQTYPE >   IMPOSED
+EQ >       fgdpl4 = LAG(fgdpl2,2)
+
+EQUATION > EQID46
+EQTYPE >   IMPOSED
+EQ >       fgdpl6 = LAG(fgdpl4,2)
+
+EQUATION > EQID47
+EQTYPE >   IMPOSED
+EQ >       pgasrl2 = LAG(pgasr,2)
+
+EQUATION > EQID48
+EQTYPE >   IMPOSED
+EQ >       pcrl2  =  LAG(pcr,2)
+
+EQUATION > EQID49
+EQTYPE >   IMPOSED
+EQ >       gfdbtyl2 = LAG(gfdbtnr,2)-LAG(xgdpnr,2)
+
+EQUATION > EQID50
+EQTYPE >   IMPOSED
+EQ >       gfdbtyl4 = LAG(gfdbtyl2,2)
+
+EQUATION > EQID51
+EQTYPE >   IMPOSED
+EQ >       gsdbtyl2 = LAG(gsdbtnr,2)-LAG(xgdpnr,2)
+
+EQUATION > EQID52
+EQTYPE >   IMPOSED
+EQ >       gsdbtyl4 = LAG(gsdbtyl2,2)
+
+EQUATION > EQID53
+EQTYPE >   IMPOSED
+EQ >       xothtl2 =  xotht1*(xgv1*LAG(egfl,2)+ xgv2*LAG(egsl,2))
+                    + xotht2*LAG(xgpot,2)
+                    + xotht3*LAG(kh,2) 
+
+EQUATION > EQID54
+EQTYPE >   IMPOSED
+EQ >       xothtl4  = LAG(xothtl2,2)
+
+EQUATION > EQID55
+EQTYPE >   IMPOSED
+EQ >       xothtl6  = LAG(xothtl4,2)
+
+EQUATION > EQID56
+EQTYPE >   IMPOSED
+EQ >       xothtl8  = LAG(xothtl6,2)
+
+EQUATION > EQID57
+EQTYPE >   IMPOSED
+EQ >       xothtl10  = LAG(xothtl8,2)
+
+EQUATION > EQIDF1
+EQTYPE >   IMPOSED
+EQ >       dlpxpf2  = LEAD(dlpxp,2)
+
+EQUATION > EQIDF2
+EQTYPE >   IMPOSED
+EQ >       pcf2     =  LEAD(pcr,2) + LEAD(pxp,2)
+
+EQUATION > EQIDF3
+EQTYPE >   IMPOSED
+EQ >       xgap2f2  =  LEAD(xgap2,2)
+
+EQUATION > EQIDF3a
+EQTYPE >   IMPOSED
+EQ >       xgap2f4  =  LEAD(xgap2f2,2)
+
+EQUATION > EQIDF3b
+EQTYPE >   IMPOSED
+EQ >       xgap2f6  =  LEAD(xgap2f4,2)
+
+EQUATION > EQIDF4
+EQTYPE >   IMPOSED
+EQ >       xbf2    = LEAD(xb,2)
+
+EQUATION > EQIDF5
+EQTYPE >   IMPOSED
+EQ >       qplrf2  = LEAD(qplr,2)
+
+EQUATION > EQIDF6
+EQTYPE >   IMPOSED
+EQ >       zkimtl2 = LEAD(zkimt,2)
+
+EQUATION > EQIDF7
+EQTYPE >   IMPOSED
+EQ >       zpll2   = LEAD(zpl,2)
+
+EQUATION > EQIDF8
+EQTYPE >   IMPOSED
+EQ >       zlur2l2 = LEAD(zlur2,2)
+
+EQUATION > EQIDF9
+EQTYPE >   IMPOSED
+EQ >       zvpdl2  = LEAD(zvpd,2)
+
+EQUATION > EQIDF10
+EQTYPE >   IMPOSED
+EQ >       zxbl2   = LEAD(zxb,2)
+
+EQUATION > EQIDF11
+EQTYPE >   IMPOSED
+EQ >       zdxbl2  = LEAD(zdxb,2)
+
+EQUATION > EQIDF12
+EQTYPE >   IMPOSED
+EQ >       zpxpl2  = LEAD(zpxp,2)
+
+EQUATION > EQIDF13
+EQTYPE >   IMPOSED
+EQ >       zlur1l2 = LEAD(zlur1,2)
+
+EQUATION > EQK15
+EQTYPE >   IMPOSED
+EQ >       pxgr   =  xgnr - xg
+
+EQUATION > EQJ18
+EQTYPE >   IMPOSED
+EQ >       yhp  =    yhp1*tryh 
+                   + yhp2*(yhptn1*xbnr + yhptn2*yhinr + yhptn3*ynidnr) 
+                   + yhp3*yhpntnr 
+		   - pcr
+
+EQUATION > EQL9
+EQTYPE >   IMPOSED
+EQ >       gsintnr =  gsintn1*(LAG(gsdbtnr,1) + gfintn1*rgsint)
+                    + gsintn2*xbnr
+		
+EQUATION > EQL4
+EQTYPE >   IMPOSED
+EQ >       tfpnr  =  tfpn4*trfp 
+                   + tfpn1*ypnr 
+                   + tfpn2*(xgdpt + gfptn1*gftrd + pcr) 
+                   + tfpn3*(xgdpt + gsptn1*gstrd + pcr)
+
+EQUATION > EQA10
+EQTYPE >   IMPOSED
+EQ >       ecnd  =  ecnd1*ec + ecnd2*LAG(kcd,1)
+
+EQUATION > EQD3
+EQTYPE >   IMPOSED
+EQ >       ei     =  xgdp5*(ki1*kimt + ki2*kio)
+                   + xgdp6*(ki1*LAG(kimt,1) + ki2*LAG(kio,1))
+	
+EQUATION > EQE5  
+EQTYPE >   IMPOSED
+EQ>        fcbnr  = fcbn1*(pxbr + ex) 
+                   + fcbn2*(emn1*(pmor + emo) 
+                         + emn2*(poilr + pxbr +  emp1*xg + emp2*xgpot))
+                   + fcbn3*(fynin1*LAG(fninr,1) 
+                             + fynin2*(pxgr + xgpot))
+                   + fcbn4*(pxgr + xgpot)         
+ 
+EQUATION > EQH3
+EQTYPE >   IMPOSED
+EQ >       leh    =  (leh1*lep 
+                   + leor 
+                   + leh3*egsl
+                   + leh4*egfl)/(1-leh2)
+
+EQUATION > EQH4
+EQTYPE >   IMPOSED
+EQ >       lur    =  lur1*(lf-leh) 
+
+EQUATION > EQJ19
+EQTYPE >   IMPOSED
+EQ >       yht    =  xgdpt 
+                   + yhtn1*gfptn1*gftrd 
+                   + yhtn2*gsptn1*gstrd 
+
+EQUATION > EQM2
+EQTYPE >   IMPOSED
+EQ >       rg5e   = zrff05 - anton*0.62346*zgap05 + rg5es
+
+EQUATION > EQM3
+EQTYPE >   IMPOSED
+EQ >       rg10e  = zrff10 - anton*0.78598*zgap10 + rg10es
+
+EQUATION > EQM4
+EQTYPE >   IMPOSED
+EQ >       rcbe   = zrff30 - anton*1.2078*zgap30 + rcbes
+
+EQUATION > EQN1
+EQTYPE >   IMPOSED
+EQ >       lwps   =  LAG(ynidnr,1) - LAG(pxgr,1) 
+                   + zdivgr
+                   - (1/(1-0.98))*(rcbe - zpi30)/400
+                   + lwpss
+
+EQUATION > EQQ16
+EQTYPE >   IMPOSED
+EQ >       egf    =  egf1*egfo + egf2*egfi + egf3*egfl 
+                   
+
+EQUATION > EQQ17
+EQTYPE >   IMPOSED
+EQ >       egs    =  egs1*egso + egs2*egsi + egs3*egsl
+
+EQUATION > EQA11
+EQTYPE >   IMPOSED
+EQ >       ecd   =  ecd1*ecdv + ecd2*ecdo
+
+EQUATION > EQE4
+EQTYPE >   IMPOSED
+EQ >       em     =  em1*emo  + em2*(emp1*xg + emp2*xgpot)
+
+EQUATION > EQG3
+EQTYPE >   IMPOSED
+EQ >       lprdgt =  .257*vpda + 0.075*veoa 
+
+EQUATION > EQG5
+EQTYPE >   IMPOSED
+EQ >       qlhp   =  xg - lprdgt
+
+EQUATION > EQJ6
+EQTYPE >   IMPOSED
+EQ >       qyhibnr =  qyhibnr1*rcar
+                    + qyhibnr2*(pcr+(ecd1*ecdv + ecd2*ecdo))
+                    + qyhibnr3*(ecnia + pcr)
+
+EQUATION > EQJ10
+EQTYPE >   IMPOSED
+EQ >       yniinr =   xbnr
+
+EQUATION > EQJ13
+EQTYPE >   IMPOSED
+EQ >       qynidnr =  qynid1*ynicpnr 
+                    + qynid2*(trfci1*trfci + ynicpnr)
+                    + qynid3*(trsci1*trsci + ynicpnr)
+
+EQUATION > EQK1
+EQTYPE >   IMPOSED
+EQ >       qpxgr  =  0.98*(plr - lprdgt)
+		   + 0.02*(pcengr + pxbr) 
+
+EQUATION > EQK7
+EQTYPE >   IMPOSED
+EQ >       qpmor   =  pxbr - .786550*fpxr
+
+EQUATION > EQL8
+EQTYPE >   IMPOSED
+EQ >       rgsint  = rgfint 
+
+EQUATION > EQQ15
+EQTYPE >   IMPOSED
+EQ >       eg     =  eg1*egf 
+                   + eg2*egs
+
+EQUATION > EQF4
+EQTYPE >   IMPOSED
+EQ >       xg     =  xg1*xb + xg2*kh + xg3*(emp1*xg + emp2*xgpot)
+
+EQUATION > EQA9
+EQTYPE >   IMPOSED
+EQ >       ecnia  =  1.00*ec  + ecnia1*(ecd1*ecdv + ecd2*ecdo - LAG(kcd,1)) 
+
+EQUATION > EQJ2
+EQTYPE >   IMPOSED
+EQ >       xbnr   =  xbn1*xgdpnr
+                   + xbn2*(plr + xgv1*egfl + xgv2*egsl) 
+                   + xbn3*(pxbr + xgpot)
+
+EQUATION > EQJ3
+EQTYPE >   IMPOSED
+EQ >       xgnr   =  xgn1*xbnr
+                   + xgn2*(emp1*xg + emp2*xgpot + poilr + pxbr)
+                   + xgn3*(pxbr + kh)
+                   + xgn4*(ecnia + pcr)
+                   + xgn5*(trsib1*trsib + ecnia + pcr)
+
+EQUATION > EQJ5
+EQTYPE >   IMPOSED
+EQ >       yninr  =  ynin1*xgdpnr
+                   + ynin2*(fynin1*LAG(fninr,1) + fynin2*(pxgr + xgpot))
+                   + ynin3*jccanr 
+                   + ynin4*(ecnia + pcr)
+                   + ynin5*(trsib1*trsib + ecnia + pcr)
+                   + ynin6*(pgdpr + xgpot)
+                   + ynin7*(pgdpr + xgpot)
+
+EQUATION > EQJ9
+EQTYPE >   IMPOSED
+EQ >       yhinr  =  yhinr1*yniinr
+                   + yhinr2*gfintnr
+                   + yhinr3*gsintnr
+                   + yhinr4*yhibnr
+
+EQUATION > EQJ16
+EQTYPE >   IMPOSED
+EQ >       tryh   =  tryh1*tfpnr 
+		   + tryh2*tspnr
+                   - (tryh3*((plr + yniln1*lhp + yniln2*egfl + yniln3*egsl) + yhln3*trssi1*trssi) 
+                   + tryh4*(yhptn1*xbnr + yhptn2*yhinr + yhptn3*ynidnr)) 
+
+EQUATION > EQJ17
+EQTYPE >   IMPOSED
+EQ >       yhl     =  plr - pcr
+                    + yniln1*lhp + yniln2*egfl + yniln3*egsl + yhln3*trssi1*trssi
+                    + yhl1*tryh
+
+EQUATION > EQJ20
+EQTYPE >   IMPOSED
+EQ >       yh     =  yh1*yhl  
+                   + yh2*yht
+                   + yh3*yhp
+
+EQUATION > EQK13
+EQTYPE >   IMPOSED
+EQ >       pgdpr  =  xgdpnr - xgdp
+
+EQUATION > EQL3
+EQTYPE >   IMPOSED
+EQ >       gfintnr  = LAG(gfdbtnr,1) + gfintn1*rgfint
+
+EQUATION > EQL10
+EQTYPE >   IMPOSED
+EQ >       tspnr  =  tspn4*trsp 
+                   + tspn1*ypnr 
+                   + tspn2*(xgdpt + gfptn1*gftrd + pcr) 
+                   + tspn3*(xgdpt + gsptn1*gstrd + pcr)
+EQUATION > EQL11
+EQTYPE >   IMPOSED
+EQ >       gssrpnr =  gssrpn1*tspnr 
+                    + gssrpn2*(trsci1*trsci + ynicpnr)
+                    + gssrpn3*(trsib1*trsib + ecnia + pcr)
+                    + gssrpn4*(trssi1*trssi + plr + yniln1*lhp + yniln2*egfl + yniln3*egsl)
+                    + gssrpn5*(pgdpr + xgpot)
+                    + gssrpn6*(pgdpr + xgpot)
+                    + gssrpn7*(plr + egsl)
+                    + gssrpn8*(pxbr + egso)
+                    + gssrpn9*(xgdpt + gsptn1*gstrd + pcr)
+                    + gssrpn10*gsintnr
+                    + gssrpn11*(pgdpr + xgpot) 
+   
+EQUATION > EQO1
+EQTYPE >   IMPOSED
+EQ >       wpo   =  wpo1*(gfdbtnr - pcr)
+                  + wpo2*(gsdbtnr - pcr)
+                  + wpo3*(fninr - pcr)
+                  + wpo4*(kh + pxbr - pcr)
+                  + wpo5*(kcd + pxbr - pcr)
+                  + wpo6*xgpot
+   
+EQUATION > EQST1
+EQTYPE >   STOCH
+EQ >       ec_    = 0*one
+
+EQUATION > EQST2
+EQTYPE >   STOCH
+EQ >       ecdo_    = 0*one
+
+EQUATION > EQST3
+EQTYPE >   STOCH
+EQ >       ecdv_    = 0*one
+
+EQUATION > EQST4
+EQTYPE >   STOCH
+EQ >       eh_    = 0*one
+
+EQUATION > EQST5
+EQTYPE >   STOCH
+EQ >       epd_    = 0*one
+
+EQUATION > EQST6
+EQTYPE >   STOCH
+EQ >       eps_    = 0*one
+
+EQUATION > EQST7
+EQTYPE >   STOCH
+EQ >       kimt_    = 0*one
+
+EQUATION > EQST8
+EQTYPE >   STOCH
+EQ >       kio_    = 0*one
+
+EQUATION > EQST9
+EQTYPE >   STOCH
+EQ >       ex_    = 0*one
+
+EQUATION > EQST10
+EQTYPE >   STOCH
+EQ >       emo_    = 0*one
+
+EQUATION > EQST11
+EQTYPE >   STOCH
+EQ >       lhp_  =  0*one
+
+EQUATION > EQST12
+EQTYPE >   STOCH
+EQ >       lep_  =  0*one
+
+EQUATION > EQST13
+EQTYPE >   STOCH
+EQ >       lf_  =  0*one
+
+EQUATION > EQST14
+EQTYPE >   STOCH
+EQ >       leor_  =  0*one
+
+EQUATION > EQST15
+EQTYPE >   STOCH
+EQ >       yhibnr_  =  0*one
+
+EQUATION > EQST16
+EQTYPE >   STOCH
+EQ >       ynidnr_  =  0*one
+
+EQUATION > EQST17
+EQTYPE >   STOCH
+EQ >       dlpxp_  = 0*one
+
+EQUATION > EQST18
+EQTYPE >   STOCH
+EQ >       dlpl_  = 0*one
+
+EQUATION > EQST19
+EQTYPE >   STOCH
+EQ >       pmor_  = 0*one
+
+EQUATION > EQST20
+EQTYPE >   STOCH
+EQ >       pcr_  = 0*one
+
+EQUATION > EQST21
+EQTYPE >   STOCH
+EQ >       pcengr_  = 0*one
+
+EQUATION > EQST22
+EQTYPE >   STOCH
+EQ >       pgasr_  = 0*one
+
+EQUATION > EQST23
+EQTYPE >   STOCH
+EQ >       gftrd_  =  0*one
+
+EQUATION > EQST24
+EQTYPE >   STOCH
+EQ >       rgfint_  =  0*one
+
+EQUATION > EQST25
+EQTYPE >   STOCH
+EQ >       trfp_  = 0*one
+
+EQUATION > EQST26
+EQTYPE >   STOCH
+EQ >       trfci_ = 0*one
+
+EQUATION > EQST27
+EQTYPE >   STOCH
+EQ >       gstrd_  =  0*one
+
+EQUATION > EQST28
+EQTYPE >   STOCH
+EQ >       trsp_  = 0*one
+
+EQUATION > EQST29
+EQTYPE >   STOCH
+EQ >       trsci_ = 0*one
+
+EQUATION > EQST30
+EQTYPE >   STOCH
+EQ >       trsib_ = 0*one
+
+EQUATION > EQST31
+EQTYPE >   STOCH
+EQ >       trssi_ = 0*one
+
+EQUATION > EQST32
+EQTYPE >   STOCH
+EQ >       rg5e_ = 0*one
+
+EQUATION > EQST33
+EQTYPE >   STOCH
+EQ >       rg10e_ = 0*one
+
+EQUATION > EQST34
+EQTYPE >   STOCH
+EQ >       rcbe_ = 0*one
+
+EQUATION > EQST35
+EQTYPE >   STOCH
+EQ >       rtbe_  = 0*one
+
+EQUATION > EQST36
+EQTYPE >   STOCH
+EQ >       rme_ = 0*one
+
+EQUATION > EQST37
+EQTYPE >   STOCH
+EQ >       rcar_ = 0*one
+
+EQUATION > EQST38
+EQTYPE >   STOCH
+EQ >       lwps_ = 0*one
+
+EQUATION > EQST39
+EQTYPE >   STOCH
+EQ >       rdp_  = 0*one
+
+EQUATION > EQST40
+EQTYPE >   STOCH
+EQ >       dlfgdp_  = 0*one
+
+EQUATION > EQST41
+EQTYPE >   STOCH
+EQ >       dlfpc_  = 0*one
+
+EQUATION > EQST42
+EQTYPE >   STOCH
+EQ >       poilr_  = 0*one
+
+EQUATION > EQST43
+EQTYPE >   STOCH
+EQ >       egfi_  = 0*one
+
+EQUATION > EQST44
+EQTYPE >   STOCH
+EQ >       egfl_  = 0*one
+
+EQUATION > EQST45
+EQTYPE >   STOCH
+EQ >       egfo_  = 0*one
+
+EQUATION > EQST46
+EQTYPE >   STOCH
+EQ >       egsi_  = 0*one
+
+EQUATION > EQST47
+EQTYPE >   STOCH
+EQ >       egsl_  = 0*one
+
+EQUATION > EQST48
+EQTYPE >   STOCH
+EQ >       egso_  = 0*one
+
+EQUATION > EQST49
+EQTYPE >   STOCH
+EQ >       dlfpxr_  = 0*one
+
+EQUATION > EQST50
+EQTYPE >   STOCH
+EQ >       rffvar_ = 0*one
+
+EQUATION > EQST51
+EQTYPE >   STOCH
+EQ >       rfftay_ = 0*one
+
+EQUATION > EQST52
+EQTYPE >   STOCH
+EQ >       ptr_   = 0*one
+
+EQUATION > EQST53
+EQTYPE >   STOCH
+EQ >       rtr_  =  0*one
+
+END

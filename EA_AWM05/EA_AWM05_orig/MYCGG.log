@@ -1,0 +1,4203 @@
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep out; end
+ys_
+ys_ =
+     0
+     0
+     0
+if system_dependent('IsDebugMode')==1, dbstep out; end
+ 
+MODEL SUMMARY
+ 
+  Number of variables:         3
+  Number of stochastic shocks: 1
+  Number of state variables:   2
+  Number of jumpers:           2
+  Number of static variables:  1
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables    r_        
+r_           1.000000
+ 
+POLICY AND TRANSITION FUNCTIONS
+                                    r               inf             ygap
+inf (-1)                    0.967756        0.683141       -0.113910
+ygap(-1)                    0.780319        0.321264        0.596847
+r_                          0.893593       -0.043809       -0.081388
+
+
+THEORETICAL MOMENTS
+
+VARIABLE    MEAN       STD. DEV.  VARIANCE   
+inf            0.0000     0.1056     0.0111
+r              0.0000     0.9083     0.8251
+ygap           0.0000     0.0950     0.0090
+ 
+
+
+MATRIX OF CORRELATIONS
+
+Variables    inf      r        ygap     
+inf          1.0000 -0.2459  0.7023
+r           -0.2459  1.0000 -0.7684
+ygap         0.7023 -0.7684  1.0000
+ 
+
+
+COEFFICIENTS OF AUTOCORRELATION
+
+Order    1       2       3       4       5       
+inf      0.8862  0.6900  0.4895  0.3199  0.1920
+r       -0.0904 -0.0788 -0.0607 -0.0427 -0.0276
+ygap     0.5080  0.2059  0.0378 -0.0431 -0.0719
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep out; end
+if system_dependent('IsDebugMode')==1, dbstep out; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+uiopen('C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\compute_aim_matrices.m',1)
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+Can't open file C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\CGG_mod.txt. 
+??? Error using ==> eval
+Undefined function or variable 'calfa'.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\newaim\spsolve.m,19,0">spsolve at 19</a>
+      p(i) = eval(param_(i,:));end
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,65,0">CGG_simulate at 65</a>
+   spsolve
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+Can't open file C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\CGG_mod.txt. 
+??? Error using ==> eval
+Undefined function or variable 'calfa'.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\newaim\spsolve.m,19,0">spsolve at 19</a>
+      p(i) = eval(param_(i,:));end
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,65,0">CGG_simulate at 65</a>
+   spsolve
+
+close all
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+Can't open file C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\CGG_mod.txt. 
+??? Error using ==> eval
+Undefined function or variable 'calfa'.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\newaim\spsolve.m,19,0">spsolve at 19</a>
+      p(i) = eval(param_(i,:));end
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,65,0">CGG_simulate at 65</a>
+   spsolve
+
+dbclear ('C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m', '28')
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+Can't open file C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\CGG_mod.txt. 
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+??? Error using ==> eval
+Undefined function or variable 'calfa'.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\newaim\spsolve.m,19,0">spsolve at 19</a>
+      p(i) = eval(param_(i,:));end
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,65,0">CGG_simulate at 65</a>
+   spsolve
+
+durnam
+??? Undefined function or variable 'durnam'.
+
+dirnam
+dirnam =
+ C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+if system_dependent('IsDebugMode')==1, dbquit; end
+dbclear ('C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m', '64')
+dirnam
+dirnam =
+ C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\
+thispath
+thispath =
+C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW
+builtin('cd','..');
+builtin('cd','..');
+builtin('cd','C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare');
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+Das System kann den angegebenen Pfad nicht finden. 
+??? Error using ==> eval
+Undefined function or variable 'calfa'.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spsolve.m,19,0">spsolve at 19</a>
+      p(i) = eval(param_(i,:));end
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,65,0">CGG_simulate at 65</a>
+   spsolve
+
+dirnam
+dirnam =
+ C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\
+solve_path
+solve_path =
+C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim
+uiopen('C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_par.m',1)
+clear 
+clc
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+Das System kann den angegebenen Pfad nicht finden. 
+??? Error using ==> eval
+Undefined function or variable 'calfa'.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spsolve.m,19,0">spsolve at 19</a>
+      p(i) = eval(param_(i,:));end
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,65,0">CGG_simulate at 65</a>
+   spsolve
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep out; end
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+parsecom
+parsecom =
+C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\vwparser\vwparser  C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_mod.txt
+if system_dependent('IsDebugMode')==1, dbstep; end
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _DATA 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+        y_     _NOTD   
+        inf_   _NOTD   
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		  + y_  
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		   + inf_ 
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 +r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        y_  =    0*one 
+ 
+EQUATION> EQ6 
+EQTYPE>   STOCH 
+EQ>       inf_ =   0*one 
+ 
+EQUATION> EQ7 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+if system_dependent('IsDebugMode')==1, dbstep out; end
+if system_dependent('IsDebugMode')==1, dbstep out; end
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _DATA 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+        y_     _NOTD   
+        inf_   _NOTD   
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		  + y_  
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		   + inf_ 
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 +r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        y_  =    0*one 
+ 
+EQUATION> EQ6 
+EQTYPE>   STOCH 
+EQ>       inf_ =   0*one 
+ 
+EQUATION> EQ7 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+??? Error using ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spparser.m,17,0">spparser at 17</a>
+Number of data variables not equal to number of stochastic equations.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spsolve.m,11,0">spsolve at 11</a>
+SPParser
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,64,0">CGG_simulate at 64</a>
+   spsolve
+
+dbclear all
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _DATA 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+        y_     _NOTD   
+        inf_   _NOTD   
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		  + y_  
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		   + inf_ 
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 +r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        y_  =    0*one 
+ 
+EQUATION> EQ6 
+EQTYPE>   STOCH 
+EQ>       inf_ =   0*one 
+ 
+EQUATION> EQ7 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+??? Error using ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spparser.m,17,0">spparser at 17</a>
+Number of data variables not equal to number of stochastic equations.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spsolve.m,11,0">spsolve at 11</a>
+SPParser
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,64,0">CGG_simulate at 64</a>
+   spsolve
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+        y_     _NOTD   
+        inf_   _NOTD   
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		  + y_  
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		   + inf_ 
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 +r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        y_  =    0*one 
+ 
+EQUATION> EQ6 
+EQTYPE>   STOCH 
+EQ>       inf_ =   0*one 
+ 
+EQUATION> EQ7 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+??? Error using ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spparser.m,17,0">spparser at 17</a>
+Number of data variables not equal to number of stochastic equations.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spsolve.m,11,0">spsolve at 11</a>
+SPParser
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,64,0">CGG_simulate at 64</a>
+   spsolve
+
+clear
+clc
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+        y_     _NOTD   
+        inf_   _NOTD   
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		  + y_  
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		   + inf_ 
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 +r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        y_  =    0*one 
+ 
+EQUATION> EQ6 
+EQTYPE>   STOCH 
+EQ>       inf_ =   0*one 
+ 
+EQUATION> EQ7 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+??? Error using ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spparser.m,17,0">spparser at 17</a>
+Number of data variables not equal to number of stochastic equations.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spsolve.m,11,0">spsolve at 11</a>
+SPParser
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,64,0">CGG_simulate at 64</a>
+   spsolve
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+        y_     _NOTD   
+        inf_   _NOTD   
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 +r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        y_  =    0*one 
+ 
+EQUATION> EQ6 
+EQTYPE>   STOCH 
+EQ>       inf_ =   0*one 
+ 
+EQUATION> EQ7 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+??? Error using ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spparser.m,17,0">spparser at 17</a>
+Number of data variables not equal to number of stochastic equations.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spsolve.m,11,0">spsolve at 11</a>
+SPParser
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,64,0">CGG_simulate at 64</a>
+   spsolve
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+if system_dependent('IsDebugMode')==1, dbstep out; end
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+        y_     _NOTD   
+        inf_   _NOTD   
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 +r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Warning: Could not find an exact (case-sensitive) match for 'SPAmalg'.
+C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spamalg.m is a case-insensitive
+match and will be used instead.
+You can improve the performance of your code by using exact
+name matches and we therefore recommend that you update your
+usage accordingly. Alternatively, you can disable this warning using
+warning('off','MATLAB:dispatcher:InexactMatch').
+> In <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spsolve.m,48,1">spsolve at 48</a>
+  In <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,64,1">CGG_simulate at 64</a>
+Warning: Could not find an exact (case-sensitive) match for 'SPCopy_w'.
+C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spcopy_w.m is a
+case-insensitive match and will be used instead.
+You can improve the performance of your code by using exact
+name matches and we therefore recommend that you update your
+usage accordingly. Alternatively, you can disable this warning using
+warning('off','MATLAB:dispatcher:InexactMatch').
+> In <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spamalg.m,74,1">spamalg at 74</a>
+  In <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\newaim\spsolve.m,48,1">spsolve at 48</a>
+  In <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,64,1">CGG_simulate at 64</a>
+Aim: q(:,right) is singular.
+Warning: Matrix is singular to working precision.
+> In <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,75,1">CGG_simulate at 75</a>
+Could not find pi4 
+Could not find q   
+Could not find dis 
+??? Error using ==> mtimes
+Inner matrix dimensions must agree.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\autocorrelation_2.m,17,0">autocorrelation_2 at 17</a>
+gamma0  = B*Omega*B';
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,82,0">CGG_simulate at 82</a>
+[COR, Std]   = autocorrelation_2(amat,bmat(:,end-1:end),80,Omega,index) ;
+
+dbclear all
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+        y_     _NOTD   
+        inf_   _NOTD   
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 +r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Aim: q(:,right) is singular.
+??? Error using ==> mtimes
+Inner matrix dimensions must agree.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\autocorrelation_2.m,17,0">autocorrelation_2 at 17</a>
+gamma0  = B*Omega*B';
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,84,0">CGG_simulate at 84</a>
+[COR, Std]   = autocorrelation_2(amat,bmat(:,end-1:end),80,Omega,index) ;
+
+amat
+amat =
+         0         0         0         0   -1.0000
+         0   -1.0000         0         0         0
+         0         0         0         0    1.0000
+         0         0         0         0         0
+   -0.0070         0    0.4342         0         0
+bmat
+bmat =
+   Inf   Inf   Inf   Inf   Inf
+   Inf   Inf   Inf   Inf   Inf
+   Inf   Inf   Inf   Inf   Inf
+   Inf   Inf   Inf   Inf   Inf
+   Inf   Inf   Inf   Inf   Inf
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+        y_     _NOTD   
+        inf_   _NOTD   
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 +r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Aim: q(:,right) is singular.
+??? Error using ==> mtimes
+Inner matrix dimensions must agree.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\autocorrelation_2.m,17,0">autocorrelation_2 at 17</a>
+gamma0  = B*Omega*B';
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,67,0">CGG_simulate at 67</a>
+[COR, Std]   = autocorrelation_2(amat,bmat(:,end-1:end),80,Omega,index) ;
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+        y_     _NOTD   
+        inf_   _NOTD   
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 +r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Aim: q(:,right) is singular.
+??? Error using ==> mtimes
+Inner matrix dimensions must agree.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\autocorrelation_2.m,17,0">autocorrelation_2 at 17</a>
+gamma0  = B*Omega*B';
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,67,0">CGG_simulate at 67</a>
+[COR, Std]   = autocorrelation_2(amat,bmat(:,end-1:end),80,Omega,index) ;
+
+uiopen('C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_par.m',1)
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+        y_     _NOTD   
+        inf_   _NOTD   
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 +r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Aim: too many big roots, and q(:,right) is singular.
+??? Error using ==> mtimes
+Inner matrix dimensions must agree.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\autocorrelation_2.m,17,0">autocorrelation_2 at 17</a>
+gamma0  = B*Omega*B';
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,67,0">CGG_simulate at 67</a>
+[COR, Std]   = autocorrelation_2(amat,bmat(:,end-1:end),80,Omega,index) ;
+
+uiopen('C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_par.m',1)
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+        y_     _NOTD   
+        inf_   _NOTD   
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 +r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Aim: too many big roots, and q(:,right) is singular.
+??? Error using ==> mtimes
+Inner matrix dimensions must agree.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\autocorrelation_2.m,17,0">autocorrelation_2 at 17</a>
+gamma0  = B*Omega*B';
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,63,0">CGG_simulate at 63</a>
+[COR, Std]   = autocorrelation_2(amat,bmat(:,end-1:end),80,Omega,index) ;
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+        y_     _NOTD   
+        inf_   _NOTD   
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 +r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Aim: too many big roots, and q(:,right) is singular.
+??? Error using ==> mtimes
+Inner matrix dimensions must agree.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\Vorlagen_Wieland\Diagnostics_VW\autocorrelation_2.m,17,0">autocorrelation_2 at 17</a>
+gamma0  = B*Omega*B';
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,63,0">CGG_simulate at 63</a>
+[COR, Std]   = autocorrelation_2(amat,bmat(:,end-1:end),80,Omega,index) ;
+
+uiopen('C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m',1)
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+        y_     _NOTD   
+        inf_   _NOTD   
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 +r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Aim: too many big roots, and q(:,right) is singular.
+Could not find r_  
+??? Subscript indices must either be real positive integers or logicals.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,106,0">CGG_simulate at 106</a>
+e(:,loc(endog_,'r_'))    = r_;
+
+e
+e =
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+loc(endog_,'r_')
+Could not find r_  
+ans =
+     0
+endog_
+endog_ =
+ygap
+one 
+inf 
+r   
+y_  
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+??? Undefined function or variable 'types'.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,192,0">CGG_simulate at 192</a>
+elseif rule==3 & types==3
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+??? Undefined function or variable 'types'.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,192,0">CGG_simulate at 192</a>
+elseif rule==3 & types==3
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irpinf =
+         0
+   -0.0225
+   -0.0264
+   -0.0229
+   -0.0175
+   -0.0124
+   -0.0083
+   -0.0053
+   -0.0033
+   -0.0020
+   -0.0012
+   -0.0006
+   -0.0003
+   -0.0002
+   -0.0001
+   -0.0000
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+irq =
+         0
+   -0.0869
+   -0.0534
+   -0.0318
+   -0.0183
+   -0.0102
+   -0.0054
+   -0.0027
+   -0.0013
+   -0.0005
+   -0.0002
+   -0.0000
+    0.0000
+    0.0001
+    0.0001
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+irr =
+         0
+    0.9228
+   -0.0663
+   -0.0503
+   -0.0354
+   -0.0237
+   -0.0152
+   -0.0094
+   -0.0056
+   -0.0033
+   -0.0018
+   -0.0010
+   -0.0005
+   -0.0002
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+??? Undefined function or variable 'types'.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,192,0">CGG_simulate at 192</a>
+elseif rule==3 & types==3
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+??? Undefined function or variable 'types'.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,192,0">CGG_simulate at 192</a>
+elseif rule==3 & types==3
+
+irr  
+irr =
+         0
+    0.9505
+   -0.0683
+   -0.0518
+   -0.0365
+   -0.0244
+   -0.0156
+   -0.0097
+   -0.0058
+   -0.0033
+   -0.0019
+   -0.0010
+   -0.0005
+   -0.0002
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    1.1997
+   -0.0862
+   -0.0654
+   -0.0461
+   -0.0308
+   -0.0197
+   -0.0122
+   -0.0073
+   -0.0042
+   -0.0024
+   -0.0013
+   -0.0006
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+??? Undefined function or variable 'types'.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,192,0">CGG_simulate at 192</a>
+elseif rule==3 & types==3
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    1.0151
+   -0.0729
+   -0.0553
+   -0.0390
+   -0.0261
+   -0.0167
+   -0.0103
+   -0.0062
+   -0.0036
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+??? Undefined function or variable 'types'.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,192,0">CGG_simulate at 192</a>
+elseif rule==3 & types==3
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    0.9690
+   -0.0696
+   -0.0528
+   -0.0372
+   -0.0249
+   -0.0159
+   -0.0099
+   -0.0059
+   -0.0034
+   -0.0019
+   -0.0010
+   -0.0005
+   -0.0002
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    0.9874
+   -0.0709
+   -0.0538
+   -0.0379
+   -0.0253
+   -0.0162
+   -0.0100
+   -0.0060
+   -0.0035
+   -0.0019
+   -0.0010
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    0.9967
+   -0.0716
+   -0.0543
+   -0.0383
+   -0.0256
+   -0.0164
+   -0.0101
+   -0.0061
+   -0.0035
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    1.0013
+   -0.0719
+   -0.0546
+   -0.0384
+   -0.0257
+   -0.0165
+   -0.0102
+   -0.0061
+   -0.0035
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    1.0012
+   -0.0719
+   -0.0546
+   -0.0384
+   -0.0257
+   -0.0165
+   -0.0102
+   -0.0061
+   -0.0035
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    1.0011
+   -0.0719
+   -0.0546
+   -0.0384
+   -0.0257
+   -0.0165
+   -0.0102
+   -0.0061
+   -0.0035
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    1.0011
+   -0.0719
+   -0.0546
+   -0.0384
+   -0.0257
+   -0.0165
+   -0.0102
+   -0.0061
+   -0.0035
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    1.0011
+   -0.0719
+   -0.0546
+   -0.0384
+   -0.0257
+   -0.0165
+   -0.0102
+   -0.0061
+   -0.0035
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    1.0011
+   -0.0719
+   -0.0546
+   -0.0384
+   -0.0257
+   -0.0165
+   -0.0102
+   -0.0061
+   -0.0035
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    1.0010
+   -0.0719
+   -0.0546
+   -0.0384
+   -0.0257
+   -0.0165
+   -0.0102
+   -0.0061
+   -0.0035
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    1.0009
+   -0.0719
+   -0.0546
+   -0.0384
+   -0.0257
+   -0.0165
+   -0.0102
+   -0.0061
+   -0.0035
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    1.0006
+   -0.0719
+   -0.0545
+   -0.0384
+   -0.0257
+   -0.0165
+   -0.0102
+   -0.0061
+   -0.0035
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    0.9996
+   -0.0718
+   -0.0545
+   -0.0384
+   -0.0257
+   -0.0164
+   -0.0102
+   -0.0061
+   -0.0035
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    0.9999
+   -0.0718
+   -0.0545
+   -0.0384
+   -0.0257
+   -0.0164
+   -0.0102
+   -0.0061
+   -0.0035
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    1.0000
+   -0.0718
+   -0.0545
+   -0.0384
+   -0.0257
+   -0.0165
+   -0.0102
+   -0.0061
+   -0.0035
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+??? Error using ==> save
+Variable 'rule' not found.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,64,0">CGG_simulate at 64</a>
+save CGG_autocorr endog_ index COR Std rule
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    1.0000
+   -0.0718
+   -0.0545
+   -0.0384
+   -0.0257
+   -0.0165
+   -0.0102
+   -0.0061
+   -0.0035
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+??? Undefined function or variable 'rule'.
+
+Error in ==> <a href="error:C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_simulate.m,145,0">CGG_simulate at 145</a>
+                if rule==1
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+irr =
+         0
+    1.0000
+   -0.0718
+   -0.0545
+   -0.0384
+   -0.0257
+   -0.0165
+   -0.0102
+   -0.0061
+   -0.0035
+   -0.0020
+   -0.0011
+   -0.0005
+   -0.0003
+   -0.0001
+   -0.0000
+   -0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+amat
+amat =
+    0.6370         0   -0.0853         0         0
+         0    1.0000         0         0         0
+    0.1650         0    0.5356         0         0
+    0.5659         0    0.7607         0         0
+         0         0         0         0         0
+bmat
+bmat =
+    1.4478   -0.1776   -0.0869         0   -0.0869
+         0         0         0    1.0000         0
+    0.3749    1.1158   -0.0225         0   -0.0225
+    1.2862    1.5848    0.9228         0    0.9228
+         0         0         0         0    1.0000
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+CGG_simulate
+ans =
+dos(' del C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\compute_aim_matrices.m ' )
+modnam =
+CGG_mod.txt
+parnam =
+ CGG_par
+MODEL> CGG 
+ 
+ENDOG> 
+        ygap   _NOTD 
+	one    _DTRM 
+        inf    _NOTD 
+        r      _DATA 
+	r_     _NOTD 
+ 
+ 
+EQUATION> EQ1 
+EQTYPE>   IMPOSED 
+EQ>       ygap  = theta * LAG(ygap,1)   
+		  + (1-theta)*LEAD(ygap,1) 
+		  +sigma *(r - LEAD(inf,1))  
+		   
+ 
+  
+EQUATION> EQ2 
+EQTYPE>   IMPOSED 
+EQ>       inf  =   phi * LAG(inf,1)  
+		   + (1-phi) * beta * LEAD(inf,1)  
+		   + lambda*ygap  
+		    
+ 
+ 
+EQUATION> EQ3 
+EQTYPE>   IMPOSED 
+EQ>       r   =  alpha*inf 
+	         +beta*ygap 
+		 + r_ 
+ 
+EQUATION> EQ4 
+EQTYPE>   IMPOSED 
+EQ>       one =    LAG(one,1) 
+ 
+ 
+EQUATION> EQ5 
+EQTYPE>   STOCH 
+EQ>        r_ =    0*one 
+ 
+END 
+ 
+Checking for errors...... 
+No errors found. 
+ 
+Parser has finished running. 
+Final covariance matrix change        = 1267650600228229400000000000000
+Program did not converge.
+uiopen('C:\EigeneDateien\Lehrstuhlaufgaben\ModelBase\understand_AIM_dynare\CGG_par.m',1)
+dynare MYCGG

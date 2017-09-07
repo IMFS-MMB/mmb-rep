@@ -1,0 +1,111 @@
+ 
+STEADY-STATE RESULTS:
+ 
+p                		 0
+y                		 0
+lambdda          		 0
+w                		 0
+R                		 0
+z                		 0
+lambddap         		 0
+pit              		 0
+b                		 0
+ystar            		 0
+lambddastar      		 0
+wstar            		 0
+Rstar            		 0
+inflgap          		 0
+realR            		 0
+outpgap          		 0
+ 
+ 
+ 
+ 
+Residuals of the static equations:
+ 
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+Equation number 10 : 0
+Equation number 11 : 0
+Equation number 12 : 0
+Equation number 13 : 0
+Equation number 14 : 0
+Equation number 15 : 0
+Equation number 16 : 0
+ 
+ 
+ 
+MODEL SUMMARY
+ 
+  Number of variables:         18
+  Number of stochastic shocks: 5
+  Number of state variables:   10
+  Number of jumpers:           5
+  Number of static variables:  6
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables       Rs         zs     lambddaps     pits        bs    
+Rs            0.000000   0.000000   0.000000   0.000000   0.000000
+zs            0.000000   0.000000   0.000000   0.000000   0.000000
+lambddaps     0.000000   0.000000   0.000000   0.000000   0.000000
+pits          0.000000   0.000000   0.000000   1.000000   0.000000
+bs            0.000000   0.000000   0.000000   0.000000   0.000000
+ 
+POLICY AND TRANSITION FUNCTIONS
+                        inflgap         realR           
+R(-1)                      -0.015322        0.621982
+z(-1)                      -0.000159       -0.000585
+lambddap(-1)                1.442647       -1.325689
+pit(-1)                     0.432427       -1.324130
+b(-1)                       0.005065        0.026496
+p(-2)                      -0.005602        0.089786
+p(-3)                      -0.002508        0.101795
+p(-1)                      -0.009130        0.080791
+y(-1)                       0.000334        0.064979
+ystar(-1)                   0.001566       -0.042096
+Rs                         -0.021765        0.883497
+zs                         -0.000602       -0.002215
+lambddaps                   2.412453       -2.216871
+pits                        0.434600       -1.330783
+bs                          0.007246        0.037905
+
+
+THEORETICAL MOMENTS
+
+VARIABLE      MEAN    STD. DEV.   VARIANCE 
+inflgap        0.0000     3.9127    15.3089
+realR          0.0000     1.8388     3.3810
+ 
+
+
+VARIANCE DECOMPOSITION (in percent)
+
+              Rs         zs     lambddaps     pits        bs    
+inflgap         0.00       0.00       0.00     100.00       0.00
+realR           0.00       0.00       0.00     100.00       0.00
+ 
+
+
+MATRIX OF CORRELATIONS
+
+Variables   inflgap   realR  
+inflgap       1.0000  -0.2726
+realR        -0.2726   1.0000
+ 
+
+
+COEFFICIENTS OF AUTOCORRELATION
+
+Order        1       2       3       4       5   
+inflgap    0.9938  0.9880  0.9826  0.9774  0.9724
+realR      0.6829  0.4037  0.1995  0.0963  0.0481
+Total computing time : 0h00m01s

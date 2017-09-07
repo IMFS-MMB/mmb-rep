@@ -1,0 +1,24 @@
+US_DNGS15 Replication
+
+
++ last change: 2017-03-11
+
++ replication: IRF to a monetary policy shock (one standard deviation)
+
+               IRF to a fiscal policy shock (one standard deviation)
+
+               IRF to a productivity shock (one standard deviation)
+
+
++ replicated IRFs: US_DNGS15_irf_monetary.pdf (interest rate shock)
+                   US_DNGS15_irf_fiscal.pdf (government policy shock)   
+                   US_DNGS15_irf_productivity.pdf (productivity shock)  
+
++ file to produce replicated IRFs: run.m (which calls US_DNGS15.mod in the folder US_DNGS15_rep)
+
++ original IRFs: not available in the paper and original code; our derivation of original IRFs provided
++ file to produce original IRFs: original_irfs.m (necessary to open original code folder to use it)
+                   
++ literature:
+  - DEL NEGRO, M., M. GIANNONI & F. SCHORFHEIDE 2015.: Inflation in the Great Recession and New Keynesian Models,
+American Economic Journal: Macroeconomics, 2015, 7(1): 168-196

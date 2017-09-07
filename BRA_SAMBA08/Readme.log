@@ -1,0 +1,15 @@
+BRA_SAMBA08 Replication
+
++ last change: 2010-08-02
+
++ replication: IRF to positive consumption shock, monetary policy shock, and world GDP shock
+(one standard deviation)
+
++ PDF files with replicated IRF: BRA_SAMBA08_irf_con, ..._mon, ..._wgdp.
+
++ file to produce replicated IRF: run.m
+(which calls BRA_SAMBA08_rep.mod in the subfolder)
+
++ original IRF: figure 1-3 on pages 17-18 in Gouvea et al. (2008)
+
++ Reference: Gouvea, S., A. Minella, R. Santos, N. Souza-Sobrinho. 2008. Samba: Stochastic Analytical Model with a Bayesian Approach. Manuscript.

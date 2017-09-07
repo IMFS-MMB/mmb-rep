@@ -1,0 +1,28 @@
+{??? Index exceeds matrix dimensions.
+
+Error in ==> <a href="matlab: opentoline('C:\dynare\dynare_snapshot_v3\matlab\th_autocovariances.m',100,0)">th_autocovariances at 100</a>
+      i_ivar = find(~ismember(ivar,dr.order_var(ns_var+nstatic)));
+
+Error in ==> <a href="matlab: opentoline('C:\dynare\dynare_snapshot_v3\matlab\disp_th_moments.m',33,0)">disp_th_moments at 33</a>
+[Gamma_y,ivar] = th_autocovariances(dr,ivar);
+
+Error in ==> <a href="matlab: opentoline('C:\dynare\dynare_snapshot_v3\matlab\stoch_simul.m',75,0)">stoch_simul at 75</a>
+    disp_th_moments(dr_,var_list);
+
+Error in ==> <a href="matlab: opentoline('D:\Sebastian\MODELBASE\Model Replications\US_FRB03\US_FRB03_rep\US_FRB03_rep.m',962,0)">US_FRB03_rep at 962</a>
+info=stoch_simul(var_list_);
+
+Error in ==> <a href="matlab: opentoline('C:\dynare\dynare_snapshot_v3\matlab\dynare.m',26,0)">dynare at 26</a>
+evalin('base',fname) ;
+
+Error in ==> <a href="matlab: opentoline('D:\Sebastian\MODELBASE\Model Replications\US_FRB03\run.m',11,0)">run at 11</a>
+dynare US_FRB03_rep
+} 
+uiopen('D:\Sebastian\MODELBASE\Model Replications\US_FRB03\US_FRB03_rep\US_FRB03_rep.mod',1)
+uiopen('D:\Sebastian\MODELBASE\Model Replications\US_MR07\run.m',1)
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+run

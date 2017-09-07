@@ -1,0 +1,28 @@
+% Parser setup for modelez syntax models
+
+if(parseflag)
+     parsexpr = ['! c:\aim\matlab\parser\mdlez-aim.exe ',dirnam,modnam];
+     eval(parsexpr);
+end
+
+% Run compute_aim_data:
+
+[param_,np,modname,neq,nlag,nlead,eqname_,eqtype_,endog_,delay_,vtype_] = ...
+	eval([modnam,'_aim_data']);
+
+if(parseflag)
+   seq  = find(eqtype_==0);
+   dvar = find(vtype_==0);
+   if(length(seq)~=length(dvar))
+      error('Number of data variables not equal to number of stochastic equations.');
+   end
+end
+   
+param_  = setstr(param_);
+endog_  = setstr(endog_);
+eqname_ = setstr(eqname_);
+modname = setstr(modname');
+param_  =  nmfix(param_);
+endog_  =  nmfix(endog_);
+eqname_ =  nmfix(eqname_);
+

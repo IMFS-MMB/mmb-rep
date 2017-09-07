@@ -1,0 +1,152 @@
+MODEL> FuhrerMoore_emp_first
+
+ENDOG>
+        q      _DATA
+        lagq1  _NOTD
+        cwp    _NOTD
+        lagcwp1 _NOTD
+        lagcwp2 _NOTD
+        vindex _NOTD
+        pi1    _DATA
+        lagpi11 _NOTD
+        lagpi12 _NOTD
+        pi4    _NOTD
+        is     _NOTD
+        lagis1 _NOTD
+        dis    _NOTD
+        il     _NOTD
+        rl     _NOTD
+        e_m    _NOTD
+         one    _DTRM
+         e_d    _NOTD
+        e_cw   _NOTD
+  
+   
+
+EQUATION> EQ1
+EQTYPE>   IMPOSED
+EQ>       q =        delta1*LAG(q,1)
+                   + delta2*LAG(lagq1,1)
+                   + delta3*(  LAG(rl,1)
+                             - rlbar*one)
+                   + sigma_e_d*e_d
+
+EQUATION> EQ1a
+EQTYPE>   IMPOSED
+EQ>       lagq1 =  LAG(q,1)                
+                   
+EQUATION> EQ2
+EQTYPE>   IMPOSED
+EQ>       cwp =      f0*vindex
+                   + f1*LEAD(vindex,1)
+                   + f2*LEAD(vindex,2)
+                   + f3*LEAD(vindex,3) 
+                   + gamma*(  f0*q
+                            + f1*LEAD(q,1)
+                            + f2*LEAD(q,2)
+                            + f3*LEAD(q,3) 
+                           )
+                   + sigma_e_cw*e_cw
+EQUATION> EQ3a
+EQTYPE>   IMPOSED
+EQ>       lagcwp1 = LAG(cwp,1)
+ 
+EQUATION> EQ3b
+EQTYPE>   IMPOSED
+EQ>       lagcwp2 = LAG(lagcwp1,1)
+
+EQUATION> EQ3
+EQTYPE>   IMPOSED
+EQ>       vindex =   f0*cwp
+                   + f1*LAG(cwp,1)
+                   + f2*LAG(lagcwp1,1)
+                   + f3*LAG(lagcwp2,1)
+
+
+                   
+EQUATION> EQ4
+EQTYPE>   IMPOSED
+EQ>       pi1 =    (  f0*cwp
+                    + f1*LAG(cwp,1)
+                    + f2*LAG(lagcwp1,1)
+                    + f3*LAG(lagcwp2,1)
+                    - (f2+f3)*LAG(pi1,1)
+                    - f3*LAG(lagpi11,1)
+                   )/(f1+f2+f3)
+                   
+EQUATION> EQ4a
+EQTYPE>   IMPOSED
+EQ>       lagpi11 = LAG(pi1,1)   
+
+EQUATION> EQ4b
+EQTYPE>   IMPOSED
+EQ>       lagpi12 = LAG(lagpi11,1)  
+
+EQUATION> EQ5
+EQTYPE>   IMPOSED
+EQ>       pi4 =      pi1
+                   + LAG(pi1,1)
+                   + LAG(lagpi11,1)
+                   + LAG(lagpi12,1)
+
+EQUATION> EQ6
+EQTYPE>   IMPOSED
+EQ>       is =       rho1*LAG(is,1)
+                   - rho2*LAG(lagis1,1)
+                   + (1-rho1-rho2)*rlbar*one
+                   + ((1-rho1-rho2)+alpha)*(LEAD(pi4,4)-pitarget*one)
+                   + beta*q
+
+EQUATION> EQ6a
+EQTYPE>   IMPOSED
+EQ>       lagis1 =      LAG(is,1)
+                        
+                   
+EQUATION> EQ7
+EQTYPE>   IMPOSED
+EQ>       dis =      is
+                   - LAG(is,1)
+
+EQUATION> EQ8
+EQTYPE>   IMPOSED
+EQ>	  il =      (  is 
+                     + LEAD(is,1)
+                     + LEAD(is,2)
+                     + LEAD(is,3)
+                     + LEAD(is,4)
+                     + LEAD(is,5)
+                     + LEAD(is,6)
+                     + LEAD(is,7)
+                    )/8
+
+EQUATION> EQ9
+EQTYPE>   IMPOSED
+EQ>       rl =        il 
+                    - (  LEAD(pi1,8)
+                       + LEAD(pi1,7)
+                       + LEAD(pi1,6)
+                       + LEAD(pi1,5)
+                       + LEAD(pi1,4)
+                       + LEAD(pi1,3)
+                       + LEAD(pi1,2)
+                       + LEAD(pi1,1)
+                      )/2
+
+EQUATION> EQ10a
+EQTYPE>   IMPOSED
+EQ>       e_m =    0*one
+
+EQUATION> EQ10
+EQTYPE>   IMPOSED
+EQ>       one =    LAG(one,1)
+
+EQUATION> EQ11
+EQTYPE>   STOCH
+EQ>       e_d =    0*one
+
+EQUATION> EQ12
+EQTYPE>   STOCH
+EQ>       e_cw =   0*one
+
+END
+

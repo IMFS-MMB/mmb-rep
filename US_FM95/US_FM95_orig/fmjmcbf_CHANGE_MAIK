@@ -1,0 +1,235 @@
+MODEL > FMJMCBF
+
+ENDOG >   
+	ygap	_DATA
+	pdot	_NOTD
+	rff	_DATA
+	drff	_NOTD
+	index	_DATA
+	pdotma4	_NOTD
+	rho40	_NOTD
+	rho16	_NOTD
+	rho1	_NOTD
+	vbar	_NOTD
+	ygap1	_NOTD
+	ygap2	_NOTD
+	ygap3	_NOTD
+	rff1	_NOTD
+	rff2	_NOTD
+	rff3	_NOTD
+	pdot1	_NOTD
+	pdot2	_NOTD
+	pdot3	_NOTD
+	pdot4	_NOTD
+	pdot5	_NOTD
+	pdot6	_NOTD
+	pdot7	_NOTD
+	pdot8	_NOTD
+	pdot9	_NOTD
+	pdot10	_NOTD
+	contr	_NOTD
+	contr1	_NOTD
+	contr2	_NOTD
+	index1	_NOTD
+	index2	_NOTD
+	index3	_NOTD
+	pdotf4	_NOTD
+	pdotf8	_NOTD
+	pdotf12	_NOTD
+	pdotf16	_NOTD
+	pdotf20	_NOTD
+        one	_DTRM
+        pdot_   _NOTD
+        rff_    _NOTD
+        ygap_   _NOTD
+
+
+EQUATION > ygap
+EQTYPE >   IMPOSED
+EQ >       ygap   =  xgap1*LAG(ygap,1)
+                   + xgap2*LAG(ygap1,1)
+                   + xgap3*LAG(rho40,1) 
+                   + xgap4*LAG(rho16,1) 
+                   + xgap5*LAG(rho1,1) 
+                   + ygap_
+
+EQUATION > rff
+EQTYPE >   IMPOSED
+EQ >       rff    = cofintintb1*LAG(rff,1) 
+          	  + cofintinf0*pdot 
+		  + cofintinfb1*LAG(pdot,1)
+                  + cofintinfb2*LAG(pdot1,1) 
+		  + cofintinfb3*LAG(pdot2,1)
+		  + cofintout*ygap
+         	  + cofintoutb1*LAG(ygap,1)
+		  + rff_
+
+EQUATION > rho1
+EQTYPE >   IMPOSED
+EQ >       rho1 = rff - LEAD(pdot,1)
+
+EQUATION > rho16
+EQTYPE >   IMPOSED
+EQ >       rff - LEAD(pdot,1) = rho16 - 16.0*(LEAD(rho16,1) - rho16)
+
+EQUATION > rho40
+EQTYPE >   IMPOSED
+EQ >       rff - LEAD(pdot,1) = rho40 - 40.0*(LEAD(rho40,1) - rho40)
+
+EQUATION > contr
+EQTYPE >   IMPOSED
+EQ >       contr - index = 
+          (.25 + 1.5*slope) * (     vbar    + cy *      ygap   )
+        + (.25 +  .5*slope) * (LEAD(vbar,1) + cy * LEAD(ygap,1))
+        + (.25 -  .5*slope) * (LEAD(vbar,2) + cy * LEAD(ygap,2))
+        + (.25 - 1.5*slope) * (LEAD(vbar,3) + cy * LEAD(ygap,3))
+        + pdot_
+
+EQUATION > index
+EQTYPE >   IMPOSED
+EQ >       index =  (.25 + 1.5*slope) *     contr 
+                  + (.25 +  .5*slope) * LAG(contr,1) 
+                  + (.25 -  .5*slope) * LAG(contr1,1) 
+                  + (.25 - 1.5*slope) * LAG(contr2,1) 
+
+EQUATION > vbar
+EQTYPE >   IMPOSED
+EQ >       vbar =   
+      (.25 + 1.5*slope) * (    contr    -     index   )
+    + (.25 +  .5*slope) * (LAG(contr,1) - LAG(index,1))
+    + (.25 -  .5*slope) * (LAG(contr1,1) - LAG(index1,1)) 
+    + (.25 - 1.5*slope) * (LAG(contr2,1) - LAG(index2,1)) 
+
+EQUATION > pdot
+EQTYPE >   IMPOSED
+EQ >       pdot   = 4.0*(index - LAG(index,1))
+
+EQUATION > pdotma4
+EQTYPE >   IMPOSED
+EQ >       pdotma4   = 0.25*(pdot+LAG(pdot,1)+LAG(pdot1,1)+LAG(pdot2,1))
+
+EQUATION > drff
+EQTYPE >   IMPOSED
+EQ >       drff = rff- LAG(rff,1)
+
+EQUATION > ygap1
+EQTYPE >   IMPOSED
+EQ >       ygap1  = LAG(ygap,1)
+
+EQUATION > ygap2
+EQTYPE >   IMPOSED
+EQ >       ygap2  = LAG(ygap1,1)
+
+EQUATION > ygap3
+EQTYPE >   IMPOSED
+EQ >       ygap3  = LAG(ygap2,1)
+
+EQUATION > rff1
+EQTYPE >   IMPOSED
+EQ >       rff1   = LAG(rff,1)
+
+EQUATION > rff2
+EQTYPE >   IMPOSED
+EQ >       rff2   = LAG(rff1,1)
+
+EQUATION > rff3
+EQTYPE >   IMPOSED
+EQ >       rff3   = LAG(rff2,1)
+
+EQUATION > pdot1
+EQTYPE >   IMPOSED
+EQ >       pdot1   = LAG(pdot,1)
+
+EQUATION > pdot2
+EQTYPE >   IMPOSED
+EQ >       pdot2   = LAG(pdot1,1)
+
+EQUATION > pdot3
+EQTYPE >   IMPOSED
+EQ >       pdot3   = LAG(pdot2,1)
+
+EQUATION > pdot4
+EQTYPE >   IMPOSED
+EQ >       pdot4   = LAG(pdot3,1)
+
+EQUATION > pdot5
+EQTYPE >   IMPOSED
+EQ >       pdot5   = LAG(pdot4,1)
+
+EQUATION > pdot6
+EQTYPE >   IMPOSED
+EQ >       pdot6   = LAG(pdot5,1)
+
+EQUATION > pdot7
+EQTYPE >   IMPOSED
+EQ >       pdot7   = LAG(pdot6,1)
+
+EQUATION > pdot8
+EQTYPE >   IMPOSED
+EQ >       pdot8   = LAG(pdot7,1)
+
+EQUATION > pdot9
+EQTYPE >   IMPOSED
+EQ >       pdot9   = LAG(pdot8,1)
+
+EQUATION > pdot10
+EQTYPE >   IMPOSED
+EQ >       pdot10   = LAG(pdot9,1)
+
+EQUATION > contr1
+EQTYPE >   IMPOSED
+EQ >       contr1   = LAG(contr,1)
+
+EQUATION > contr2
+EQTYPE >   IMPOSED
+EQ >       contr2   = LAG(contr1,1)
+
+EQUATION > index1
+EQTYPE >   IMPOSED
+EQ >       index1   = LAG(index,1)
+
+EQUATION > index2
+EQTYPE >   IMPOSED
+EQ >       index2   = LAG(index1,1)
+
+EQUATION > index3
+EQTYPE >   IMPOSED
+EQ >       index3   = LAG(index2,1)
+
+EQUATION > pdotf4
+EQTYPE >   IMPOSED
+EQ >       pdotf4  = LEAD(pdot,4)
+
+EQUATION > pdotf8
+EQTYPE >   IMPOSED
+EQ >       pdotf8  = LEAD(pdot,8)
+
+EQUATION > pdotf12
+EQTYPE >   IMPOSED
+EQ >       pdotf12  = LEAD(pdot,12)
+
+EQUATION > pdotf16
+EQTYPE >   IMPOSED
+EQ >       pdotf16  = LEAD(pdot,16)
+
+EQUATION > pdotf20
+EQTYPE >   IMPOSED
+EQ >       pdotf20  = LEAD(pdot,20)
+
+EQUATION > one
+EQTYPE >   IMPOSED
+EQ >       one = LAG(one,1)
+
+EQUATION > pdot_
+EQTYPE >   STOCH
+EQ >       pdot_ = 0*one
+
+EQUATION > rff_
+EQTYPE >   STOCH
+EQ >       rff_ = 0*one
+
+EQUATION > ygap_
+EQTYPE >   STOCH
+EQ >       ygap_ = 0*one
+
+END

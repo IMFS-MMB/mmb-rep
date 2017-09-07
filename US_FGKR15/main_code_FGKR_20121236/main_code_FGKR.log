@@ -1,0 +1,146 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 31 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+ - order 3
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+Elapsed time is 0.132509 seconds.
+
+ans = 
+
+              numSim: 1
+             seedNum: 1
+           IRFlength: 21
+          computeIRF: 0
+      computeMoments: 0
+            orderApp: 3
+             ySelect: 'all'
+             autoLag: 4
+    AntitheticShocks: 0
+           shockSize: 1
+             plotIRF: 1
+
+std:        1.28863 
+
+ans = 
+
+    'gyt'    'gct'    'git'    'gwt'    'ht'    'utilt'    'mct'    'inflt'
+
+std:        1.69945 1.32905 6.17944 0.16848 2.01625 1.39553 0.56193 1.44024
+AR:         0.64847 0.68372 0.89575 0.94385 0.58319 0.74653 0.52747 0.87334
+corr coeff: 0.34770 0.57698 0.54137 0.97628 0.80754 0.64097 0.07192
+Corr R with output:  -0.22290 
+
+j =
+
+     2
+
+
+j =
+
+     3
+
+
+j =
+
+     4
+
+
+j =
+
+     5
+
+
+j =
+
+     6
+
+
+j =
+
+     7
+
+
+j =
+
+     8
+
+
+j =
+
+     9
+
+
+j =
+
+    10
+
+
+j =
+
+    11
+
+
+j =
+
+    12
+
+
+j =
+
+    13
+
+
+j =
+
+    14
+
+
+j =
+
+    15
+
+
+j =
+
+    16
+
+
+j =
+
+    17
+
+
+j =
+
+    18
+
+
+j =
+
+    19
+
+
+j =
+
+    20
+
+
+j =
+
+    21
+
+
+j =
+
+    22
+
+Total computing time : 0h00m44s
+Note: warning(s) encountered in MATLAB/Octave code

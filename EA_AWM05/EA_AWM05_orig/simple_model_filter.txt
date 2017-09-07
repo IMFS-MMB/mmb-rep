@@ -1,0 +1,57 @@
+MODEL > simple_model_filter
+
+ENDOG>
+    yer     _NOTD 
+    pipcd   _NOTD
+    stn     _NOTD
+    dstn    _NOTD
+    g       _NOTD
+    e       _NOTD
+    m       _NOTD
+    yinno       _NOTD
+    piinno       _NOTD
+    stninno     _NOTD
+    
+
+
+EQUATION >  is
+EQTYPE >    IMPOSED
+EQ >        yer = LEAD(yer,1)-sig*(stn-LEAD(pipcd,1)-g)
+
+EQUATION >  phillips
+EQTYPE >    IMPOSED
+EQ >        pipcd = delta*LEAD(pipcd,1)+phi*yer+e
+
+EQUATION >  stn
+EQTYPE >    IMPOSED
+EQ >        stn = rho*LAG(stn,1)+alpha*pipcd+beta*yer+m
+
+EQUATION >  dstn
+EQTYPE >    IMPOSED
+EQ >        dstn = stn-LAG(stn,1)
+
+EQUATION >  yshock
+EQTYPE >    IMPOSED
+EQ >        g = 0.9*LAG(g,1)+yinno 
+
+EQUATION >  yshock
+EQTYPE >    IMPOSED
+EQ >        e = 0.7*LAG(e,1)+piinno 
+
+EQUATION >  yshock
+EQTYPE >    IMPOSED
+EQ >        m = .4*LAG(m,1)+stninno
+
+EQUATION >  yshock
+EQTYPE >    IMPOSED
+EQ >        yinno = 0*LAG(g,1)
+
+EQUATION >  infshock
+EQTYPE >    IMPOSED
+EQ >        piinno = 0*LAG(g,1)
+
+EQUATION >  infshock
+EQTYPE >    IMPOSED
+EQ >        stninno = 0*LAG(g,1)
+
+END

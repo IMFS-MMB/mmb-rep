@@ -1,0 +1,63 @@
+MODEL > NAIVEKL
+
+ENDOG >
+         cb     _DATA
+         nb     _NOTD
+         kb     _NOTD
+         lamb   _NOTD
+         yb     _NOTD
+         at     _NOTD
+         ya     _NOTD
+         smalla _NOTD
+         one    _DTRM
+
+EQUATION > con_eub
+EQTYPE >   IMPOSED
+EQ >       mbcc11*cb + mbcc12*nb = mbcs11*LAG(kb,1) + mbcs12*lamb 
+                                 + mbce11*at        + mbce12*ya
+
+EQUATION > lab_eub
+EQTYPE >   IMPOSED
+EQ >       mbcc21*cb + mbcc22*nb = mbcs21*LAG(kb,1) + mbcs22*lamb 
+                                 + mbce21*at        + mbce22*ya
+
+EQUATION > cap_eub
+EQTYPE >   IMPOSED
+EQ >       mbss011*     kb    + mbss012*LEAD(lamb,1)
+         + mbss111* LAG(kb,1) + mbss112*     lamb    =
+           mbsc011*LEAD(cb,1) + mbsc012*LEAD(nb,1)
+         + mbsc111*     cb    + mbsc112*     nb
+         + mbse011*LEAD(at,1) + mbse012*LEAD(ya,1)
+         + mbse111*     at    + mbse112*     ya
+
+EQUATION > sha_eub
+EQTYPE >   IMPOSED
+EQ >       mbss021*     kb    + mbss022*LEAD(lamb,1)
+         + mbss121* LAG(kb,1) + mbss122*     lamb    =
+           mbsc021*LEAD(cb,1) + mbsc022*LEAD(nb,1)
+         + mbsc121*     cb    + mbsc122*     nb
+         + mbse021*LEAD(at,1) + mbse022*LEAD(ya,1)
+         + mbse121*     at    + mbse122*     ya
+
+EQUATION > pro_fub
+EQTYPE >   IMPOSED
+EQ >       yb = fibk * LAG(kb,1) + fibn * nb
+         + fiba * at + fibya * ya
+
+EQUATION > sho_expb
+EQTYPE >   IMPOSED
+EQ >       at = rhot*LAG(at,1) + smalla
+
+EQUATION > ya_expb
+EQTYPE >   IMPOSED
+EQ >       ya = rhot*LAG(ya,1)
+
+EQUATION > shock_innov
+EQTYPE >   STOCH
+EQ >       smalla = 0*one
+
+EQUATION > one
+EQTYPE >   IMPOSED
+EQ >       one = LAG(one,1)
+
+END

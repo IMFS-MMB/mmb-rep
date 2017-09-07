@@ -1,0 +1,1441 @@
+
+
+Terminals which are not used:
+
+   NEG
+
+
+Conflict in state 58 between rule 42 and token POW resolved as reduce.
+Conflict in state 58 between rule 42 and token DIV resolved as reduce.
+Conflict in state 58 between rule 42 and token PLUS resolved as reduce.
+Conflict in state 58 between rule 42 and token MULT resolved as reduce.
+Conflict in state 58 between rule 42 and token MINUS resolved as reduce.
+Conflict in state 73 between rule 41 and token POW resolved as shift.
+Conflict in state 73 between rule 41 and token DIV resolved as reduce.
+Conflict in state 73 between rule 41 and token PLUS resolved as reduce.
+Conflict in state 73 between rule 41 and token MULT resolved as reduce.
+Conflict in state 73 between rule 41 and token MINUS resolved as reduce.
+Conflict in state 74 between rule 40 and token POW resolved as shift.
+Conflict in state 74 between rule 40 and token DIV resolved as reduce.
+Conflict in state 74 between rule 40 and token PLUS resolved as reduce.
+Conflict in state 74 between rule 40 and token MULT resolved as reduce.
+Conflict in state 74 between rule 40 and token MINUS resolved as reduce.
+Conflict in state 75 between rule 37 and token POW resolved as shift.
+Conflict in state 75 between rule 37 and token DIV resolved as shift.
+Conflict in state 75 between rule 37 and token PLUS resolved as reduce.
+Conflict in state 75 between rule 37 and token MULT resolved as shift.
+Conflict in state 75 between rule 37 and token MINUS resolved as reduce.
+Conflict in state 76 between rule 39 and token POW resolved as shift.
+Conflict in state 76 between rule 39 and token DIV resolved as reduce.
+Conflict in state 76 between rule 39 and token PLUS resolved as reduce.
+Conflict in state 76 between rule 39 and token MULT resolved as reduce.
+Conflict in state 76 between rule 39 and token MINUS resolved as reduce.
+Conflict in state 77 between rule 38 and token POW resolved as shift.
+Conflict in state 77 between rule 38 and token DIV resolved as shift.
+Conflict in state 77 between rule 38 and token PLUS resolved as reduce.
+Conflict in state 77 between rule 38 and token MULT resolved as shift.
+Conflict in state 77 between rule 38 and token MINUS resolved as reduce.
+
+Grammar
+rule 1    finished -> mdl
+rule 2    mdl -> MODEL PROMPT SYMBOLNAME ENDOG PROMPT variablelist eqnlist END
+rule 3    variablelist -> variabledef
+rule 4    variablelist -> variablelist variabledef
+rule 5    variabledef -> SYMBOLNAME INTEGER variabletype
+rule 6    variabledef -> SYMBOLNAME INTEGER
+rule 7    variabledef -> SYMBOLNAME variabletype
+rule 8    variabledef -> SYMBOLNAME
+rule 9    variabletype -> _DATA
+rule 10   variabletype -> _NOTD
+rule 11   variabletype -> _DTRM
+rule 12   eqnlist -> EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression
+rule 13   eqnlist -> EQUATION PROMPT SYMBOLNAME EQ PROMPT expression EQUALS expression
+rule 14   eqnlist -> eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression
+rule 15   eqnlist -> eqnlist EQUATION PROMPT SYMBOLNAME EQ PROMPT expression EQUALS expression
+rule 16   eqntype -> IMPO
+rule 17   eqntype -> STOC
+rule 18   expression -> SYMBOLNAME
+rule 19   expression -> lagvariable
+rule 20   expression -> elagvariable
+rule 21   expression -> leadvariable
+rule 22   expression -> REAL
+rule 23   expression -> INTEGER
+rule 24   expression -> addition
+rule 25   expression -> subtraction
+rule 26   expression -> multiplication
+rule 27   expression -> division
+rule 28   expression -> exponentiation
+rule 29   expression -> unaryminus
+rule 30   expression -> '(' expression ')'
+rule 31   lagvariable -> LAG '(' SYMBOLNAME COMMA INTEGER ')'
+rule 32   lagvariable -> LAG '(' SYMBOLNAME ')'
+rule 33   elagvariable -> ELAG '(' SYMBOLNAME COMMA INTEGER ')'
+rule 34   elagvariable -> ELAG '(' SYMBOLNAME ')'
+rule 35   leadvariable -> LEAD '(' SYMBOLNAME COMMA INTEGER ')'
+rule 36   leadvariable -> LEAD '(' SYMBOLNAME ')'
+rule 37   addition -> expression PLUS expression
+rule 38   subtraction -> expression MINUS expression
+rule 39   multiplication -> expression MULT expression
+rule 40   division -> expression DIV expression
+rule 41   exponentiation -> expression POW expression
+rule 42   unaryminus -> MINUS expression
+
+Terminals, with rules where they appear
+
+$ (-1)
+'(' (40) 30 31 32 33 34 35 36
+')' (41) 30 31 32 33 34 35 36
+error (256)
+MODEL (258) 2
+EQUATION (259) 12 13 14 15
+EQ (260) 12 13 14 15
+EQTYPE (261) 12 14
+ENDOG (262) 2
+PROMPT (263) 2 12 13 14 15
+_DATA (264) 9
+_NOTD (265) 10
+_DTRM (266) 11
+IMPO (267) 16
+STOC (268) 17
+LAG (269) 31 32
+ELAG (270) 33 34
+LEAD (271) 35 36
+END (272) 2
+EQUALS (273) 12 13 14 15
+COMMA (274) 31 33 35
+POW (275) 41
+DIV (276) 40
+PLUS (277) 37
+MULT (278) 39
+MINUS (279) 38 42
+NEG (280)
+SYMBOLNAME (281) 2 5 6 7 8 12 13 14 15 18 31 32 33 34 35 36
+REAL (282) 22
+INTEGER (283) 5 6 23 31 33 35
+
+Nonterminals, with rules where they appear
+
+finished (31)
+    on left: 1
+mdl (32)
+    on left: 2, on right: 1
+variablelist (33)
+    on left: 3 4, on right: 2 4
+variabledef (34)
+    on left: 5 6 7 8, on right: 3 4
+variabletype (35)
+    on left: 9 10 11, on right: 5 7
+eqnlist (36)
+    on left: 12 13 14 15, on right: 2 14 15
+eqntype (37)
+    on left: 16 17, on right: 12 14
+expression (38)
+    on left: 18 19 20 21 22 23 24 25 26 27 28 29 30,
+    on right: 12 13 14 15 30 37 38 39 40 41 42
+lagvariable (39)
+    on left: 31 32, on right: 19
+elagvariable (40)
+    on left: 33 34, on right: 20
+leadvariable (41)
+    on left: 35 36, on right: 21
+addition (42)
+    on left: 37, on right: 24
+subtraction (43)
+    on left: 38, on right: 25
+multiplication (44)
+    on left: 39, on right: 26
+division (45)
+    on left: 40, on right: 27
+exponentiation (46)
+    on left: 41, on right: 28
+unaryminus (47)
+    on left: 42, on right: 29
+
+
+state 0
+
+    MODEL	shift, and go to state 1
+
+    finished	go to state 101
+    mdl 	go to state 2
+
+
+
+state 1
+
+    mdl  ->  MODEL . PROMPT SYMBOLNAME ENDOG PROMPT variablelist eqnlist END   (rule 2)
+
+    PROMPT	shift, and go to state 3
+
+
+
+state 2
+
+    finished  ->  mdl .   (rule 1)
+
+    $default	reduce using rule 1 (finished)
+
+
+
+state 3
+
+    mdl  ->  MODEL PROMPT . SYMBOLNAME ENDOG PROMPT variablelist eqnlist END   (rule 2)
+
+    SYMBOLNAME	shift, and go to state 4
+
+
+
+state 4
+
+    mdl  ->  MODEL PROMPT SYMBOLNAME . ENDOG PROMPT variablelist eqnlist END   (rule 2)
+
+    ENDOG	shift, and go to state 5
+
+
+
+state 5
+
+    mdl  ->  MODEL PROMPT SYMBOLNAME ENDOG . PROMPT variablelist eqnlist END   (rule 2)
+
+    PROMPT	shift, and go to state 6
+
+
+
+state 6
+
+    mdl  ->  MODEL PROMPT SYMBOLNAME ENDOG PROMPT . variablelist eqnlist END   (rule 2)
+
+    SYMBOLNAME	shift, and go to state 7
+
+    variablelist	go to state 8
+    variabledef	go to state 9
+
+
+
+state 7
+
+    variabledef  ->  SYMBOLNAME . INTEGER variabletype   (rule 5)
+    variabledef  ->  SYMBOLNAME . INTEGER   (rule 6)
+    variabledef  ->  SYMBOLNAME . variabletype   (rule 7)
+    variabledef  ->  SYMBOLNAME .   (rule 8)
+
+    _DATA	shift, and go to state 10
+    _NOTD	shift, and go to state 11
+    _DTRM	shift, and go to state 12
+    INTEGER	shift, and go to state 13
+
+    $default	reduce using rule 8 (variabledef)
+
+    variabletype	go to state 14
+
+
+
+state 8
+
+    mdl  ->  MODEL PROMPT SYMBOLNAME ENDOG PROMPT variablelist . eqnlist END   (rule 2)
+    variablelist  ->  variablelist . variabledef   (rule 4)
+
+    EQUATION	shift, and go to state 15
+    SYMBOLNAME	shift, and go to state 7
+
+    variabledef	go to state 16
+    eqnlist	go to state 17
+
+
+
+state 9
+
+    variablelist  ->  variabledef .   (rule 3)
+
+    $default	reduce using rule 3 (variablelist)
+
+
+
+state 10
+
+    variabletype  ->  _DATA .   (rule 9)
+
+    $default	reduce using rule 9 (variabletype)
+
+
+
+state 11
+
+    variabletype  ->  _NOTD .   (rule 10)
+
+    $default	reduce using rule 10 (variabletype)
+
+
+
+state 12
+
+    variabletype  ->  _DTRM .   (rule 11)
+
+    $default	reduce using rule 11 (variabletype)
+
+
+
+state 13
+
+    variabledef  ->  SYMBOLNAME INTEGER . variabletype   (rule 5)
+    variabledef  ->  SYMBOLNAME INTEGER .   (rule 6)
+
+    _DATA	shift, and go to state 10
+    _NOTD	shift, and go to state 11
+    _DTRM	shift, and go to state 12
+
+    $default	reduce using rule 6 (variabledef)
+
+    variabletype	go to state 18
+
+
+
+state 14
+
+    variabledef  ->  SYMBOLNAME variabletype .   (rule 7)
+
+    $default	reduce using rule 7 (variabledef)
+
+
+
+state 15
+
+    eqnlist  ->  EQUATION . PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression   (rule 12)
+    eqnlist  ->  EQUATION . PROMPT SYMBOLNAME EQ PROMPT expression EQUALS expression   (rule 13)
+
+    PROMPT	shift, and go to state 19
+
+
+
+state 16
+
+    variablelist  ->  variablelist variabledef .   (rule 4)
+
+    $default	reduce using rule 4 (variablelist)
+
+
+
+state 17
+
+    mdl  ->  MODEL PROMPT SYMBOLNAME ENDOG PROMPT variablelist eqnlist . END   (rule 2)
+    eqnlist  ->  eqnlist . EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression   (rule 14)
+    eqnlist  ->  eqnlist . EQUATION PROMPT SYMBOLNAME EQ PROMPT expression EQUALS expression   (rule 15)
+
+    EQUATION	shift, and go to state 20
+    END 	shift, and go to state 21
+
+
+
+state 18
+
+    variabledef  ->  SYMBOLNAME INTEGER variabletype .   (rule 5)
+
+    $default	reduce using rule 5 (variabledef)
+
+
+
+state 19
+
+    eqnlist  ->  EQUATION PROMPT . SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression   (rule 12)
+    eqnlist  ->  EQUATION PROMPT . SYMBOLNAME EQ PROMPT expression EQUALS expression   (rule 13)
+
+    SYMBOLNAME	shift, and go to state 22
+
+
+
+state 20
+
+    eqnlist  ->  eqnlist EQUATION . PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression   (rule 14)
+    eqnlist  ->  eqnlist EQUATION . PROMPT SYMBOLNAME EQ PROMPT expression EQUALS expression   (rule 15)
+
+    PROMPT	shift, and go to state 23
+
+
+
+state 21
+
+    mdl  ->  MODEL PROMPT SYMBOLNAME ENDOG PROMPT variablelist eqnlist END .   (rule 2)
+
+    $default	reduce using rule 2 (mdl)
+
+
+
+state 22
+
+    eqnlist  ->  EQUATION PROMPT SYMBOLNAME . EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression   (rule 12)
+    eqnlist  ->  EQUATION PROMPT SYMBOLNAME . EQ PROMPT expression EQUALS expression   (rule 13)
+
+    EQ  	shift, and go to state 24
+    EQTYPE	shift, and go to state 25
+
+
+
+state 23
+
+    eqnlist  ->  eqnlist EQUATION PROMPT . SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression   (rule 14)
+    eqnlist  ->  eqnlist EQUATION PROMPT . SYMBOLNAME EQ PROMPT expression EQUALS expression   (rule 15)
+
+    SYMBOLNAME	shift, and go to state 26
+
+
+
+state 24
+
+    eqnlist  ->  EQUATION PROMPT SYMBOLNAME EQ . PROMPT expression EQUALS expression   (rule 13)
+
+    PROMPT	shift, and go to state 27
+
+
+
+state 25
+
+    eqnlist  ->  EQUATION PROMPT SYMBOLNAME EQTYPE . PROMPT eqntype EQ PROMPT expression EQUALS expression   (rule 12)
+
+    PROMPT	shift, and go to state 28
+
+
+
+state 26
+
+    eqnlist  ->  eqnlist EQUATION PROMPT SYMBOLNAME . EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression   (rule 14)
+    eqnlist  ->  eqnlist EQUATION PROMPT SYMBOLNAME . EQ PROMPT expression EQUALS expression   (rule 15)
+
+    EQ  	shift, and go to state 29
+    EQTYPE	shift, and go to state 30
+
+
+
+state 27
+
+    eqnlist  ->  EQUATION PROMPT SYMBOLNAME EQ PROMPT . expression EQUALS expression   (rule 13)
+
+    LAG 	shift, and go to state 31
+    ELAG	shift, and go to state 32
+    LEAD	shift, and go to state 33
+    '(' 	shift, and go to state 34
+    MINUS	shift, and go to state 35
+    SYMBOLNAME	shift, and go to state 36
+    REAL	shift, and go to state 37
+    INTEGER	shift, and go to state 38
+
+    expression	go to state 39
+    lagvariable	go to state 40
+    elagvariable	go to state 41
+    leadvariable	go to state 42
+    addition	go to state 43
+    subtraction	go to state 44
+    multiplication	go to state 45
+    division	go to state 46
+    exponentiation	go to state 47
+    unaryminus	go to state 48
+
+
+
+state 28
+
+    eqnlist  ->  EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT . eqntype EQ PROMPT expression EQUALS expression   (rule 12)
+
+    IMPO	shift, and go to state 49
+    STOC	shift, and go to state 50
+
+    eqntype	go to state 51
+
+
+
+state 29
+
+    eqnlist  ->  eqnlist EQUATION PROMPT SYMBOLNAME EQ . PROMPT expression EQUALS expression   (rule 15)
+
+    PROMPT	shift, and go to state 52
+
+
+
+state 30
+
+    eqnlist  ->  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE . PROMPT eqntype EQ PROMPT expression EQUALS expression   (rule 14)
+
+    PROMPT	shift, and go to state 53
+
+
+
+state 31
+
+    lagvariable  ->  LAG . '(' SYMBOLNAME COMMA INTEGER ')'   (rule 31)
+    lagvariable  ->  LAG . '(' SYMBOLNAME ')'   (rule 32)
+
+    '(' 	shift, and go to state 54
+
+
+
+state 32
+
+    elagvariable  ->  ELAG . '(' SYMBOLNAME COMMA INTEGER ')'   (rule 33)
+    elagvariable  ->  ELAG . '(' SYMBOLNAME ')'   (rule 34)
+
+    '(' 	shift, and go to state 55
+
+
+
+state 33
+
+    leadvariable  ->  LEAD . '(' SYMBOLNAME COMMA INTEGER ')'   (rule 35)
+    leadvariable  ->  LEAD . '(' SYMBOLNAME ')'   (rule 36)
+
+    '(' 	shift, and go to state 56
+
+
+
+state 34
+
+    expression  ->  '(' . expression ')'   (rule 30)
+
+    LAG 	shift, and go to state 31
+    ELAG	shift, and go to state 32
+    LEAD	shift, and go to state 33
+    '(' 	shift, and go to state 34
+    MINUS	shift, and go to state 35
+    SYMBOLNAME	shift, and go to state 36
+    REAL	shift, and go to state 37
+    INTEGER	shift, and go to state 38
+
+    expression	go to state 57
+    lagvariable	go to state 40
+    elagvariable	go to state 41
+    leadvariable	go to state 42
+    addition	go to state 43
+    subtraction	go to state 44
+    multiplication	go to state 45
+    division	go to state 46
+    exponentiation	go to state 47
+    unaryminus	go to state 48
+
+
+
+state 35
+
+    unaryminus  ->  MINUS . expression   (rule 42)
+
+    LAG 	shift, and go to state 31
+    ELAG	shift, and go to state 32
+    LEAD	shift, and go to state 33
+    '(' 	shift, and go to state 34
+    MINUS	shift, and go to state 35
+    SYMBOLNAME	shift, and go to state 36
+    REAL	shift, and go to state 37
+    INTEGER	shift, and go to state 38
+
+    expression	go to state 58
+    lagvariable	go to state 40
+    elagvariable	go to state 41
+    leadvariable	go to state 42
+    addition	go to state 43
+    subtraction	go to state 44
+    multiplication	go to state 45
+    division	go to state 46
+    exponentiation	go to state 47
+    unaryminus	go to state 48
+
+
+
+state 36
+
+    expression  ->  SYMBOLNAME .   (rule 18)
+
+    $default	reduce using rule 18 (expression)
+
+
+
+state 37
+
+    expression  ->  REAL .   (rule 22)
+
+    $default	reduce using rule 22 (expression)
+
+
+
+state 38
+
+    expression  ->  INTEGER .   (rule 23)
+
+    $default	reduce using rule 23 (expression)
+
+
+
+state 39
+
+    eqnlist  ->  EQUATION PROMPT SYMBOLNAME EQ PROMPT expression . EQUALS expression   (rule 13)
+    addition  ->  expression . PLUS expression   (rule 37)
+    subtraction  ->  expression . MINUS expression   (rule 38)
+    multiplication  ->  expression . MULT expression   (rule 39)
+    division  ->  expression . DIV expression   (rule 40)
+    exponentiation  ->  expression . POW expression   (rule 41)
+
+    EQUALS	shift, and go to state 59
+    POW 	shift, and go to state 60
+    DIV 	shift, and go to state 61
+    PLUS	shift, and go to state 62
+    MULT	shift, and go to state 63
+    MINUS	shift, and go to state 64
+
+
+
+state 40
+
+    expression  ->  lagvariable .   (rule 19)
+
+    $default	reduce using rule 19 (expression)
+
+
+
+state 41
+
+    expression  ->  elagvariable .   (rule 20)
+
+    $default	reduce using rule 20 (expression)
+
+
+
+state 42
+
+    expression  ->  leadvariable .   (rule 21)
+
+    $default	reduce using rule 21 (expression)
+
+
+
+state 43
+
+    expression  ->  addition .   (rule 24)
+
+    $default	reduce using rule 24 (expression)
+
+
+
+state 44
+
+    expression  ->  subtraction .   (rule 25)
+
+    $default	reduce using rule 25 (expression)
+
+
+
+state 45
+
+    expression  ->  multiplication .   (rule 26)
+
+    $default	reduce using rule 26 (expression)
+
+
+
+state 46
+
+    expression  ->  division .   (rule 27)
+
+    $default	reduce using rule 27 (expression)
+
+
+
+state 47
+
+    expression  ->  exponentiation .   (rule 28)
+
+    $default	reduce using rule 28 (expression)
+
+
+
+state 48
+
+    expression  ->  unaryminus .   (rule 29)
+
+    $default	reduce using rule 29 (expression)
+
+
+
+state 49
+
+    eqntype  ->  IMPO .   (rule 16)
+
+    $default	reduce using rule 16 (eqntype)
+
+
+
+state 50
+
+    eqntype  ->  STOC .   (rule 17)
+
+    $default	reduce using rule 17 (eqntype)
+
+
+
+state 51
+
+    eqnlist  ->  EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype . EQ PROMPT expression EQUALS expression   (rule 12)
+
+    EQ  	shift, and go to state 65
+
+
+
+state 52
+
+    eqnlist  ->  eqnlist EQUATION PROMPT SYMBOLNAME EQ PROMPT . expression EQUALS expression   (rule 15)
+
+    LAG 	shift, and go to state 31
+    ELAG	shift, and go to state 32
+    LEAD	shift, and go to state 33
+    '(' 	shift, and go to state 34
+    MINUS	shift, and go to state 35
+    SYMBOLNAME	shift, and go to state 36
+    REAL	shift, and go to state 37
+    INTEGER	shift, and go to state 38
+
+    expression	go to state 66
+    lagvariable	go to state 40
+    elagvariable	go to state 41
+    leadvariable	go to state 42
+    addition	go to state 43
+    subtraction	go to state 44
+    multiplication	go to state 45
+    division	go to state 46
+    exponentiation	go to state 47
+    unaryminus	go to state 48
+
+
+
+state 53
+
+    eqnlist  ->  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT . eqntype EQ PROMPT expression EQUALS expression   (rule 14)
+
+    IMPO	shift, and go to state 49
+    STOC	shift, and go to state 50
+
+    eqntype	go to state 67
+
+
+
+state 54
+
+    lagvariable  ->  LAG '(' . SYMBOLNAME COMMA INTEGER ')'   (rule 31)
+    lagvariable  ->  LAG '(' . SYMBOLNAME ')'   (rule 32)
+
+    SYMBOLNAME	shift, and go to state 68
+
+
+
+state 55
+
+    elagvariable  ->  ELAG '(' . SYMBOLNAME COMMA INTEGER ')'   (rule 33)
+    elagvariable  ->  ELAG '(' . SYMBOLNAME ')'   (rule 34)
+
+    SYMBOLNAME	shift, and go to state 69
+
+
+
+state 56
+
+    leadvariable  ->  LEAD '(' . SYMBOLNAME COMMA INTEGER ')'   (rule 35)
+    leadvariable  ->  LEAD '(' . SYMBOLNAME ')'   (rule 36)
+
+    SYMBOLNAME	shift, and go to state 70
+
+
+
+state 57
+
+    expression  ->  '(' expression . ')'   (rule 30)
+    addition  ->  expression . PLUS expression   (rule 37)
+    subtraction  ->  expression . MINUS expression   (rule 38)
+    multiplication  ->  expression . MULT expression   (rule 39)
+    division  ->  expression . DIV expression   (rule 40)
+    exponentiation  ->  expression . POW expression   (rule 41)
+
+    ')' 	shift, and go to state 71
+    POW 	shift, and go to state 60
+    DIV 	shift, and go to state 61
+    PLUS	shift, and go to state 62
+    MULT	shift, and go to state 63
+    MINUS	shift, and go to state 64
+
+
+
+state 58
+
+    addition  ->  expression . PLUS expression   (rule 37)
+    subtraction  ->  expression . MINUS expression   (rule 38)
+    multiplication  ->  expression . MULT expression   (rule 39)
+    division  ->  expression . DIV expression   (rule 40)
+    exponentiation  ->  expression . POW expression   (rule 41)
+    unaryminus  ->  MINUS expression .   (rule 42)
+
+
+    $default	reduce using rule 42 (unaryminus)
+
+
+
+state 59
+
+    eqnlist  ->  EQUATION PROMPT SYMBOLNAME EQ PROMPT expression EQUALS . expression   (rule 13)
+
+    LAG 	shift, and go to state 31
+    ELAG	shift, and go to state 32
+    LEAD	shift, and go to state 33
+    '(' 	shift, and go to state 34
+    MINUS	shift, and go to state 35
+    SYMBOLNAME	shift, and go to state 36
+    REAL	shift, and go to state 37
+    INTEGER	shift, and go to state 38
+
+    expression	go to state 72
+    lagvariable	go to state 40
+    elagvariable	go to state 41
+    leadvariable	go to state 42
+    addition	go to state 43
+    subtraction	go to state 44
+    multiplication	go to state 45
+    division	go to state 46
+    exponentiation	go to state 47
+    unaryminus	go to state 48
+
+
+
+state 60
+
+    exponentiation  ->  expression POW . expression   (rule 41)
+
+    LAG 	shift, and go to state 31
+    ELAG	shift, and go to state 32
+    LEAD	shift, and go to state 33
+    '(' 	shift, and go to state 34
+    MINUS	shift, and go to state 35
+    SYMBOLNAME	shift, and go to state 36
+    REAL	shift, and go to state 37
+    INTEGER	shift, and go to state 38
+
+    expression	go to state 73
+    lagvariable	go to state 40
+    elagvariable	go to state 41
+    leadvariable	go to state 42
+    addition	go to state 43
+    subtraction	go to state 44
+    multiplication	go to state 45
+    division	go to state 46
+    exponentiation	go to state 47
+    unaryminus	go to state 48
+
+
+
+state 61
+
+    division  ->  expression DIV . expression   (rule 40)
+
+    LAG 	shift, and go to state 31
+    ELAG	shift, and go to state 32
+    LEAD	shift, and go to state 33
+    '(' 	shift, and go to state 34
+    MINUS	shift, and go to state 35
+    SYMBOLNAME	shift, and go to state 36
+    REAL	shift, and go to state 37
+    INTEGER	shift, and go to state 38
+
+    expression	go to state 74
+    lagvariable	go to state 40
+    elagvariable	go to state 41
+    leadvariable	go to state 42
+    addition	go to state 43
+    subtraction	go to state 44
+    multiplication	go to state 45
+    division	go to state 46
+    exponentiation	go to state 47
+    unaryminus	go to state 48
+
+
+
+state 62
+
+    addition  ->  expression PLUS . expression   (rule 37)
+
+    LAG 	shift, and go to state 31
+    ELAG	shift, and go to state 32
+    LEAD	shift, and go to state 33
+    '(' 	shift, and go to state 34
+    MINUS	shift, and go to state 35
+    SYMBOLNAME	shift, and go to state 36
+    REAL	shift, and go to state 37
+    INTEGER	shift, and go to state 38
+
+    expression	go to state 75
+    lagvariable	go to state 40
+    elagvariable	go to state 41
+    leadvariable	go to state 42
+    addition	go to state 43
+    subtraction	go to state 44
+    multiplication	go to state 45
+    division	go to state 46
+    exponentiation	go to state 47
+    unaryminus	go to state 48
+
+
+
+state 63
+
+    multiplication  ->  expression MULT . expression   (rule 39)
+
+    LAG 	shift, and go to state 31
+    ELAG	shift, and go to state 32
+    LEAD	shift, and go to state 33
+    '(' 	shift, and go to state 34
+    MINUS	shift, and go to state 35
+    SYMBOLNAME	shift, and go to state 36
+    REAL	shift, and go to state 37
+    INTEGER	shift, and go to state 38
+
+    expression	go to state 76
+    lagvariable	go to state 40
+    elagvariable	go to state 41
+    leadvariable	go to state 42
+    addition	go to state 43
+    subtraction	go to state 44
+    multiplication	go to state 45
+    division	go to state 46
+    exponentiation	go to state 47
+    unaryminus	go to state 48
+
+
+
+state 64
+
+    subtraction  ->  expression MINUS . expression   (rule 38)
+
+    LAG 	shift, and go to state 31
+    ELAG	shift, and go to state 32
+    LEAD	shift, and go to state 33
+    '(' 	shift, and go to state 34
+    MINUS	shift, and go to state 35
+    SYMBOLNAME	shift, and go to state 36
+    REAL	shift, and go to state 37
+    INTEGER	shift, and go to state 38
+
+    expression	go to state 77
+    lagvariable	go to state 40
+    elagvariable	go to state 41
+    leadvariable	go to state 42
+    addition	go to state 43
+    subtraction	go to state 44
+    multiplication	go to state 45
+    division	go to state 46
+    exponentiation	go to state 47
+    unaryminus	go to state 48
+
+
+
+state 65
+
+    eqnlist  ->  EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ . PROMPT expression EQUALS expression   (rule 12)
+
+    PROMPT	shift, and go to state 78
+
+
+
+state 66
+
+    eqnlist  ->  eqnlist EQUATION PROMPT SYMBOLNAME EQ PROMPT expression . EQUALS expression   (rule 15)
+    addition  ->  expression . PLUS expression   (rule 37)
+    subtraction  ->  expression . MINUS expression   (rule 38)
+    multiplication  ->  expression . MULT expression   (rule 39)
+    division  ->  expression . DIV expression   (rule 40)
+    exponentiation  ->  expression . POW expression   (rule 41)
+
+    EQUALS	shift, and go to state 79
+    POW 	shift, and go to state 60
+    DIV 	shift, and go to state 61
+    PLUS	shift, and go to state 62
+    MULT	shift, and go to state 63
+    MINUS	shift, and go to state 64
+
+
+
+state 67
+
+    eqnlist  ->  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype . EQ PROMPT expression EQUALS expression   (rule 14)
+
+    EQ  	shift, and go to state 80
+
+
+
+state 68
+
+    lagvariable  ->  LAG '(' SYMBOLNAME . COMMA INTEGER ')'   (rule 31)
+    lagvariable  ->  LAG '(' SYMBOLNAME . ')'   (rule 32)
+
+    COMMA	shift, and go to state 81
+    ')' 	shift, and go to state 82
+
+
+
+state 69
+
+    elagvariable  ->  ELAG '(' SYMBOLNAME . COMMA INTEGER ')'   (rule 33)
+    elagvariable  ->  ELAG '(' SYMBOLNAME . ')'   (rule 34)
+
+    COMMA	shift, and go to state 83
+    ')' 	shift, and go to state 84
+
+
+
+state 70
+
+    leadvariable  ->  LEAD '(' SYMBOLNAME . COMMA INTEGER ')'   (rule 35)
+    leadvariable  ->  LEAD '(' SYMBOLNAME . ')'   (rule 36)
+
+    COMMA	shift, and go to state 85
+    ')' 	shift, and go to state 86
+
+
+
+state 71
+
+    expression  ->  '(' expression ')' .   (rule 30)
+
+    $default	reduce using rule 30 (expression)
+
+
+
+state 72
+
+    eqnlist  ->  EQUATION PROMPT SYMBOLNAME EQ PROMPT expression EQUALS expression .   (rule 13)
+    addition  ->  expression . PLUS expression   (rule 37)
+    subtraction  ->  expression . MINUS expression   (rule 38)
+    multiplication  ->  expression . MULT expression   (rule 39)
+    division  ->  expression . DIV expression   (rule 40)
+    exponentiation  ->  expression . POW expression   (rule 41)
+
+    POW 	shift, and go to state 60
+    DIV 	shift, and go to state 61
+    PLUS	shift, and go to state 62
+    MULT	shift, and go to state 63
+    MINUS	shift, and go to state 64
+
+    $default	reduce using rule 13 (eqnlist)
+
+
+
+state 73
+
+    addition  ->  expression . PLUS expression   (rule 37)
+    subtraction  ->  expression . MINUS expression   (rule 38)
+    multiplication  ->  expression . MULT expression   (rule 39)
+    division  ->  expression . DIV expression   (rule 40)
+    exponentiation  ->  expression . POW expression   (rule 41)
+    exponentiation  ->  expression POW expression .   (rule 41)
+
+    POW 	shift, and go to state 60
+
+    $default	reduce using rule 41 (exponentiation)
+
+
+
+state 74
+
+    addition  ->  expression . PLUS expression   (rule 37)
+    subtraction  ->  expression . MINUS expression   (rule 38)
+    multiplication  ->  expression . MULT expression   (rule 39)
+    division  ->  expression . DIV expression   (rule 40)
+    division  ->  expression DIV expression .   (rule 40)
+    exponentiation  ->  expression . POW expression   (rule 41)
+
+    POW 	shift, and go to state 60
+
+    $default	reduce using rule 40 (division)
+
+
+
+state 75
+
+    addition  ->  expression . PLUS expression   (rule 37)
+    addition  ->  expression PLUS expression .   (rule 37)
+    subtraction  ->  expression . MINUS expression   (rule 38)
+    multiplication  ->  expression . MULT expression   (rule 39)
+    division  ->  expression . DIV expression   (rule 40)
+    exponentiation  ->  expression . POW expression   (rule 41)
+
+    POW 	shift, and go to state 60
+    DIV 	shift, and go to state 61
+    MULT	shift, and go to state 63
+
+    $default	reduce using rule 37 (addition)
+
+
+
+state 76
+
+    addition  ->  expression . PLUS expression   (rule 37)
+    subtraction  ->  expression . MINUS expression   (rule 38)
+    multiplication  ->  expression . MULT expression   (rule 39)
+    multiplication  ->  expression MULT expression .   (rule 39)
+    division  ->  expression . DIV expression   (rule 40)
+    exponentiation  ->  expression . POW expression   (rule 41)
+
+    POW 	shift, and go to state 60
+
+    $default	reduce using rule 39 (multiplication)
+
+
+
+state 77
+
+    addition  ->  expression . PLUS expression   (rule 37)
+    subtraction  ->  expression . MINUS expression   (rule 38)
+    subtraction  ->  expression MINUS expression .   (rule 38)
+    multiplication  ->  expression . MULT expression   (rule 39)
+    division  ->  expression . DIV expression   (rule 40)
+    exponentiation  ->  expression . POW expression   (rule 41)
+
+    POW 	shift, and go to state 60
+    DIV 	shift, and go to state 61
+    MULT	shift, and go to state 63
+
+    $default	reduce using rule 38 (subtraction)
+
+
+
+state 78
+
+    eqnlist  ->  EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT . expression EQUALS expression   (rule 12)
+
+    LAG 	shift, and go to state 31
+    ELAG	shift, and go to state 32
+    LEAD	shift, and go to state 33
+    '(' 	shift, and go to state 34
+    MINUS	shift, and go to state 35
+    SYMBOLNAME	shift, and go to state 36
+    REAL	shift, and go to state 37
+    INTEGER	shift, and go to state 38
+
+    expression	go to state 87
+    lagvariable	go to state 40
+    elagvariable	go to state 41
+    leadvariable	go to state 42
+    addition	go to state 43
+    subtraction	go to state 44
+    multiplication	go to state 45
+    division	go to state 46
+    exponentiation	go to state 47
+    unaryminus	go to state 48
+
+
+
+state 79
+
+    eqnlist  ->  eqnlist EQUATION PROMPT SYMBOLNAME EQ PROMPT expression EQUALS . expression   (rule 15)
+
+    LAG 	shift, and go to state 31
+    ELAG	shift, and go to state 32
+    LEAD	shift, and go to state 33
+    '(' 	shift, and go to state 34
+    MINUS	shift, and go to state 35
+    SYMBOLNAME	shift, and go to state 36
+    REAL	shift, and go to state 37
+    INTEGER	shift, and go to state 38
+
+    expression	go to state 88
+    lagvariable	go to state 40
+    elagvariable	go to state 41
+    leadvariable	go to state 42
+    addition	go to state 43
+    subtraction	go to state 44
+    multiplication	go to state 45
+    division	go to state 46
+    exponentiation	go to state 47
+    unaryminus	go to state 48
+
+
+
+state 80
+
+    eqnlist  ->  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ . PROMPT expression EQUALS expression   (rule 14)
+
+    PROMPT	shift, and go to state 89
+
+
+
+state 81
+
+    lagvariable  ->  LAG '(' SYMBOLNAME COMMA . INTEGER ')'   (rule 31)
+
+    INTEGER	shift, and go to state 90
+
+
+
+state 82
+
+    lagvariable  ->  LAG '(' SYMBOLNAME ')' .   (rule 32)
+
+    $default	reduce using rule 32 (lagvariable)
+
+
+
+state 83
+
+    elagvariable  ->  ELAG '(' SYMBOLNAME COMMA . INTEGER ')'   (rule 33)
+
+    INTEGER	shift, and go to state 91
+
+
+
+state 84
+
+    elagvariable  ->  ELAG '(' SYMBOLNAME ')' .   (rule 34)
+
+    $default	reduce using rule 34 (elagvariable)
+
+
+
+state 85
+
+    leadvariable  ->  LEAD '(' SYMBOLNAME COMMA . INTEGER ')'   (rule 35)
+
+    INTEGER	shift, and go to state 92
+
+
+
+state 86
+
+    leadvariable  ->  LEAD '(' SYMBOLNAME ')' .   (rule 36)
+
+    $default	reduce using rule 36 (leadvariable)
+
+
+
+state 87
+
+    eqnlist  ->  EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression . EQUALS expression   (rule 12)
+    addition  ->  expression . PLUS expression   (rule 37)
+    subtraction  ->  expression . MINUS expression   (rule 38)
+    multiplication  ->  expression . MULT expression   (rule 39)
+    division  ->  expression . DIV expression   (rule 40)
+    exponentiation  ->  expression . POW expression   (rule 41)
+
+    EQUALS	shift, and go to state 93
+    POW 	shift, and go to state 60
+    DIV 	shift, and go to state 61
+    PLUS	shift, and go to state 62
+    MULT	shift, and go to state 63
+    MINUS	shift, and go to state 64
+
+
+
+state 88
+
+    eqnlist  ->  eqnlist EQUATION PROMPT SYMBOLNAME EQ PROMPT expression EQUALS expression .   (rule 15)
+    addition  ->  expression . PLUS expression   (rule 37)
+    subtraction  ->  expression . MINUS expression   (rule 38)
+    multiplication  ->  expression . MULT expression   (rule 39)
+    division  ->  expression . DIV expression   (rule 40)
+    exponentiation  ->  expression . POW expression   (rule 41)
+
+    POW 	shift, and go to state 60
+    DIV 	shift, and go to state 61
+    PLUS	shift, and go to state 62
+    MULT	shift, and go to state 63
+    MINUS	shift, and go to state 64
+
+    $default	reduce using rule 15 (eqnlist)
+
+
+
+state 89
+
+    eqnlist  ->  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT . expression EQUALS expression   (rule 14)
+
+    LAG 	shift, and go to state 31
+    ELAG	shift, and go to state 32
+    LEAD	shift, and go to state 33
+    '(' 	shift, and go to state 34
+    MINUS	shift, and go to state 35
+    SYMBOLNAME	shift, and go to state 36
+    REAL	shift, and go to state 37
+    INTEGER	shift, and go to state 38
+
+    expression	go to state 94
+    lagvariable	go to state 40
+    elagvariable	go to state 41
+    leadvariable	go to state 42
+    addition	go to state 43
+    subtraction	go to state 44
+    multiplication	go to state 45
+    division	go to state 46
+    exponentiation	go to state 47
+    unaryminus	go to state 48
+
+
+
+state 90
+
+    lagvariable  ->  LAG '(' SYMBOLNAME COMMA INTEGER . ')'   (rule 31)
+
+    ')' 	shift, and go to state 95
+
+
+
+state 91
+
+    elagvariable  ->  ELAG '(' SYMBOLNAME COMMA INTEGER . ')'   (rule 33)
+
+    ')' 	shift, and go to state 96
+
+
+
+state 92
+
+    leadvariable  ->  LEAD '(' SYMBOLNAME COMMA INTEGER . ')'   (rule 35)
+
+    ')' 	shift, and go to state 97
+
+
+
+state 93
+
+    eqnlist  ->  EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS . expression   (rule 12)
+
+    LAG 	shift, and go to state 31
+    ELAG	shift, and go to state 32
+    LEAD	shift, and go to state 33
+    '(' 	shift, and go to state 34
+    MINUS	shift, and go to state 35
+    SYMBOLNAME	shift, and go to state 36
+    REAL	shift, and go to state 37
+    INTEGER	shift, and go to state 38
+
+    expression	go to state 98
+    lagvariable	go to state 40
+    elagvariable	go to state 41
+    leadvariable	go to state 42
+    addition	go to state 43
+    subtraction	go to state 44
+    multiplication	go to state 45
+    division	go to state 46
+    exponentiation	go to state 47
+    unaryminus	go to state 48
+
+
+
+state 94
+
+    eqnlist  ->  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression . EQUALS expression   (rule 14)
+    addition  ->  expression . PLUS expression   (rule 37)
+    subtraction  ->  expression . MINUS expression   (rule 38)
+    multiplication  ->  expression . MULT expression   (rule 39)
+    division  ->  expression . DIV expression   (rule 40)
+    exponentiation  ->  expression . POW expression   (rule 41)
+
+    EQUALS	shift, and go to state 99
+    POW 	shift, and go to state 60
+    DIV 	shift, and go to state 61
+    PLUS	shift, and go to state 62
+    MULT	shift, and go to state 63
+    MINUS	shift, and go to state 64
+
+
+
+state 95
+
+    lagvariable  ->  LAG '(' SYMBOLNAME COMMA INTEGER ')' .   (rule 31)
+
+    $default	reduce using rule 31 (lagvariable)
+
+
+
+state 96
+
+    elagvariable  ->  ELAG '(' SYMBOLNAME COMMA INTEGER ')' .   (rule 33)
+
+    $default	reduce using rule 33 (elagvariable)
+
+
+
+state 97
+
+    leadvariable  ->  LEAD '(' SYMBOLNAME COMMA INTEGER ')' .   (rule 35)
+
+    $default	reduce using rule 35 (leadvariable)
+
+
+
+state 98
+
+    eqnlist  ->  EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression .   (rule 12)
+    addition  ->  expression . PLUS expression   (rule 37)
+    subtraction  ->  expression . MINUS expression   (rule 38)
+    multiplication  ->  expression . MULT expression   (rule 39)
+    division  ->  expression . DIV expression   (rule 40)
+    exponentiation  ->  expression . POW expression   (rule 41)
+
+    POW 	shift, and go to state 60
+    DIV 	shift, and go to state 61
+    PLUS	shift, and go to state 62
+    MULT	shift, and go to state 63
+    MINUS	shift, and go to state 64
+
+    $default	reduce using rule 12 (eqnlist)
+
+
+
+state 99
+
+    eqnlist  ->  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS . expression   (rule 14)
+
+    LAG 	shift, and go to state 31
+    ELAG	shift, and go to state 32
+    LEAD	shift, and go to state 33
+    '(' 	shift, and go to state 34
+    MINUS	shift, and go to state 35
+    SYMBOLNAME	shift, and go to state 36
+    REAL	shift, and go to state 37
+    INTEGER	shift, and go to state 38
+
+    expression	go to state 100
+    lagvariable	go to state 40
+    elagvariable	go to state 41
+    leadvariable	go to state 42
+    addition	go to state 43
+    subtraction	go to state 44
+    multiplication	go to state 45
+    division	go to state 46
+    exponentiation	go to state 47
+    unaryminus	go to state 48
+
+
+
+state 100
+
+    eqnlist  ->  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression .   (rule 14)
+    addition  ->  expression . PLUS expression   (rule 37)
+    subtraction  ->  expression . MINUS expression   (rule 38)
+    multiplication  ->  expression . MULT expression   (rule 39)
+    division  ->  expression . DIV expression   (rule 40)
+    exponentiation  ->  expression . POW expression   (rule 41)
+
+    POW 	shift, and go to state 60
+    DIV 	shift, and go to state 61
+    PLUS	shift, and go to state 62
+    MULT	shift, and go to state 63
+    MINUS	shift, and go to state 64
+
+    $default	reduce using rule 14 (eqnlist)
+
+
+
+state 101
+
+    $   	go to state 102
+
+
+
+state 102
+
+    $   	go to state 103
+
+
+
+state 103
+
+    $default	accept

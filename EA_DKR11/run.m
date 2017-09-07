@@ -1,0 +1,115 @@
+% Run and plot IRFs of replication file 
+
+clear all;
+clc;
+
+% Adjust path to folder where replication file is stored
+cd([cd '/EA_DKR11_rep']);
+
+% Run replication dynare file
+dynare EA_DKR11_rep
+
+%For bank capital shock
+yirfbk   = [0; Zobs_E_Bankcap]; % output
+invirfbk = [0; Iobs_E_Bankcap]; % investment
+cirfbk   = [0; Cobs_E_Bankcap]; % household consumption
+rirfbk   = [0; Robs_E_Bankcap]; % nominal interest rate
+
+%For markup shock
+yirfmu   = [0; Zobs_E_R_L]; % output
+invirfmu = [0; Iobs_E_R_L]; % investment
+cirfmu   = [0; Cobs_E_R_L]; % household consumption
+rirfmu   = [0; Robs_E_R_L]; % nominal interest rate
+
+%For interest rate shock
+yirfint   = [0; Zobs_E_R]; % output
+invirfint = [0; Iobs_E_R]; % investment
+cirfint   = [0; Cobs_E_R]; % household consumption
+rirfint   = [0; Robs_E_R]; % nominal interest rate
+
+% Go back to original path
+cd('..');
+
+
+% Plot replicated IRFs
+t = 0:1:length(yirfbk)-1;
+t2 = 1:1:length(yirfbk);
+zeroline = ones(length(t),1)*0;
+
+figure1 = figure('PaperSize',[20.98 29.68],...
+    'Name','Impulse Responses to a Bank Capital Shock (unit shock)');
+subplot(2,2,1);
+plot(t2,yirfbk,'LineWidth',2);
+axis([1 20 -0.25 -0.05]);
+%xlabel('quarters','FontSize',8);
+title('OUTPUT','FontSize',10);
+
+subplot(2,2,2);
+plot(t2,invirfbk,'LineWidth',2);
+axis([1 20 -1.4 -0.2]);
+%xlabel('quarters','FontSize',8);
+title('INVESTMENT','FontSize',10);
+
+subplot(2,2,3);
+plot(t2,cirfbk,'LineWidth',2);
+axis([1 20 -0.2 0.075]);
+%xlabel('quarters','FontSize',8);
+title('CONSUMPTION','FontSize',10);
+
+subplot(2,2,4);
+plot(t2,rirfbk,'LineWidth',2);
+axis([1 20 -0.05 0.01]);
+%xlabel('quarters','FontSize',8);
+title('NOM. INT. RATE','FontSize',10);
+
+figure2 = figure('PaperSize',[20.98 29.68],...
+    'Name','Impulse Responses to a Loan Markup Shock (unit shock)');
+subplot(2,2,1);
+plot(t2,yirfmu,'LineWidth',2);
+axis([1 20 -0.06 0.18]);
+%xlabel('quarters','FontSize',8);
+title('OUTPUT','FontSize',10);
+
+subplot(2,2,2);
+plot(t2,invirfmu,'LineWidth',2);
+axis([1 20 -0.4 0]);
+%xlabel('quarters','FontSize',8);
+title('INVESTMENT','FontSize',10);
+
+subplot(2,2,3);
+plot(t2,cirfmu,'LineWidth',2);
+axis([1 20 -0.01 0.21]);
+%xlabel('quarters','FontSize',8);
+title('CONSUMPTION','FontSize',10);
+
+subplot(2,2,4);
+plot(t2,rirfmu,'LineWidth',2);
+axis([1 20 -0.01 0.02]);
+%xlabel('quarters','FontSize',8);
+title('NOM. INT. RATE','FontSize',10);
+
+figure3 = figure('PaperSize',[20.98 29.68],...
+    'Name','Impulse Responses to a Interest Rate Shock (unit shock)');
+subplot(2,2,1);
+plot(t2,yirfint,'LineWidth',2);
+axis([1 20 -0.4 0.01]);
+%xlabel('quarters','FontSize',8);
+title('OUTPUT','FontSize',10);
+
+subplot(2,2,2);
+plot(t2,invirfint,'LineWidth',2);
+axis([1 20 -0.32 0.05]);
+%xlabel('quarters','FontSize',8);
+title('INVESTMENT','FontSize',10);
+
+subplot(2,2,3);
+plot(t2,cirfint,'LineWidth',2);
+axis([1 20 -0.35 0.05]);
+%xlabel('quarters','FontSize',8);
+title('CONSUMPTION','FontSize',10);
+
+subplot(2,2,4);
+plot(t2,rirfint,'LineWidth',2);
+axis([1 20 -0.02 0.1]);
+%xlabel('quarters','FontSize',8);
+title('NOM. INT. RATE','FontSize',10);

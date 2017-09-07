@@ -1,0 +1,505 @@
+MODEL> SWEAR
+
+ENDOG>
+       mcf      _NOTD
+       zcapf    _NOTD
+       rkf      _NOTD
+       kf       _NOTD
+       pkf      _NOTD
+       muf      _NOTD
+       cf       _NOTD
+       invef    _NOTD
+       yf       _NOTD
+       labf     _NOTD
+       pinff    _NOTD
+       wf       _NOTD
+       pf       _NOTD
+       emplf    _NOTD
+       rrf      _NOTD
+       effortf  _NOTD
+       rf       _NOTD
+       mc       _NOTD
+       zcap     _NOTD
+       rk       _NOTD
+       k        _NOTD
+       pk       _NOTD
+       mu       _NOTD
+       c        _NOTD
+       inve     _NOTD
+       y        _NOTD
+       lab      _NOTD
+       pinf     _NOTD
+       w        _NOTD
+       p        _NOTD
+       empl     _NOTD
+       ww       _NOTD
+       effort   _NOTD
+       r        _NOTD
+dr          _NOTD
+pinfLAG1    _NOTD
+pinfLAG2    _NOTD
+pinf4       _NOTD
+ygap        _NOTD
+       a        _NOTD
+       as       _NOTD
+       b        _NOTD
+       g        _NOTD
+       ls       _NOTD
+       qs       _NOTD
+       ps       _NOTD
+       ms       _NOTD
+       scons    _NOTD
+       sinv     _NOTD
+       sy       _NOTD
+       slab     _NOTD
+       spinf    _NOTD
+       sw       _NOTD
+       kpf      _NOTD
+       habf     _NOTD
+       kp       _NOTD
+       hab      _NOTD
+       one      _DTRM
+       ea       _NOTD
+       eb       _NOTD
+       eg       _NOTD
+       els      _NOTD
+       eqs      _NOTD
+       eps      _NOTD
+       em       _NOTD
+       eas      _NOTD
+       econs    _NOTD
+       einv     _NOTD
+       ey       _NOTD
+       elab     _NOTD
+       epinf    _NOTD
+       ew       _NOTD
+
+
+
+
+
+EQUATION> EQ1
+EQTYPE>   IMPOSED
+EQ>       mcf =           calfa*rkf
+                        + (1-calfa)*wf
+                        - a
+
+EQUATION> EQ2
+EQTYPE>   IMPOSED
+EQ>       zcapf =       (1/czcap)*rkf
+
+EQUATION> EQ3
+EQTYPE>   IMPOSED
+EQ>       rkf =           wf
+                        + labf
+                        - kf
+
+EQUATION> EQ4
+EQTYPE>   IMPOSED
+EQ>       kf =            LAG(kpf,1)
+                        + zcapf
+
+EQUATION> EQ5
+EQTYPE>   IMPOSED
+EQ>       invef =         (1/(1+cinvdyn*cbeta))*((  cinvdyn*LAG(invef,1)
+                                                  + cbeta*(LEAD(invef,1)))
+                        + (1/csadjcost)*pkf)
+                        + 0*sinv
+
+EQUATION> EQ6
+EQTYPE>   IMPOSED
+EQ>       pkf =         - muf
+                        - 1*b
+                        + LEAD(muf,1)
+                        + (1-cbeta*(1-ctou))*LEAD(rkf,1)
+                        + 0*(1-cbeta*(1-ctou))*LEAD(zcapf,1)
+                        + cbeta*(1-ctou)*LEAD(pkf,1)
+                        + qs
+
+EQUATION> EQ7
+EQTYPE>   IMPOSED
+EQ>       muf =           LEAD(muf,1)
+                        + rf-LEAD(pinff,1)
+                        - b
+
+EQUATION> EQ8
+EQTYPE>   IMPOSED
+EQ>       muf =         - csigma*((1-chab)/(1-chab-chabb))*cf
+                        + csigma*(chabb/(1-chab-chabb))*habf
+
+EQUATION> EQ9
+EQTYPE>   IMPOSED
+EQ>       yf =            ccs*cf
+                        + cinvs*invef
+                        + g
+
+EQUATION> EQ10
+EQTYPE>   IMPOSED
+EQ>       yf =          cfc*(  calfa*kf
+                             + (1-calfa)*labf
+                             + a)
+
+EQUATION> EQ11
+EQTYPE>   IMPOSED
+EQ>       mcf =         - 0*ps
+                        - 0*(1+cbeta*cindp)*(1/((1-cprobp)*(1-cbeta*cprobp)/(cprobp)))*spinf
+
+EQUATION> EQ12
+EQTYPE>   IMPOSED
+EQ>       wf =          - 1*muf
+                        - 1*ls
+                        + csigl*labf
+
+EQUATION> EQ13
+EQTYPE>   IMPOSED
+EQ>       pf =            0*LAG(pf,1)
+                        + pinff
+
+EQUATION> EQ14
+EQTYPE>   IMPOSED
+EQ>       emplf =         LAG(emplf,1)
+                        + 1*LEAD(emplf,1)
+                        - 1*emplf
+                        + ((1-csadjlab)*(1-csadjlab)/csadjlab)*effortf
+
+EQUATION> EQ15
+EQTYPE>   IMPOSED
+EQ>       rrf =           rf
+                        - LEAD(pinff,1)
+
+EQUATION> EQ16
+EQTYPE>   IMPOSED
+EQ>       effortf =       labf
+                        - emplf
+
+EQUATION> EQ17
+EQTYPE>   IMPOSED
+EQ>       pinff =       0*one
+
+EQUATION> EQ18
+EQTYPE>   IMPOSED
+EQ>       mc =            calfa*rk+(1-calfa)*w
+                        - a
+                        - slab
+
+EQUATION> EQ19
+EQTYPE>   IMPOSED
+EQ>       zcap =          (1/czcap)*rk
+                        - 0*(1/czcap)*pk
+
+EQUATION> EQ20
+EQTYPE>   IMPOSED
+EQ>       rk =            w
+                        + lab
+                        - k
+
+EQUATION> EQ21
+EQTYPE>   IMPOSED
+EQ>       k =             LAG(kp,1)
+                        + zcap
+
+EQUATION> EQ22
+EQTYPE>   IMPOSED
+EQ>       inve =          (1/(1+cinvdyn*cbeta))*((  cinvdyn*LAG(inve,1)
+                                                  + cbeta*(LEAD(inve,1)))
+                        + (1/csadjcost)*pk)
+                        + 1*sinv
+
+EQUATION> EQ23
+EQTYPE>   IMPOSED
+EQ>       pk =          - mu
+                        - 1*b
+                        - 0*(1-crhols)*ls
+                        - 0*scons+LEAD(mu,1)
+                        + 0*LEAD(b,1)
+                        + (1-cbeta*(1-ctou))*LEAD(rk,1)
+                        + 0*(1-cbeta*(1-ctou))*LEAD(zcap,1)
+                        + cbeta*(1-ctou)*LEAD(pk,1)
+                        + qs
+                        + 0*sinv
+
+EQUATION> EQ24
+EQTYPE>   IMPOSED
+EQ>       mu =            LEAD(mu,1)
+                        + r
+                        - LEAD(pinf,1)
+                        - b
+                        + 0*LEAD(b,1)
+                        - scons
+                        - 0*(1-crhols)*ls
+
+EQUATION> EQ25
+EQTYPE>   IMPOSED
+EQ>       mu =          - csigma*((1-chab)/(1-chab-chabb))*c
+                        + csigma*(chabb/(1-chab-chabb))*hab
+
+EQUATION> EQ26
+EQTYPE>   IMPOSED
+EQ>       y =             ccs*c
+                        + cinvs*inve
+                        + g
+                        + sy
+
+EQUATION> EQ27
+EQTYPE>   IMPOSED
+EQ>       y =           cfc*(  calfa*k
+                             + (1-calfa)*lab
+                             + a
+                             + slab)
+
+EQUATION> EQ28
+EQTYPE>   IMPOSED
+EQ>       pinf =          0*as
+                        + (1/(1+cbeta*cindp))*(  (cbeta)*(  LEAD(pinf,1)
+                                                          - 0*LEAD(as,1))
+                                               + (cindp)*(  LAG(pinf,1)
+                                                          - 0*LAG(as,1))
+                        + (  (1-cprobp)*(1-cbeta*cprobp)/(cprobp))*(mc+ps)
+                           + 0*0.1*ps)
+                        + spinf
+
+EQUATION> EQ29
+EQTYPE>   IMPOSED
+EQ>       w =             ((1/(((1+cbeta)*cprobw*((clandaw/(1-clandaw))*csigl-1+crelwage)/(1-cprobw))+crelwage+crelwage*cprobw*cbeta*(chabw-1))))
+                              *(((cprobw*((clandaw/(1-clandaw))*csigl-1+crelwage))/(1-cprobw)+crelwage+crelwage*(chabw-1))*LAG(w,1)
+                        + (cbeta)*((cprobw*((clandaw/(1-clandaw))*csigl-1+crelwage))/(1-cprobw))*LEAD(w,1)
+                        + (cindw)*(cprobw/(1-cprobw))*((clandaw/(1-clandaw))*csigl-1+crelwage)*(LAG(pinf,1)-0*LAG(as,1))
+                        - (cindw*cbeta*cprobw*(cprobw/(1-cprobw))*((clandaw/(1-clandaw))*csigl-1+crelwage)
+                        + (cprobw/(1-cprobw))*((clandaw/(1-clandaw))*csigl-1+crelwage)
+                        + cprobw*cbeta*cindw*((clandaw/(1-clandaw))*csigl-1))*(  pinf
+                                                                               - 0*as)
+                        + (cbeta*cprobw)*(((cprobw/(1-cprobw))*((clandaw/(1-clandaw))*csigl-1+crelwage))
+                        + ((clandaw/(1-clandaw))*csigl-1))*(  LEAD(pinf,1)
+                                                            - 0*LEAD(as,1))
+                        + (1-cbeta*cprobw)*(  w
+                                            + 1*mu
+                                            + 1*ls
+                                            - clabeff*effort
+                                            -csigl*(1/(1-chlab))*lab
+                                            + csigl*(chlab/(1-chlab))*LAG(lab,1)))
+                        + 0*(1/(1+cbeta))*1*ls
+                        + 1*sw
+
+
+EQUATION> EQ30
+EQTYPE>   IMPOSED
+EQ>       p =             0*LAG(p,1)
+                        + pinf
+
+EQUATION> EQ31
+EQTYPE>   IMPOSED
+EQ>       empl =          LAG(empl,1)
+                        + 1*LEAD(empl,1)
+                        - 1*empl
+                        - 0*r
+                        + 0*LEAD(pinf,1)
+                        + 0*csadjlab*effort
+                        + ((1-csadjlab)*(1-csadjlab)/csadjlab)*effort
+                        + 0.0*(LAG(a,1)
+                        + cbeta*LEAD(a,1)
+                        - (1+cbeta)*a)
+
+EQUATION> EQ32
+EQTYPE>   IMPOSED
+EQ>       ww =            w
+                        + 0*(  lab
+                             - empl)
+
+EQUATION> EQ33
+EQTYPE>   IMPOSED
+EQ>       effort =        lab
+                        - empl
+
+EQUATION> EQ34
+EQTYPE>   IMPOSED
+EQ>       r =             crdpi*(  pinf
+                                 - LAG(pinf,1))
+                        + crpi*(1-crr)*LAG(pinf,1)
+                        + crdy*(  y
+                                - yf
+                                - LAG(y,1)
+                                + LAG(yf,1))
+                        + cry*(1-crr)*(  LAG(y,1)
+                                       - LAG(yf,1))
+                        + crr*LAG(r,1)
+                        + 1*ms
+                        - crpi*(1-crr)*as
+                        + (1-crr)*as
+
+EQUATION> EQ34a
+EQTYPE>   IMPOSED
+EQ>       dr =            r
+                        - LAG(r,1)
+
+EQUATION> EQ34b
+EQTYPE>   IMPOSED
+EQ>       pinfLAG1 =      LAG(pinf,1)
+
+EQUATION> EQ34c
+EQTYPE>   IMPOSED
+EQ>       pinfLAG2 =      LAG(pinfLAG1,1)
+
+EQUATION> EQ34d
+EQTYPE>   IMPOSED
+EQ>       pinf4 =         pinf
+                        + pinfLAG1
+                        + pinfLAG2
+                        + LAG(pinfLAG2,1)
+
+EQUATION> EQ34e
+EQTYPE>   IMPOSED
+EQ>       ygap =          y
+                        - yf
+
+
+EQUATION> EQ35
+EQTYPE>   IMPOSED
+EQ>       a =             crhoa*LAG(a,1)
+                        + cscaleea*ea
+
+EQUATION> EQ36
+EQTYPE>   IMPOSED
+EQ>   as =            crhoas*LAG(as,1)
+                        + cscaleeas*eas
+
+EQUATION> EQ37
+EQTYPE>   IMPOSED
+EQ>       b =             crhob*LAG(b,1)
+                        + cscaleeb*eb
+
+EQUATION> EQ38
+EQTYPE>   IMPOSED
+EQ>       g =             crhog*LAG(g,1)
+                        + cscaleeg*eg
+
+EQUATION> EQ39
+EQTYPE>   IMPOSED
+EQ>       ls =            crhols*LAG(ls,1)
+                        + cscaleels*els
+
+EQUATION> EQ40
+EQTYPE>   IMPOSED
+EQ>       qs =            crhoqs*LAG(qs,1)
+                        + cscaleeqs*eqs
+
+EQUATION> EQ41
+EQTYPE>   IMPOSED
+EQ>       ps =            crhops*LAG(ps,1)
+                        + cscaleeps*eps
+
+EQUATION> EQ42
+EQTYPE>   IMPOSED
+EQ>       ms =            crhoms*LAG(ms,1)
+                        + cscaleem*em
+
+EQUATION> EQ43
+EQTYPE>   IMPOSED
+EQ>       scons =         crhocons*LAG(scons,1)
+                        + cscaleecons*econs
+
+EQUATION> EQ44
+EQTYPE>   IMPOSED
+EQ>       sinv =          crhoinv*LAG(sinv,1)
+                        + cscaleeinv*einv
+
+EQUATION> EQ45
+EQTYPE>   IMPOSED
+EQ>       sy =            crhoy*LAG(sy,1)
+                        + cscaleey*ey
+
+EQUATION> EQ46
+EQTYPE>   IMPOSED
+EQ>       slab =          crholab*LAG(slab,1)
+                        + cscaleelab*elab
+
+EQUATION> EQ47
+EQTYPE>   IMPOSED
+EQ>       spinf =         crhopinf*LAG(spinf,1)
+                        + cscaleepinf*epinf
+
+EQUATION> EQ48
+EQTYPE>   IMPOSED
+EQ>       sw =            crhow*LAG(sw,1)
+                        + cscaleew*ew
+
+EQUATION> EQ49
+EQTYPE>   IMPOSED
+EQ>       kpf =           (1-ctou)*LAG(kpf,1)
+                        + ctou*LAG(invef,1)
+
+EQUATION> EQ50
+EQTYPE>   IMPOSED
+EQ>       habf =          chab*LAG(habf,1)
+                        + (1-chab)*LAG(cf,1)
+
+EQUATION> EQ51
+EQTYPE>   IMPOSED
+EQ>       kp =            (1-ctou)*LAG(kp,1)
+                        + ctou*LAG(inve,1)
+
+EQUATION> EQ52
+EQTYPE>   IMPOSED
+EQ>       hab =           chab*LAG(hab,1)
+                        + (1-chab)*LAG(c,1)
+
+EQUATION> EQ53
+EQTYPE>   IMPOSED
+EQ>       one =         0*LAG(one,1)
+
+EQUATION> EQ54
+EQTYPE>   IMPOSED
+EQ>       ea =          0*one
+
+EQUATION> EQ55
+EQTYPE>   IMPOSED
+EQ>       eb =          0*one
+
+EQUATION> EQ56
+EQTYPE>   IMPOSED
+EQ>       eg =          0*one
+
+EQUATION> EQ57
+EQTYPE>   IMPOSED
+EQ>       els =         0*one
+
+EQUATION> EQ58
+EQTYPE>   IMPOSED
+EQ>       eqs =         0*one
+
+EQUATION> EQ59
+EQTYPE>   IMPOSED
+EQ>       eps =         0*one
+
+EQUATION> EQ60
+EQTYPE>   IMPOSED
+EQ>       em =          0*one
+
+EQUATION> EQ61
+EQTYPE>   IMPOSED
+EQ>       eas =         0*one
+
+EQUATION> EQ62
+EQTYPE>   IMPOSED
+EQ>       econs =       0*one
+
+EQUATION> EQ63
+EQTYPE>   IMPOSED
+EQ>       einv =        0*one
+
+EQUATION> EQ64
+EQTYPE>   IMPOSED
+EQ>       ey =          0*one
+
+EQUATION> EQ65
+EQTYPE>   IMPOSED
+EQ>       elab =        0*one
+
+EQUATION> EQ66
+EQTYPE>   IMPOSED
+EQ>       epinf =       0*one
+
+EQUATION> EQ67
+EQTYPE>   IMPOSED
+EQ>       ew =          0*one
+
+END

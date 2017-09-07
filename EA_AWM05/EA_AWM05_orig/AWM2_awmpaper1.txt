@@ -1,0 +1,1321 @@
+MODEL> AWM_yfd_pieen_discret_4_no
+
+ENDOG>
+    stn        _NOTD
+    lnn        _NOTD
+    wrn        _NOTD
+    piyfd      _NOTD
+    pipcd      _NOTD
+    itr        _NOTD
+    itd        _NOTD
+    pieen      _NOTD
+    pimtd      _NOTD
+    pcr        _NOTD
+    lsr        _NOTD
+    xtr        _NOTD
+    mtr        _NOTD
+    ltn        _NOTD
+pixtd      _NOTD
+ywd        _NOTD
+compr      _NOTD
+ywr        _NOTD
+gcr        _NOTD
+nfn        _NOTD
+tdn_yen    _NOTD
+ign        _NOTD
+piyet       _NOTD
+urx         _NOTD
+lprod       _NOTD
+yett        _NOTD
+pcd         _NOTD
+mtd         _NOTD
+picompr     _NOTD
+ulc         _NOTD
+ult         _NOTD
+ksr         _NOTD
+strq        _NOTD
+xtd         _NOTD
+piywdx      _NOTD
+pipyr       _NOTD
+piyer       _NOTD
+scr         _NOTD
+fdd         _NOTD
+ywrx        _NOTD
+ywdx        _NOTD
+tbr         _NOTD
+yer         _NOTD
+pcn         _NOTD
+itn         _NOTD
+xtn         _NOTD
+mtn         _NOTD
+tbn         _NOTD
+can         _NOTD
+nfa         _NOTD
+pyn         _NOTD
+pyr         _NOTD
+wln         _NOTD
+yfn         _NOTD
+win         _NOTD
+tdn         _NOTD
+trn         _NOTD
+gln_yen     _NOTD
+gyn         _NOTD
+gsn         _NOTD
+gln         _NOTD
+gdn         _NOTD
+inn         _NOTD
+dstn        _NOTD
+    lagksr1     _NOTD
+    lagksr2     _NOTD
+    lagyer1     _NOTD
+    lagyer2     _NOTD
+    lagwrn1     _NOTD
+    lagwrn2     _NOTD
+    lagwrn3     _NOTD
+    lagwrn4     _NOTD
+    lagwrn5     _NOTD
+    lagpcd1     _NOTD
+    lagpcd2     _NOTD
+    lagpcd3     _NOTD
+    lagpcd4     _NOTD
+    lagpcd5     _NOTD
+    laglprod1   _NOTD
+    laglprod2   _NOTD
+    laglprod3   _NOTD
+    laglprod4   _NOTD
+    laglprod5   _NOTD
+    lagpipcd1   _NOTD
+    lagpipcd2   _NOTD
+    lagpipcd3   _NOTD
+    lagpipcd4   _NOTD
+    lagult1     _NOTD
+    lagult2     _NOTD
+    lagult3     _NOTD
+    lagpiyfd1   _NOTD
+    lagpiyfd2   _NOTD
+    lagitr1     _NOTD
+    lagitr2     _NOTD
+    lagitd1     _NOTD
+    lagitd2     _NOTD
+    lagitd3     _NOTD
+    lagitd4     _NOTD
+    lagitd5     _NOTD
+    lagitd6     _NOTD
+    lagitd7     _NOTD
+    lagmtd1     _NOTD
+    lagmtd2     _NOTD
+    lagmtd3     _NOTD
+    lagmtd4     _NOTD
+    lagmtd5     _NOTD
+    lagmtd6     _NOTD
+    lagstn1     _NOTD
+    lagpiyer1   _NOTD
+    lagpiyer2   _NOTD
+    laglsr1     _NOTD
+    lagxtr1     _NOTD
+    lagxtr2     _NOTD
+    lagxtr3     _NOTD
+    lagxtr4     _NOTD
+    lagxtr5     _NOTD
+    lagxtr6     _NOTD
+    lagxtr7     _NOTD
+    lagywrx1     _NOTD
+    lagywrx2     _NOTD
+    lagywrx3     _NOTD
+    lagywrx4     _NOTD
+    lagywrx5     _NOTD
+    lagywrx6     _NOTD
+    lagywrx7     _NOTD
+    lagpixtd1    _NOTD
+    lagpixtd2    _NOTD
+    lagpiywdx1   _NOTD
+    lagpiywdx2   _NOTD
+    lagnfa1     _NOTD
+    laggln_yen1 _NOTD
+    laggln_yen2 _NOTD
+    laggln_yen3 _NOTD
+    lagltn1     _NOTD
+    lagltn2     _NOTD
+    lagltn3     _NOTD
+    lagltn4     _NOTD
+    lagltn5     _NOTD
+    lagltn6     _NOTD
+    lagltn7     _NOTD
+    lagltn8     _NOTD
+    lagltn9     _NOTD
+    lagltn10    _NOTD
+    lagltn11    _NOTD
+    lagltn12    _NOTD
+    lagltn13    _NOTD
+    lagltn14    _NOTD
+    lagltn15    _NOTD
+    lagltn16    _NOTD
+    lagltn17    _NOTD
+    lagltn18    _NOTD
+    lagltn19    _NOTD
+    lagltn20    _NOTD
+    lagltn21    _NOTD
+    lagltn22    _NOTD
+    lagltn23    _NOTD
+    lagltn24    _NOTD
+    lagltn25    _NOTD
+    lagltn26    _NOTD
+    lagltn27    _NOTD
+    lagltn28    _NOTD
+    lagltn29    _NOTD
+    lagltn30    _NOTD
+    lagltn31    _NOTD
+    lagltn32    _NOTD
+    lagltn33    _NOTD
+    lagltn34    _NOTD
+    lagltn35    _NOTD
+    lagltn36    _NOTD
+    lagltn37    _NOTD
+    lagltn38    _NOTD
+    lagltn39    _NOTD
+    lagltn40    _NOTD
+    lagltn41    _NOTD
+    lagltn42    _NOTD
+    lagltn43    _NOTD
+    lagltn44    _NOTD
+    lagltn45    _NOTD
+    lagltn46    _NOTD
+    lagltn47    _NOTD
+    lagywd1     _NOTD
+    lagywd2     _NOTD
+    lagywd3     _NOTD
+    lagpieen1   _NOTD
+    lagpieen2   _NOTD
+    lagcompr1   _NOTD
+    lagcompr2   _NOTD
+    laggcr1     _NOTD
+    lagywr1     _NOTD
+    lagywr2     _NOTD
+    lagpiyet1   _NOTD
+    yet         _NOTD
+ldstn1      _NOTD
+ldstn2      _NOTD
+ldstn3      _NOTD
+ldstn4      _NOTD
+ldstn5      _NOTD
+ldstn6      _NOTD
+ldstn7      _NOTD
+ldstn8      _NOTD
+ldstn9      _NOTD
+ldstn10     _NOTD
+ldstn11     _NOTD
+ldstn12     _NOTD
+ldstn13     _NOTD
+ldstn14     _NOTD
+ldstn15     _NOTD
+ldstn16     _NOTD
+ldstn17     _NOTD
+ldstn18     _NOTD
+pipcda      _NOTD
+control     _NOTD
+one         _NOTD
+    innoestn        _NOTD
+    innoelnn        _NOTD
+    innoewrn        _NOTD
+    innoeyfd        _NOTD
+    innoepcd        _NOTD
+    innoeitr        _NOTD
+    innoeitd        _NOTD
+    innoextd        _NOTD
+    innoemtd        _NOTD
+    innoepcr        _NOTD
+    innoelsr        _NOTD
+    innoextr        _NOTD
+    innoemtr        _NOTD
+    innoeltn        _NOTD
+
+
+
+EQUATION>   EQ1
+EQTYPE>     IMPOSED
+EQ>         stn =           control
+
+
+EQUATION>   EQ2
+EQTYPE>     IMPOSED
+EQ>         control     =     rho*LAG(stn,1)
+                            + alpha*100*(1*pipcda+0*LEAD(pipcd,4))
+                            + beta*100 *yer +0*innoestn
+
+
+EQUATION>   EQ3
+EQTYPE>     IMPOSED
+EQ>         lnn     =        LAG(lnn,1)+LNN__DLYERADJ * (yer - lagyer1+piyet)
+                            + (1-LNN__DLLNT-LNN__DLYERADJ)* (lagyer1-lagyer2+LAG(piyet,1))
+                            + LNN__DLWRRADJ*(wrn-lagwrn1)
+                            + LNN__DLWRRADJ1*(lagwrn1-lagwrn2)
+                            + LNN__ECM*(LAG(lnn,1)-1/(1-BETA)*LAG(yer,1))+innoelnn
+
+EQUATION>   EQ4
+EQTYPE>     IMPOSED
+EQ>         wrn     =         LAG(wrn,1) + ( lprod - laglprod1 ) + ( pcd - LAG(pcd,1) )
+                            - WRN__INFT*LAG(pipcd,1)
+                            + WRN__DLWRCQ4*(     (lagwrn4-lagwrn5)
+                                            -   (lagpcd4-lagpcd5)
+                                            -   (laglprod4-laglprod5))
+                            + WRN__DDLPCD*(pipcd-lagpipcd1)
+                            + WRN__DDLPCD1*(lagpipcd1-lagpipcd2)
+                            + WRN__DDLPCD2*(lagpipcd2-lagpipcd3)
+                            + WRN__DDLPCD3*(lagpipcd3-lagpipcd4)
+                            + WRN__DDLPROD*(( lprod - laglprod1 )-( laglprod1 - laglprod2 ))
+                            + WRN__DDLPROD1*(( laglprod1 - laglprod2 )-( laglprod2 - laglprod3 ))
+                            + WRN__DDLPROD2*(( laglprod2 - laglprod3 )-( laglprod3 - laglprod4 ))
+                            + WRN__DDLPROD3*(( laglprod3 - laglprod4 )-( laglprod4 - laglprod5 ))
+                            + .5*WRN__LURX_GAP1*LAG(urx,1)
+                            - WRN__ECM*LAG(ult,1)+innoewrn
+
+
+EQUATION>   EQ5
+EQTYPE>     IMPOSED
+EQ>         piyfd   =        YFD__LYGA*LAG(yer,1) -YFD__INFT*lagpiyfd1
+                            + 1.0*YFD__DLYFD1*lagpiyfd1
+                            + ( YFD__DLULT*(ult-lagult1+piyfd)
+                            + YFD__DLULT1*(lagult1-lagult2+lagpiyfd1)
+                            + YFD__DLULT2*(lagult2-lagult3+lagpiyfd2))
+                            + YFD__DLMTD1*(LAG(pimtd,1))
+                            - YFD__ECM*LAG(ult,1)*1+1*innoeyfd
+
+EQUATION>   EQ6
+EQTYPE>     IMPOSED
+EQ>         pipcd   =         PCD__DLPCD4*lagpipcd4
+                            + PCD__DLYED*piyfd
+                            + PCD__DLYED1*LAG(piyfd,1)
+                            + PCD__DLMTD*pimtd
+                            + PCD__DLMTD1*LAG(pimtd,1)
+                            + PCD__DLCOMPREEN*picompr
+                            + PCD__ECM*(LAG(pcd,1)-PCD__ECM__LMTD*LAG(mtd,1))
+                            + innoepcd
+
+
+EQUATION>   EQ7
+EQTYPE>     IMPOSED
+EQ>         itr =             1*LAG(itr,1)+(yer-LAG(yer,1))
+                            + ITR__DITY1*( (lagitr1-lagitr2)-(LAG(yer,1)-lagyer2) )
+                            + ITR__ECM*( - (STRQBAR+DELTA+ITR__ADJ)*LAG(itr,1)
+                                         - LAG(strq,1) )
+                            + innoeitr
+
+EQUATION>   EQ8
+EQTYPE>     IMPOSED
+EQ>         itd     =         LAG(itd,1)+ITD__DDLYFD*(piyfd-LAG(piyfd,1))
+                            + ITD__DDLMTD*(pimtd-LAG(pimtd,1))
+                            + ITD__DLITDYFD1*(lagitd1-lagitd2)
+                            + ITD__DLITDYFD4*(lagitd4-lagitd5)
+                            + ITD__DLITDYFD7*(lagitd7-LAG(lagitd7,1))
+                            + ITD__DLITDMTD1*( (lagitd1-lagitd2) - (lagmtd1-lagmtd2))
+                            + ITD__DLITDMTD5*( (lagitd5-lagitd6) - (lagmtd5-lagmtd6))
+                            + ITD__DLITDMTD6*( (lagitd6-lagitd7) - (lagmtd6-LAG(lagmtd6,1)))
+                            + ITD__ECM1*LAG(itd,1)
+                            + ITD__ECM2*( LAG(itd,1)-LAG(mtd,1) )
+                            + innoeitd
+
+
+EQUATION>   EQ9
+EQTYPE>     IMPOSED
+EQ>         pixtd       =     XTD__DLXTD1*LAG(pixtd,1)
+                            + XTD__DLYED*piyfd
+                            + XTD__DLEEN*pieen
+                            + XTD__DLMTD*LAG(pimtd,1)
+                            + XTD__ECM*( LAG(xtd,1)
+                                        - 0.3*LAG(ywd,1) )
+                            + innoextd
+
+
+EQUATION>   EQ10
+EQTYPE>     IMPOSED
+EQ>         pimtd       =     MTD__DLMTD1 * LAG(pimtd,1)
+                            + MTD__DLYWDX * piywdx
+                            + MTD__DLCOMPR * picompr
+                            + MTD__DLCOMPR1 *LAG(picompr,1)
+                            + MTD__ECM*(   .65*( LAG(mtd,1)-LAG(xtd,1) )
+                                        + .25*( LAG(mtd,1)-LAG(compr,1) )
+                                        + .1* ( LAG(mtd,1)-LAG(ywd,1) ) )
+                            + innoemtd
+
+EQUATION>   EQ11
+EQTYPE>     IMPOSED
+EQ>         pcr         =     LAG(pcr,1)- piyet + PCR__DURX*URTBAR*( urx -LAG(urx,1) )
+                            + PCR__DLSTR*(     .25*( 1/(1+STNBAR/100) )*1/100 * ( lagstn1 - LAG(lagstn1,1) )
+                                            - ( LAG(pipcd,1) - lagpipcd2 ) )
+                            + PCR__DLPYR/2*( pipyr+LAG(pipyr,1) )
+                            + PCR__ECM__LPYR*( LAG(pcr,1)-LAG(pyr,1) )
+                            + PCR__ECM__LWLR*( LAG(pcr,1)-LAG(wln,1)+LAG(pcd,1) )
+                            + innoepcr
+
+
+EQUATION>   EQ12
+EQTYPE>     IMPOSED
+EQ>         lsr         =     LAG(lsr,1)- piyet
+                            + LSR__DYER1*( piyer+lagpiyer1+lagpiyer2+LAG(lagpiyer2,1) )/8
+                            + LSR__DYER2*lagpiyer2
+                            + LSR__DLSTR*(     .25*( 1/(1+STNBAR/100) )*1/100*( stn-lagstn1 )
+                                            - ( pipcd-lagpipcd1 ))
+                            + LSR__DLSR1* ( laglsr1 - LAG(laglsr1,1)+ LAG(piyet,1))
+                            + LSR__ECM*( LAG(lsr,1)-LAG(yer,1) )
+                            + innoelsr
+EQUATION>   EQ13
+EQTYPE>     IMPOSED
+EQ>         xtr         =     LAG(xtr,1)+ywrx-LAG(ywrx,1)
+                            + XTR__DLXTRYWRX7*( ( lagxtr7-LAG(lagxtr7,1) ) - ( lagywrx7-LAG(lagywrx7,1) )   )
+                            + XTR__DLXTDYWDX1*( LAG(pixtd,1)-LAG(piywdx,1) )
+                            + XTR__DLXTDYWDX1*( LAG(lagpixtd2,1)-LAG(lagpiywdx2,1) )
+                            + XTR__ECM*(lagxtr1-LAG(ywrx,1))
+                            + XTR__LXTDYWDX1*(LAG(xtd,1)-LAG(ywdx,1))
+                            + innoextr
+
+
+
+EQUATION>   EQ14
+EQTYPE>     IMPOSED
+EQ>         mtr         =     LAG(mtr,1)- piyet
+                            + MTR__DLFDD*( fdd-LAG(fdd,1)+ piyet )
+                            + MTR__ECM*(   LAG(mtr,1)-LAG(fdd,1)
+                                        - MTR__ECM__LMTDYED*( LAG(mtd,1) ))
+                            + innoemtr
+
+
+EQUATION>   EQ15
+EQTYPE>     IMPOSED
+EQ>         ltn         =     EXPLTNRESBAR *1/20
+                            * (stn+ldstn1+ldstn2+ldstn3+ldstn4
+                               +ldstn5+ldstn6+ldstn7+ldstn8
+                               +ldstn9+ldstn10+ldstn11+ldstn12
+                               +ldstn13+ldstn14+ldstn15+ldstn16
+                               +ldstn17+ldstn18+LEAD(ldstn18,1))+1*innoeltn
+
+
+
+EQUATION>   EQ16
+EQTYPE>     IMPOSED
+EQ>          1/XTD__DLEEN*( LEAD(pixtd,1) -XTD__DLXTD1*pixtd
+                    - XTD__DLYED*LEAD(piyfd,1) - XTD__DLMTD*pimtd
+                    - XTD__ECM*( xtd
+                    - 0.3*ywd )
+                    - LEAD(innoextd,1))
+             = .25*(1/(1+STNBAR/100))*1/100*stn
+
+EQUATION>   EQ17
+EQTYPE>     IMPOSED
+EQ>         (ywd-aywd*lagywd1+piyfd-pieen)  =     (1.406622+0*1.777736)*(LAG(ywd,1)-aywd*LAG(lagywd1,1)-lagpieen1+lagpiyfd1)
+                                                +(0.059834-0*.784159)*(LAG(lagywd1,1)-aywd*LAG(lagywd2,1)-LAG(lagpieen1,1)+lagpiyfd2)
+                                                 -0.475129*(LAG(lagywd2,1)-aywd*LAG(lagywd3,1)-LAG(lagpieen2,1)+LAG(lagpiyfd2,1))
+
+
+
+EQUATION>   EQ18
+EQTYPE>     IMPOSED
+EQ>         (compr-lagcompr1+piyfd-pieen)  =     1.200419*(LAG(compr,1)-LAG(lagcompr1,1)-lagpieen1+lagpiyfd1)
+                                                -.291067*(LAG(lagcompr1,1)-LAG(lagcompr2,1)-LAG(lagpieen1,1)+lagpiyfd2)
+
+
+
+
+EQUATION>   EQ19
+EQTYPE>     IMPOSED
+EQ>         (ywr-aywr*lagywr1+piyet)  =     1.127551*(LAG(ywr,1)-aywr*LAG(lagywr1,1)+lagpiyet1)
+                                                -0.194380*(LAG(lagywr1,1)-aywr*LAG(lagywr2,1)+LAG(lagpiyet1,1))
+
+
+EQUATION>   EQ20
+EQTYPE>     IMPOSED
+EQ>         (gcr-agcr*laggcr1+piyet)  =     0.970768*(LAG(gcr,1)-agcr*LAG(laggcr1,1)+lagpiyet1)
+
+
+
+EQUATION>   EQ21
+EQTYPE>     IMPOSED
+EQ>         nfn         =     NFN__NFN*1/( (1+PIBAR)*(1+YETGBAR) )*
+                                (     LAG(nfn,1)
+                                    - piyet
+                                    - piyfd )
+                            + ((1+YETGBAR)*(1+PIBAR)-NFN__NFN)/((1+YETGBAR)*(1+PIBAR)+1)
+                            * (       (LAG(nfa,1)-piyet-piyfd)
+                                + 1/(1+YETGBAR)*1/(1+PIBAR)* (LAG(lagnfa1,1)-piyet-LAG(piyet,1)
+                                                                        -piyfd-LAG(piyfd,1)))
+
+
+EQUATION>   EQ22
+EQTYPE>     IMPOSED
+EQ>         tdn_yen     =     LAG(tdn_yen,1)+atdn_yen*TDN__GLN/2*(LAG(laggln_yen3,1))
+
+
+
+EQUATION>   EQ23
+EQTYPE>     IMPOSED
+EQ>         ign         =     1/96*1/2*(ltn+lagltn1+lagltn2+lagltn3+lagltn4+lagltn5+lagltn6+lagltn7+lagltn8
+                                    +lagltn9+lagltn10+lagltn11+lagltn12+lagltn13+lagltn14+lagltn15
+                                    +lagltn16+lagltn17+lagltn18+lagltn19+lagltn20+lagltn21+lagltn22
+                                    +lagltn23+lagltn24+lagltn25+lagltn26+lagltn27+lagltn28+lagltn29
+                                    +lagltn30+lagltn31+lagltn32+lagltn33+lagltn34+lagltn35+lagltn36
+                                    +lagltn37+lagltn38+lagltn39+lagltn40+lagltn41+lagltn42+lagltn43
+                                    +lagltn44+lagltn45+lagltn46+lagltn47)
+
+
+
+
+EQUATION>   EQ24
+EQTYPE>     IMPOSED
+EQ>         piyet       =     BETA * LAG(piyet,1)
+                            + BETA*(lagksr1-lagksr2)
+
+
+EQUATION>   EQ25
+EQTYPE>     IMPOSED
+EQ>         urx         =     -(1-URTBAR)/(URTBAR)*lnn
+
+
+EQUATION>   EQ26
+EQTYPE>     IMPOSED
+EQ>         lprod   =         yer + yett - lnn
+
+EQUATION>   EQ27
+EQTYPE>     IMPOSED
+EQ>         yett    =         ayett*LAG(yett,1)+piyet
+
+EQUATION>   EQ28
+EQTYPE>     IMPOSED
+EQ>         pipcd   =        ( pcd - LAG(pcd,1) ) + piyfd
+
+EQUATION>   EQ29
+EQTYPE>     IMPOSED
+EQ>         pimtd   =        ( mtd - LAG(mtd,1) ) + piyfd
+
+
+
+EQUATION>   EQ30
+EQTYPE>     IMPOSED
+EQ>         picompr =        compr-LAG(compr,1)+piyfd
+
+EQUATION>   EQ31
+EQTYPE>     IMPOSED
+EQ>         ulc     =       win - yett - yer
+
+EQUATION>   EQ32
+EQTYPE>     IMPOSED
+EQ>         ult     =       wrn  - yett
+
+
+EQUATION>   EQ33
+EQTYPE>     IMPOSED
+EQ>         ksr     =         (1-DELTA)/(1+YETGBAR)*LAG(ksr,1)
+                            - (1-DELTA)/(1+YETGBAR)*piyet
+                            + (YETGBAR+DELTA)/(1+YETGBAR)*itr
+
+EQUATION>   EQ34
+EQTYPE>     IMPOSED
+EQ>         strq    =         .25/100*( 1/ (1+STNBAR/100))^(.75) *stn
+                            - .25 * (piyfd+lagpiyfd1+lagpiyfd2+LAG(lagpiyfd2,1))
+
+
+EQUATION>   EQ35
+EQTYPE>     IMPOSED
+EQ>         pixtd       =     xtd - LAG(xtd,1)  + piyfd
+
+
+
+EQUATION>   EQ36
+EQTYPE>     IMPOSED
+EQ>         piywdx      =   ( ywdx - LAG(ywdx,1) ) + piyfd
+
+
+
+EQUATION>   EQ37
+EQTYPE>     IMPOSED
+EQ>         pipyr       =     pyr - LAG(pyr,1)
+                            + piyet
+
+EQUATION>   EQ38
+EQTYPE>     IMPOSED
+EQ>         piyer       =     yer - LAG(yer,1)
+                            + piyet
+
+EQUATION>   EQ39
+EQTYPE>     IMPOSED
+EQ>         scr         =     (1+YETGBAR)/(YETGBAR)*(     lsr
+                                                        - 1/(1+YETGBAR)*LAG(lsr,1)
+                                                        + 1/(1+YETGBAR)*piyet )
+
+
+EQUATION>   EQ40
+EQTYPE>     IMPOSED
+EQ>         fdd         =     PCR__FDDBAR*pcr+GCR__FDDBAR*gcr+ITR__FDDBAR*itr+XTR__FDDBAR*xtr
+                            + (1-PCR__FDDBAR-GCR__FDDBAR-ITR__FDDBAR-XTR__FDDBAR)*scr
+
+
+
+EQUATION>   EQ41
+EQTYPE>     IMPOSED
+EQ>         ywrx        =     .4* ywr + .6*( (1-XTR__FDDBAR)^(-1)*fdd+ (1-(1-XTR__FDDBAR)^(-1))*xtr)
+
+EQUATION>   EQ42
+EQTYPE>     IMPOSED
+EQ>         ywdx        =     .4*ywd+.6*xtd
+
+EQUATION>   EQ43
+EQTYPE>     IMPOSED
+EQ>         tbr         =     XTR__TBRBAR*xtr+(1-XTR__TBRBAR)*mtr
+
+EQUATION>   EQ44
+EQTYPE>     IMPOSED
+EQ>         yer         =     PCR__YERBAR*pcr+GCR__YERBAR*gcr+ITR__YERBAR*itr+TBR__YERBAR*tbr
+                            + (1-PCR__YERBAR-GCR__YERBAR-ITR__YERBAR-TBR__YERBAR)*scr
+
+
+EQUATION>   EQ45
+EQTYPE>     IMPOSED
+EQ>         pcn         =     pcr+pcd
+
+EQUATION>   EQ46
+EQTYPE>     IMPOSED
+EQ>         itn         =     itr+itd
+
+EQUATION>   EQ47
+EQTYPE>     IMPOSED
+EQ>         xtn         =     xtr+xtd
+
+EQUATION>   EQ48
+EQTYPE>     IMPOSED
+EQ>         mtn         =     mtr+mtd
+
+EQUATION>   EQ49
+EQTYPE>     IMPOSED
+EQ>         tbn         =     XTN__TBNBAR*xtn+(1-XTN__TBNBAR)*mtn
+
+EQUATION>   EQ50
+EQTYPE>     IMPOSED
+EQ>         can         =     TBN__CANBAR*tbn+(1-TBN__CANBAR)*nfn
+
+EQUATION>   EQ51
+EQTYPE>     IMPOSED
+EQ>         nfa         =     1/( (1+YETGBAR)*(1+PIBAR) )*(LAG(nfa,1)-piyet-piyfd)
+                            + CAN__YENBAR/NFA__YENBAR*can
+
+EQUATION>   EQ52
+EQTYPE>     IMPOSED
+EQ>         pyn         =     YFN__PYNBAR*yfn
+                            + (1-YFN__PYNBAR-TIN__PYNBAR-NFN__PYNBAR-PYN__DIS__PYNBAR)*gyn
+                            + TIN__PYNBAR*yer
+                            + NFN__PYNBAR*nfn
+                            + PYN__DIS__PYNBAR*yer
+
+
+EQUATION>   EQ53
+EQTYPE>     IMPOSED
+EQ>         pyr         =     pyn-pcd
+
+EQUATION>   EQ54
+EQTYPE>     IMPOSED
+EQ>         wln         =     NFA__WLNBAR*nfa+KSRITD__WLNBAR*(ksr+itd)+(1-NFA__WLNBAR-KSRITD__WLNBAR)*gdn
+
+
+EQUATION>   EQ55
+EQTYPE>     IMPOSED
+EQ>         yer         =     YFN__YINBAR*yfn+(1-YFN__YINBAR)*yer
+
+EQUATION>   EQ56
+EQTYPE>     IMPOSED
+EQ>         win         =     wrn+lnn
+
+EQUATION>   EQ57
+EQTYPE>     IMPOSED
+EQ>         tdn_yen     =     TDN__YENBAR*(tdn-yer)
+
+
+EQUATION>   EQ58
+EQTYPE>     IMPOSED
+EQ>         atransfer*(.2*URTBAR)*urx     =     (.2*URTBAR+TRN__YEN__DISBAR)*(trn-yer)
+
+
+
+EQUATION>   EQ59
+EQTYPE>     IMPOSED
+EQ>         gln_yen     =     GLN__YENBAR*(gln-yer)
+
+
+EQUATION>   EQ60
+EQTYPE>     IMPOSED
+EQ>         gyn         =     TDN__GYNBAR*tdn+SSN__GYNBAR*yer+TIN__GYNBAR*yer+OGN__GYNBAR*yer-INN__GYNBAR*inn-TRN__GYNBAR*trn
+                            - TRN__OTHER__GYNBAR*yer
+                            + (1-TDN__GYNBAR-SSN__GYNBAR-TIN__GYNBAR-OGN__GYNBAR+INN__GYNBAR+TRN__GYNBAR+TRN__OTHER__GYNBAR)*yer
+
+EQUATION>   EQ61
+EQTYPE>     IMPOSED
+EQ>         gsn         =     GYN__GSNBAR*gyn+(1-GYN__GSNBAR)*gcr
+
+EQUATION>   EQ62
+EQTYPE>     IMPOSED
+EQ>         gln         =     GSN__GLNBAR*gsn+(1-GSN__GLNBAR)*yer
+
+EQUATION>   EQ63
+EQTYPE>     IMPOSED
+EQ>         gdn         =     1/( (1+YETGBAR)*(1+PIBAR) )*( LAG(gdn,1)-piyet-piyfd )
+                            - .25*GLN__GDNBAR *gln+GDN__DIS__GDNBAR*yer
+
+
+EQUATION>   EQ64
+EQTYPE>     IMPOSED
+EQ>         inn         =     1/( ( (100+STNBAR)*EXPLTNRESBAR -100 )/2+IGN__ADJ )*ign+LAG(gdn,1)-piyfd-piyet
+
+EQUATION>   EQ65
+EQTYPE>     IMPOSED
+EQ>         dstn        =     stn-LAG(stn,1)
+
+
+EQUATION>   EQ66
+EQTYPE>     IMPOSED
+EQ>         lagksr1     =     LAG(ksr,1)
+
+EQUATION>   EQ67
+EQTYPE>     IMPOSED
+EQ>         lagksr2     =     LAG(lagksr1,1)
+
+EQUATION>   EQ68
+EQTYPE>     IMPOSED
+EQ>         lagyer1     =     LAG(yer,1)
+
+EQUATION>   EQ69
+EQTYPE>     IMPOSED
+EQ>         lagyer2     =     LAG(lagyer1,1)
+
+EQUATION>   EQ70
+EQTYPE>     IMPOSED
+EQ>         lagwrn1     =     LAG(wrn,1)
+
+EQUATION>   EQ71
+EQTYPE>     IMPOSED
+EQ>         lagwrn2     =     LAG(lagwrn1,1)
+
+EQUATION>   EQ72
+EQTYPE>     IMPOSED
+EQ>         lagwrn3     =    LAG(lagwrn2,1)
+
+EQUATION>   EQ73
+EQTYPE>     IMPOSED
+EQ>         lagwrn4     =    LAG(lagwrn3,1)
+
+EQUATION>   EQ74
+EQTYPE>     IMPOSED
+EQ>         lagwrn5     =    LAG(lagwrn4,1)
+
+EQUATION>   EQ75
+EQTYPE>     IMPOSED
+EQ>         lagpcd1     =    LAG(pcd,1)
+
+EQUATION>   EQ76
+EQTYPE>     IMPOSED
+EQ>         lagpcd2     =    LAG(lagpcd1,1)
+
+EQUATION>   EQ77
+EQTYPE>     IMPOSED
+EQ>         lagpcd3     =    LAG(lagpcd2,1)
+
+EQUATION>   EQ78
+EQTYPE>     IMPOSED
+EQ>         lagpcd4     =    LAG(lagpcd3,1)
+
+EQUATION>   EQ79
+EQTYPE>     IMPOSED
+EQ>         lagpcd5     =    LAG(lagpcd4,1)
+
+EQUATION>   EQ80
+EQTYPE>     IMPOSED
+EQ>         laglprod1   =    LAG(lprod,1)
+
+EQUATION>   EQ81
+EQTYPE>     IMPOSED
+EQ>         laglprod2   =    LAG(laglprod1,1)
+
+EQUATION>   EQ82
+EQTYPE>     IMPOSED
+EQ>         laglprod3   =    LAG(laglprod2,1)
+
+EQUATION>   EQ83
+EQTYPE>     IMPOSED
+EQ>         laglprod4   =    LAG(laglprod3,1)
+
+EQUATION>   EQ84
+EQTYPE>     IMPOSED
+EQ>         laglprod5   =    LAG(laglprod4,1)
+
+EQUATION>   EQ85
+EQTYPE>     IMPOSED
+EQ>         lagpipcd1   =    LAG(pipcd,1)
+
+EQUATION>   EQ86
+EQTYPE>     IMPOSED
+EQ>         lagpipcd2   =    LAG(lagpipcd1,1)
+
+EQUATION>   EQ87
+EQTYPE>     IMPOSED
+EQ>         lagpipcd3   =    LAG(lagpipcd2,1)
+
+EQUATION>   EQ88
+EQTYPE>     IMPOSED
+EQ>         lagpipcd4   =    LAG(lagpipcd3,1)
+
+EQUATION>   EQ89
+EQTYPE>     IMPOSED
+EQ>         lagult1     =    LAG(ult,1)
+
+EQUATION>   EQ90
+EQTYPE>     IMPOSED
+EQ>         lagult2     =    LAG(lagult1,1)
+
+EQUATION>   EQ91
+EQTYPE>     IMPOSED
+EQ>         lagult3     =    LAG(lagult2,1)
+
+EQUATION>   EQ92
+EQTYPE>     IMPOSED
+EQ>         lagpiyfd1   =    LAG(piyfd,1)
+
+EQUATION>   EQ93
+EQTYPE>     IMPOSED
+EQ>         lagpiyfd2   =    LAG(lagpiyfd1,1)
+
+EQUATION>   EQ94
+EQTYPE>     IMPOSED
+EQ>         lagitr1     =    LAG(itr,1)
+
+EQUATION>   EQ95
+EQTYPE>     IMPOSED
+EQ>         lagitr2     =    LAG(lagitr1,1)
+
+
+EQUATION>   EQ96
+EQTYPE>     IMPOSED
+EQ>         lagitd1     =    LAG(itd,1)
+
+EQUATION>   EQ97
+EQTYPE>     IMPOSED
+EQ>         lagitd2     =    LAG(lagitd1,1)
+
+EQUATION>   EQ98
+EQTYPE>     IMPOSED
+EQ>         lagitd3     =    LAG(lagitd2,1)
+
+EQUATION>   EQ99
+EQTYPE>     IMPOSED
+EQ>         lagitd4     =    LAG(lagitd3,1)
+
+EQUATION>   EQ100
+EQTYPE>     IMPOSED
+EQ>         lagitd5     =    LAG(lagitd4,1)
+
+EQUATION>   EQ101
+EQTYPE>     IMPOSED
+EQ>         lagitd6     =    LAG(lagitd5,1)
+
+EQUATION>   EQ102
+EQTYPE>     IMPOSED
+EQ>         lagitd7     =    LAG(lagitd6,1)
+
+EQUATION>   EQ103
+EQTYPE>     IMPOSED
+EQ>         lagmtd1     =    LAG(mtd,1)
+
+EQUATION>   EQ104
+EQTYPE>     IMPOSED
+EQ>         lagmtd2     =    LAG(lagmtd1,1)
+
+EQUATION>   EQ105
+EQTYPE>     IMPOSED
+EQ>         lagmtd3     =    LAG(lagmtd2,1)
+
+EQUATION>   EQ106
+EQTYPE>     IMPOSED
+EQ>         lagmtd4     =    LAG(lagmtd3,1)
+
+EQUATION>   EQ107
+EQTYPE>     IMPOSED
+EQ>         lagmtd5     =    LAG(lagmtd4,1)
+
+EQUATION>   EQ108
+EQTYPE>     IMPOSED
+EQ>         lagmtd6     =    LAG(lagmtd5,1)
+
+EQUATION>   EQ109
+EQTYPE>     IMPOSED
+EQ>         lagstn1     =     LAG(stn,1)
+
+EQUATION>   EQ110
+EQTYPE>     IMPOSED
+EQ>         lagpiyer1   =     LAG(piyer,1)
+
+EQUATION>   EQ111
+EQTYPE>     IMPOSED
+EQ>         lagpiyer2   =     LAG(lagpiyer1,1)
+
+EQUATION>   EQ112
+EQTYPE>     IMPOSED
+EQ>         laglsr1     =     LAG(lsr,1)
+
+EQUATION>   EQ113
+EQTYPE>     IMPOSED
+EQ>         lagxtr1     =     LAG(xtr,1)
+
+EQUATION>   EQ114
+EQTYPE>     IMPOSED
+EQ>         lagxtr2     =     LAG(lagxtr1,1)
+
+EQUATION>   EQ115
+EQTYPE>     IMPOSED
+EQ>         lagxtr3     =     LAG(lagxtr2,1)
+
+EQUATION>   EQ116
+EQTYPE>     IMPOSED
+EQ>         lagxtr4     =     LAG(lagxtr3,1)
+
+EQUATION>   EQ117
+EQTYPE>     IMPOSED
+EQ>         lagxtr5     =     LAG(lagxtr4,1)
+
+EQUATION>   EQ118
+EQTYPE>     IMPOSED
+EQ>         lagxtr6     =     LAG(lagxtr5,1)
+
+EQUATION>   EQ119
+EQTYPE>     IMPOSED
+EQ>         lagxtr7     =     LAG(lagxtr6,1)
+
+EQUATION>   EQ120
+EQTYPE>     IMPOSED
+EQ>         lagywrx1    =     LAG(ywrx,1)
+
+EQUATION>   EQ121
+EQTYPE>     IMPOSED
+EQ>         lagywrx2    =     LAG(lagywrx1,1)
+
+EQUATION>   EQ122
+EQTYPE>     IMPOSED
+EQ>         lagywrx3    =     LAG(lagywrx2,1)
+
+EQUATION>   EQ123
+EQTYPE>     IMPOSED
+EQ>         lagywrx4    =     LAG(lagywrx3,1)
+
+EQUATION>   EQ124
+EQTYPE>     IMPOSED
+EQ>         lagywrx5    =     LAG(lagywrx4,1)
+
+EQUATION>   EQ125
+EQTYPE>     IMPOSED
+EQ>         lagywrx6    =     LAG(lagywrx5,1)
+
+EQUATION>   EQ126
+EQTYPE>     IMPOSED
+EQ>         lagywrx7    =     LAG(lagywrx6,1)
+
+EQUATION>   EQ127
+EQTYPE>     IMPOSED
+EQ>         lagpixtd1   =     LAG(pixtd,1)
+
+EQUATION>   EQ128
+EQTYPE>     IMPOSED
+EQ>         lagpixtd2   =     LAG(lagpixtd1,1)
+
+EQUATION>   EQ129
+EQTYPE>     IMPOSED
+EQ>         lagpiywdx1   =     LAG(piywdx,1)
+
+EQUATION>   EQ130
+EQTYPE>     IMPOSED
+EQ>         lagpiywdx2   =     LAG(lagpiywdx1,1)
+
+EQUATION>   EQ131
+EQTYPE>     IMPOSED
+EQ>         lagnfa1      =    LAG(nfa,1)
+
+EQUATION>   EQ132
+EQTYPE>     IMPOSED
+EQ>         laggln_yen1  =    LAG(gln_yen,1)
+
+EQUATION>   EQ133
+EQTYPE>     IMPOSED
+EQ>         laggln_yen2  =    LAG(laggln_yen1,1)
+
+EQUATION>   EQ134
+EQTYPE>     IMPOSED
+EQ>         laggln_yen3  =    LAG(laggln_yen2,1)
+
+EQUATION>   EQ135
+EQTYPE>     IMPOSED
+EQ>         lagltn1      =    LAG(ltn,1)
+
+EQUATION>   EQ136
+EQTYPE>     IMPOSED
+EQ>         lagltn2      =    LAG(lagltn1,1)
+
+EQUATION>   EQ137
+EQTYPE>     IMPOSED
+EQ>         lagltn3      =    LAG(lagltn2,1)
+
+EQUATION>   EQ138
+EQTYPE>     IMPOSED
+EQ>         lagltn4      =    LAG(lagltn3,1)
+
+EQUATION>   EQ139
+EQTYPE>     IMPOSED
+EQ>         lagltn5      =    LAG(lagltn4,1)
+
+EQUATION>   EQ140
+EQTYPE>     IMPOSED
+EQ>         lagltn6      =    LAG(lagltn5,1)
+
+EQUATION>   EQ141
+EQTYPE>     IMPOSED
+EQ>         lagltn7      =    LAG(lagltn6,1)
+
+EQUATION>   EQ142
+EQTYPE>     IMPOSED
+EQ>         lagltn8      =    LAG(lagltn7,1)
+
+EQUATION>   EQ143
+EQTYPE>     IMPOSED
+EQ>         lagltn9      =    LAG(lagltn8,1)
+
+EQUATION>   EQ144
+EQTYPE>     IMPOSED
+EQ>         lagltn10    =   LAG(lagltn9,1)
+
+EQUATION>   EQ145
+EQTYPE>     IMPOSED
+EQ>         lagltn11    =    LAG(lagltn10,1)
+
+EQUATION>   EQ146
+EQTYPE>     IMPOSED
+EQ>         lagltn12    =    LAG(lagltn11,1)
+
+EQUATION>   EQ147
+EQTYPE>     IMPOSED
+EQ>         lagltn13    =    LAG(lagltn12,1)
+
+EQUATION>   EQ148
+EQTYPE>     IMPOSED
+EQ>         lagltn14    =    LAG(lagltn13,1)
+
+EQUATION>   EQ149
+EQTYPE>     IMPOSED
+EQ>         lagltn15    =    LAG(lagltn14,1)
+
+EQUATION>   EQ150
+EQTYPE>     IMPOSED
+EQ>         lagltn16    =    LAG(lagltn15,1)
+
+EQUATION>   EQ151
+EQTYPE>     IMPOSED
+EQ>         lagltn17    =    LAG(lagltn16,1)
+
+EQUATION>   EQ152
+EQTYPE>     IMPOSED
+EQ>         lagltn18    =    LAG(lagltn17,1)
+
+EQUATION>   EQ153
+EQTYPE>     IMPOSED
+EQ>         lagltn19    =    LAG(lagltn18,1)
+
+EQUATION>   EQ154
+EQTYPE>     IMPOSED
+EQ>         lagltn20    =    LAG(lagltn19,1)
+
+EQUATION>   EQ155
+EQTYPE>     IMPOSED
+EQ>         lagltn21    =    LAG(lagltn20,1)
+
+EQUATION>   EQ156
+EQTYPE>     IMPOSED
+EQ>         lagltn22    =    LAG(lagltn21,1)
+
+EQUATION>   EQ157
+EQTYPE>     IMPOSED
+EQ>         lagltn23    =    LAG(lagltn22,1)
+
+EQUATION>   EQ158
+EQTYPE>     IMPOSED
+EQ>         lagltn24    =    LAG(lagltn23,1)
+
+EQUATION>   EQ159
+EQTYPE>     IMPOSED
+EQ>         lagltn25    =    LAG(lagltn24,1)
+
+EQUATION>   EQ160
+EQTYPE>     IMPOSED
+EQ>         lagltn26    =    LAG(lagltn25,1)
+
+EQUATION>   EQ161
+EQTYPE>     IMPOSED
+EQ>         lagltn27    =    LAG(lagltn26,1)
+
+EQUATION>   EQ162
+EQTYPE>     IMPOSED
+EQ>         lagltn28    =    LAG(lagltn27,1)
+
+EQUATION>   EQ163
+EQTYPE>     IMPOSED
+EQ>         lagltn29    =    LAG(lagltn28,1)
+
+EQUATION>   EQ164
+EQTYPE>     IMPOSED
+EQ>         lagltn30    =    LAG(lagltn29,1)
+
+EQUATION>   EQ165
+EQTYPE>     IMPOSED
+EQ>         lagltn31    =   LAG(lagltn30,1)
+
+EQUATION>   EQ166
+EQTYPE>     IMPOSED
+EQ>         lagltn32    =   LAG(lagltn31,1)
+
+EQUATION>   EQ167
+EQTYPE>     IMPOSED
+EQ>         lagltn33    =   LAG(lagltn32,1)
+
+EQUATION>   EQ168
+EQTYPE>     IMPOSED
+EQ>         lagltn34    =   LAG(lagltn33,1)
+
+EQUATION>   EQ169
+EQTYPE>     IMPOSED
+EQ>         lagltn35    =   LAG(lagltn34,1)
+
+EQUATION>   EQ170
+EQTYPE>     IMPOSED
+EQ>         lagltn36    =   LAG(lagltn35,1)
+
+EQUATION>   EQ171
+EQTYPE>     IMPOSED
+EQ>         lagltn37    =   LAG(lagltn36,1)
+
+EQUATION>   EQ172
+EQTYPE>     IMPOSED
+EQ>         lagltn38    =   LAG(lagltn37,1)
+
+EQUATION>   EQ173
+EQTYPE>     IMPOSED
+EQ>         lagltn39    =   LAG(lagltn38,1)
+
+EQUATION>   EQ174
+EQTYPE>     IMPOSED
+EQ>         lagltn40    =   LAG(lagltn39,1)
+
+EQUATION>   EQ175
+EQTYPE>     IMPOSED
+EQ>         lagltn41    =   LAG(lagltn40,1)
+
+EQUATION>   EQ176
+EQTYPE>     IMPOSED
+EQ>         lagltn42    =   LAG(lagltn41,1)
+
+EQUATION>   EQ177
+EQTYPE>     IMPOSED
+EQ>         lagltn43    =   LAG(lagltn42,1)
+
+EQUATION>   EQ178
+EQTYPE>     IMPOSED
+EQ>         lagltn44    =   LAG(lagltn43,1)
+
+EQUATION>   EQ179
+EQTYPE>     IMPOSED
+EQ>         lagltn45    =   LAG(lagltn44,1)
+
+EQUATION>   EQ180
+EQTYPE>     IMPOSED
+EQ>         lagltn46    =   LAG(lagltn45,1)
+
+EQUATION>   EQ181
+EQTYPE>     IMPOSED
+EQ>         lagltn47    =   LAG(lagltn46,1)
+
+EQUATION>   EQ182
+EQTYPE>     IMPOSED
+EQ>         lagywd1   =     LAG(ywd,1)
+
+EQUATION>   EQ183
+EQTYPE>     IMPOSED
+EQ>         lagywd2   =     LAG(lagywd1,1)
+
+EQUATION>   EQ184
+EQTYPE>     IMPOSED
+EQ>         lagywd3   =     LAG(lagywd2,1)
+
+EQUATION>   EQ185
+EQTYPE>     IMPOSED
+EQ>         lagpieen1   =     LAG(pieen,1)
+
+EQUATION>   EQ186
+EQTYPE>     IMPOSED
+EQ>         lagpieen2   =   LAG(lagpieen1,1)
+
+EQUATION>   EQ187
+EQTYPE>     IMPOSED
+EQ>         lagcompr1   =     LAG(compr,1)
+
+EQUATION>   EQ188
+EQTYPE>     IMPOSED
+EQ>         lagcompr2   =     LAG(lagcompr1,1)
+
+EQUATION>   EQ189
+EQTYPE>     IMPOSED
+EQ>         laggcr1   =     LAG(gcr,1)
+
+EQUATION>   EQ190
+EQTYPE>     IMPOSED
+EQ>         lagywr1   =     LAG(ywr,1)
+
+EQUATION>   EQ191
+EQTYPE>     IMPOSED
+EQ>         lagywr2   =     LAG(lagywr1,1)
+
+EQUATION>   EQ192
+EQTYPE>     IMPOSED
+EQ>         lagpiyet1   =     LAG(piyet,1)
+
+EQUATION>   EQ193
+EQTYPE>     IMPOSED
+EQ>         yet         =    LAG(yet,1) + piyet
+
+EQUATION>   EQ194
+EQTYPE>     IMPOSED
+EQ>         ldstn1      =     LEAD(stn,1)
+
+EQUATION>   EQ195
+EQTYPE>     IMPOSED
+EQ>         ldstn2      =     LEAD(ldstn1,1)
+
+EQUATION>   EQ196
+EQTYPE>     IMPOSED
+EQ>         ldstn3      =     LEAD(ldstn2,1)
+
+EQUATION>   EQ197
+EQTYPE>     IMPOSED
+EQ>         ldstn4      =     LEAD(ldstn3,1)
+
+EQUATION>   EQ198
+EQTYPE>     IMPOSED
+EQ>         ldstn5      =     LEAD(ldstn4,1)
+
+EQUATION>   EQ199
+EQTYPE>     IMPOSED
+EQ>         ldstn6      =     LEAD(ldstn5,1)
+
+EQUATION>   EQ200
+EQTYPE>     IMPOSED
+EQ>         ldstn7      =     LEAD(ldstn6,1)
+
+EQUATION>   EQ201
+EQTYPE>     IMPOSED
+EQ>         ldstn8      =     LEAD(ldstn7,1)
+
+EQUATION>   EQ202
+EQTYPE>     IMPOSED
+EQ>         ldstn9      =     LEAD(ldstn8,1)
+
+EQUATION>   EQ203
+EQTYPE>     IMPOSED
+EQ>         ldstn10     =     LEAD(ldstn9,1)
+
+EQUATION>   EQ204
+EQTYPE>     IMPOSED
+EQ>         ldstn11     =     LEAD(ldstn10,1)
+
+EQUATION>   EQ205
+EQTYPE>     IMPOSED
+EQ>         ldstn12     =     LEAD(ldstn11,1)
+
+EQUATION>   EQ206
+EQTYPE>     IMPOSED
+EQ>         ldstn13     =     LEAD(ldstn12,1)
+
+EQUATION>   EQ207
+EQTYPE>     IMPOSED
+EQ>         ldstn14     =     LEAD(ldstn13,1)
+
+EQUATION>   EQ208
+EQTYPE>     IMPOSED
+EQ>         ldstn15     =     LEAD(ldstn14,1)
+
+EQUATION>   EQ209
+EQTYPE>     IMPOSED
+EQ>         ldstn16     =     LEAD(ldstn15,1)
+
+EQUATION>   EQ210
+EQTYPE>     IMPOSED
+EQ>         ldstn17     =     LEAD(ldstn16,1)
+
+EQUATION>   EQ211
+EQTYPE>     IMPOSED
+EQ>         ldstn18     =     LEAD(ldstn17,1)
+
+EQUATION>   EQ212
+EQTYPE>     IMPOSED
+EQ>         pipcda      =   pipcd+lagpipcd1+lagpipcd2+LAG(lagpipcd2,1)
+
+
+
+EQUATION>   EQ213
+EQTYPE>     IMPOSED
+EQ>         one         =     0*LAG(one,1)
+
+EQUATION>   EQ214
+EQTYPE>     IMPOSED
+EQ>         innoestn        =    0*LAG(yer,1)
+
+EQUATION>   EQ215
+EQTYPE>     IMPOSED
+EQ>         innoelnn        =    0*LAG(yer,1)
+
+EQUATION>   EQ216
+EQTYPE>     IMPOSED
+EQ>         innoewrn        =    0*LAG(yer,1)
+
+EQUATION>   EQ217
+EQTYPE>     IMPOSED
+EQ>         innoeyfd        =    0*LAG(yer,1)
+
+EQUATION>   EQ218
+EQTYPE>     IMPOSED
+EQ>         innoepcd        =    0*LAG(yer,1)
+
+EQUATION>   EQ219
+EQTYPE>     IMPOSED
+EQ>         innoeitr        =    0*LAG(yer,1)
+
+EQUATION>   EQ220
+EQTYPE>     IMPOSED
+EQ>         innoeitd        =    0*LAG(yer,1)
+
+EQUATION>   EQ221
+EQTYPE>     IMPOSED
+EQ>         innoextd        =    0*LAG(yer,1)
+
+EQUATION>   EQ222
+EQTYPE>     IMPOSED
+EQ>         innoemtd        =    0*LAG(yer,1)
+
+EQUATION>   EQ223
+EQTYPE>     IMPOSED
+EQ>         innoepcr        =    0*LAG(yer,1)
+
+EQUATION>   EQ224
+EQTYPE>     IMPOSED
+EQ>         innoelsr        =    0*LAG(yer,1)
+
+EQUATION>   EQ225
+EQTYPE>     IMPOSED
+EQ>         innoextr        =    0*LAG(yer,1)
+
+EQUATION>   EQ226
+EQTYPE>     IMPOSED
+EQ>         innoemtr        =    0*LAG(yer,1)
+
+
+EQUATION>   EQ227
+EQTYPE>     IMPOSED
+EQ>         innoeltn        =   0*LAG(yer,1)
+
+END

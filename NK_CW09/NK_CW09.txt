@@ -1,0 +1,5 @@
+Note for MMB implementation:
+
+The model is expressed in percentage terms so:
+
+variabledim = 1

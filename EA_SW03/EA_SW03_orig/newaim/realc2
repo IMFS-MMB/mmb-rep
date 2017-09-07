@@ -1,0 +1,68 @@
+MODEL> REALC2
+
+ENDOG>  PI      0   _DATA
+        F       0   _DATA
+
+        REALC   0   _NOTD
+        CONTR   0   _NOTD
+        CSHOCK  0   _NOTD
+        INDEX   0   _NOTD
+        FSHOCK  0   _NOTD
+        PISTAR  0   _NOTD
+        PISHOCK 0   _NOTD
+        RHO     0   _NOTD
+        ONE     0   _DTRM
+
+EQUATION> PI
+EQTYPE> IMPOSED
+EQ>       PI = INDEX - LAG(INDEX,1)
+
+EQUATION> F
+EQTYPE> IMPOSED
+EQ>       F - LAG(F,1) = DF1*(LAG(F,1)-LAG(F,2))
+               +  ALPHAP  *INDEX
+               +  ALPHAPI *(PI - PISTAR) 
+               +  ALPHADPI*(PI - LAG(PI,1)) 
+               +  FSHOCK
+
+EQUATION> CONTR
+EQTYPE> IMPOSED
+EQ>       REALC = CONTR - INDEX
+
+EQUATION> INDEX
+EQTYPE> IMPOSED
+EQ>       INDEX = .5*(CONTR + LAG(CONTR,1))
+
+EQUATION> REALC
+EQTYPE> IMPOSED
+EQ>       CONTR - INDEX  = .5 * ( LAG(CONTR,1) -  LAG(INDEX,1))
+                          + .5 * (LEAD(CONTR,1) - LEAD(INDEX,1))
+                  - CRHO * (RHO - RHOBAR*ONE) + CSHOCK
+
+EQUATION> CSHOCK
+EQTYPE> STOCH
+EQ>       CSHOCK = 0*ONE
+
+EQUATION> FSHOCK
+EQTYPE> STOCH
+EQ>       FSHOCK = 0*ONE
+
+EQUATION> PISTAR
+EQTYPE> IMPOSED
+EQ>       PISTAR = LAG(PISTAR,1) + PISHOCK
+
+EQUATION> PISHOCK
+EQTYPE> IMPOSED
+EQ>       PISHOCK = 0*ONE
+
+EQUATION> RHO
+EQTYPE> IMPOSED
+EQ>        RHO = (1-MU)*LEAD(RHO,1) + MU*(F - LEAD(PI,1))
+
+EQUATION> ONE
+EQTYPE> IMPOSED
+EQ>       ONE = LAG(ONE,1)
+
+END
+
+

@@ -1,0 +1,1118 @@
+
+state 0
+	$accept : _finished $end 
+
+	MODEL  shift 3
+	.  error
+
+	finished  goto 1
+	mdl  goto 2
+
+state 1
+	$accept :  finished_$end 
+
+	$end  accept
+	.  error
+
+
+state 2
+	finished :  mdl_    (1)
+
+	.  reduce 1
+
+
+state 3
+	mdl :  MODEL_PROMPT SYMBOLNAME ENDOG PROMPT variablelist eqnlist END 
+
+	PROMPT  shift 4
+	.  error
+
+
+state 4
+	mdl :  MODEL PROMPT_SYMBOLNAME ENDOG PROMPT variablelist eqnlist END 
+
+	SYMBOLNAME  shift 5
+	.  error
+
+
+state 5
+	mdl :  MODEL PROMPT SYMBOLNAME_ENDOG PROMPT variablelist eqnlist END 
+
+	ENDOG  shift 6
+	.  error
+
+
+state 6
+	mdl :  MODEL PROMPT SYMBOLNAME ENDOG_PROMPT variablelist eqnlist END 
+
+	PROMPT  shift 7
+	.  error
+
+
+state 7
+	mdl :  MODEL PROMPT SYMBOLNAME ENDOG PROMPT_variablelist eqnlist END 
+
+	SYMBOLNAME  shift 10
+	.  error
+
+	variablelist  goto 8
+	variabledef  goto 9
+
+state 8
+	mdl :  MODEL PROMPT SYMBOLNAME ENDOG PROMPT variablelist_eqnlist END 
+	variablelist :  variablelist_variabledef 
+
+	EQUATION  shift 13
+	SYMBOLNAME  shift 10
+	.  error
+
+	eqnlist  goto 11
+	variabledef  goto 12
+
+state 9
+	variablelist :  variabledef_    (3)
+
+	.  reduce 3
+
+
+state 10
+	variabledef :  SYMBOLNAME_INTEGER variabletype 
+	variabledef :  SYMBOLNAME_INTEGER 
+	variabledef :  SYMBOLNAME_variabletype 
+	variabledef :  SYMBOLNAME_    (8)
+
+	_DATA  shift 16
+	_NOTD  shift 17
+	_DTRM  shift 18
+	INTEGER  shift 14
+	.  reduce 8
+
+	variabletype  goto 15
+
+state 11
+	mdl :  MODEL PROMPT SYMBOLNAME ENDOG PROMPT variablelist eqnlist_END 
+	eqnlist :  eqnlist_EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression 
+	eqnlist :  eqnlist_EQUATION PROMPT SYMBOLNAME EQ PROMPT expression EQUALS expression 
+
+	EQUATION  shift 20
+	END  shift 19
+	.  error
+
+
+state 12
+	variablelist :  variablelist variabledef_    (4)
+
+	.  reduce 4
+
+
+state 13
+	eqnlist :  EQUATION_PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression 
+	eqnlist :  EQUATION_PROMPT SYMBOLNAME EQ PROMPT expression EQUALS expression 
+
+	PROMPT  shift 21
+	.  error
+
+
+state 14
+	variabledef :  SYMBOLNAME INTEGER_variabletype 
+	variabledef :  SYMBOLNAME INTEGER_    (6)
+
+	_DATA  shift 16
+	_NOTD  shift 17
+	_DTRM  shift 18
+	.  reduce 6
+
+	variabletype  goto 22
+
+state 15
+	variabledef :  SYMBOLNAME variabletype_    (7)
+
+	.  reduce 7
+
+
+state 16
+	variabletype :  _DATA_    (9)
+
+	.  reduce 9
+
+
+state 17
+	variabletype :  _NOTD_    (10)
+
+	.  reduce 10
+
+
+state 18
+	variabletype :  _DTRM_    (11)
+
+	.  reduce 11
+
+
+state 19
+	mdl :  MODEL PROMPT SYMBOLNAME ENDOG PROMPT variablelist eqnlist END_    (2)
+
+	.  reduce 2
+
+
+state 20
+	eqnlist :  eqnlist EQUATION_PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression 
+	eqnlist :  eqnlist EQUATION_PROMPT SYMBOLNAME EQ PROMPT expression EQUALS expression 
+
+	PROMPT  shift 23
+	.  error
+
+
+state 21
+	eqnlist :  EQUATION PROMPT_SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression 
+	eqnlist :  EQUATION PROMPT_SYMBOLNAME EQ PROMPT expression EQUALS expression 
+
+	SYMBOLNAME  shift 24
+	.  error
+
+
+state 22
+	variabledef :  SYMBOLNAME INTEGER variabletype_    (5)
+
+	.  reduce 5
+
+
+state 23
+	eqnlist :  eqnlist EQUATION PROMPT_SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression 
+	eqnlist :  eqnlist EQUATION PROMPT_SYMBOLNAME EQ PROMPT expression EQUALS expression 
+
+	SYMBOLNAME  shift 25
+	.  error
+
+
+state 24
+	eqnlist :  EQUATION PROMPT SYMBOLNAME_EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression 
+	eqnlist :  EQUATION PROMPT SYMBOLNAME_EQ PROMPT expression EQUALS expression 
+
+	EQ  shift 27
+	EQTYPE  shift 26
+	.  error
+
+
+state 25
+	eqnlist :  eqnlist EQUATION PROMPT SYMBOLNAME_EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression 
+	eqnlist :  eqnlist EQUATION PROMPT SYMBOLNAME_EQ PROMPT expression EQUALS expression 
+
+	EQ  shift 29
+	EQTYPE  shift 28
+	.  error
+
+
+state 26
+	eqnlist :  EQUATION PROMPT SYMBOLNAME EQTYPE_PROMPT eqntype EQ PROMPT expression EQUALS expression 
+
+	PROMPT  shift 30
+	.  error
+
+
+state 27
+	eqnlist :  EQUATION PROMPT SYMBOLNAME EQ_PROMPT expression EQUALS expression 
+
+	PROMPT  shift 31
+	.  error
+
+
+state 28
+	eqnlist :  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE_PROMPT eqntype EQ PROMPT expression EQUALS expression 
+
+	PROMPT  shift 32
+	.  error
+
+
+state 29
+	eqnlist :  eqnlist EQUATION PROMPT SYMBOLNAME EQ_PROMPT expression EQUALS expression 
+
+	PROMPT  shift 33
+	.  error
+
+
+state 30
+	eqnlist :  EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT_eqntype EQ PROMPT expression EQUALS expression 
+
+	IMPO  shift 35
+	STOC  shift 36
+	.  error
+
+	eqntype  goto 34
+
+state 31
+	eqnlist :  EQUATION PROMPT SYMBOLNAME EQ PROMPT_expression EQUALS expression 
+
+	LAG  shift 51
+	ELAG  shift 52
+	LEAD  shift 53
+	(  shift 50
+	MINUS  shift 54
+	SYMBOLNAME  shift 38
+	REAL  shift 42
+	INTEGER  shift 43
+	.  error
+
+	expression  goto 37
+	lagvariable  goto 39
+	elagvariable  goto 40
+	leadvariable  goto 41
+	addition  goto 44
+	subtraction  goto 45
+	multiplication  goto 46
+	division  goto 47
+	exponentiation  goto 48
+	unaryminus  goto 49
+
+state 32
+	eqnlist :  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT_eqntype EQ PROMPT expression EQUALS expression 
+
+	IMPO  shift 35
+	STOC  shift 36
+	.  error
+
+	eqntype  goto 55
+
+state 33
+	eqnlist :  eqnlist EQUATION PROMPT SYMBOLNAME EQ PROMPT_expression EQUALS expression 
+
+	LAG  shift 51
+	ELAG  shift 52
+	LEAD  shift 53
+	(  shift 50
+	MINUS  shift 54
+	SYMBOLNAME  shift 38
+	REAL  shift 42
+	INTEGER  shift 43
+	.  error
+
+	expression  goto 56
+	lagvariable  goto 39
+	elagvariable  goto 40
+	leadvariable  goto 41
+	addition  goto 44
+	subtraction  goto 45
+	multiplication  goto 46
+	division  goto 47
+	exponentiation  goto 48
+	unaryminus  goto 49
+
+state 34
+	eqnlist :  EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype_EQ PROMPT expression EQUALS expression 
+
+	EQ  shift 57
+	.  error
+
+
+state 35
+	eqntype :  IMPO_    (16)
+
+	.  reduce 16
+
+
+state 36
+	eqntype :  STOC_    (17)
+
+	.  reduce 17
+
+
+state 37
+	eqnlist :  EQUATION PROMPT SYMBOLNAME EQ PROMPT expression_EQUALS expression 
+	addition :  expression_PLUS expression 
+	subtraction :  expression_MINUS expression 
+	multiplication :  expression_MULT expression 
+	division :  expression_DIV expression 
+	exponentiation :  expression_POW expression 
+
+	EQUALS  shift 58
+	POW  shift 63
+	DIV  shift 62
+	PLUS  shift 59
+	MULT  shift 61
+	MINUS  shift 60
+	.  error
+
+
+state 38
+	expression :  SYMBOLNAME_    (18)
+
+	.  reduce 18
+
+
+state 39
+	expression :  lagvariable_    (19)
+
+	.  reduce 19
+
+
+state 40
+	expression :  elagvariable_    (20)
+
+	.  reduce 20
+
+
+state 41
+	expression :  leadvariable_    (21)
+
+	.  reduce 21
+
+
+state 42
+	expression :  REAL_    (22)
+
+	.  reduce 22
+
+
+state 43
+	expression :  INTEGER_    (23)
+
+	.  reduce 23
+
+
+state 44
+	expression :  addition_    (24)
+
+	.  reduce 24
+
+
+state 45
+	expression :  subtraction_    (25)
+
+	.  reduce 25
+
+
+state 46
+	expression :  multiplication_    (26)
+
+	.  reduce 26
+
+
+state 47
+	expression :  division_    (27)
+
+	.  reduce 27
+
+
+state 48
+	expression :  exponentiation_    (28)
+
+	.  reduce 28
+
+
+state 49
+	expression :  unaryminus_    (29)
+
+	.  reduce 29
+
+
+state 50
+	expression :  (_expression ) 
+
+	LAG  shift 51
+	ELAG  shift 52
+	LEAD  shift 53
+	(  shift 50
+	MINUS  shift 54
+	SYMBOLNAME  shift 38
+	REAL  shift 42
+	INTEGER  shift 43
+	.  error
+
+	expression  goto 64
+	lagvariable  goto 39
+	elagvariable  goto 40
+	leadvariable  goto 41
+	addition  goto 44
+	subtraction  goto 45
+	multiplication  goto 46
+	division  goto 47
+	exponentiation  goto 48
+	unaryminus  goto 49
+
+state 51
+	lagvariable :  LAG_( SYMBOLNAME COMMA INTEGER ) 
+	lagvariable :  LAG_( SYMBOLNAME ) 
+
+	(  shift 65
+	.  error
+
+
+state 52
+	elagvariable :  ELAG_( SYMBOLNAME COMMA INTEGER ) 
+	elagvariable :  ELAG_( SYMBOLNAME ) 
+
+	(  shift 66
+	.  error
+
+
+state 53
+	leadvariable :  LEAD_( SYMBOLNAME COMMA INTEGER ) 
+	leadvariable :  LEAD_( SYMBOLNAME ) 
+
+	(  shift 67
+	.  error
+
+
+state 54
+	unaryminus :  MINUS_expression 
+
+	LAG  shift 51
+	ELAG  shift 52
+	LEAD  shift 53
+	(  shift 50
+	MINUS  shift 54
+	SYMBOLNAME  shift 38
+	REAL  shift 42
+	INTEGER  shift 43
+	.  error
+
+	expression  goto 68
+	lagvariable  goto 39
+	elagvariable  goto 40
+	leadvariable  goto 41
+	addition  goto 44
+	subtraction  goto 45
+	multiplication  goto 46
+	division  goto 47
+	exponentiation  goto 48
+	unaryminus  goto 49
+
+state 55
+	eqnlist :  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype_EQ PROMPT expression EQUALS expression 
+
+	EQ  shift 69
+	.  error
+
+
+state 56
+	eqnlist :  eqnlist EQUATION PROMPT SYMBOLNAME EQ PROMPT expression_EQUALS expression 
+	addition :  expression_PLUS expression 
+	subtraction :  expression_MINUS expression 
+	multiplication :  expression_MULT expression 
+	division :  expression_DIV expression 
+	exponentiation :  expression_POW expression 
+
+	EQUALS  shift 70
+	POW  shift 63
+	DIV  shift 62
+	PLUS  shift 59
+	MULT  shift 61
+	MINUS  shift 60
+	.  error
+
+
+state 57
+	eqnlist :  EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ_PROMPT expression EQUALS expression 
+
+	PROMPT  shift 71
+	.  error
+
+
+state 58
+	eqnlist :  EQUATION PROMPT SYMBOLNAME EQ PROMPT expression EQUALS_expression 
+
+	LAG  shift 51
+	ELAG  shift 52
+	LEAD  shift 53
+	(  shift 50
+	MINUS  shift 54
+	SYMBOLNAME  shift 38
+	REAL  shift 42
+	INTEGER  shift 43
+	.  error
+
+	expression  goto 72
+	lagvariable  goto 39
+	elagvariable  goto 40
+	leadvariable  goto 41
+	addition  goto 44
+	subtraction  goto 45
+	multiplication  goto 46
+	division  goto 47
+	exponentiation  goto 48
+	unaryminus  goto 49
+
+state 59
+	addition :  expression PLUS_expression 
+
+	LAG  shift 51
+	ELAG  shift 52
+	LEAD  shift 53
+	(  shift 50
+	MINUS  shift 54
+	SYMBOLNAME  shift 38
+	REAL  shift 42
+	INTEGER  shift 43
+	.  error
+
+	expression  goto 73
+	lagvariable  goto 39
+	elagvariable  goto 40
+	leadvariable  goto 41
+	addition  goto 44
+	subtraction  goto 45
+	multiplication  goto 46
+	division  goto 47
+	exponentiation  goto 48
+	unaryminus  goto 49
+
+state 60
+	subtraction :  expression MINUS_expression 
+
+	LAG  shift 51
+	ELAG  shift 52
+	LEAD  shift 53
+	(  shift 50
+	MINUS  shift 54
+	SYMBOLNAME  shift 38
+	REAL  shift 42
+	INTEGER  shift 43
+	.  error
+
+	expression  goto 74
+	lagvariable  goto 39
+	elagvariable  goto 40
+	leadvariable  goto 41
+	addition  goto 44
+	subtraction  goto 45
+	multiplication  goto 46
+	division  goto 47
+	exponentiation  goto 48
+	unaryminus  goto 49
+
+state 61
+	multiplication :  expression MULT_expression 
+
+	LAG  shift 51
+	ELAG  shift 52
+	LEAD  shift 53
+	(  shift 50
+	MINUS  shift 54
+	SYMBOLNAME  shift 38
+	REAL  shift 42
+	INTEGER  shift 43
+	.  error
+
+	expression  goto 75
+	lagvariable  goto 39
+	elagvariable  goto 40
+	leadvariable  goto 41
+	addition  goto 44
+	subtraction  goto 45
+	multiplication  goto 46
+	division  goto 47
+	exponentiation  goto 48
+	unaryminus  goto 49
+
+state 62
+	division :  expression DIV_expression 
+
+	LAG  shift 51
+	ELAG  shift 52
+	LEAD  shift 53
+	(  shift 50
+	MINUS  shift 54
+	SYMBOLNAME  shift 38
+	REAL  shift 42
+	INTEGER  shift 43
+	.  error
+
+	expression  goto 76
+	lagvariable  goto 39
+	elagvariable  goto 40
+	leadvariable  goto 41
+	addition  goto 44
+	subtraction  goto 45
+	multiplication  goto 46
+	division  goto 47
+	exponentiation  goto 48
+	unaryminus  goto 49
+
+state 63
+	exponentiation :  expression POW_expression 
+
+	LAG  shift 51
+	ELAG  shift 52
+	LEAD  shift 53
+	(  shift 50
+	MINUS  shift 54
+	SYMBOLNAME  shift 38
+	REAL  shift 42
+	INTEGER  shift 43
+	.  error
+
+	expression  goto 77
+	lagvariable  goto 39
+	elagvariable  goto 40
+	leadvariable  goto 41
+	addition  goto 44
+	subtraction  goto 45
+	multiplication  goto 46
+	division  goto 47
+	exponentiation  goto 48
+	unaryminus  goto 49
+
+state 64
+	expression :  ( expression_) 
+	addition :  expression_PLUS expression 
+	subtraction :  expression_MINUS expression 
+	multiplication :  expression_MULT expression 
+	division :  expression_DIV expression 
+	exponentiation :  expression_POW expression 
+
+	)  shift 78
+	POW  shift 63
+	DIV  shift 62
+	PLUS  shift 59
+	MULT  shift 61
+	MINUS  shift 60
+	.  error
+
+
+state 65
+	lagvariable :  LAG (_SYMBOLNAME COMMA INTEGER ) 
+	lagvariable :  LAG (_SYMBOLNAME ) 
+
+	SYMBOLNAME  shift 79
+	.  error
+
+
+state 66
+	elagvariable :  ELAG (_SYMBOLNAME COMMA INTEGER ) 
+	elagvariable :  ELAG (_SYMBOLNAME ) 
+
+	SYMBOLNAME  shift 80
+	.  error
+
+
+state 67
+	leadvariable :  LEAD (_SYMBOLNAME COMMA INTEGER ) 
+	leadvariable :  LEAD (_SYMBOLNAME ) 
+
+	SYMBOLNAME  shift 81
+	.  error
+
+
+state 68
+	addition :  expression_PLUS expression 
+	subtraction :  expression_MINUS expression 
+	multiplication :  expression_MULT expression 
+	division :  expression_DIV expression 
+	exponentiation :  expression_POW expression 
+	unaryminus :  MINUS expression_    (42)
+
+	.  reduce 42
+
+
+state 69
+	eqnlist :  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ_PROMPT expression EQUALS expression 
+
+	PROMPT  shift 82
+	.  error
+
+
+state 70
+	eqnlist :  eqnlist EQUATION PROMPT SYMBOLNAME EQ PROMPT expression EQUALS_expression 
+
+	LAG  shift 51
+	ELAG  shift 52
+	LEAD  shift 53
+	(  shift 50
+	MINUS  shift 54
+	SYMBOLNAME  shift 38
+	REAL  shift 42
+	INTEGER  shift 43
+	.  error
+
+	expression  goto 83
+	lagvariable  goto 39
+	elagvariable  goto 40
+	leadvariable  goto 41
+	addition  goto 44
+	subtraction  goto 45
+	multiplication  goto 46
+	division  goto 47
+	exponentiation  goto 48
+	unaryminus  goto 49
+
+state 71
+	eqnlist :  EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT_expression EQUALS expression 
+
+	LAG  shift 51
+	ELAG  shift 52
+	LEAD  shift 53
+	(  shift 50
+	MINUS  shift 54
+	SYMBOLNAME  shift 38
+	REAL  shift 42
+	INTEGER  shift 43
+	.  error
+
+	expression  goto 84
+	lagvariable  goto 39
+	elagvariable  goto 40
+	leadvariable  goto 41
+	addition  goto 44
+	subtraction  goto 45
+	multiplication  goto 46
+	division  goto 47
+	exponentiation  goto 48
+	unaryminus  goto 49
+
+state 72
+	eqnlist :  EQUATION PROMPT SYMBOLNAME EQ PROMPT expression EQUALS expression_    (13)
+	addition :  expression_PLUS expression 
+	subtraction :  expression_MINUS expression 
+	multiplication :  expression_MULT expression 
+	division :  expression_DIV expression 
+	exponentiation :  expression_POW expression 
+
+	POW  shift 63
+	DIV  shift 62
+	PLUS  shift 59
+	MULT  shift 61
+	MINUS  shift 60
+	.  reduce 13
+
+
+state 73
+	addition :  expression_PLUS expression 
+	addition :  expression PLUS expression_    (37)
+	subtraction :  expression_MINUS expression 
+	multiplication :  expression_MULT expression 
+	division :  expression_DIV expression 
+	exponentiation :  expression_POW expression 
+
+	POW  shift 63
+	DIV  shift 62
+	MULT  shift 61
+	.  reduce 37
+
+
+state 74
+	addition :  expression_PLUS expression 
+	subtraction :  expression_MINUS expression 
+	subtraction :  expression MINUS expression_    (38)
+	multiplication :  expression_MULT expression 
+	division :  expression_DIV expression 
+	exponentiation :  expression_POW expression 
+
+	POW  shift 63
+	DIV  shift 62
+	MULT  shift 61
+	.  reduce 38
+
+
+state 75
+	addition :  expression_PLUS expression 
+	subtraction :  expression_MINUS expression 
+	multiplication :  expression_MULT expression 
+	multiplication :  expression MULT expression_    (39)
+	division :  expression_DIV expression 
+	exponentiation :  expression_POW expression 
+
+	POW  shift 63
+	.  reduce 39
+
+
+state 76
+	addition :  expression_PLUS expression 
+	subtraction :  expression_MINUS expression 
+	multiplication :  expression_MULT expression 
+	division :  expression_DIV expression 
+	division :  expression DIV expression_    (40)
+	exponentiation :  expression_POW expression 
+
+	POW  shift 63
+	.  reduce 40
+
+
+state 77
+	addition :  expression_PLUS expression 
+	subtraction :  expression_MINUS expression 
+	multiplication :  expression_MULT expression 
+	division :  expression_DIV expression 
+	exponentiation :  expression_POW expression 
+	exponentiation :  expression POW expression_    (41)
+
+	POW  shift 63
+	.  reduce 41
+
+
+state 78
+	expression :  ( expression )_    (30)
+
+	.  reduce 30
+
+
+state 79
+	lagvariable :  LAG ( SYMBOLNAME_COMMA INTEGER ) 
+	lagvariable :  LAG ( SYMBOLNAME_) 
+
+	COMMA  shift 85
+	)  shift 86
+	.  error
+
+
+state 80
+	elagvariable :  ELAG ( SYMBOLNAME_COMMA INTEGER ) 
+	elagvariable :  ELAG ( SYMBOLNAME_) 
+
+	COMMA  shift 87
+	)  shift 88
+	.  error
+
+
+state 81
+	leadvariable :  LEAD ( SYMBOLNAME_COMMA INTEGER ) 
+	leadvariable :  LEAD ( SYMBOLNAME_) 
+
+	COMMA  shift 89
+	)  shift 90
+	.  error
+
+
+state 82
+	eqnlist :  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT_expression EQUALS expression 
+
+	LAG  shift 51
+	ELAG  shift 52
+	LEAD  shift 53
+	(  shift 50
+	MINUS  shift 54
+	SYMBOLNAME  shift 38
+	REAL  shift 42
+	INTEGER  shift 43
+	.  error
+
+	expression  goto 91
+	lagvariable  goto 39
+	elagvariable  goto 40
+	leadvariable  goto 41
+	addition  goto 44
+	subtraction  goto 45
+	multiplication  goto 46
+	division  goto 47
+	exponentiation  goto 48
+	unaryminus  goto 49
+
+state 83
+	eqnlist :  eqnlist EQUATION PROMPT SYMBOLNAME EQ PROMPT expression EQUALS expression_    (15)
+	addition :  expression_PLUS expression 
+	subtraction :  expression_MINUS expression 
+	multiplication :  expression_MULT expression 
+	division :  expression_DIV expression 
+	exponentiation :  expression_POW expression 
+
+	POW  shift 63
+	DIV  shift 62
+	PLUS  shift 59
+	MULT  shift 61
+	MINUS  shift 60
+	.  reduce 15
+
+
+state 84
+	eqnlist :  EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression_EQUALS expression 
+	addition :  expression_PLUS expression 
+	subtraction :  expression_MINUS expression 
+	multiplication :  expression_MULT expression 
+	division :  expression_DIV expression 
+	exponentiation :  expression_POW expression 
+
+	EQUALS  shift 92
+	POW  shift 63
+	DIV  shift 62
+	PLUS  shift 59
+	MULT  shift 61
+	MINUS  shift 60
+	.  error
+
+
+state 85
+	lagvariable :  LAG ( SYMBOLNAME COMMA_INTEGER ) 
+
+	INTEGER  shift 93
+	.  error
+
+
+state 86
+	lagvariable :  LAG ( SYMBOLNAME )_    (32)
+
+	.  reduce 32
+
+
+state 87
+	elagvariable :  ELAG ( SYMBOLNAME COMMA_INTEGER ) 
+
+	INTEGER  shift 94
+	.  error
+
+
+state 88
+	elagvariable :  ELAG ( SYMBOLNAME )_    (34)
+
+	.  reduce 34
+
+
+state 89
+	leadvariable :  LEAD ( SYMBOLNAME COMMA_INTEGER ) 
+
+	INTEGER  shift 95
+	.  error
+
+
+state 90
+	leadvariable :  LEAD ( SYMBOLNAME )_    (36)
+
+	.  reduce 36
+
+
+state 91
+	eqnlist :  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression_EQUALS expression 
+	addition :  expression_PLUS expression 
+	subtraction :  expression_MINUS expression 
+	multiplication :  expression_MULT expression 
+	division :  expression_DIV expression 
+	exponentiation :  expression_POW expression 
+
+	EQUALS  shift 96
+	POW  shift 63
+	DIV  shift 62
+	PLUS  shift 59
+	MULT  shift 61
+	MINUS  shift 60
+	.  error
+
+
+state 92
+	eqnlist :  EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS_expression 
+
+	LAG  shift 51
+	ELAG  shift 52
+	LEAD  shift 53
+	(  shift 50
+	MINUS  shift 54
+	SYMBOLNAME  shift 38
+	REAL  shift 42
+	INTEGER  shift 43
+	.  error
+
+	expression  goto 97
+	lagvariable  goto 39
+	elagvariable  goto 40
+	leadvariable  goto 41
+	addition  goto 44
+	subtraction  goto 45
+	multiplication  goto 46
+	division  goto 47
+	exponentiation  goto 48
+	unaryminus  goto 49
+
+state 93
+	lagvariable :  LAG ( SYMBOLNAME COMMA INTEGER_) 
+
+	)  shift 98
+	.  error
+
+
+state 94
+	elagvariable :  ELAG ( SYMBOLNAME COMMA INTEGER_) 
+
+	)  shift 99
+	.  error
+
+
+state 95
+	leadvariable :  LEAD ( SYMBOLNAME COMMA INTEGER_) 
+
+	)  shift 100
+	.  error
+
+
+state 96
+	eqnlist :  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS_expression 
+
+	LAG  shift 51
+	ELAG  shift 52
+	LEAD  shift 53
+	(  shift 50
+	MINUS  shift 54
+	SYMBOLNAME  shift 38
+	REAL  shift 42
+	INTEGER  shift 43
+	.  error
+
+	expression  goto 101
+	lagvariable  goto 39
+	elagvariable  goto 40
+	leadvariable  goto 41
+	addition  goto 44
+	subtraction  goto 45
+	multiplication  goto 46
+	division  goto 47
+	exponentiation  goto 48
+	unaryminus  goto 49
+
+state 97
+	eqnlist :  EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression_    (12)
+	addition :  expression_PLUS expression 
+	subtraction :  expression_MINUS expression 
+	multiplication :  expression_MULT expression 
+	division :  expression_DIV expression 
+	exponentiation :  expression_POW expression 
+
+	POW  shift 63
+	DIV  shift 62
+	PLUS  shift 59
+	MULT  shift 61
+	MINUS  shift 60
+	.  reduce 12
+
+
+state 98
+	lagvariable :  LAG ( SYMBOLNAME COMMA INTEGER )_    (31)
+
+	.  reduce 31
+
+
+state 99
+	elagvariable :  ELAG ( SYMBOLNAME COMMA INTEGER )_    (33)
+
+	.  reduce 33
+
+
+state 100
+	leadvariable :  LEAD ( SYMBOLNAME COMMA INTEGER )_    (35)
+
+	.  reduce 35
+
+
+state 101
+	eqnlist :  eqnlist EQUATION PROMPT SYMBOLNAME EQTYPE PROMPT eqntype EQ PROMPT expression EQUALS expression_    (14)
+	addition :  expression_PLUS expression 
+	subtraction :  expression_MINUS expression 
+	multiplication :  expression_MULT expression 
+	division :  expression_DIV expression 
+	exponentiation :  expression_POW expression 
+
+	POW  shift 63
+	DIV  shift 62
+	PLUS  shift 59
+	MULT  shift 61
+	MINUS  shift 60
+	.  reduce 14
+
+
+30/127 terminals, 17/600 nonterminals
+43/300 grammar rules, 102/1000 states
+0 shift/reduce, 0 reduce/reduce conflicts reported
+26/601 working sets used
+memory: states,etc. 215/2000, parser 159/4000
+20/3001 distinct lookahead sets
+40 extra closures
+234 shift entries, 1 exceptions
+34 goto entries
+126 entries saved by goto default
+Optimizer space used: input 521/2000, output 284/4000
+284 table entries, 150 zero
+maximum spread: 282, maximum offset: 282

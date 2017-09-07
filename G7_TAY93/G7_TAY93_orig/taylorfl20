@@ -1,0 +1,2444 @@
+MODEL > TAYLORFL20
+
+ENDOG >
+	ygap0	_NOTD
+	pdot0	_NOTD
+	rs0	_DATA
+ 	drs0	_NOTD
+	lretw0	_NOTD
+	dretw0	_NOTD
+        dletw0	_NOTD
+	fgdp0	_NOTD
+	fpdot0	_NOTD
+	frs0	_NOTD
+	dfrs0	_NOTD
+	lp0	_DATA
+	dygap0	_NOTD
+	rr20	_NOTD
+	rr50	_NOTD
+	rr100	_NOTD
+	rs1	_DATA
+	rs2	_DATA
+	rs3	_DATA
+	rs4	_DATA
+	rs5	_DATA
+	rs6	_DATA
+	rl0	_DATA
+	rl1	_DATA
+	rl2	_DATA
+	rl3	_DATA
+	rl4	_DATA
+	rl5	_DATA
+	rl6	_DATA
+	cd0	_DATA
+	cn0	_DATA
+	cs0	_DATA
+	cd1	_DATA
+	cn1	_DATA
+	cs1	_DATA
+	cd2	_DATA
+	cn2	_DATA
+	cs2	_DATA
+	c3	_DATA
+	c4	_DATA
+	cd5	_DATA
+	cn5	_DATA
+	cs5	_DATA
+	cd6	_DATA
+	cn6	_DATA
+	cs6	_DATA
+	ine0	_DATA
+	ins0	_DATA
+	ir0	_DATA
+	ii0	_DATA
+	if1	_DATA
+	ii1	_DATA
+	in2	_DATA
+	ir2	_DATA
+	ii2	_DATA
+	if3	_DATA
+	ii3	_DATA
+	if4	_DATA
+	ii4	_DATA
+	in5	_DATA
+	ir5	_DATA
+	ii5	_DATA
+	in6	_DATA
+	ir6	_DATA
+	ii6	_DATA
+	lex0	_DATA
+	lex1	_DATA
+	lex2	_DATA
+	lex3	_DATA
+	lex4	_DATA
+	lex5	_DATA
+	lex6	_DATA
+	lim0	_DATA
+	lim1	_DATA
+	lim2	_DATA
+	lim3	_DATA
+	lim4	_DATA
+	lim5	_DATA
+	lim6	_DATA
+	y0	_NOTD
+	y1	_NOTD
+	y2	_NOTD
+	y3	_NOTD
+	y4	_NOTD
+	y5	_NOTD
+	y6	_NOTD
+	le1	_NOTD
+	le2	_NOTD
+	le3	_NOTD
+	le4	_NOTD
+	le5	_NOTD
+	le6	_NOTD
+	lx0	_DATA
+	lx1	_DATA
+	lx2	_DATA
+	lx3	_DATA
+	lx4	_DATA
+	lx5	_DATA
+	lx6	_DATA
+	lw0	_NOTD
+	lw1	_NOTD
+	lw2	_NOTD
+	lw3	_NOTD
+	lw4	_NOTD
+	lw5	_NOTD
+	lw6	_NOTD
+	lp1	_DATA
+	lp2	_DATA
+	lp3	_DATA
+	lp4	_DATA
+	lp5	_DATA
+	lp6	_DATA
+	lpi0	_DATA
+	lpi1	_DATA
+	lpi2	_DATA
+	lpi3	_DATA
+	lpi4	_DATA
+	lpi5	_DATA
+	lpi6	_DATA
+	lpe0	_DATA
+	lpe1	_DATA
+	lpe2	_DATA
+	lpe3	_DATA
+	lpe4	_DATA
+	lpe5	_DATA
+	lpe6	_DATA
+	lg0	_DATA
+	lg1	_DATA
+	lg2	_DATA
+	lg3	_DATA
+	lg4	_DATA
+	lg5	_DATA
+	lg6	_DATA
+	ule1	_DATA
+	ule2	_DATA
+	ule3	_DATA
+	ule4	_DATA
+	ule5	_DATA
+	ule6	_DATA
+	rsl20	_NOTD
+	rsl21	_NOTD
+	rsl22	_NOTD
+	rsl23	_NOTD
+	rsl25	_NOTD
+	rsl26	_NOTD
+	rsl40	_NOTD
+	rsl41	_NOTD
+	rsl42	_NOTD
+	rsl43	_NOTD
+	rsl45	_NOTD
+	rsl46	_NOTD
+	rsl60	_NOTD
+	rsl61	_NOTD
+	rsl62	_NOTD
+	rsl63	_NOTD
+	rsl65	_NOTD
+	rsl66	_NOTD
+	yl20	_NOTD
+	yl21	_NOTD
+	yl22	_NOTD
+	yl23	_NOTD
+	yl24	_NOTD
+	yl25	_NOTD
+	yl26	_NOTD
+	yl40	_NOTD
+	yl41	_NOTD
+	yl42	_NOTD
+	yl43	_NOTD
+	yl44	_NOTD
+	yl45	_NOTD
+	yl46	_NOTD
+	yl60	_NOTD
+	yl61	_NOTD
+	yl62	_NOTD
+	yl63	_NOTD
+	yl64	_NOTD
+	yl65	_NOTD
+	yl66	_NOTD
+        lpl20   _NOTD
+        lpl40   _NOTD
+        lpl60   _NOTD
+        lpl80   _NOTD
+        lpl100  _NOTD
+        lpl120  _NOTD
+        lpl140  _NOTD
+        lpl160  _NOTD
+        lpl180  _NOTD
+        lpl21   _NOTD
+        lpl22   _NOTD
+        lpl23   _NOTD
+        lpl24   _NOTD
+        lpl25   _NOTD
+        lpl26   _NOTD
+        lwl20   _NOTD
+        lwl21   _NOTD
+        lwl22   _NOTD
+        lwl23   _NOTD
+        lwl24   _NOTD
+        lwl25   _NOTD
+        lwl26   _NOTD
+	lp20	_NOTD
+	lp21	_NOTD
+	lp22	_NOTD
+	lp23	_NOTD
+	lp24	_NOTD
+	lp25	_NOTD
+	lp26	_NOTD
+	lp40	_NOTD
+	lp60	_NOTD
+	lp80	_NOTD
+	lp100	_NOTD
+	lx20	_NOTD
+	lx21	_NOTD
+	lx22	_NOTD
+	lx23	_NOTD
+	lx24	_NOTD
+	lx25	_NOTD
+	lx26	_NOTD
+	one	_DTRM
+	rs0_	_NOTD
+	rs1_	_NOTD
+	rs2_	_NOTD
+	rs3_	_NOTD
+	rs4_	_NOTD
+	rs5_	_NOTD
+	rs6_	_NOTD
+	ule1_	_NOTD
+	ule2_	_NOTD
+	ule3_	_NOTD
+	ule4_	_NOTD
+	ule5_	_NOTD
+	ule6_	_NOTD
+	rl0_    _NOTD
+	rl1_    _NOTD
+	rl2_    _NOTD
+	rl3_    _NOTD
+	rl4_    _NOTD
+	rl5_    _NOTD
+	rl6_    _NOTD
+	cd0_	_NOTD
+	cn0_	_NOTD
+	cs0_	_NOTD
+	cd1_	_NOTD
+	cn1_	_NOTD
+	cs1_	_NOTD
+	cd2_	_NOTD
+	cn2_	_NOTD
+	cs2_	_NOTD
+	c3_	_NOTD
+	c4_	_NOTD
+	cd5_	_NOTD
+	cn5_	_NOTD
+	cs5_	_NOTD
+	cd6_	_NOTD
+	cn6_	_NOTD
+	cs6_	_NOTD
+	ine0_   _NOTD
+	ins0_   _NOTD
+	ir0_    _NOTD
+	ii0_    _NOTD
+	if1_	_NOTD
+	ii1_	_NOTD
+	in2_	_NOTD
+	ir2_	_NOTD
+	ii2_	_NOTD
+	if3_	_NOTD
+	ii3_	_NOTD
+	if4_	_NOTD
+	ii4_	_NOTD
+	in5_	_NOTD
+	ir5_	_NOTD
+	ii5_	_NOTD
+	in6_	_NOTD
+	ir6_	_NOTD
+	ii6_	_NOTD
+	lex0_   _NOTD
+	lex1_   _NOTD
+	lex2_   _NOTD
+	lex3_   _NOTD
+	lex4_   _NOTD
+	lex5_   _NOTD
+	lex6_   _NOTD
+	lim0_   _NOTD
+	lim1_   _NOTD
+	lim2_   _NOTD
+	lim3_   _NOTD
+	lim4_   _NOTD
+	lim5_   _NOTD
+	lim6_   _NOTD
+	lx0_    _NOTD
+	lx1_    _NOTD
+	lx2_    _NOTD
+	lx3_    _NOTD
+	lx4_    _NOTD
+	lx5_    _NOTD
+	lx6_    _NOTD
+	lp0_    _NOTD
+	lp1_    _NOTD
+	lp2_    _NOTD
+	lp3_    _NOTD
+	lp4_    _NOTD
+	lp5_    _NOTD
+	lp6_    _NOTD
+	lpi0_   _NOTD
+	lpi1_   _NOTD
+	lpi2_   _NOTD
+	lpi3_   _NOTD
+	lpi4_   _NOTD
+	lpi5_   _NOTD
+	lpi6_   _NOTD
+	lpe0_   _NOTD
+	lpe1_   _NOTD
+	lpe2_   _NOTD
+	lpe3_   _NOTD
+	lpe4_   _NOTD
+	lpe5_   _NOTD
+	lpe6_   _NOTD
+	lg0_	_NOTD
+	lg1_	_NOTD
+	lg2_	_NOTD
+	lg3_	_NOTD
+	lg4_	_NOTD
+	lg5_	_NOTD
+	lg6_	_NOTD
+
+
+EQUATION > EQ311
+EQTYPE >   IMPOSED
+EQ >	   dygap0   =  ygap0 - LAG(ygap0,1)
+
+EQUATION > EQ312
+EQTYPE >   IMPOSED
+EQ >	   rr20     =  rl0 - (LEAD(lpl20,2) - lp0) 
+
+EQUATION > EQ313
+EQTYPE >   IMPOSED
+EQ >	   rr50   =  rs0 - (LEAD(lp0,1) - lp0) + 20.0*(LEAD(rr50,1) - rr50)
+
+EQUATION > EQ314
+EQTYPE >   IMPOSED
+EQ >	   rr100   =  rs0 - (LEAD(lp0,1) - lp0) + 40.0*(LEAD(rr100,1) - rr100)
+
+EQUATION > EQ1
+EQTYPE >   IMPOSED
+EQ >	   rs0    =  tayrule0*(
+                     tayr10*LAG(rs0,1)
+                   + tayr20*LAG(rs0,2)
+                   + (1-tayr10-tayr20)*(
+                     leadpi20*4*(LEAD(lpl180,2)-LEAD(lpl180,1)) 
+                   + leadpi19*4*(LEAD(lpl180,1)-LEAD(lpl160,2))                 
+                   + leadpi18*4*(LEAD(lpl160,2)-LEAD(lpl160,1))                 
+                   + leadpi17*4*(LEAD(lpl160,1)-LEAD(lpl140,2))                 
+                   + leadpi16*4*(LEAD(lpl140,2)-LEAD(lpl140,1))
+                   + leadpi15*4*(LEAD(lpl140,1)-LEAD(lpl120,2))                 
+                   + leadpi14*4*(LEAD(lpl120,2)-LEAD(lpl120,1))                 
+                   + leadpi13*4*(LEAD(lpl120,1)-LEAD(lpl100,2))  
+                   + leadpi12*4*(LEAD(lpl100,2)-LEAD(lpl100,1))  
+                   + leadpi11*4*(LEAD(lpl100,1)-LEAD(lpl80,2))
+                   + leadpi10*4*(LEAD(lpl80,2)-LEAD(lpl20,1))
+                   + leadpi9*4*(LEAD(lpl80,1)-LEAD(lpl60,2))
+                   + leadpi8*4*(LEAD(lpl60,2)-LEAD(lpl60,1))
+                   + leadpi7*4*(LEAD(lpl60,1)-LEAD(lpl40,2))
+                   + leadpi6*4*(LEAD(lpl40,2)-LEAD(lpl40,1))
+                   + leadpi5*4*(LEAD(lpl40,1)-LEAD(lpl20,2))
+                   + leadpi4*4*(LEAD(lpl20,2)-LEAD(lpl20,1))
+                   + leadpi3*4*(LEAD(lpl20,1)-LEAD(lp0,2))
+                   + leadpi2*4*(LEAD(lp0,2)-LEAD(lp0,1))
+                   + leadpi1*4*(LEAD(lp0,1)-lp0)
+                   + leadpi0*4*(lp0-LAG(lp0,1))
+                   + lagpi1*4*(LAG(lp0,1)-LAG(lp0,2))
+                   + lagpi2*4*(LAG(lp0,2)-LAG(lp20,1))
+                   + lagpi3*4*(LAG(lp20,1)-LAG(lp20,2))
+                   + lagpi4*4*(LAG(lp20,2)-LAG(lp40,1))  ) 
+                   + taypm200*4*(LEAD(lpl180,2)-LEAD(lpl180,1))                 
+                   + taypm190*4*(LEAD(lpl180,1)-LEAD(lpl160,2))                 
+                   + taypm180*4*(LEAD(lpl160,2)-LEAD(lpl160,1))                 
+                   + taypm170*4*(LEAD(lpl160,1)-LEAD(lpl140,2))                 
+                   + taypm160*4*(LEAD(lpl140,2)-LEAD(lpl140,1))
+                   + taypm150*4*(LEAD(lpl140,1)-LEAD(lpl120,2))                 
+                   + taypm140*4*(LEAD(lpl120,2)-LEAD(lpl120,1))                 
+                   + taypm130*4*(LEAD(lpl120,1)-LEAD(lpl100,2))                   
+                   + taypm120*4*(LEAD(lpl100,2)-LEAD(lpl100,1))
+                   + taypm110*4*(LEAD(lpl100,1)-LEAD(lpl80,2))
+                   + taypm100*4*(LEAD(lpl80,2)-LEAD(lpl80,1))
+                   + taypm90*4*(LEAD(lpl80,1)-LEAD(lpl60,2))
+                   + taypm80*4*(LEAD(lpl60,2)-LEAD(lpl60,1))
+                   + taypm70*4*(LEAD(lpl60,1)-LEAD(lpl40,2))
+                   + taypm60*4*(LEAD(lpl40,2)-LEAD(lpl40,1))
+                   + taypm50*4*(LEAD(lpl40,1)-LEAD(lpl20,2))
+                   + taypm40*4*(LEAD(lpl20,2)-LEAD(lpl20,1))
+                   + taypm30*4*(LEAD(lpl20,1)-LEAD(lp0,2))
+                   + taypm20*4*(LEAD(lp0,2)-LEAD(lp0,1))
+                   + taypm10*4*(LEAD(lp0,1)-lp0)
+                   + tayp00*4*(lp0-LAG(lp0,1))
+                   + tayp10*4*(LAG(lp0,1)-LAG(lp0,2))
+                   + tayp20*4*(LAG(lp0,2)-LAG(lp20,1))
+                   + tayp30*4*(LAG(lp20,1)-LAG(lp20,2))
+                   + tayp40*4*(LAG(lp20,2)-LAG(lp40,1))
+                   + tayp80*4*(LAG(lp20,2)-LAG(lp60,2))
+                   + tayp120*4*(LAG(lp60,2)-LAG(lp100,2)) 
+                   + tayxm80*LEAD(yl60,2)/ybar0
+                   + tayxm70*LEAD(yl60,1)/ybar0
+                   + tayxm60*LEAD(yl40,2)/ybar0
+                   + tayxm50*LEAD(yl40,1)/ybar0
+                   + tayxm40*LEAD(yl20,2)/ybar0
+                   + tayxm30*LEAD(yl20,1)/ybar0
+                   + tayxm20*LEAD(ygap0,2)
+                   + tayxm10*LEAD(ygap0,1)
+                   + tayx00*ygap0
+                   + tayx10*LAG(ygap0,1)
+                   + tayx20*LAG(ygap0,2)
+                   + tayc0*(cd0+cs0+cn0)/ybar0
+                   + tayfi0*(ine0+ins0+ir0)/ybar0
+                   + tayii0*ii0/ybar0
+                   + tayplm3*LEAD(lpl20,1)
+                   + tayplm2*LEAD(lp0,2)
+                   + tayplm1*LEAD(lp0,1)
+                   + taypl00*lp0
+                   + taypl10*LAG(lp0,1)
+                   + taypl20*LAG(lp0,2)
+                   + taywd00*(lw0-LAG(lw0,1))
+                   + taywd10*(LAG(lw0,1)-LAG(lw0,2))
+                   + taypi00*(lpi0-LAG(lpi0,1))
+                   + taypfx0*fgdp0)
+                   + (1-tayrule0)*(
+                   - 4.458439*( - lp0)
+                   + 4.246994*( - LAG(lp0,1))
+                   + 0.179319*y0 )   
+                   + rs0_
+
+EQUATION > EQ2
+EQTYPE >   IMPOSED
+EQ >	   rs1    =  tayrule1*(lp1 - LAG(lp21,2) 
+                   + mrulep1*(lp1 - LAG(lp21,2))
+                   + mruley1*y1/ybar1 )
+                   + (1-tayrule1)*(
+                   - 1.956500*( - lp1)
+                   + 1.833256*( - LAG(lp1,1))
+                   + 0.065438*y1/ybar1 )   
+                   + rs1_
+
+EQUATION > EQ3
+EQTYPE >   IMPOSED
+EQ >	   rs2    =  tayrule2*(lp2 - LAG(lp22,2) 
+                   + mrulep2*(lp2 - LAG(lp22,2))
+                   + mruley2*y2/ybar2 )
+                   + (1-tayrule2)*(
+                   - 3.167371*(- lp2)
+                   + 2.161998*( - LAG(lp2,1))
+                   + 0.530050*y2/ybar2 )   
+                   + rs2_
+
+EQUATION > EQ4
+EQTYPE >   IMPOSED
+EQ >	   rs3    =  tayrule3*(lp3 - LAG(lp23,2) 
+                   + mrulep3*(lp3 - LAG(lp23,2))
+                   + mruley3*y3/ybar3 )
+                   + (1-tayrule3)*(
+                   - 1.547899*( - lp3)
+                   + 1.079499*( - LAG(lp3,1))
+                   + 0.624063*y3/ybar3 )   
+                   + rs3_
+
+EQUATION > EQ5
+EQTYPE >   IMPOSED
+EQ >	   rs4    =  tayrule4*(lp4 - LAG(lp24,2)
+                   + mrulep4*(lp4 - LAG(lp24,2))
+                   + mruley4*y4/ybar4 )
+                   + (1-tayrule4)*(
+                   - 2.583022*( - lp4)
+                   + 2.310869*( - LAG(lp4,1))
+                   + 0.198877*y4/ybar4 )    
+                   + rs4_
+
+EQUATION > EQ6
+EQTYPE >   IMPOSED
+EQ >	   rs5    =  tayrule5*(lp5 - LAG(lp25,2) 
+                   + mrulep5*(lp5 - LAG(lp25,2))
+                   + mruley5*y5/ybar5 )
+                   + (1-tayrule5)*(
+                   - 2.085851*( - lp5)
+                   + 1.563560*( - LAG(lp5,1))
+                   + 0.289115*y5/ybar5 )   
+                   + rs5_
+
+EQUATION > EQ7
+EQTYPE >   IMPOSED
+EQ >	   rs6    =  tayrule6*(lp6 - LAG(lp26,2) 
+                   + mrulep6*(lp6 - LAG(lp26,2))
+                   + mruley6*y6/ybar6 )
+                   + (1-tayrule6)*(
+                   - 1.285991*( - lp6)
+                   + 1.177721*( - LAG(lp6,1))
+                   + 0.272787*y6/ybar6 )   
+                   + rs6_
+
+EQUATION > EQ8
+EQTYPE >   IMPOSED
+EQ >	   le1    = LEAD(le1,1) + 0.25*(rs1 - rs0) + ule1 	
+
+EQUATION > EQ9
+EQTYPE >   IMPOSED
+EQ >	   le2    = LEAD(le2,1) + 0.25*(rs2 - rs0) + ule2	
+
+EQUATION > EQ10
+EQTYPE >   IMPOSED
+EQ >	   le3    = LEAD(le3,1) + 0.25*(rs3 - rs0) + ule3 	
+
+EQUATION > EQ11
+EQTYPE >   IMPOSED
+EQ >	   le4    = LEAD(le4,1) + 0.25*(rs4 - rs0) + ule4 	
+
+EQUATION > EQ12
+EQTYPE >   IMPOSED
+EQ >	   le5    = LEAD(le5,1) + 0.25*(rs5 - rs0) + ule5 	
+
+EQUATION > EQ13
+EQTYPE >   IMPOSED
+EQ >	   le6    = LEAD(le6,1) + 0.25*(rs6 - rs0) + ule6 	
+
+EQUATION > EQ14
+EQTYPE >   IMPOSED
+EQ >	   rl0    =  0.267752456729*(rs0 
+                   + 0.753116*(LEAD(rs0,1) 
+                   + 0.753116*(LEAD(rs0,2)
+                   + 0.753116*(LEAD(rsl20,1) 
+                   + 0.753116*(LEAD(rsl20,2) 
+                   + 0.753116*(LEAD(rsl40,1) 
+                   + 0.753116*(LEAD(rsl40,2) 
+                   + 0.753116*(LEAD(rsl60,1) 
+                   + 0.753116*(LEAD(rsl60,2))))))))))
+                   + rl0_
+
+EQUATION > EQ15
+EQTYPE >   IMPOSED
+EQ >	   rl1    =  0.536220867091*(rs1 
+                   + 0.464317*(LEAD(rs1,1) 
+                   + 0.464317*(LEAD(rs1,2)
+                   + 0.464317*(LEAD(rsl21,1) 
+                   + 0.464317*(LEAD(rsl21,2) 
+                   + 0.464317*(LEAD(rsl41,1) 
+                   + 0.464317*(LEAD(rsl41,2) 
+                   + 0.464317*(LEAD(rsl61,1) 
+                   + 0.464317*(LEAD(rsl61,2))))))))))
+                   + rl1_
+	
+EQUATION > EQ16
+EQTYPE >   IMPOSED
+EQ >	   rl2    =  0.487360392790*(rs2 
+                   + 0.513857*(LEAD(rs2,1) 
+                   + 0.513857*(LEAD(rs2,2)
+                   + 0.513857*(LEAD(rsl22,1) 
+                   + 0.513857*(LEAD(rsl22,2) 
+                   + 0.513857*(LEAD(rsl42,1) 
+                   + 0.513857*(LEAD(rsl42,2) 
+                   + 0.513857*(LEAD(rsl62,1) 
+                   + 0.513857*(LEAD(rsl62,2))))))))))
+                   + rl2_
+	
+EQUATION > EQ17
+EQTYPE >   IMPOSED
+EQ >	   rl3    =  0.365325410230*(rs3 
+                   + 0.641385*(LEAD(rs3,1) 
+                   + 0.641385*(LEAD(rsl23,2)
+                   + 0.641385*(LEAD(rsl23,1) 
+                   + 0.641385*(LEAD(rsl23,2) 
+                   + 0.641385*(LEAD(rsl43,1) 
+                   + 0.641385*(LEAD(rsl43,2) 
+                   + 0.641385*(LEAD(rsl63,1) 
+                   + 0.641385*(LEAD(rsl63,2))))))))))
+                   + rl3_
+	
+EQUATION > EQ18
+EQTYPE >   IMPOSED
+EQ >	   rl4    =  rs4
+                   + rl4_
+	
+EQUATION > EQ19
+EQTYPE >   IMPOSED
+EQ >	   rl5    =  0.279991858639*(rs5 
+                   + 0.738245*(LEAD(rs5,1) 
+                   + 0.738245*(LEAD(rs5,2)
+                   + 0.738245*(LEAD(rsl25,1) 
+                   + 0.738245*(LEAD(rsl25,2) 
+                   + 0.738245*(LEAD(rsl45,1) 
+                   + 0.738245*(LEAD(rsl45,2) 
+                   + 0.738245*(LEAD(rsl65,1) 
+                   + 0.738245*(LEAD(rsl65,2))))))))))
+                   + rl5_
+	
+EQUATION > EQ20
+EQTYPE >   IMPOSED
+EQ >	   rl6    =  0.166364985021*(rs6 
+                   + 0.894834*(LEAD(rs6,1) 
+                   + 0.894834*(LEAD(rs6,2)
+                   + 0.894834*(LEAD(rsl26,1) 
+                   + 0.894834*(LEAD(rsl26,2) 
+                   + 0.894834*(LEAD(rsl46,1) 
+                   + 0.894834*(LEAD(rsl46,2) 
+                   + 0.894834*(LEAD(rsl66,1) 
+                   + 0.894834*(LEAD(rsl66,2))))))))))
+                   + rl6_
+	
+EQUATION > EQ21
+EQTYPE >   IMPOSED
+EQ >	   cd0    =  0.040036*(0.163244115*(y0 
+                   + 0.9*(LEAD(y0,1)
+                   + 0.9*(LEAD(y0,2)
+                   + 0.9*(LEAD(yl20,1)
+                   + 0.9*(LEAD(yl20,2)
+                   + 0.9*(LEAD(yl40,1)
+                   + 0.9*(LEAD(yl40,2)
+                   + 0.9*(LEAD(yl60,1)
+                   + 0.9*(LEAD(yl60,2)))))))))) )
+                   + 0.697747*LAG(cd0,1)
+                   - 29.342915*yt0*(rl0 - LEAD(lpl20,2) + lp0) 
+                   + dummy0*cd0_
+
+EQUATION > EQ22
+EQTYPE >   IMPOSED
+EQ >	   cn0    =  0.097906*(0.163244115*(y0 
+                   + 0.9*(LEAD(y0,1)
+                   + 0.9*(LEAD(y0,2)
+                   + 0.9*(LEAD(yl20,1)
+                   + 0.9*(LEAD(yl20,2)
+                   + 0.9*(LEAD(yl40,1)
+                   + 0.9*(LEAD(yl40,2)
+                   + 0.9*(LEAD(yl60,1)
+                   + 0.9*(LEAD(yl60,1)))))))))) )
+                   + 0.508379*LAG(cn0,1)
+                   - 24.789224*yt0*(rl0 - LEAD(lpl20,2) + lp0) 
+                   + dummy0*cn0_
+
+EQUATION > EQ23
+EQTYPE >   IMPOSED
+EQ >	   cs0    =  0.038131*(0.163244115*(y0 
+                   + 0.9*(LEAD(y0,1)
+                   + 0.9*(LEAD(y0,2)
+                   + 0.9*(LEAD(yl20,1)
+                   + 0.9*(LEAD(yl20,2)
+                   + 0.9*(LEAD(yl40,1)
+                   + 0.9*(LEAD(yl40,2)
+                   + 0.9*(LEAD(yl60,1)
+                   + 0.9*(LEAD(yl60,2)))))))))) )
+                   + 0.906280*LAG(cs0,1)
+                   - 0*yt0*(rl0 - LEAD(lpl20,2) + lp0) 
+                   + dummy0*cs0_
+
+EQUATION > EQ24
+EQTYPE >   IMPOSED
+EQ >	   cd1    =  0.047059*(0.163244115*(y1
+                   + 0.9*(LEAD(y1,1)
+                   + 0.9*(LEAD(y1,2)
+                   + 0.9*(LEAD(yl21,1)
+                   + 0.9*(LEAD(yl21,2)
+                   + 0.9*(LEAD(yl41,1)
+                   + 0.9*(LEAD(yl41,2)
+                   + 0.9*(LEAD(yl61,1)
+                   + 0.9*(LEAD(yl61,2)))))))))) )
+                   + 0.632337*LAG(cd1,1)
+                   - 7.528040*yt1*(rl1 - LEAD(lpl21,2) + lp1) 
+                   + dummy1*cd1_
+
+EQUATION > EQ25
+EQTYPE >   IMPOSED
+EQ >	   cn1    =  0.014979*(0.163244115*(y1              
+                   + 0.9*(LEAD(y1,1)                        
+                   + 0.9*(LEAD(y1,2)                        
+                   + 0.9*(LEAD(yl21,1)                        
+                   + 0.9*(LEAD(yl21,2)                        
+                   + 0.9*(LEAD(yl41,1)                        
+                   + 0.9*(LEAD(yl41,2)                        
+                   + 0.9*(LEAD(yl61,1)                        
+                   + 0.9*(LEAD(yl61,2)))))))))) )             
+                   + 0.899088*LAG(cn1,1)                    
+                   - 3.266014*yt1*(rl1 - LEAD(lpl21,2) + lp1) 
+                   + dummy1*cn1_
+
+EQUATION > EQ26
+EQTYPE >   IMPOSED
+EQ >	   cs1    =  0.026202*(0.163244115*(y1       
+                   + 0.9*(LEAD(y1,1)                 
+                   + 0.9*(LEAD(y1,2)                 
+                   + 0.9*(LEAD(yl21,1)                 
+                   + 0.9*(LEAD(yl21,2)                 
+                   + 0.9*(LEAD(yl41,1)                 
+                   + 0.9*(LEAD(yl41,2)                 
+                   + 0.9*(LEAD(yl61,1)                 
+                   + 0.9*(LEAD(yl61,2)))))))))) )      
+                   + 0.911831*LAG(cs1,1)             
+                   - 0*yt1*(rl1 - LEAD(lpl21,2) + lp1) 
+                   + dummy1*cs1_
+
+EQUATION > EQ27
+EQTYPE >   IMPOSED
+EQ >	   cd2    =  0.079200*(0.163244115*(y2               
+                   + 0.9*(LEAD(y2,1)                      
+                   + 0.9*(LEAD(y2,2)                      
+                   + 0.9*(LEAD(yl22,1)                      
+                   + 0.9*(LEAD(yl22,2)                      
+                   + 0.9*(LEAD(yl42,1)                      
+                   + 0.9*(LEAD(yl42,2)                      
+                   + 0.9*(LEAD(yl62,1)                      
+                   + 0.9*(LEAD(yl62,2)))))))))) )           
+		   + 0.343733*LAG(cd2,1)                     
+		   - 34.504536*yt2*(rl2 - LEAD(lpl22,2) + lp2) 
+                   + dummy2*cd2_
+
+EQUATION > EQ28
+EQTYPE >   IMPOSED
+EQ >	   cn2    =  0.195613*(0.163244115*(y2              
+		    + 0.9*(LEAD(y2,1)                        
+		    + 0.9*(LEAD(y2,2)                        
+		    + 0.9*(LEAD(yl22,1)                        
+		    + 0.9*(LEAD(yl22,2)                        
+		    + 0.9*(LEAD(yl42,1)                        
+		    + 0.9*(LEAD(yl42,2)                        
+		    + 0.9*(LEAD(yl62,1)                        
+		    + 0.9*(LEAD(yl62,2)))))))))) )             
+		    + 0.330087*LAG(cn2,1)                    
+		   - 0*yt2*(rl2 - LEAD(lpl22,2) + lp2) 
+                   + dummy2*cn2_
+
+EQUATION > EQ29
+EQTYPE >   IMPOSED
+EQ >	   cs2    =  0.075554*(0.163244115*(y2       
+		    + 0.9*(LEAD(y2,1)                 
+		    + 0.9*(LEAD(y2,2)                 
+		    + 0.9*(LEAD(yl22,1)                 
+		    + 0.9*(LEAD(yl22,2)                 
+		    + 0.9*(LEAD(yl42,1)                 
+		    + 0.9*(LEAD(yl42,2)                 
+		    + 0.9*(LEAD(yl62,1)                 
+		    + 0.9*(LEAD(yl62,2)))))))))) )      
+		   + 0.809747*LAG(cs2,1)             
+		   - 0*yt2*(rl2 - LEAD(lpl22,2) + lp2) 
+                   + dummy2*cs2_
+
+EQUATION > EQ30
+EQTYPE >   IMPOSED
+EQ >	   c3     =  0.176731*(0.163244115*(y3       
+		    + 0.9*(LEAD(y3,1)                 
+		    + 0.9*(LEAD(y3,2)                 
+		    + 0.9*(LEAD(yl23,1)                 
+		    + 0.9*(LEAD(yl23,2)                 
+		    + 0.9*(LEAD(yl43,1)                 
+		    + 0.9*(LEAD(yl43,2)                 
+		    + 0.9*(LEAD(yl63,1)                 
+		    + 0.9*(LEAD(yl63,2)))))))))) ) 
+		    + 0.733012*LAG(c3,1)
+		   - 95.037846*yt3*(rl3 - LEAD(lpl23,2) + lp3) 
+                   + dummy3*c3_
+
+EQUATION > EQ31
+EQTYPE >   IMPOSED
+EQ >	   c4     =   0.084700*(0.163244115*(y4       
+		   + 0.9*(LEAD(y4,1)                 
+		   + 0.9*(LEAD(y4,2)                 
+		   + 0.9*(LEAD(yl24,1)                 
+		   + 0.9*(LEAD(yl24,2)                 
+		   + 0.9*(LEAD(yl44,1)                 
+		   + 0.9*(LEAD(yl44,2)                 
+		   + 0.9*(LEAD(yl64,1)                 
+		   + 0.9*(LEAD(yl64,2)))))))))) ) 
+		   + 0.876537*LAG(c4,1)
+		  - 1203.954351*yt4*(rl4 - LEAD(lpl24,2) + lp4)  
+                   + dummy4*c4_
+
+EQUATION > EQ32
+EQTYPE >   IMPOSED
+EQ >	   cd5 =  0.040712*(0.163244115*(y5               
+		   + 0.9*(LEAD(y5,1)                      
+		   + 0.9*(LEAD(y5,2)                      
+		   + 0.9*(LEAD(yl25,1)                      
+		   + 0.9*(LEAD(yl25,2)                      
+		   + 0.9*(LEAD(yl45,1)                      
+		   + 0.9*(LEAD(yl45,2)                      
+		   + 0.9*(LEAD(yl65,1)                      
+		   + 0.9*(LEAD(yl65,2)))))))))) )           
+		   + 0.356465*LAG(cd5,1)                     
+		   - 4098.146661*yt5*(rl5 - LEAD(lpl25,2) + lp5) 
+                   + dummy5*cd5_
+
+EQUATION > EQ33
+EQTYPE >   IMPOSED
+EQ >	   cn5    =  0.025993*(0.163244115*(y5               
+		    + 0.9*(LEAD(y5,1)                      
+		    + 0.9*(LEAD(y5,2)                      
+		    + 0.9*(LEAD(yl25,1)                      
+		    + 0.9*(LEAD(yl25,2)                      
+		    + 0.9*(LEAD(yl45,1)                      
+		    + 0.9*(LEAD(yl45,2)                      
+		    + 0.9*(LEAD(yl65,1)                      
+		    + 0.9*(LEAD(yl65,2)))))))))) )           
+		   + 0.822208*LAG(cn5,1)                     
+		   - 0*yt5*(rl5 - LEAD(lpl25,2) + lp5) 
+                   + dummy5*cn5_
+
+EQUATION > EQ34
+EQTYPE >   IMPOSED
+EQ >	   cs5    =  0.093135*(0.163244115*(y5       
+		    + 0.9*(LEAD(y5,1)                 
+		    + 0.9*(LEAD(y5,2)                 
+		    + 0.9*(LEAD(yl25,1)                 
+		    + 0.9*(LEAD(yl25,2)                 
+		    + 0.9*(LEAD(yl45,1)                 
+		    + 0.9*(LEAD(yl45,2)                 
+		    + 0.9*(LEAD(yl65,1)                 
+		    + 0.9*(LEAD(yl65,2)))))))))) )      
+		   + 0.691814*LAG(cs5,1)             
+		   - 0*yt5*(rl5 - LEAD(lpl25,2) + lp5) 
+                   + dummy5*cs5_
+
+EQUATION > EQ35
+EQTYPE >   IMPOSED
+EQ >	   cd6    =  0.072862*(0.163244115*(y6               
+		    + 0.9*(LEAD(y6,1)                      
+		    + 0.9*(LEAD(y6,2)                      
+		    + 0.9*(LEAD(yl26,1)                      
+		    + 0.9*(LEAD(yl26,2)                      
+		    + 0.9*(LEAD(yl46,1)                      
+		    + 0.9*(LEAD(yl46,2)                      
+		    + 0.9*(LEAD(yl66,1)                      
+		    + 0.9*(LEAD(yl66,2)))))))))) )           
+		   + 0.516084*LAG(cd6,1)                     
+		   - 0*yt6*(rl6 - LEAD(lpl26,2) + lp6) 
+                   + dummy6*cd6_
+
+EQUATION > EQ36
+EQTYPE >   IMPOSED
+EQ >	   cn6    =  0.089712*(0.163244115*(y6               
+		    + 0.9*(LEAD(y6,1)                      
+		    + 0.9*(LEAD(y6,2)                      
+		    + 0.9*(LEAD(yl26,1)                      
+		    + 0.9*(LEAD(yl26,2)                      
+		    + 0.9*(LEAD(yl46,1)                      
+		    + 0.9*(LEAD(yl46,2)                      
+		    + 0.9*(LEAD(yl66,1)                      
+		    + 0.9*(LEAD(yl66,2)))))))))) )           
+		   + 0.666482*LAG(cn6,1)                     
+		   - 4.996876*yt6*(rl6 - LEAD(lpl26,2) + lp6) 
+                   + dummy6*cn6_
+
+EQUATION > EQ37
+EQTYPE >   IMPOSED
+EQ >	   cs6    =  0.031536*(0.163244115*(y6       
+		    + 0.9*(LEAD(y6,1)                 
+		    + 0.9*(LEAD(y6,2)                 
+		    + 0.9*(LEAD(yl26,1)                 
+		    + 0.9*(LEAD(yl26,2)                 
+		    + 0.9*(LEAD(yl46,1)                 
+		    + 0.9*(LEAD(yl46,2)                 
+		    + 0.9*(LEAD(yl66,1)                 
+		    + 0.9*(LEAD(yl66,2)))))))))) )      
+		   + 0.912554*LAG(cs6,1)             
+		   - 0*yt6*(rl6 - LEAD(lpl26,2) + lp6) 
+                   + dummy6*cs6_
+
+EQUATION > EQ38
+EQTYPE >   IMPOSED
+EQ >	   ine0   =  0.759169*LAG(ine0,1) 
+		   + 0.042619*(0.163244115*(y0 
+                    + 0.9*(LEAD(y0,1)
+                    + 0.9*(LEAD(y0,2)
+                    + 0.9*(LEAD(yl20,1)
+                    + 0.9*(LEAD(yl20,2)
+                    + 0.9*(LEAD(yl40,1)
+                    + 0.9*(LEAD(yl40,2)
+                    + 0.9*(LEAD(yl60,1)
+                    + 0.9*(LEAD(yl60,2)))))))))) )
+		   - 98.662872*yt0*(rl0 - LEAD(lpl20,2) + lp0)
+		   + dummy0*ine0_
+
+EQUATION > EQ39
+EQTYPE >   IMPOSED
+EQ >	   ins0   =  0.962768*LAG(ins0,1) 
+		   + 0.007254*(0.163244115*(y0 
+                    + 0.9*(LEAD(y0,1)
+                    + 0.9*(LEAD(y0,2)
+                    + 0.9*(LEAD(yl20,1)
+                    + 0.9*(LEAD(yl20,2)
+                    + 0.9*(LEAD(yl40,1)
+                    + 0.9*(LEAD(yl40,2)
+                    + 0.9*(LEAD(yl60,1)
+                    + 0.9*(LEAD(yl60,2)))))))))) )
+		  - 24.992937*yt0*(rl0 - LEAD(lpl20,2) + lp0)
+		  + dummy0*ins0_
+
+EQUATION > EQ40
+EQTYPE >   IMPOSED
+EQ >	   ir0    =  0.613971*LAG(ir0,1) 
+		   + 0.063050*(0.163244115*(y0 
+                    + 0.9*(LEAD(y0,1)
+                    + 0.9*(LEAD(y0,2)
+                    + 0.9*(LEAD(yl20,1)
+                    + 0.9*(LEAD(yl20,2)
+                    + 0.9*(LEAD(yl40,1)
+                    + 0.9*(LEAD(yl40,2)
+                    + 0.9*(LEAD(yl60,1)
+                    + 0.9*(LEAD(yl60,2)))))))))) )
+		   - 269.518067*yt0*(rl0 - LEAD(lpl20,2) + lp0)
+		   + dummy0*ir0_
+
+EQUATION > EQ41
+EQTYPE >   IMPOSED
+EQ >	   ii0    =  0.656318*LAG(ii0,1) 
+		   + 0.207494*y0
+		   - 0.200888*LAG(y0,1) 
+		   - 86.277158*yt0*(rl0 - LEAD(lpl20,2) + lp0)
+		   + dummy0*ii0_
+
+EQUATION > EQ42
+EQTYPE >   IMPOSED
+EQ >	   if1    =  0.933232*LAG(if1,1) 
+		   + 0.025502*(0.163244115*(y1
+                   + 0.9*(LEAD(y1,1)
+                   + 0.9*(LEAD(y1,2)
+                   + 0.9*(LEAD(yl21,1)
+                   + 0.9*(LEAD(yl21,2)
+                   + 0.9*(LEAD(yl41,1)
+                   + 0.9*(LEAD(yl41,2)
+                   + 0.9*(LEAD(yl61,1)
+                   + 0.9*(LEAD(yl61,2)))))))))) )
+		   - 9.697647*yt1*(rl1 - LEAD(lpl21,2) + lp1)
+		   + dummy1*if1_
+
+EQUATION > EQ43
+EQTYPE >   IMPOSED
+EQ >	   ii1    =  0.715112*LAG(ii1,1) 
+		   + 0.631541*y1
+		   - 0.604745*LAG(y1,1) 
+		   - 24.337881*yt1*(rl1 - LEAD(lpl21,2) + lp1)
+		   + dummy1*ii1_
+
+EQUATION > EQ44
+EQTYPE >   IMPOSED
+EQ >	   in2    =  0.811606*LAG(in2,1) 
+		   + 0.019594*(0.163244115*(y2
+                    + 0.9*(LEAD(y2,1)
+                    + 0.9*(LEAD(y2,2)
+                    + 0.9*(LEAD(yl22,1)
+                    + 0.9*(LEAD(yl22,2)
+                    + 0.9*(LEAD(yl42,1)
+                    + 0.9*(LEAD(yl42,2)
+                    + 0.9*(LEAD(yl62,1)
+                    + 0.9*(LEAD(yl62,2)))))))))) )
+		   + dummy2*in2_
+
+EQUATION > EQ45
+EQTYPE >   IMPOSED
+EQ >	   ir2    =  0.857641*LAG(ir2,1) 
+		   - 21.531584*yt2*(rl2 - LEAD(lpl22,2) + lp2)
+		   + dummy2*ir2_
+
+EQUATION > EQ46
+EQTYPE >   IMPOSED
+EQ >	   ii2    =  0.698647*LAG(ii2,1) 
+		   + 0.155856*y2
+		   - 0.150925*LAG(y2,1) 
+		   - 45.009887*yt2*(rl2 - LEAD(lpl22,2) + lp2)
+		   + dummy2*ii2_
+
+EQUATION > EQ47
+EQTYPE >   IMPOSED
+EQ >	   if3    =  0.810232*LAG(if3,1) 
+		   + 0.049096*(0.163244115*(y3       
+		    + 0.9*(LEAD(y3,1)                 
+		    + 0.9*(LEAD(y3,2)                 
+		    + 0.9*(LEAD(yl23,1)                 
+		    + 0.9*(LEAD(yl23,2)                 
+		    + 0.9*(LEAD(yl43,1)                 
+		    + 0.9*(LEAD(yl43,2)                 
+		    + 0.9*(LEAD(yl63,1)                 
+		    + 0.9*(LEAD(yl63,2)))))))))) )
+		   - 213.802663*yt3*(rl3 - LEAD(lpl23,2) + lp3)
+		   + dummy3*if3_
+
+EQUATION > EQ48
+EQTYPE >   IMPOSED
+EQ >	   ii3    =  0.326051*LAG(ii3,1) 
+		   + 0.177627*y3
+		   - 0.171459*LAG(y3,1) 
+		   - 261.311394*yt3*(rl3 - LEAD(lpl23,2) + lp3)
+		   + dummy3*ii3_ 
+
+EQUATION > EQ49
+EQTYPE >   IMPOSED
+EQ >	   if4    =  0.906866*LAG(if4,1) 
+		   + 0.030282*(0.163244115*(y4      
+		    + 0.9*(LEAD(y4,1)                 
+		    + 0.9*(LEAD(y4,2)                 
+		    + 0.9*(LEAD(yl24,1)                 
+		    + 0.9*(LEAD(yl24,2)                 
+		    + 0.9*(LEAD(yl44,1)                 
+		    + 0.9*(LEAD(yl44,2)                 
+		    + 0.9*(LEAD(yl64,1)                 
+		    + 0.9*(LEAD(yl64,2)))))))))) )
+		   - 3015.818496*yt4*(rl4 - LEAD(lpl24,2) + lp4)
+		   + dummy4*if4_
+
+EQUATION > EQ50
+EQTYPE >   IMPOSED
+EQ >	   ii4    =  0.543133*LAG(ii4,1) 
+		   + 0.560677*y4
+		   - 0.514888*LAG(y4,1) 
+		   - 7551.414350*yt4*(rl4 - LEAD(lpl24,2) + lp4)
+		   + dummy4*ii4_
+
+EQUATION > EQ51
+EQTYPE >   IMPOSED
+EQ >	   in5    =  0.898810*LAG(in5,1) 
+		   + 0.040603*(0.163244115*(y5               
+		    + 0.9*(LEAD(y5,1)                      
+		    + 0.9*(LEAD(y5,2)                      
+		    + 0.9*(LEAD(yl25,1)                      
+		    + 0.9*(LEAD(yl25,2)                      
+		    + 0.9*(LEAD(yl45,1)                      
+		    + 0.9*(LEAD(yl45,2)                      
+		    + 0.9*(LEAD(yl65,1)                      
+		    + 0.9*(LEAD(yl65,2)))))))))) )   
+		   - 13453.512916*yt5*(rl5 - LEAD(lpl25,2) + lp5)
+		   + dummy5*in5_
+
+EQUATION > EQ52
+EQTYPE >   IMPOSED
+EQ >	   ir5    =  0.823210*LAG(ir5,1) 
+		   - 2577.509255*yt5*(rl5 - LEAD(lpl25,2) + lp5) 
+		   + dummy5*ir5_
+
+EQUATION > EQ53
+EQTYPE >   IMPOSED
+EQ >	   ii5    =  0.296271*LAG(ii5,1) 
+		   - 0.305864*y5
+		   + 0.323035*LAG(y5,1) 
+		   - 16349.191748*yt5*(rl5 - LEAD(lpl25,2) + lp5) 
+		   + dummy5*ii5_ 
+
+EQUATION > EQ54
+EQTYPE >   IMPOSED
+EQ >	   in6    =  0.726412*LAG(in6,1) 
+		   + 0.033597*(0.163244115*(y6               
+		    + 0.9*(LEAD(y6,1)                      
+		    + 0.9*(LEAD(y6,2)                      
+		    + 0.9*(LEAD(yl26,1)                      
+		    + 0.9*(LEAD(yl26,2)                      
+		    + 0.9*(LEAD(yl46,1)                      
+		    + 0.9*(LEAD(yl46,2)                      
+		    + 0.9*(LEAD(yl66,1)                      
+		    + 0.9*(LEAD(yl66,2)))))))))) ) 
+		   - 4.022227*yt6*(rl6 - LEAD(lpl26,2) + lp6)
+		   + dummy6*in6_
+
+EQUATION > EQ55
+EQTYPE >   IMPOSED
+EQ >	   ir6    =  0.727523*LAG(ir6,1) 
+		   - 1.330503*yt6*(rl6 - LEAD(lpl26,2) + lp6)
+		   + dummy6*ir6_
+
+EQUATION > EQ56
+EQTYPE >   IMPOSED
+EQ >	   ii6    =  0.639135*LAG(ii6,1) 
+		   + 0.034235*y6
+                   - 0.035887*LAG(y6,1) 
+		   - 2.522000*yt6*(rl6 - LEAD(lpl26,2) + lp6)
+		   + dummy6*ii6_
+
+EQUATION > EQ57
+EQTYPE >   IMPOSED
+EQ >	   lex0   =  0.794366*LAG(lex0,1)                                
+                   - 0.150669*(lpe0-lpi0)                                
+                   + 0.230363*(0.091*y1/ybar1 + 0.175*y2/ybar2           
+                     + 0.265*y3/ybar3 + 0.123*y4/ybar4 + 0.189*y5/ybar5    
+                     + 0.157*y6/ybar6)                                     
+                   + lex0_  
+                                                               
+EQUATION > EQ58
+EQTYPE >   IMPOSED
+EQ >	   lex1   =  0.581493*LAG(lex1,1) 
+		   - 0.324658*(lpe1-lpi1)
+		   + 1.014557*(0.268*y0/ybar0 + 0.141*y2/ybar2
+		    + 0.213*y3/ybar3 + 0.099*y4/ybar4 + 0.152*y5/ybar5 
+		    + 0.127*y6/ybar6)
+                   + lex1_ 
+
+EQUATION > EQ59
+EQTYPE >   IMPOSED
+EQ >	   lex2   =  0.508914*LAG(lex2,1) 
+		   - 0.375950*(lpe2-lpi2)
+		   + 0.999121*(0.287*y0/ybar0 + 0.079*y1/ybar1
+		    + 0.229*y3/ybar3 + 0.106*y4/ybar4 + 0.163*y5/ybar5
+		    + 0.136*y6/ybar6)
+                   + lex2_ 
+
+EQUATION > EQ60
+EQTYPE >   IMPOSED
+EQ >	   lex3   =  0.532222*LAG(lex3,1) 
+		   - 0.340291*(lpe3-lpi3)
+		   + 0.684491*(0.311*y0/ybar0 + 0.085*y1/ybar1
+		    + 0.164*y2/ybar2 + 0.116*y4/ybar4 + 0.177*y5/ybar5
+		    + 0.147*y6/ybar6)
+                   + lex3_ 
+
+EQUATION > EQ61
+EQTYPE >   IMPOSED
+EQ >	   lex4   =  0.704032*LAG(lex4,1) 
+		   - 0.079844*(lpe4-lpi4)
+		   + 0.594719*(0.275*y0/ybar0 + 0.075*y1/ybar1
+		    + 0.145*y2/ybar2 + 0.219*y3/ybar3 + 0.156*y5/ybar5
+		    + 0.130*y6/ybar6)
+                   + lex4_ 
+
+EQUATION > EQ62
+EQTYPE >   IMPOSED
+EQ >	   lex5   =  0.814074*LAG(lex5,1) 
+		   - 0.153263*(lpe5-lpi5)
+		   + 0.372469*(0.291*y0/ybar0 + 0.079*y1/ybar1
+		    + 0.153*y2/ybar2 + 0.232*y3/ybar3 + 0.108*y4/ybar4
+		    + 0.137*y6/ybar6)
+                   + lex5_ 
+
+EQUATION > EQ63
+EQTYPE >   IMPOSED
+EQ >	   lex6   =  0.130558*LAG(lex6,1) 
+		   - 0.369852*(lpe6-lpi6)
+		   + 1.128672*(0.283*y0/ybar0 + 0.077*y1/ybar1
+		    + 0.149*y2/ybar2 + 0.225*y3/ybar3 + 0.105*y4/ybar4
+		    + 0.161*y5/ybar5)
+                   + lex6_ 
+
+EQUATION > EQ64
+EQTYPE >   IMPOSED
+EQ >	   lim0   =  0.440069*LAG(lim0,1) 
+		   - 0.216498*(lpi0-lp0)
+		   + 1.274518*y0/ybar0
+		   + lim0_
+
+EQUATION > EQ65
+EQTYPE >   IMPOSED 
+EQ >	   lim1   =  0.679052*LAG(lim1,1) 
+		   - 0.100330*(lpi1-lp1)
+		   + 0.497822*y1/ybar1
+		   + lim1_
+
+EQUATION > EQ66
+EQTYPE >   IMPOSED
+EQ >	   lim2   =  0.687657*LAG(lim2,1) 
+		   - 0.147787*(lpi2-lp2)
+		   + 0.698130*y2/ybar2
+		   + lim2_
+
+EQUATION > EQ67
+EQTYPE >   IMPOSED
+EQ >	   lim3   =  0.290667*LAG(lim3,1) 
+		   + 0*(lpi3-lp3)
+		   + 1.324583*y3/ybar3
+		   + lim3_
+
+EQUATION > EQ68
+EQTYPE >   IMPOSED
+EQ >	   lim4   =  0.414376*LAG(lim4,1) 
+		   - 0.190000*(lpi4-lp4)
+		   + 1.176764*y4/ybar4
+		   + lim4_
+
+EQUATION > EQ69
+EQTYPE >   IMPOSED
+EQ >	   lim5   =  0.902181*LAG(lim5,1) 
+		   - 0.081189*(lpi5-lp5)
+		   + 0.110926*y5/ybar5
+		   + lim5_
+
+EQUATION > EQ70
+EQTYPE >   IMPOSED
+EQ >	   lim6   =  0.650631*LAG(lim6,1) 
+		   - 0.061169*(lpi6-lp6)
+		   + 0.656945*y6/ybar6
+		   + lim6_
+
+
+EQUATION > EQ71
+EQTYPE >   IMPOSED
+EQ >	   y0     =  cd0 + cn0 + cs0 + ine0 + ins0 + ir0 + ii0 
+		    + exbar0*lex0 - imbar0*lim0 + gbar0*lg0
+
+EQUATION > EQ72
+EQTYPE >   IMPOSED
+EQ >	   y1     =  cd1 + cn1 + cs1 + if1 + ii1 
+		   + exbar1*lex1 - imbar1*lim1 + gbar1*lg1
+
+EQUATION > EQ73
+EQTYPE >   IMPOSED
+EQ >	   y2     =  cd2 + cn2 + cs2 + in2 + ir2 + ii2
+		   + exbar2*lex2 - imbar2*lim2 + gbar2*lg2
+
+EQUATION > EQ74
+EQTYPE >   IMPOSED
+EQ >	   y3     =   c3 + if3 + ii3 + exbar3*lex3 - imbar3*lim3 + gbar3*lg3
+
+EQUATION > EQ75
+EQTYPE >   IMPOSED
+EQ >	   y4     =  c4 + if4 + ii4 + exbar4*lex4 - imbar4*lim4 + gbar4*lg4
+
+EQUATION > EQ76
+EQTYPE >   IMPOSED 
+EQ >	   y5     =   cd5 + cn5 + cs5 + in5 + ir5 + ii5
+		   + exbar5*lex5 - imbar5*lim5 + gbar5*lg5
+
+EQUATION > EQ77
+EQTYPE >   IMPOSED
+EQ >	   y6     =   cd6 + cn6 + cs6 + in6 + ir6 + ii6
+		   + exbar6*lex6 - imbar6*lim6 + gbar6*lg6
+
+EQUATION > EQ78
+EQTYPE >   IMPOSED
+EQ >	   lx0    =  0.32704*(lw0 + 0.029763*y0/ybar0) 
+                   + 0.27436*(LEAD(lw0,1) + 0.029763*LEAD(y0,1)/ybar0)
+                   + 0.19930*(LEAD(lw0,2) + 0.029763*LEAD(y0,2)/ybar0)
+                   + 0.19930*(LEAD(lwl20,1) + 0.029763*LEAD(yl20,1)/ybar0)
+                   + lx0_
+
+EQUATION > EQ79
+EQTYPE >   IMPOSED
+EQ >	   lx1    =  0.44989*(lw1 + 0.054075*y1/ybar1)
+                   + 0.31735*(LEAD(lw1,1) + 0.054075*LEAD(y1,1)/ybar1)
+                   + 0.11638*(LEAD(lw1,2) + 0.054075*LEAD(y1,2)/ybar1)
+                   + 0.11638*(LEAD(lwl21,1) + 0.054075*LEAD(yl21,1)/ybar1)
+                   + lx1_
+
+EQUATION > EQ80
+EQTYPE >   IMPOSED
+EQ >	   lx2    =  0.51173*(lw2 + 0.036756*y2/ybar2) 
+                   + 0.28827*(LEAD(lw2,1) + 0.036756*LEAD(y2,1)/ybar2)
+                   + 0.10000*(LEAD(lw2,2) + 0.036756*LEAD(y2,2)/ybar2)
+                   + 0.10000*(LEAD(lwl22,1) + 0.036756*LEAD(yl22,1)/ybar2)
+                   + lx2_
+
+EQUATION > EQ81
+EQTYPE >   IMPOSED
+EQ >	   lx3    =  0.50243*(lw3 + 0.039324*y3/ybar3) 
+                   + 0.28925*(LEAD(lw3,1) + 0.039324*LEAD(y3,1)/ybar3)
+                   + 0.10416*(LEAD(lw3,2) + 0.039324*LEAD(y3,2)/ybar3)
+                   + 0.10416*(LEAD(lwl23,1) + 0.039324*LEAD(yl23,1)/ybar3)
+                   + lx3_
+
+EQUATION > EQ82
+EQTYPE >   IMPOSED
+EQ >	   lx4    =  0.49913*(lw4 + 0.10839*y4/ybar4)
+                   + 0.30087*(LEAD(lw4,1) + 0.10839*LEAD(y4,1)/ybar4)
+                   + 0.10000*(LEAD(lw4,2) + 0.10839*LEAD(y4,2)/ybar4)
+                   + 0.10000*(LEAD(lwl24,1) + 0.10839*LEAD(yl24,1)/ybar4)
+                   + lx4_
+
+EQUATION > EQ83
+EQTYPE >   IMPOSED
+EQ >	   lx5    =  0.340475*(lw5 + 0.29649*y5/ybar5)
+                   + 0.222275*(LEAD(lw5,1) + 0.29649*LEAD(y5,1)/ybar5)
+                   + 0.218625*(LEAD(lw5,2) + 0.29649*LEAD(y5,2)/ybar5)
+                   + 0.218625*(LEAD(lwl25,1) + 0.29649*LEAD(yl25,1)/ybar5)
+                   + lx5_
+
+EQUATION > EQ84
+EQTYPE >   IMPOSED
+EQ >	   lx6    =  0.52716*(lw6 + 0.052835*y6/ybar6)
+                   + 0.27284*(LEAD(lw6,1) + 0.052835*LEAD(y6,1)/ybar6)
+                   + 0.10000*(LEAD(lw6,2) + 0.052835*LEAD(y6,2)/ybar6)
+                   + 0.10000*(LEAD(lwl26,1) + 0.052835*LEAD(yl26,1)/ybar6)
+                   + lx6_
+
+EQUATION > EQ85
+EQTYPE >   IMPOSED
+EQ >	   lw0    =  0.32704*lx0
+		   + 0.27436*LAG(lx0,1)
+		   + 0.19930*LAG(lx0,2)
+		   + 0.19930*LAG(lx20,1)
+
+EQUATION > EQ86
+EQTYPE >   IMPOSED
+EQ >	   lw1    =  0.44989*lx1
+		   + 0.31735*LAG(lx1,1)
+		   + 0.11638*LAG(lx1,2)
+		   + 0.11638*LAG(lx21,1)
+
+EQUATION > EQ87
+EQTYPE >   IMPOSED
+EQ >	   lw2    =  0.51173*lx2
+                   + 0.28827*LAG(lx2,1)
+                   + 0.10000*LAG(lx2,2)
+                   + 0.10000*LAG(lx22,1)
+
+EQUATION > EQ88
+EQTYPE >   IMPOSED
+EQ >	   lw3    =  0.50243*lx3
+                   + 0.28925*LAG(lx3,1)
+                   + 0.10416*LAG(lx3,2)
+                   + 0.10416*LAG(lx23,1)
+
+EQUATION > EQ89
+EQTYPE >   IMPOSED
+EQ >	   lw4    =  0.49913*lx4 
+                   + 0.30087*LAG(lx4,1)
+                   + 0.10000*LAG(lx4,2)
+                   + 0.10000*LAG(lx24,1)
+
+EQUATION > EQ90
+EQTYPE >   IMPOSED
+EQ >	   lw5    =  0.340475*lx5 
+                   + 0.222275*LAG(lx5,1)
+                   + 0.218625*LAG(lx5,2)
+                   + 0.218625*LAG(lx25,1)
+
+EQUATION > EQ91
+EQTYPE >   IMPOSED
+EQ >	   lw6    =  0.52716*lx6
+                   + 0.27284*LAG(lx6,1)
+                   + 0.10000*LAG(lx6,2)
+                   + 0.10000*LAG(lx26,1)
+
+EQUATION > EQ92
+EQTYPE >   IMPOSED
+EQ >	   lp0    =  1.088743*LAG(lp0,1) 
+                   - 0.295658*LAG(lp0,2)
+                   + 0.454517*lw0 
+                   - 0.259299*LAG(lw0,1) 
+                   + 0.027232*LAG(lpi0,1) 
+                   - 0.015535*LAG(lpi0,2)
+                   + lp0_
+
+EQUATION > EQ93
+EQTYPE >   IMPOSED
+EQ >	   lp1    =  1.559540*LAG(lp1,1) 
+                   - 0.599187*LAG(lp1,2)
+                   + 0.100062*lw1 
+                   - 0.068610*LAG(lw1,1) 
+                   + 0.026074*(0.268*LAG(lp0,1) - LAG(le1,1) 
+                     + 0.141*(LAG(lp2,1) + LAG(le2,1))
+                     + 0.213*(LAG(lp3,1) + LAG(le3,1))
+                     + 0.099*(LAG(lp4,1) + LAG(le4,1))
+                     + 0.152*(LAG(lp5,1) + LAG(le5,1))
+                     + 0.127*(LAG(lp6,1) + LAG(le6,1))) 
+                   - 0.017879*(0.268*LAG(lp0,2) - LAG(le1,2) 
+                     + 0.141*(LAG(lp2,2) + LAG(le2,2))
+                     + 0.213*(LAG(lp3,2) + LAG(le3,2))
+                     + 0.099*(LAG(lp4,2) + LAG(le4,2))
+                     + 0.152*(LAG(lp5,2) + LAG(le5,2))
+                     + 0.127*(LAG(lp6,2) + LAG(le6,2)))
+                   + lp1_
+
+EQUATION > EQ94
+EQTYPE >   IMPOSED
+EQ >	   lp2    =  1.125662*LAG(lp2,1) 
+                   - 0.227201*LAG(lp2,2)
+                   + 0.101682*lw2 
+                   - 0.026797*LAG(lw2,1) 
+                   + 0.036192*LAG(lpi2,1) 
+                   - 0.009538*LAG(lpi2,2)
+                   + lp2_
+
+EQUATION > EQ95
+EQTYPE >   IMPOSED
+EQ >	   lp3    =  0.848208*LAG(lp3,1) 
+                   + 0.132416*lw3
+                   + 0.019376*(0.311*LAG(lp0,1) - LAG(le3,1) 
+                     + 0.085*(LAG(lp1,1) + LAG(le1,1))
+                     + 0.164*(LAG(lp2,1) + LAG(le2,1))
+                     + 0.116*(LAG(lp4,1) + LAG(le4,1))
+                     + 0.177*(LAG(lp5,1) + LAG(le5,1))
+                     + 0.147*(LAG(lp6,1) + LAG(le6,1)))
+                   + lp3_
+
+EQUATION > EQ96
+EQTYPE >   IMPOSED
+EQ >	   lp4    =  1.190099*LAG(lp4,1) 
+                   - 0.286187*LAG(lp4,2)
+                   + 0.111369*lw4 
+                   - 0.037250*LAG(lw4,1) 
+                   + 0.033011*LAG(lpi4,1) 
+                   - 0.011042*LAG(lpi4,2)
+                   + lp4_
+
+EQUATION > EQ97
+EQTYPE >   IMPOSED
+EQ >	   lp5    =  1.785110*LAG(lp5,1) 
+                   - 0.795084*LAG(lp5,2)
+                   + 0.052518*lw5 
+                   - 0.044794*LAG(lw5,1) 
+                   + 0.015293*LAG(lpi5,1) 
+                   - 0.013043*LAG(lpi5,2)
+                   + lp5_
+
+EQUATION > EQ98
+EQTYPE >   IMPOSED
+EQ >	   lp6    =  1.404124*LAG(lp6,1) 
+                   - 0.490370*LAG(lp6,2)
+                   + 0.160132*lw6 
+                   - 0.104382*LAG(lw6,1) 
+                   + 0.087596*LAG(lpi6,1) 
+                   - 0.057100*LAG(lpi6,2)
+                   + lp6_
+
+EQUATION > EQ99
+EQTYPE >   IMPOSED
+EQ >	   lpi0   =  1.487969*LAG(lpi0,1) 
+                   - 0.531068*LAG(lpi0,2)
+                   + 0.106199*(0.091*(lp1 + le1) + 0.175*(lp2 + le2)
+                     + 0.265*(lp3 + le3) + 0.123*(lp4 + le4)
+                     + 0.189*(lp5 + le5) + 0.157*(lp6 + le6)) 
+                   - 0.063100*(0.091*(LAG(lp1,1) + LAG(le1,1)) 
+                     + 0.175*(LAG(lp2,1) + LAG(le2,1))
+                     + 0.265*(LAG(lp3,1) + LAG(le3,1))
+                     + 0.123*(LAG(lp4,1) + LAG(le4,1))
+                     + 0.189*(LAG(lp5,1) + LAG(le5,1))
+                     + 0.157*(LAG(lp6,1) + LAG(le6,1)))
+                     + lpi0_
+
+EQUATION > EQ100
+EQTYPE >   IMPOSED
+EQ >	   lpi1   =  1.634182*LAG(lpi1,1) 
+                   - 0.661753*LAG(lpi1,2)
+                   + 0.106199*(0.268*lp0 - le1 + 0.141*(lp2 + le2)        
+                     + 0.213*(lp3 + le3) + 0.099*(lp4 + le4)       
+                     + 0.152*(lp5 + le5) + 0.127*(lp6 + le6)) 
+                   - 0.078628*(0.268*LAG(lp0,1) - LAG(le1,1) 
+                     + 0.141*(LAG(lp2,1) + LAG(le2,1))
+                     + 0.213*(LAG(lp3,1) + LAG(le3,1))
+                     + 0.099*(LAG(lp4,1) + LAG(le4,1))
+                     + 0.152*(LAG(lp5,1) + LAG(le5,1))
+                     + 0.127*(LAG(lp6,1) + LAG(le6,1)))
+                     + lpi1_                   
+
+EQUATION > EQ101
+EQTYPE >   IMPOSED
+EQ >	   lpi2   =  1.303861*LAG(lpi2,1) 
+                   - 0.313229*LAG(lpi2,2)
+                   + 0.682412*(0.287*lp0 - le2 + 0.079*(lp1 + le1)        
+                     + 0.229*(lp3 + le3) + 0.106*(lp4 + le4)       
+                     + 0.163*(lp5 + le5) + 0.136*(lp6 + le6)) 
+                   - 0.673044*(0.287*LAG(lp0,1) - LAG(le2,1) 
+                     + 0.079*(LAG(lp1,1) + LAG(le1,1))
+                     + 0.229*(LAG(lp3,1) + LAG(le3,1))
+                     + 0.106*(LAG(lp4,1) + LAG(le4,1))
+                     + 0.163*(LAG(lp5,1) + LAG(le5,1))
+                     + 0.136*(LAG(lp6,1) + LAG(le6,1)))
+                     + lpi2_                   
+
+EQUATION > EQ102
+EQTYPE >   IMPOSED
+EQ >	   lpi3   =  1.649893*LAG(lpi3,1) 
+                   - 0.680513*LAG(lpi3,2)
+                   + 0.179918*(0.311*lp0 - le3 + 0.085*(lp1 + le1)        
+                     + 0.164*(lp2 + le2) + 0.116*(lp4 + le4)       
+                     + 0.177*(lp5 + le5) + 0.147*(lp6 + le6)) 
+                   - 0.149298*(0.311*LAG(lp0,1) - LAG(le3,1) 
+                     + 0.085*(LAG(lp1,1) + LAG(le1,1))
+                     + 0.164*(LAG(lp2,1) + LAG(le2,1))
+                     + 0.116*(LAG(lp4,1) + LAG(le4,1))
+                     + 0.177*(LAG(lp5,1) + LAG(le5,1))
+                     + 0.147*(LAG(lp6,1) + LAG(le6,1)))
+                     + lpi3_                   
+
+EQUATION > EQ103
+EQTYPE >   IMPOSED
+EQ >	   lpi4   =  1.487061*LAG(lpi4,1) 
+                   - 0.526309*LAG(lpi4,2)
+                   + 0.419347*(0.275*lp0 - le4 + 0.075*(lp1 + le1)        
+                     + 0.145*(lp2 + le2) + 0.219*(lp3 + le3)       
+                     + 0.156*(lp5 + le5) + 0.130*(lp6 + le6)) 
+                   - 0.380099*(0.275*LAG(lp0,1) - LAG(le4,1) 
+                     + 0.075*(LAG(lp1,1) + LAG(le1,1))
+                     + 0.145*(LAG(lp2,1) + LAG(le2,1))
+                     + 0.219*(LAG(lp3,1) + LAG(le3,1))
+                     + 0.156*(LAG(lp5,1) + LAG(le5,1))
+                     + 0.130*(LAG(lp6,1) + LAG(le6,1)))
+                     + lpi4_                   
+
+EQUATION > EQ104
+EQTYPE >   IMPOSED
+EQ >	   lpi5   =  1.367766*LAG(lpi5,1) 
+                   - 0.414996*LAG(lpi5,2)
+                   + 0.545684*(0.291*lp0 - le5 + 0.079*(lp1 + le1)        
+                     + 0.153*(lp2 + le2) + 0.232*(lp3 + le3)       
+                     + 0.108*(lp4 + le4) + 0.137*(lp6 + le6)) 
+                   - 0.498454*(0.291*LAG(lp0,1) - LAG(le5,1) 
+                     + 0.079*(LAG(lp1,1) + LAG(le1,1))
+                     + 0.153*(LAG(lp2,1) + LAG(le2,1))
+                     + 0.232*(LAG(lp3,1) + LAG(le3,1))
+                     + 0.108*(LAG(lp4,1) + LAG(le4,1))
+                     + 0.137*(LAG(lp6,1) + LAG(le6,1)))
+                     + lpi5_                   
+
+EQUATION > EQ105
+EQTYPE >   IMPOSED
+EQ >	   lpi6   =  1.470613*LAG(lpi6,1) 
+                   - 0.507596*LAG(lpi6,2)
+                   + 0.446572*(0.283*lp0 - le6 + 0.077*(lp1 + le1)        
+                     + 0.149*(lp2 + le2) + 0.225*(lp3 + le3)       
+                     + 0.105*(lp4 + le4) + 0.161*(lp5 + le5)) 
+                   - 0.409589*(0.283*LAG(lp0,1) - LAG(le6,1) 
+                     + 0.077*(LAG(lp1,1) + LAG(le1,1))
+                     + 0.149*(LAG(lp2,1) + LAG(le2,1))
+                     + 0.225*(LAG(lp3,1) + LAG(le3,1))
+                     + 0.105*(LAG(lp4,1) + LAG(le4,1))
+                     + 0.161*(LAG(lp5,1) + LAG(le5,1)))
+                     + lpi6_                   
+
+EQUATION > EQ106
+EQTYPE >   IMPOSED
+EQ >	   lpe0   =  1.496438*LAG(lpe0,1) 
+                   - 0.526481*LAG(lpe0,2)
+                   + 0.434402*lp0 
+                   - 0.404359*LAG(lp0,1)
+                   + lpe0_
+
+EQUATION > EQ107
+EQTYPE >   IMPOSED
+EQ >	   lpe1   =  1.333433*LAG(lpe1,1) 
+                   - 0.378879*LAG(lpe1,2)
+                   + 0.589471*lp1 
+                   - 0.544025*LAG(lp1,1)
+                   + lpe1_
+
+EQUATION > EQ108
+EQTYPE >   IMPOSED
+EQ >	   lpe2   =  1.324253*LAG(lpe2,1) 
+                   - 0.436685*LAG(lpe2,2)
+                   + 0.296323*lp2 
+                   - 0.183891*LAG(lp2,1)
+                   + lpe2_
+
+EQUATION > EQ109
+EQTYPE >   IMPOSED
+EQ >	   lpe3   =  1.618395*LAG(lpe3,1) 
+                   - 0.654678*LAG(lpe3,2)
+                   + 0.143262*lp3 
+                   - 0.117509*LAG(lp3,1)
+                   + 0.058586*(0.311*lp0 - le3 + 0.085*(lp1 + le1)        
+                     + 0.164*(lp2 + le2) + 0.116*(lp4 + le4)       
+                     + 0.177*(lp5 + le5) + 0.147*(lp6 + le6)) 
+                   - 0.048056*(0.311*LAG(lp0,1) - LAG(le3,1) 
+                     + 0.085*(LAG(lp1,1) + LAG(le1,1))
+                     + 0.164*(LAG(lp2,1) + LAG(le2,1))
+                     + 0.116*(LAG(lp4,1) + LAG(le4,1))
+                     + 0.177*(LAG(lp5,1) + LAG(le5,1))
+                     + 0.147*(LAG(lp6,1) + LAG(le6,1)))
+                   + lpe3_
+
+EQUATION > EQ110
+EQTYPE >   IMPOSED
+EQ >	   lpe4   =  1.154987*LAG(lpe4,1) 
+                   - 0.242117*LAG(lpe4,2)
+                   + 0.276511*lp4 
+                   - 0.243271*LAG(lp4,1)
+                   + 0.448290*(0.275*lp0 - le4 + 0.075*(lp1 + le1)        
+                     + 0.145*(lp2 + le2) + 0.219*(lp3 + le3)       
+                     + 0.156*(lp5 + le5) + 0.130*(lp6 + le6)) 
+                   - 0.394400*(0.275*LAG(lp0,1) - LAG(le4,1) 
+                     + 0.075*(LAG(lp1,1) + LAG(le1,1))
+                     + 0.145*(LAG(lp2,1) + LAG(le2,1))
+                     + 0.219*(LAG(lp3,1) + LAG(le3,1))
+                     + 0.156*(LAG(lp5,1) + LAG(le5,1))
+                     + 0.130*(LAG(lp6,1) + LAG(le6,1)))
+                   + lpe4_
+
+EQUATION > EQ111
+EQTYPE >   IMPOSED
+EQ >	   lpe5   =  1.163789*LAG(lpe5,1) 
+                   - 0.251802*LAG(lpe5,2)
+                   + 0.385888*lp5 
+                   - 0.338235*LAG(lp5,1)
+                   + 0.326834*(0.291*lp0 - le5 + 0.079*(lp1 + le1)        
+                     + 0.153*(lp2 + le2) + 0.232*(lp3 + le3)       
+                     + 0.108*(lp4 + le4) + 0.137*(lp6 + le6)) 
+                   - 0.286474*(0.291*LAG(lp0,1) - LAG(le5,1) 
+                     + 0.079*(LAG(lp1,1) + LAG(le1,1))
+                     + 0.153*(LAG(lp2,1) + LAG(le2,1))
+                     + 0.232*(LAG(lp3,1) + LAG(le3,1))
+                     + 0.108*(LAG(lp4,1) + LAG(le4,1))
+                     + 0.137*(LAG(lp6,1) + LAG(le6,1)))
+                   + lpe5_
+
+
+EQUATION > EQ112
+EQTYPE >   IMPOSED
+EQ >	   lpe6   =  1.541207*LAG(lpe6,1) 
+                   - 0.565219*LAG(lpe6,2)
+                   + 0.220616*lp6 
+                   - 0.207324*LAG(lp6,1)
+                   + 0.177926*(0.283*lp0 - le6 + 0.077*(lp1 + le1)        
+                     + 0.149*(lp2 + le2) + 0.225*(lp3 + le3)       
+                     + 0.105*(lp4 + le4) + 0.161*(lp5 + le5)) 
+                   - 0.167206*(0.283*LAG(lp0,1) - LAG(le6,1) 
+                     + 0.077*(LAG(lp1,1) + LAG(le1,1))
+                     + 0.149*(LAG(lp2,1) + LAG(le2,1))
+                     + 0.225*(LAG(lp3,1) + LAG(le3,1))
+                     + 0.105*(LAG(lp4,1) + LAG(le4,1))
+                     + 0.161*(LAG(lp5,1) + LAG(le5,1)))
+                   + lpe6_
+
+EQUATION > EQ113
+EQTYPE >   IMPOSED
+EQ >	   lg0     =  rhog0*LAG(lg0,1) + lg0_
+					 
+EQUATION > EQ114			 
+EQTYPE >   IMPOSED			 
+EQ >	   lg1     =  rhog1*LAG(lg1,1) + lg1_
+					 
+EQUATION > EQ115			 
+EQTYPE >   IMPOSED			 
+EQ >	   lg2     =  rhog2*LAG(lg2,1) + lg2_
+					 
+EQUATION > EQ116			 
+EQTYPE >   IMPOSED			 
+EQ >	   lg3     =  rhog3*LAG(lg3,1) + lg3_
+					 
+EQUATION > EQ117			 
+EQTYPE >   IMPOSED			 
+EQ >	   lg4     =  rhog4*LAG(lg4,1) + lg4_
+					 
+EQUATION > EQ118			 
+EQTYPE >   IMPOSED			 
+EQ >	   lg5     =  rhog5*LAG(lg5,1) + lg5_
+					 
+EQUATION > EQ119			 
+EQTYPE >   IMPOSED			 
+EQ >	   lg6     =  rhog6*LAG(lg6,1) + lg6_
+
+EQUATION > EQ127
+EQTYPE >   IMPOSED
+EQ >	   ule1   =  0.5*LAG(ule1,1) + ule1_
+
+EQUATION > EQ128
+EQTYPE >   IMPOSED
+EQ >	   ule2   =  0.5*LAG(ule2,1) + ule2_
+
+EQUATION > EQ129
+EQTYPE >   IMPOSED
+EQ >	   ule3   =  0.5*LAG(ule3,1) + ule3_
+
+EQUATION > EQ130
+EQTYPE >   IMPOSED
+EQ >	   ule4   =  0.5*LAG(ule4,1) + ule4_
+
+EQUATION > EQ131
+EQTYPE >   IMPOSED
+EQ >	   ule5   =  0.5*LAG(ule5,1) + ule5_
+
+EQUATION > EQ132
+EQTYPE >   IMPOSED
+EQ >	   ule6   =  0.5*LAG(ule6,1) + ule6_
+
+EQUATION > EQ133
+EQTYPE >   IMPOSED
+EQ >	   one    =  LAG(one,1)
+
+EQUATION > EQ135
+EQTYPE >   IMPOSED
+EQ >	   rsl20  =  LEAD(rs0,2)
+
+EQUATION > EQ136
+EQTYPE >   IMPOSED
+EQ >	   rsl21  =  LEAD(rs1,2)
+
+EQUATION > EQ137
+EQTYPE >   IMPOSED
+EQ >	   rsl22  =  LEAD(rs2,2)
+
+EQUATION > EQ138
+EQTYPE >   IMPOSED
+EQ >	   rsl23  =  LEAD(rs3,2)
+
+EQUATION > EQ139
+EQTYPE >   IMPOSED
+EQ >	   rsl25  =  LEAD(rs5,2)
+
+EQUATION > EQ140
+EQTYPE >   IMPOSED
+EQ >	   rsl26  =  LEAD(rs6,2)
+
+EQUATION > EQ141
+EQTYPE >   IMPOSED
+EQ >	   rsl40  =  LEAD(rsl20,2)
+
+EQUATION > EQ142
+EQTYPE >   IMPOSED
+EQ >	   rsl41  =  LEAD(rsl21,2)
+
+EQUATION > EQ143
+EQTYPE >   IMPOSED
+EQ >	   rsl42  =  LEAD(rsl22,2)
+
+EQUATION > EQ144
+EQTYPE >   IMPOSED
+EQ >	   rsl43  =  LEAD(rsl23,2)
+
+EQUATION > EQ145
+EQTYPE >   IMPOSED
+EQ >	   rsl45  =  LEAD(rsl25,2)
+
+EQUATION > EQ146
+EQTYPE >   IMPOSED
+EQ >	   rsl46  =  LEAD(rsl26,2)
+
+EQUATION > EQ147
+EQTYPE >   IMPOSED
+EQ >	   rsl60  =  LEAD(rsl40,2)
+
+EQUATION > EQ148
+EQTYPE >   IMPOSED
+EQ >	   rsl61  =  LEAD(rsl41,2)
+
+EQUATION > EQ149
+EQTYPE >   IMPOSED
+EQ >	   rsl62  =  LEAD(rsl42,2)
+
+EQUATION > EQ150
+EQTYPE >   IMPOSED
+EQ >	   rsl63  =  LEAD(rsl43,2)
+
+EQUATION > EQ151
+EQTYPE >   IMPOSED
+EQ >	   rsl65  =  LEAD(rsl45,2)
+
+EQUATION > EQ152
+EQTYPE >   IMPOSED
+EQ >	   rsl66  =  LEAD(rsl46,2)
+
+EQUATION > EQ153
+EQTYPE >   IMPOSED
+EQ >	   yl20   =  LEAD(y0,2)
+
+EQUATION > EQ154
+EQTYPE >   IMPOSED
+EQ >	   yl21   =  LEAD(y1,2)
+
+EQUATION > EQ155
+EQTYPE >   IMPOSED
+EQ >	   yl22   =  LEAD(y2,2)
+
+EQUATION > EQ156
+EQTYPE >   IMPOSED
+EQ >	   yl23   =  LEAD(y3,2)
+
+EQUATION > EQ157
+EQTYPE >   IMPOSED
+EQ >	   yl24   =  LEAD(y4,2)
+
+EQUATION > EQ158
+EQTYPE >   IMPOSED
+EQ >	   yl25   =  LEAD(y5,2)
+
+EQUATION > EQ159
+EQTYPE >   IMPOSED
+EQ >	   yl26   =  LEAD(y6,2)
+
+EQUATION > EQ160
+EQTYPE >   IMPOSED
+EQ >	   yl40   =  LEAD(yl20,2)
+
+EQUATION > EQ161
+EQTYPE >   IMPOSED
+EQ >	   yl41   =  LEAD(yl21,2)
+
+EQUATION > EQ162
+EQTYPE >   IMPOSED
+EQ >	   yl42   =  LEAD(yl22,2)
+
+EQUATION > EQ163
+EQTYPE >   IMPOSED
+EQ >	   yl43   =  LEAD(yl23,2)
+
+EQUATION > EQ164
+EQTYPE >   IMPOSED
+EQ >	   yl44   =  LEAD(yl24,2)
+
+EQUATION > EQ165
+EQTYPE >   IMPOSED
+EQ >	   yl45   =  LEAD(yl25,2)
+
+EQUATION > EQ166
+EQTYPE >   IMPOSED
+EQ >	   yl46   =  LEAD(yl26,2)
+
+EQUATION > EQ167
+EQTYPE >   IMPOSED
+EQ >	   yl60   =  LEAD(yl40,2)
+
+EQUATION > EQ168
+EQTYPE >   IMPOSED
+EQ >	   yl61   =  LEAD(yl41,2)
+
+EQUATION > EQ169
+EQTYPE >   IMPOSED
+EQ >	   yl62   =  LEAD(yl42,2)
+
+EQUATION > EQ170
+EQTYPE >   IMPOSED
+EQ >	   yl63   =  LEAD(yl43,2)
+
+EQUATION > EQ171
+EQTYPE >   IMPOSED
+EQ >	   yl64   =  LEAD(yl44,2)
+
+EQUATION > EQ172
+EQTYPE >   IMPOSED
+EQ >	   yl65   =  LEAD(yl45,2)
+
+EQUATION > EQ173
+EQTYPE >   IMPOSED
+EQ >	   yl66   =  LEAD(yl46,2)
+
+EQUATION > EQ174a
+EQTYPE >   IMPOSED
+EQ >	   lpl20   =  LEAD(lp0,2)
+
+EQUATION > EQ174b
+EQTYPE >   IMPOSED
+EQ >	   lpl40   =  LEAD(lpl20,2)
+
+EQUATION > EQ174c
+EQTYPE >   IMPOSED
+EQ >	   lpl60   =  LEAD(lpl40,2)
+
+EQUATION > EQ174d
+EQTYPE >   IMPOSED
+EQ >	   lpl80   =  LEAD(lpl60,2)
+
+EQUATION > EQ174e
+EQTYPE >   IMPOSED
+EQ >	   lpl100   =  LEAD(lpl80,2)
+
+EQUATION > EQ174f
+EQTYPE >   IMPOSED
+EQ >	   lpl120   =  LEAD(lpl100,2)
+
+EQUATION > EQ174g
+EQTYPE >   IMPOSED
+EQ >	   lpl140   =  LEAD(lpl120,2)
+
+EQUATION > EQ174h
+EQTYPE >   IMPOSED
+EQ >	   lpl160   =  LEAD(lpl140,2)
+
+EQUATION > EQ174i
+EQTYPE >   IMPOSED
+EQ >	   lpl180   =  LEAD(lpl160,2)
+
+EQUATION > EQ175
+EQTYPE >   IMPOSED
+EQ >	   lpl21   =  LEAD(lp1,2)
+
+EQUATION > EQ176
+EQTYPE >   IMPOSED
+EQ >	   lpl22   =  LEAD(lp2,2)
+
+EQUATION > EQ177
+EQTYPE >   IMPOSED
+EQ >	   lpl23   =  LEAD(lp3,2)
+
+EQUATION > EQ178
+EQTYPE >   IMPOSED
+EQ >	   lpl24   =  LEAD(lp4,2)
+
+EQUATION > EQ179
+EQTYPE >   IMPOSED
+EQ >	   lpl25   =  LEAD(lp5,2)
+
+EQUATION > EQ180
+EQTYPE >   IMPOSED
+EQ >	   lpl26   =  LEAD(lp6,2)
+
+EQUATION > EQ181
+EQTYPE >   IMPOSED
+EQ >	   lwl20   =  LEAD(lw0,2)
+
+EQUATION > EQ182
+EQTYPE >   IMPOSED
+EQ >	   lwl21   =  LEAD(lw1,2)
+
+EQUATION > EQ183
+EQTYPE >   IMPOSED
+EQ >	   lwl22   =  LEAD(lw2,2)
+
+EQUATION > EQ184
+EQTYPE >   IMPOSED
+EQ >	   lwl23   =  LEAD(lw3,2)
+
+EQUATION > EQ185
+EQTYPE >   IMPOSED
+EQ >	   lwl24   =  LEAD(lw4,2)
+
+EQUATION > EQ186
+EQTYPE >   IMPOSED
+EQ >	   lwl25   =  LEAD(lw5,2)
+
+EQUATION > EQ187
+EQTYPE >   IMPOSED
+EQ >	   lwl26   =  LEAD(lw6,2)
+
+EQUATION > EQ241
+EQTYPE >   IMPOSED
+EQ >	   lp20	   =  LAG(lp0,2)
+
+EQUATION > EQ242
+EQTYPE >   IMPOSED
+EQ >	   lp21	   =  LAG(lp1,2)
+
+EQUATION > EQ243
+EQTYPE >   IMPOSED
+EQ >	   lp22	   =  LAG(lp2,2)
+
+EQUATION > EQ244
+EQTYPE >   IMPOSED
+EQ >	   lp23	   =  LAG(lp3,2)
+
+EQUATION > EQ245
+EQTYPE >   IMPOSED
+EQ >	   lp24	   =  LAG(lp4,2)
+
+EQUATION > EQ246
+EQTYPE >   IMPOSED
+EQ >	   lp25	   =  LAG(lp5,2)
+
+EQUATION > EQ247
+EQTYPE >   IMPOSED
+EQ >	   lp26	   =  LAG(lp6,2)
+
+EQUATION > EQ251
+EQTYPE >   IMPOSED
+EQ >	   lx20	   =  LAG(lx0,2)
+
+EQUATION > EQ252
+EQTYPE >   IMPOSED
+EQ >	   lx21	   =  LAG(lx1,2)
+
+EQUATION > EQ253
+EQTYPE >   IMPOSED
+EQ >	   lx22	   =  LAG(lx2,2)
+
+EQUATION > EQ254
+EQTYPE >   IMPOSED
+EQ >	   lx23	   =  LAG(lx3,2)
+
+EQUATION > EQ255
+EQTYPE >   IMPOSED
+EQ >	   lx24	   =  LAG(lx4,2)
+
+EQUATION > EQ256
+EQTYPE >   IMPOSED
+EQ >	   lx25	   =  LAG(lx5,2)
+
+EQUATION > EQ257
+EQTYPE >   IMPOSED
+EQ >	   lx26	   =  LAG(lx6,2)
+
+EQUATION > EQ258
+EQTYPE >   IMPOSED
+EQ >	   lp40	   =  LAG(lp20,2)
+
+EQUATION > EQ259
+EQTYPE >   IMPOSED
+EQ >	   lp60	   =  LAG(lp40,2)
+
+EQUATION > EQ260
+EQTYPE >   IMPOSED
+EQ >	   lp80	   =  LAG(lp60,2)
+
+EQUATION > EQ261
+EQTYPE >   IMPOSED
+EQ >	   lp100  =   LAG(lp80,2)
+
+EQUATION > EQ301
+EQTYPE >   IMPOSED
+EQ >	   pdot0   = 4*(lp0 - LAG(lp0,1))
+
+EQUATION > EQ302
+EQTYPE >   IMPOSED
+EQ >	   drs0	   = rs0- LAG(rs0,1)
+
+EQUATION > EQ303
+EQTYPE >   IMPOSED
+EQ >	   dletw0  = 4*( 0.091*(le1-LAG(le1,1)) + 0.175*(le2-LAG(le2,1)) 
+                    + 0.265*(le3-LAG(le3,1)) + 0.123*(le4-LAG(le4,1)) 
+                    + 0.189*(le5-LAG(le5,1)) + 0.157*(le6-LAG(le6,1)) )
+
+EQUATION > EQ304
+EQTYPE >   IMPOSED
+EQ >	   lretw0   =  0.091*(lp1 + le1) + 0.175*(lp2 + le2)
+                     + 0.265*(lp3 + le3) + 0.123*(lp4 + le4)
+                     + 0.189*(lp5 + le5) + 0.157*(lp6 + le6)
+                     - lp0
+
+EQUATION > EQ305
+EQTYPE >   IMPOSED
+EQ >	   dretw0   =  4*(lretw0 - LAG(lretw0,1))
+
+EQUATION > EQ306
+EQTYPE >   IMPOSED
+EQ >	   fgdp0   =   0.091*y1/ybar1 + 0.175*y2/ybar2 + 0.265*y3/ybar3 
+                     + 0.123*y4/ybar4 + 0.189*y5/ybar5 + 0.157*y6/ybar6 
+
+EQUATION > EQ307
+EQTYPE >   IMPOSED
+EQ >	   fpdot0   = 4*( 0.091*(lp1-LAG(lp1,1)) + 0.175*(lp2-LAG(lp2,1))
+                     + 0.265*(lp2-LAG(lp2,1)) + 0.123*(lp4-LAG(lp4,1))
+                     + 0.189*(lp5-LAG(lp5,1)) + 0.157*(lp6-LAG(lp6,1)) )
+
+EQUATION > EQ308
+EQTYPE >   IMPOSED
+EQ >	   frs0    =  0.091*rs1 + 0.175*rs2 + 0.265*rs3 
+                    + 0.123*rs4 + 0.189*rs5 + 0.157*rs6 
+
+EQUATION > EQ309
+EQTYPE >   IMPOSED
+EQ >	   dfrs0   =  0.091*(rs1-LAG(rs1,1)) + 0.175*(rs2-LAG(rs2,1)) 
+                    + 0.265*(rs3-LAG(rs3,1)) + 0.123*(rs4-LAG(rs4,1)) 
+                    + 0.189*(rs5-LAG(rs5,1)) + 0.157*(rs6-LAG(rs6,1)) 
+
+EQUATION > EQ310
+EQTYPE >   IMPOSED
+EQ >	   ygap0   =  y0/ybar0
+
+EQUATION > EQS1
+EQTYPE >   STOCH
+EQ >	   rs0_   =  0*one
+
+EQUATION > EQS2
+EQTYPE >   STOCH
+EQ >	   rs1_   =  0*one
+
+EQUATION > EQS3
+EQTYPE >   STOCH
+EQ >	   rs2_   =  0*one
+
+EQUATION > EQS4
+EQTYPE >   STOCH
+EQ >	   rs3_   =  0*one
+
+EQUATION > EQS5
+EQTYPE >   STOCH
+EQ >	   rs4_   =  0*one
+
+EQUATION > EQS6
+EQTYPE >   STOCH
+EQ >	   rs5_   =  0*one
+
+EQUATION > EQS7
+EQTYPE >   STOCH
+EQ >	   rs6_   =  0*one
+
+EQUATION > EQS8
+EQTYPE >   STOCH
+EQ >	   ule1_  =  0*one
+
+EQUATION > EQS9
+EQTYPE >   STOCH
+EQ >	   ule2_  =  0*one
+
+EQUATION > EQS10
+EQTYPE >   STOCH
+EQ >	   ule3_  =  0*one
+
+EQUATION > EQS11
+EQTYPE >   STOCH
+EQ >	   ule4_  =  0*one
+
+EQUATION > EQS12
+EQTYPE >   STOCH
+EQ >	   ule5_  =  0*one
+
+EQUATION > EQS13
+EQTYPE >   STOCH
+EQ >	   ule6_  =  0*one
+
+EQUATION > EQS14
+EQTYPE >   STOCH
+EQ >	   rl0_   = 0*one  
+
+EQUATION > EQS15
+EQTYPE >   STOCH
+EQ >	   rl1_   = 0*one  
+
+EQUATION > EQS16
+EQTYPE >   STOCH
+EQ >	   rl2_   = 0*one  
+
+EQUATION > EQS17
+EQTYPE >   STOCH
+EQ >	   rl3_   = 0*one  
+
+EQUATION > EQS18
+EQTYPE >   STOCH
+EQ >	   rl4_   = 0*one  
+
+EQUATION > EQS19
+EQTYPE >   STOCH
+EQ >	   rl5_   = 0*one  
+
+EQUATION > EQS20
+EQTYPE >   STOCH
+EQ >	   rl6_   = 0*one  
+
+EQUATION > EQS21
+EQTYPE >   STOCH
+EQ >	   cd0_   = 0*one  
+
+EQUATION > EQS22
+EQTYPE >   STOCH
+EQ >	   cn0_   = 0*one  
+
+EQUATION > EQS23
+EQTYPE >   STOCH
+EQ >	   cs0_   = 0*one  
+
+EQUATION > EQS24
+EQTYPE >   STOCH
+EQ >	   cd1_   = 0*one
+
+EQUATION > EQS25
+EQTYPE >   STOCH
+EQ >	   cn1_   = 0*one
+
+EQUATION > EQS26
+EQTYPE >   STOCH
+EQ >	   cs1_   = 0*one
+
+EQUATION > EQS27
+EQTYPE >   STOCH
+EQ >	   cd2_   = 0*one
+
+EQUATION > EQS28
+EQTYPE >   STOCH
+EQ >	   cn2_   = 0*one
+
+EQUATION > EQS29
+EQTYPE >   STOCH
+EQ >	   cs2_   = 0*one
+
+EQUATION > EQS30
+EQTYPE >   STOCH
+EQ >	   c3_   = 0*one
+
+EQUATION > EQS31
+EQTYPE >   STOCH
+EQ >	   c4_   = 0*one
+
+EQUATION > EQS32
+EQTYPE >   STOCH
+EQ >	   cd5_   = 0*one
+
+EQUATION > EQS33
+EQTYPE >   STOCH
+EQ >	   cn5_   = 0*one
+
+EQUATION > EQS34
+EQTYPE >   STOCH
+EQ >	   cs5_   = 0*one
+
+EQUATION > EQS35
+EQTYPE >   STOCH
+EQ >	   cd6_   = 0*one
+
+EQUATION > EQS36
+EQTYPE >   STOCH
+EQ >	   cn6_   = 0*one
+
+EQUATION > EQS37
+EQTYPE >   STOCH
+EQ >	   cs6_   = 0*one
+
+EQUATION > EQS38
+EQTYPE >   STOCH
+EQ >	   ine0_  = 0*one  
+
+EQUATION > EQS39
+EQTYPE >   STOCH
+EQ >	   ins0_  = 0*one 
+
+EQUATION > EQS40
+EQTYPE >   STOCH
+EQ >	   ir0_   = 0*one 
+
+EQUATION > EQS41
+EQTYPE >   STOCH
+EQ >	   ii0_   = 0*one  
+
+EQUATION > EQS42
+EQTYPE >   STOCH
+EQ >	   if1_   = 0*one 
+
+EQUATION > EQS43
+EQTYPE >   STOCH
+EQ >	   ii1_   = 0*one
+
+EQUATION > EQS44
+EQTYPE >   STOCH
+EQ >	   in2_   = 0*one
+
+EQUATION > EQS45
+EQTYPE >   STOCH
+EQ >	   ir2_   = 0*one
+
+EQUATION > EQS46
+EQTYPE >   STOCH
+EQ >	   ii2_   = 0*one
+
+EQUATION > EQS47
+EQTYPE >   STOCH
+EQ >	   if3_   = 0*one
+
+EQUATION > EQS48
+EQTYPE >   STOCH
+EQ >	   ii3_    = 0*one
+
+EQUATION > EQS49
+EQTYPE >   STOCH
+EQ >	   if4_   = 0*one
+
+EQUATION > EQS50
+EQTYPE >   STOCH
+EQ >	   ii4_   = 0*one
+
+EQUATION > EQS51
+EQTYPE >   STOCH
+EQ >	   in5_   = 0*one
+
+EQUATION > EQS52
+EQTYPE >   STOCH
+EQ >	   ir5_   = 0*one
+
+EQUATION > EQS53
+EQTYPE >   STOCH
+EQ >	   ii5_    = 0*one
+
+EQUATION > EQS54
+EQTYPE >   STOCH
+EQ >	   in6_   = 0*one
+
+EQUATION > EQS55
+EQTYPE >   STOCH
+EQ >	   ir6_   = 0*one
+
+EQUATION > EQS56
+EQTYPE >   STOCH
+EQ >	   ii6_   = 0*one
+
+EQUATION > EQS57
+EQTYPE >   STOCH
+EQ >	   lex0_  = 0*one 
+
+EQUATION > EQS58
+EQTYPE >   STOCH
+EQ >	   lex1_  = 0*one 
+
+EQUATION > EQS59
+EQTYPE >   STOCH
+EQ >	   lex2_  = 0*one 
+
+EQUATION > EQS60
+EQTYPE >   STOCH
+EQ >	   lex3_  = 0*one 
+
+EQUATION > EQS61
+EQTYPE >   STOCH
+EQ >	   lex4_  = 0*one 
+
+EQUATION > EQS62
+EQTYPE >   STOCH
+EQ >	   lex5_  = 0*one 
+
+EQUATION > EQS63
+EQTYPE >   STOCH
+EQ >	   lex6_  = 0*one 
+
+EQUATION > EQS64
+EQTYPE >   STOCH
+EQ >	   lim0_  = 0*one 
+
+EQUATION > EQS65
+EQTYPE >   STOCH
+EQ >	   lim1_  = 0*one 
+
+EQUATION > EQS66
+EQTYPE >   STOCH
+EQ >	   lim2_  = 0*one 
+
+EQUATION > EQS67
+EQTYPE >   STOCH
+EQ >	   lim3_  = 0*one 
+
+EQUATION > EQS68
+EQTYPE >   STOCH
+EQ >	   lim4_  = 0*one 
+
+EQUATION > EQS69
+EQTYPE >   STOCH
+EQ >	   lim5_  = 0*one 
+
+EQUATION > EQS70
+EQTYPE >   STOCH
+EQ >	   lim6_  = 0*one 
+
+EQUATION > EQS71
+EQTYPE >   STOCH
+EQ >	   lx0_   = 0*one  
+
+EQUATION > EQS72
+EQTYPE >   STOCH
+EQ >	   lx1_   = 0*one  
+
+EQUATION > EQS73
+EQTYPE >   STOCH
+EQ >	   lx2_   = 0*one  
+
+EQUATION > EQS74
+EQTYPE >   STOCH
+EQ >	   lx3_   = 0*one  
+
+EQUATION > EQS75
+EQTYPE >   STOCH
+EQ >	   lx4_   = 0*one  
+
+EQUATION > EQS76
+EQTYPE >   STOCH
+EQ >	   lx5_   = 0*one  
+
+EQUATION > EQS77
+EQTYPE >   STOCH
+EQ >	   lx6_   = 0*one  
+
+EQUATION > EQS78
+EQTYPE >   STOCH
+EQ >	   lp0_   = 0*one  
+
+EQUATION > EQS79
+EQTYPE >   STOCH
+EQ >	   lp1_   = 0*one  
+
+EQUATION > EQS80
+EQTYPE >   STOCH
+EQ >	   lp2_   = 0*one  
+
+EQUATION > EQS81
+EQTYPE >   STOCH
+EQ >	   lp3_   = 0*one  
+
+EQUATION > EQS82
+EQTYPE >   STOCH
+EQ >	   lp4_   = 0*one  
+
+EQUATION > EQS83
+EQTYPE >   STOCH
+EQ >	   lp5_   = 0*one  
+
+EQUATION > EQS84
+EQTYPE >   STOCH
+EQ >	   lp6_   = 0*one  
+
+EQUATION > EQS85
+EQTYPE >   STOCH
+EQ >	   lpi0_  = 0*one 
+
+EQUATION > EQS86
+EQTYPE >   STOCH
+EQ >	   lpi1_  = 0*one 
+
+EQUATION > EQS87
+EQTYPE >   STOCH
+EQ >	   lpi2_  = 0*one 
+
+EQUATION > EQS88
+EQTYPE >   STOCH
+EQ >	   lpi3_  = 0*one 
+
+EQUATION > EQS89
+EQTYPE >   STOCH
+EQ >	   lpi4_  = 0*one 
+
+EQUATION > EQS90
+EQTYPE >   STOCH
+EQ >	   lpi5_  = 0*one 
+
+EQUATION > EQS91
+EQTYPE >   STOCH
+EQ >	   lpi6_  = 0*one 
+
+EQUATION > EQS92
+EQTYPE >   STOCH
+EQ >	   lpe0_  = 0*one 
+
+EQUATION > EQS93
+EQTYPE >   STOCH
+EQ >	   lpe1_  = 0*one 
+
+EQUATION > EQS94
+EQTYPE >   STOCH
+EQ >	   lpe2_  = 0*one 
+
+EQUATION > EQS95
+EQTYPE >   STOCH
+EQ >	   lpe3_  = 0*one 
+
+EQUATION > EQS96
+EQTYPE >   STOCH
+EQ >	   lpe4_  = 0*one 
+
+EQUATION > EQS97
+EQTYPE >   STOCH
+EQ >	   lpe5_  = 0*one 
+
+EQUATION > EQS98
+EQTYPE >   STOCH
+EQ >	   lpe6_  = 0*one 
+
+EQUATION > EQS99
+EQTYPE >   STOCH
+EQ >	   lg0_    = 0*one 
+
+EQUATION > EQS100
+EQTYPE >   STOCH
+EQ >	   lg1_    = 0*one 
+
+EQUATION > EQS101
+EQTYPE >   STOCH
+EQ >	   lg2_    = 0*one 
+
+EQUATION > EQS102
+EQTYPE >   STOCH
+EQ >	   lg3_    = 0*one 
+
+EQUATION > EQS103
+EQTYPE >   STOCH
+EQ >	   lg4_    = 0*one 
+
+EQUATION > EQS104
+EQTYPE >   STOCH
+EQ >	   lg5_    = 0*one 
+
+EQUATION > EQS105
+EQTYPE >   STOCH
+EQ >	   lg6_    = 0*one 
+
+END

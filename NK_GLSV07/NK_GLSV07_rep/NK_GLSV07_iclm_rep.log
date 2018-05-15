@@ -1,0 +1,27 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 10 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+STEADY-STATE RESULTS:
+
+n  		 0
+c  		 0
+pi 		 0
+k  		 0
+b  		 0
+g  		 0
+y  		 0
+w  		 0
+t  		 0
+i  		 0
+Total computing time : 0h00m04s
+Note: warning(s) encountered in MATLAB/Octave code

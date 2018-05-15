@@ -1,0 +1,50 @@
+%********************************************************
+%Run and plot IRFs in Fig.1. in  Rannenberg, Ansgar (2016). "Bank Leverage Cycles and the External Finance Premium", 
+%   Journal of Money, Credit and Banking, Vol. 48, No. 8, pp. 1569-1612
+
+
+% Codes prepared by Felix Strobel
+%********************************************************
+
+clear all;
+clc;
+close all;
+warning off;
+%adjust path to folder where replication file is stored
+cd([cd '/NK_RA16_rep']);
+
+%run replication dynare file
+dynare NK_RA16_rep;
+
+%load results 
+ 
+load NK_RA16_rep_results.mat;
+
+shocks={'e_i'};
+
+horizon = 40;
+
+Var={'GDP'; 'Cp'; 'I'; 'Q'; 'Pi'; 'R'; 'Le'; ...
+     'N';'Nb';'phi_b';'spread_RkR';'spread_RbR';'spread_RkRb'}; 
+ 
+for v = 1:size(Var,1)
+    for s = 1:size(shocks,1)         
+            eval(['dd= oo_.irfs.' Var{v} '_' shocks{s} ';'])
+            eval(['IRFs( v , s ,1: horizon ) = dd(1:horizon);'])           
+    end
+end
+
+cd ..
+t=0:1:horizon;
+Var_name={'GDP'; 'Consumption'; 'Investment'; 'Price of Capital'; 'Inflation'; 'Policy Interest Rate'; ...
+            'Loans'; 'Entr. Net Worth'; 'Bank Net Worth'; 'Bank Leverage'; 'R_k-R'; 'R_b-R'; 'R_k-R_b'}; 
+for s = 1:size(shocks,1) 
+    figure('name','IRFs to a monetary policy shock','numbertitle','off','Position', [10, 10, 900, 1000])
+    for v = 1:13
+        subplot(5,3,v);        
+        plot(t,[0; squeeze(IRFs(v,s,1:horizon))],'k','LineWidth',1.2); hold on        
+        title(Var_name{v});
+    end
+end
+
+saveas(gcf, 'Fig2_fullmodel' , 'pdf')

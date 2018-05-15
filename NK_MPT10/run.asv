@@ -1,0 +1,58 @@
+%********************************************************
+%Run and plot IRFs in Fig.1. in  T. Monacelli, R. Perotti, A. Trigari (2010): "Unemployment Fiscal Multiplier", 
+% Journal of Monetary Economics 57, pp.531-553
+
+% Codes prepared by Felix Strobel
+%********************************************************
+
+clear all;
+clc;
+close all;
+warning off;
+%adjust path to folder where replication file is stored
+cd([cd '/NK_MPT10_rep']);
+
+%run replication dynare file
+dynare NK_MPT10_rep;
+
+%load results 
+ 
+load NK_MPT10_rep_results.mat;
+
+shocks={'e'};
+
+horizon = 40;
+
+Var={'y'; 'ERb'; 'ERk'; 'I'; 'K'; 'Q'; 'N'; ...
+     'Phi'; 'G'; 'C'; 'Y'}; 
+ 
+for v = 1:size(Var,1)
+    for s = 1:size(shocks,1)         
+            eval(['dd= oo_.irfs.' Var{v} '_' shocks{s} ';'])
+            eval(['IRFs( v , s ,1: horizon ) = dd(1:horizon);'])           
+    end
+end
+
+cd ..
+t=0:1:horizon;
+Var_name={'Gov. Spending'; 'Return on Bonds'; 'Return on Capital'; 'Investment'; 'Capital'; 'Price of Capital'; 'Bank Net Worth'; 'Bank Leverage';
+         'Gov. Spending'; 'Consumption'; 'Output'}; 
+for s = 1:size(shocks,1) 
+    figure('name','IRFs to a government spending shock','numbertitle','off','Position', [10, 10, 900, 1000])
+    for v = 1:11 
+        subplot(4,3,v);        
+        plot(t,[0; squeeze(IRFs(v,s,1:horizon))],'k','LineWidth',1.2); hold on        
+        title(Var_name{v});
+    end
+end
+figure;
+subplot(2,2,1);
+plot(y_e/y_ss*100,'k','LineWidth',1.2); 
+subplot(2,2,2);
+plot(n_e/n_ss*100,'k','LineWidth',1.2); 
+subplot(2,2,3); 
+plot(u_e/(u_ss+n_ss)*100,'k','LineWidth',1.2);  
+subplot(2,2,4); 
+plot(c_e/c_ss*100,'k','LineWidth',1.2); 
+
+saveas(gcf, 'Fig1' , 'pdf')

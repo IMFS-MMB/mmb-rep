@@ -1,0 +1,125 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 27 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the default value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg('trustnleqn',1.000000e+00,true,true,'fsolve',3.829337e-09,'default',1.000000e-06,5.893389e-16,'default',1.000000e-03,5.893389e-16,'default',1.000000e-03);">stopping criteria details</a>>
+
+
+STEADY-STATE RESULTS:
+
+c      		 0.115744
+pai    		 1
+rn     		 1.00503
+k      		 0.0893565
+z      		 0.460754
+y      		 0.148217
+mc     		 0.833333
+n      		 0.19089
+q      		 1
+inv    		 0.00223391
+rok    		 1.43575
+a      		 0
+g      		 0.0294917
+uc     		 8.63972
+un     		 -3.70778
+Fk     		 0.552905
+Fn     		 0.514986
+bk     		 -0.00693635
+d      		 0.0962929
+deprat 		 1.07763
+ra     		 1.43575
+br     		 0.0591083
+fai    		 0.0379158
+rd     		 0.966919
+crun   		 0.000758324
+cpai   		 0
+rsh    		 0
+
+MODEL SUMMARY
+
+  Number of variables:         27
+  Number of stochastic shocks: 3
+  Number of state variables:   5
+  Number of jumpers:           6
+  Number of static variables:  16
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables      ua        ug        ur    
+ua           1.000000  0.000000  0.000000
+ug           0.000000  0.000000  0.000000
+ur           0.000000  0.000000  1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                  y               pai             c               inv             deprat          br    
+Constant                    0.148217        1.000000        0.115744        0.002234        1.077626        0.059108
+k(-1)                       0.093494       -0.995870        0.347935       -0.261537        0.957667        0.500445
+a(-1)                       0.120236       -0.244886        0.113551        0.005577        0.193242        0.081880
+g(-1)                       0.481132       -0.424565       -0.400057       -0.013243        0.749414       -0.443307
+rsh(-1)                    -0.035426       -0.038584       -0.027360       -0.006655       -0.001552       -0.105238
+ua                          0.126564       -0.257775        0.119527        0.005870        0.203412        0.086189
+ug                          0.015766       -0.013912       -0.013109       -0.000434        0.024557       -0.014527
+ur                         -0.177132       -0.192922       -0.136800       -0.033276       -0.007759       -0.526188
+
+
+THEORETICAL MOMENTS
+
+VARIABLE      MEAN    STD. DEV.   VARIANCE 
+y              0.1482     0.4489     0.2015
+pai            1.0000     0.9029     0.8151
+c              0.1157     0.4271     0.1824
+inv            0.0022     0.0359     0.0013
+deprat         1.0776     0.7071     0.5000
+br             0.0591     0.6212     0.3859
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+
+           ua     ug     ur  
+y         83.63   0.00  16.37
+pai       95.24   0.00   4.76
+c         88.68   0.00  11.32
+inv        5.01   0.00  94.99
+deprat    99.39   0.00   0.61
+br        23.96   0.00  76.04
+
+
+
+MATRIX OF CORRELATIONS
+
+Variables      y      pai      c      inv   deprat    br   
+y            1.0000 -0.8083  0.9964  0.4626  0.9211  0.8000
+pai         -0.8083  1.0000 -0.8520  0.0990 -0.9729 -0.2980
+c            0.9964 -0.8520  1.0000  0.3863  0.9495  0.7532
+inv          0.4626  0.0990  0.3863  1.0000  0.1018  0.8094
+deprat       0.9211 -0.9729  0.9495  0.1018  1.0000  0.5104
+br           0.8000 -0.2980  0.7532  0.8094  0.5104  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+
+Order       1       2       3       4       5   
+y         0.8316  0.7661  0.7229  0.6856  0.6511
+pai       0.9134  0.8651  0.8246  0.7863  0.7493
+c         0.8807  0.8224  0.7780  0.7382  0.7009
+inv       0.0620 -0.0872 -0.0896 -0.0705 -0.0526
+deprat    0.9568  0.9132  0.8704  0.8289  0.7889
+br        0.4095  0.2755  0.2351  0.2152  0.2009
+Total computing time : 0h00m02s

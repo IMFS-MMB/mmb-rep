@@ -1,0 +1,39 @@
+NK_GM07 Replication and Correction
+
++ last change: 2018-03-15
+
++ replication: IRF to technology shock  
+
++ replicated IRFs: FIg4.pdf is fig 4 of the article. Original version with error    
+                   FIg4_corrected.pdf is Fig 4 of the article, once the error in the article is addressed    
+
++ file to produce replicated IRFs: run.m (which calls NK_GM07_error.mod in the folder NK_GM07_rep) 
+  file to produce corrected  IRFs: run_corrected.m (which calls NK_GM07_corrected.mod in the folder NK_GM07_rep) 
+
++ literature:
+  - Goodfriend, M., B.T. McCallum. 2007. " Banking and interest raets in monetary policy analysis: A quantitative exploration".
+    Journal of Monetary Economics 54, pp. 1480-1507
+
++ Notes on replication:
+-   Version of the model with interest rate rule
+-   for running the experiments depicted in figures 3-7 of the article adjust parameters mu_1, mu_2, and mu_3 in NK_GM07_rep.mod, in the following way:
+    Fig 3: mu_1 = 50;   mu_2 = 0.0; mu_3 = 0.0;
+    Fig 4: mu_1 = 1.5;  mu_2 = 0.5; mu_3 = 0.0;
+    Fig 5: mu_1 = 50;   mu_2 = 0.0; mu_3 = 0.0;
+    Fig 6: mu_1 = 50;   mu_2 = 0.0; mu_3 = 0.0;
+    Fig 7: mu_1 = 1.5;  mu_2 = 0.5; mu_3 = 0.8;
+- The article features the collateralized EFP (CEFP) and the uncollateralized EFP (UEFP). In terms of log-deviations from 
+    their steady states they are equal, and the authors simply use EFP as a notation. On page 1498 of the article the authors
+    introduce the equation: EFP=w+m-c. Here, w,m,c are log-deviations from their respective steady state values. 
+    
+    To reproduce the results of the original article, treat the CEFP and UEFP as log-devations in the definition of the EFP 
+    and inconsistently as absolute deviations in equations 20 and 21. (then only EFP features in the code as UEFP and CEFP share the same log-deviation)
+    
+    To attain the correct result, use both variables, CEFP and UEFP, and remove the equation EFP=w+m-c,
+    and use the equations CEFP/CEFP_ss=hat_w+hat_m-hat-c and UEFP/UEFP_ss=hat_w+hat_m-hat-c in the code. Now, CEFP and UEFP are in absolute deviations 
+    and 
+    
+    The external finance premium EFP appears In both codes, the interest rates are absolute deviations from their respective steady state values.
+    To reproduce the results of the original article, one can use the equation: EFP=w+m-c, which is stated on page 
+    and interpret EFP as the log-deviation of the external finance premium from its steady state value. 
+    However, the 

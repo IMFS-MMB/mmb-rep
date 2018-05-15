@@ -1,0 +1,174 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+WARNING: NK_KW16_rep.mod:61.5-63.53: Symbol Y_ss declared twice.
+Found 40 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+STEADY-STATE RESULTS:
+
+Y        		 0.79761
+Ym       		 0.79761
+L        		 -0.137053
+w        		 0.259774
+C        		 0.340712
+U_c      		 -0.297601
+Lambda   		 0
+I        		 -0.993619
+K        		 2.69526
+Q        		 0
+a        		 0
+ksi      		 0
+Pm       		 -0.274412
+infl     		 0
+inflstar 		 0
+F        		 1.99815
+Z        		 2.27256
+Dis      		 0
+Rd       		 0.0100503
+i        		 0.0100503
+Rk       		 0.0125223
+Rb       		 0.0125223
+Rp       		 0.0125223
+ERk      		 0.0125223
+ERb      		 0.0125223
+prem     		 -5.99146
+prem2    		 -5.99146
+Phi      		 1.38629
+portf_B  		 3.0026
+N        		 1.61631
+Om       		 -0.307344
+D        		 2.71492
+nu_k     		 -6.14128
+nu_b     		 -6.14128
+nu_n     		 -0.139762
+G        		 -0.811828
+g        		 0
+Gy       		 -1.60944
+T        		 -0.671012
+B        		 1.67308
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+       3.239e-17        3.239e-17                0
+       2.046e-16        2.046e-16                0
+       7.301e-16       -7.301e-16                0
+       9.677e-16        9.677e-16                0
+       1.835e-15       -1.835e-15                0
+       1.957e-15        1.957e-15                0
+            0.66             0.66                0
+          0.7162           0.7123          0.07446
+          0.7162           0.7123         -0.07446
+           0.779            0.779                0
+             0.8              0.8                0
+           0.802           0.7989          0.07061
+           0.802           0.7989         -0.07061
+            0.95             0.95                0
+          0.9504           0.9504                0
+           1.013            1.013                0
+           1.077            1.077                0
+           1.096            1.096                0
+           1.119            1.119                0
+           1.203            1.188           0.1933
+           1.203            1.188          -0.1933
+           1.208            1.208                0
+           1.297            1.297                0
+       2.728e+16        2.728e+16                0
+       4.857e+16       -4.857e+16                0
+       5.612e+16        5.612e+16                0
+       2.062e+17        2.062e+17                0
+       9.153e+17        9.153e+17                0
+        1.01e+19         1.01e+19                0
+       4.812e+19       -4.812e+19                0
+        3.39e+20         3.39e+20                0
+
+
+There are 16 eigenvalue(s) larger than 1 in modulus 
+for 16 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         40
+  Number of stochastic shocks: 5
+  Number of state variables:   15
+  Number of jumpers:           16
+  Number of static variables:  15
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables     e_ksi       e_g        e_i        e_a        e_n    
+e_ksi         0.000000   0.000000   0.000000   0.000000   0.000000
+e_g           0.000000  25.000000   0.000000   0.000000   0.000000
+e_i           0.000000   0.000000   0.000000   0.000000   0.000000
+e_a           0.000000   0.000000   0.000000   0.000000   0.000000
+e_n           0.000000   0.000000   0.000000   0.000000   0.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                infl            i               Y       
+Constant                           0        0.010050        0.797610
+Y(-1)                       0.044570       -0.015349        0.083717
+a(-1)                      -0.120959       -0.027681        0.274586
+ksi(-1)                     0.139260        0.062084        0.647849
+Dis(-1)                     0.091522        0.027955        0.015892
+i(-1)                      -1.298801        0.327497       -2.643678
+Phi(-1)                     0.000532        0.000212        0.001673
+g(-1)                       0.002633        0.004304        0.112132
+C(-1)                       0.061672        0.034618        0.514179
+I(-1)                       0.014736        0.008509        0.130433
+K(-1)                      -0.143261       -0.050164       -0.229261
+Q(-1)                      -0.158477       -0.063161       -0.498289
+N(-1)                       0.056751        0.022618        0.178439
+B(-1)                      -0.057021       -0.022726       -0.179289
+e_ksi                      -0.211001       -0.094067       -0.981589
+e_g                         0.003291        0.005381        0.140165
+e_i                         1.421970       -0.489692        2.670937
+e_a                         0.127325        0.029138       -0.289038
+
+
+THEORETICAL MOMENTS
+
+VARIABLE      MEAN    STD. DEV.   VARIANCE 
+infl           0.0000     0.0823     0.0068
+i              0.0101     0.1115     0.0124
+Y              0.7976     1.1043     1.2195
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+
+       e_ksi   e_g    e_i    e_a    e_n  
+infl     0.00 100.00   0.00   0.00   0.00
+i        0.00 100.00   0.00   0.00   0.00
+Y        0.00 100.00   0.00   0.00   0.00
+
+
+
+MATRIX OF CORRELATIONS
+
+Variables    infl      i       Y   
+infl         1.0000  0.8333 -0.1286
+i            0.8333  1.0000  0.1811
+Y           -0.1286  0.1811  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+
+Order      1       2       3       4       5   
+infl     0.8861  0.7589  0.6351  0.5233  0.4272
+i        0.9255  0.8306  0.7297  0.6317  0.5415
+Y        0.6931  0.4711  0.3152  0.2095  0.1406
+Total computing time : 0h00m02s
+Note: 1 warning(s) encountered in the preprocessor
+Note: warning(s) encountered in MATLAB/Octave code

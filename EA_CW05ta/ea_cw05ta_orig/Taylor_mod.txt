@@ -1,0 +1,121 @@
+MODEL> Taylor
+
+ENDOG>
+        q      _DATA
+        cwp    _NOTD
+        pi1    _DATA
+        pi4    _NOTD
+        epi4   _NOTD
+        is     _DATA
+        dis    _NOTD
+        il     _NOTD
+        epi8   _NOTD
+        rl     _NOTD
+        one    _DTRM
+        e_d    _NOTD
+        e_cw   _NOTD
+        e_p    _NOTD     
+
+EQUATION> EQ1
+EQTYPE>   IMPOSED
+EQ>       q =       delta1*LAG(q,1)
+                  + delta2*LAG(q,2)
+                  + delta3*(  LAG(rl,1)
+                            - rlbar*one)
+                  + sigma_e_d*e_d
+ 
+EQUATION> EQ2
+EQTYPE>   IMPOSED
+EQ>       cwp =     (f1+f2+f3)*LEAD(pi1,1)
+                  + (f2+f3)*LEAD(pi1,2)
+                  + f3*LEAD(pi1,3) 
+                  + gamma*(  f0*q
+                           + f1*LEAD(q,1)
+                           + f2*LEAD(q,2)
+                           + f3*LEAD(q,3)
+                          )
+                  + sigma_e_cw*e_cw
+
+EQUATION> EQ3
+EQTYPE>   IMPOSED
+EQ>       pi1 =   (  f0*cwp
+                   + f1*LAG(cwp,1)
+                   + f2*LAG(cwp,2)
+                   + f3*LAG(cwp,3)
+                   - (f2+f3)*LAG(pi1,1)
+                   - f3*LAG(pi1,2)
+                  )/(f1+f2+f3)
+
+EQUATION> EQ4
+EQTYPE>   IMPOSED
+EQ>       pi4 =     pi1
+                  + LAG(pi1,1)
+                  + LAG(pi1,2)
+                  + LAG(pi1,3)
+
+EQUATION> EQ5
+EQTYPE>   IMPOSED
+EQ>       epi4 =  LEAD(pi4,4)   
+
+EQUATION> EQ6
+EQTYPE>   IMPOSED
+EQ>       is =      rho1*LAG(is,1)
+                  + rho2*LAG(is,2)
+                  + (1-rho1-rho2)*(  rlbar*one
+                                   + alpha*(  pi4
+                                            - pitarget*one)
+                                   + beta*q)
+                  + sigma_e_p*e_p
+
+EQUATION> EQ7
+EQTYPE>   IMPOSED
+EQ>       dis =     is
+                  - LAG(is,1)
+
+EQUATION> EQ8
+EQTYPE>   IMPOSED
+EQ>	  il =     (  is 
+                    + LEAD(is,1)
+                    + LEAD(is,2)
+                    + LEAD(is,3)
+                    + LEAD(is,4)
+                    + LEAD(is,5)
+                    + LEAD(is,6)
+                    + LEAD(is,7)
+                   )/8
+
+EQUATION> EQ9
+EQTYPE>   IMPOSED
+EQ>       epi8 =    (  LEAD(pi1,8)
+                     + LEAD(pi1,7)
+                     + LEAD(pi1,6)
+                     + LEAD(pi1,5)
+                     + LEAD(pi1,4)
+                     + LEAD(pi1,3)
+                     + LEAD(pi1,2)
+                     + LEAD(pi1,1)
+                    )/2
+
+EQUATION> EQ10
+EQTYPE>   IMPOSED
+EQ>       rl =        il 
+                    - epi8
+
+EQUATION> EQ11
+EQTYPE>   IMPOSED
+EQ>       one =    LAG(one,1)
+
+EQUATION> EQ12
+EQTYPE>   STOCH
+EQ>       e_d =    0*one
+
+EQUATION> EQ13
+EQTYPE>   STOCH
+EQ>       e_cw =   0*one
+
+EQUATION> EQ14
+EQTYPE>   STOCH
+EQ>       e_p =    0*one
+
+END
+

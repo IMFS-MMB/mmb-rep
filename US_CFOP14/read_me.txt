@@ -25,11 +25,6 @@ US_CFOP14 Replication
 		 figure 3c on page 144 in Carlstrom et al. 2014 (idiosyncratic variance shock)
 		 figure 3d on page 145 in Carlstrom et al. 2014 (monetary policy shock)
                  
-+ important note: During the replication process some minor issues with the equations provided in the paper were spotted. 
-                  Correspondence with the authors confirmed that the slight differences were due to typos in the paper. The code which was 
-                  provided and confirmed to be correct by the authors was implemented to the MMB. In case further clarification is 
-                  needed we kindly ask you to contact the MMB team.  
-
 + literature:
   - Carlstrom, C. T., Fuerst, T. S., Ortiz, A., & Paustian, M. (2014). Estimating contract 
 	indexation in a financial accelerator model. Journal of Economic Dynamics and control, 46, 130-149.

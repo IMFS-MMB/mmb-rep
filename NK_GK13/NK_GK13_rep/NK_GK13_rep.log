@@ -1,0 +1,26 @@
+Starting Dynare (version 4.5.3).
+Starting preprocessing of the model file ...
+Substitution of endo lags >= 2: added 2 auxiliary variables and equations.
+Found 75 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 1, 	 time = 0.171
+Iter: 2,	 err. = 0.00082284, 	 time = 0.047
+Iter: 3,	 err. = 1.3184e-16, 	 time = 0.078
+
+Total time of simulation: 0.452
+--------------------------------------------------------
+
+Perfect foresight solution found.
+
+Total computing time : 0h00m01s

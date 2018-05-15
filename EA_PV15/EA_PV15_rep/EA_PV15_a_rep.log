@@ -1,0 +1,120 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Substitution of endo leads >= 2: added 2 auxiliary variables and equations.
+Substitution of endo lags >= 2: added 6 auxiliary variables and equations.
+Substitution of exo lags: added 2 auxiliary variables and equations.
+Found 103 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0               -0                0
+       4.506e-18       -4.506e-18                0
+       9.294e-18        9.294e-18                0
+        1.02e-17        -1.02e-17                0
+       1.036e-17        1.036e-17                0
+       3.187e-17        3.187e-17                0
+       3.448e-17        3.448e-17                0
+       3.919e-17        3.919e-17                0
+       4.192e-17       -4.192e-17                0
+        7.45e-17         7.45e-17                0
+       9.034e-17       -9.034e-17                0
+       1.459e-16        1.459e-16                0
+       1.512e-16       -1.512e-16                0
+        2.41e-16        -2.41e-16                0
+       3.909e-16        3.909e-16                0
+        4.47e-16        -4.47e-16                0
+       4.865e-16        4.865e-16                0
+       1.137e-15        1.137e-15                0
+         0.06264          0.06264                0
+         0.07441          0.07441                0
+          0.1274           0.1246          0.02673
+          0.1274           0.1246         -0.02673
+          0.1296           0.1296                0
+          0.2097           0.2097                0
+          0.2571            0.238          0.09729
+          0.2571            0.238         -0.09729
+          0.2679           0.2183           0.1553
+          0.2679           0.2183          -0.1553
+          0.3206           0.3206                0
+            0.41             0.41                0
+            0.47             0.47                0
+          0.5352           0.5352                0
+            0.54             0.54                0
+          0.5573           0.5289           0.1755
+          0.5573           0.5289          -0.1755
+          0.5844           0.5461           0.2079
+          0.5844           0.5461          -0.2079
+            0.59             0.59                0
+          0.6128           0.6128                0
+          0.7064           0.6994          0.09951
+          0.7064           0.6994         -0.09951
+          0.7885           0.7845          0.07929
+          0.7885           0.7845         -0.07929
+            0.81             0.81                0
+          0.8994           0.8994                0
+             0.9              0.9                0
+             0.9              0.9                0
+            0.91             0.91                0
+            0.93             0.93                0
+            0.93             0.93                0
+          0.9376           0.9376                0
+            0.96             0.96                0
+            0.96             0.96                0
+          0.9626           0.9626                0
+          0.9847           0.9847                0
+            0.99             0.99                0
+            0.99             0.99                0
+            0.99             0.99                0
+            0.99             0.99                0
+            0.99             0.99                0
+           1.021            1.021                0
+           1.175            1.175                0
+           1.274            1.274                0
+           1.449            1.418           0.3015
+           1.449            1.418          -0.3015
+           1.573            1.491           0.5001
+           1.573            1.491          -0.5001
+           1.836            1.836                0
+           1.849            1.798           0.4299
+           1.849            1.798          -0.4299
+           3.235            3.235                0
+           3.343            3.343                0
+       5.767e+16        5.767e+16                0
+       2.063e+17       -2.063e+17                0
+       6.586e+17       -6.586e+17                0
+        9.41e+17        -9.41e+17                0
+       1.773e+18       -1.773e+18                0
+       5.459e+22       -5.459e+22                0
+
+
+There are 18 eigenvalue(s) larger than 1 in modulus 
+for 18 forward-looking variable(s)
+
+The rank condition is verified.
+
+[Warning: Some of the parameters have no value (gammatild_E) when using stoch_simul.
+If these parameters are not initialized in a steadystate file, Dynare may not be able
+to solve the model...] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_for_deep_parameters_calibration', 'C:\dynare\4.4.3\matlab\test_for_deep_parameters_calibration.m', 46)" style="font-weight:bold">test_for_deep_parameters_calibration</a> (<a href="matlab: opentoline('C:\dynare\4.4.3\matlab\test_for_deep_parameters_calibration.m',46,0)">line 46</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stoch_simul', 'C:\dynare\4.4.3\matlab\stoch_simul.m', 27)" style="font-weight:bold">stoch_simul</a> (<a href="matlab: opentoline('C:\dynare\4.4.3\matlab\stoch_simul.m',27,0)">line 27</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EA_PV15_a_rep', 'Z:\Forschung\MODELBASE\MMB_2_3\MMB_replications_2_3\EA_PV15\EA_PV15_rep\EA_PV15_a_rep.m', 1070)" style="font-weight:bold">EA_PV15_a_rep</a> (<a href="matlab: opentoline('Z:\Forschung\MODELBASE\MMB_2_3\MMB_replications_2_3\EA_PV15\EA_PV15_rep\EA_PV15_a_rep.m',1070,0)">line 1070</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\4.4.3\matlab\dynare.m', 180)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\4.4.3\matlab\dynare.m',180,0)">line 180</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'Z:\Forschung\MODELBASE\MMB_2_3\MMB_replications_2_3\EA_PV15\run.m', 40)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('Z:\Forschung\MODELBASE\MMB_2_3\MMB_replications_2_3\EA_PV15\run.m',40,0)">line 40</a>)] 
+[Warning: Aggregate variance and sum of variances by shocks differ by more than 0.01 %] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('th_autocovariances', 'C:\dynare\4.4.3\matlab\th_autocovariances.m', 198)" style="font-weight:bold">th_autocovariances</a> (<a href="matlab: opentoline('C:\dynare\4.4.3\matlab\th_autocovariances.m',198,0)">line 198</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('disp_th_moments', 'C:\dynare\4.4.3\matlab\disp_th_moments.m', 37)" style="font-weight:bold">disp_th_moments</a> (<a href="matlab: opentoline('C:\dynare\4.4.3\matlab\disp_th_moments.m',37,0)">line 37</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stoch_simul', 'C:\dynare\4.4.3\matlab\stoch_simul.m', 164)" style="font-weight:bold">stoch_simul</a> (<a href="matlab: opentoline('C:\dynare\4.4.3\matlab\stoch_simul.m',164,0)">line 164</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EA_PV15_a_rep', 'Z:\Forschung\MODELBASE\MMB_2_3\MMB_replications_2_3\EA_PV15\EA_PV15_rep\EA_PV15_a_rep.m', 1070)" style="font-weight:bold">EA_PV15_a_rep</a> (<a href="matlab: opentoline('Z:\Forschung\MODELBASE\MMB_2_3\MMB_replications_2_3\EA_PV15\EA_PV15_rep\EA_PV15_a_rep.m',1070,0)">line 1070</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\4.4.3\matlab\dynare.m', 180)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\4.4.3\matlab\dynare.m',180,0)">line 180</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'Z:\Forschung\MODELBASE\MMB_2_3\MMB_replications_2_3\EA_PV15\run.m', 40)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('Z:\Forschung\MODELBASE\MMB_2_3\MMB_replications_2_3\EA_PV15\run.m',40,0)">line 40</a>)] 
+Total computing time : 0h00m02s
+Note: warning(s) encountered in MATLAB/Octave code

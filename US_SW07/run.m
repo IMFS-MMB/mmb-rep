@@ -30,8 +30,6 @@ Eirf = lab_em; % hours worked
 yirf = y_em; % output
 
 
-
-
 % Go back to original path
 cd('..');
 

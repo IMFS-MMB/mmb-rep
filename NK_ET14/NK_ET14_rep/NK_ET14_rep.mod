@@ -20,7 +20,9 @@ clc;
 
 var Y C s G Pi L ChiC Ps PQ PB w ChiL F K A b q qbar qCB i iQ D theta nu ksi Pss; // Ps*s included, thus 26 var
 varexo epsC epsL epsA epsthet epsG epsnu epsksi; // 7 shocks
-parameters beta delta psi SStheta phi alpha SSPi tau gbar trho f a1 a2 gB gQ rhonu rhoksi rhoC rhoL rhoG rhoA rhotheta gampi gamY gampiQE gamYQE SSY SSG SSC SSD SSL SSw SSs SSqbar SSPB SSPQ SSi;
+parameters beta delta psi SStheta phi alpha SSPi tau gbar trho f a1 a2 
+            gB gQ rhonu rhoksi rhoC rhoL rhoG rhoA rhotheta gampi gamY gampiQE 
+            gamYQE SSY SSG SSC SSD SSL SSw SSs SSqbar SSPB SSPQ SSi;
 
 %----------------------------------------------------------------
 % 2. Calibration

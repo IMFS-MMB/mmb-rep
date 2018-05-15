@@ -1,0 +1,30 @@
+
+This directory contains files to read in a model file in
+Modeleasy-like syntax and generate the function make_aim_arrays(),
+which can then be used to produce the G and H matrices for linear 
+Aim.
+
+aim - executable program
+caller.c - contains a sample main() program to call make_aim_arrays()
+copy_subtree.c - makes a copy of a subtree (part of an equation)
+count_variables.c - counts variables in a subtree
+create_node.c - several function, used to create nodes of various types
+error.c - an error handling routine
+error_check.c - function to check for errors in input
+expand_subtree.c - function to expand equation into sum of products form
+find_index.c - returns the index in an array of a given charatcter string
+find_variable.c - returns the first variable found in a subtree
+header.h - #includes, #defines, and type and function declarations
+initialize_model.c - initializes model to sample model; used for testing
+lex.yy.c - code output by running lex on token.l
+main.c - the main program
+makefile - the makefile, obviously
+parse.y -- input to yacc
+print_equation.c - prints out equation; used for debugging
+print_function.c - prints the function make_aim_arrays()
+print_g_matrix_entries.c - prints out entries of G matrix
+print_h_matrix_entries.c - prints out entries of G matrix
+print_subtree.c - prints out subtree; used for debugging
+print_term.c
+tokens.l - input to LEX
+y.tab.c -- code output by running yacc on parse.y

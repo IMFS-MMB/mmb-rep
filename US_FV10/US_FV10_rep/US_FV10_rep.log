@@ -1,0 +1,89 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 29 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+[Warning: Some of the parameters have no value (gammma1, Rbar, Lambdax, LambdaYd) when using steady. If these parameters
+are not initialized in a steadystate file, Dynare may not be able to solve the model...] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_for_deep_parameters_calibration', 'C:\Apps\dynare\4.4.3\matlab\test_for_deep_parameters_calibration.m', 46)" style="font-weight:bold">test_for_deep_parameters_calibration</a> (<a href="matlab: opentoline('C:\Apps\dynare\4.4.3\matlab\test_for_deep_parameters_calibration.m',46,0)">line 46</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('steady', 'C:\Apps\dynare\4.4.3\matlab\steady.m', 33)" style="font-weight:bold">steady</a> (<a href="matlab: opentoline('C:\Apps\dynare\4.4.3\matlab\steady.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('US_FV10_rep', 'D:\2_My_Papers\Replication\New Models\Replications\US_FV10\US_FV10_rep\US_FV10_rep.m', 353)" style="font-weight:bold">US_FV10_rep</a> (<a href="matlab: opentoline('D:\2_My_Papers\Replication\New Models\Replications\US_FV10\US_FV10_rep\US_FV10_rep.m',353,0)">line 353</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\Apps\dynare\4.4.3\matlab\dynare.m', 180)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\Apps\dynare\4.4.3\matlab\dynare.m',180,0)">line 180</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'D:\2_My_Papers\Replication\New Models\Replications\US_FV10\run.m', 20)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('D:\2_My_Papers\Replication\New Models\Replications\US_FV10\run.m',20,0)">line 20</a>)] 
+
+STEADY-STATE RESULTS:
+
+d       		 1
+c       		 0.40819
+mu_z    		 1.00446
+mu_I    		 1.00341
+mu_A    		 1.0028
+lambda  		 2.58777
+R       		 1.01654
+PI      		 1.01
+r       		 0.0348988
+x       		 0.0884579
+u       		 1
+q       		 1
+f       		 2.55673
+ld      		 0.317845
+w       		 1.11127
+wstar   		 1.13352
+PIstarw 		 1.02002
+PIstar  		 1.01869
+g1      		 7.64784
+g2      		 8.4976
+yd      		 0.496648
+mc      		 0.89825
+k       		 2.71161
+vp      		 1.00222
+vw      		 1.00305
+l       		 0.318814
+phi     		 1
+F       		 0.0495432
+yg      		 1
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+       2.094e-16       -2.094e-16                0
+            0.12             0.12                0
+           0.627            0.627                0
+          0.7383           0.7383                0
+          0.7717            0.769          0.06453
+          0.7717            0.769         -0.06453
+          0.8609           0.8608           0.0135
+          0.8609           0.8608          -0.0135
+            0.93             0.93                0
+          0.9679           0.9679                0
+          0.9866           0.9866                0
+           1.017            1.012           0.0962
+           1.017            1.012          -0.0962
+           1.027            1.027         0.006791
+           1.027            1.027        -0.006791
+           1.039            1.039                0
+           1.123            1.123                0
+           1.245            1.245                0
+           1.446            1.446                0
+       1.796e+12        1.796e+12                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf             -Inf                0
+
+
+There are 15 eigenvalue(s) larger than 1 in modulus 
+for 15 forward-looking variable(s)
+
+The rank condition is verified.
+
+Total computing time : 0h00m01s
+Note: warning(s) encountered in MATLAB/Octave code

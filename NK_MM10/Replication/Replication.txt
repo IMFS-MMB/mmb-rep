@@ -10,7 +10,9 @@
           are less persistent than in the paper, and the decline in output is less 
 	  pronounced. 
 	- however qualitatively the results of the paper are preserved. 
-	- The case without bank capital is not reproduced.
-	
+	- The case without bank capital is not reproduced. 
+		- in order to do this, the author recommend solving for the stst. using mu_ss = 0.025, and use mu_ss in the dynamics of the model
+		 (see BankCapital.mod)
+
 
 

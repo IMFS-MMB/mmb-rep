@@ -1,0 +1,18 @@
++ The (other) files in this folder were created by Kevin Moran.
+
++ They are a Dynare version of: Meh and Moran. 2010. "The Role of Bank 
+	Capital in the Propagation of Shocks", JEDC 34: 555-576
++ the files were written Nov 2010 - March 2011
+
++ control produces figures for a decline/increase in the interest rate/technology/bank capital 
++ the figures produced differ slightly from the figures displayed in the paper.
+	- e.g. the responses of the financial variables to the technology shock 
+          are less persistent than in the paper, and the decline in output is less 
+	  pronounced. 
+	- however qualitatively the results of the paper are preserved. 
+	- The case without bank capital is not reproduced. 
+		- in order to do this, the author recommend solving for the stst. using mu_ss = 0.025, and use mu_ss in the dynamics of the model
+		 (see BankCapital.mod)
+
+
+

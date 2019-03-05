@@ -1,0 +1,332 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+WARNING: in the 'steady_state_model' block, variable 'ln_yn' is not assigned a value
+WARNING: A parameter was used with a lead or a lag in the model block
+Substitution of exo lags: added 2 auxiliary variables and equations.
+Found 117 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+Equation number 10 : 0
+Equation number 11 : 0
+Equation number 12 : 0
+Equation number 13 : 0
+Equation number 14 : 0
+Equation number 15 : 0
+Equation number 16 : 0
+Equation number 17 : 0
+Equation number 18 : 0
+Equation number 19 : 0
+Equation number 20 : 0
+Equation number 21 : 0
+Equation number 22 : 0
+Equation number 23 : 0
+Equation number 24 : 0
+Equation number 25 : 0
+Equation number 26 : 0
+Equation number 27 : 0
+Equation number 28 : 0
+Equation number 29 : 0
+Equation number 30 : 0
+Equation number 31 : 0
+Equation number 32 : 0
+Equation number 33 : 0
+Equation number 34 : 0
+Equation number 35 : 0
+Equation number 36 : 0
+Equation number 37 : 0
+Equation number 38 : 0
+Equation number 39 : 0
+Equation number 40 : 0
+Equation number 41 : 0
+Equation number 42 : 0
+Equation number 43 : 0
+Equation number 44 : 0
+Equation number 45 : 0
+Equation number 46 : 0
+Equation number 47 : 0
+Equation number 48 : 0
+Equation number 49 : 0
+Equation number 50 : 0
+Equation number 51 : 0
+Equation number 52 : 0
+Equation number 53 : 0
+Equation number 54 : 0
+Equation number 55 : 0
+Equation number 56 : 0
+Equation number 57 : 0
+Equation number 58 : 0
+Equation number 59 : 0
+Equation number 60 : 0
+Equation number 61 : 0
+Equation number 62 : 0
+Equation number 63 : 0
+Equation number 64 : 0
+Equation number 65 : 0
+Equation number 66 : 0
+Equation number 67 : 0
+Equation number 68 : 0
+Equation number 69 : 0
+Equation number 70 : 0
+Equation number 71 : 0
+Equation number 72 : 0
+Equation number 73 : 0
+Equation number 74 : 0
+Equation number 75 : 0
+Equation number 76 : 0
+Equation number 77 : 0
+Equation number 78 : 0
+Equation number 79 : 0
+Equation number 80 : 0
+Equation number 81 : 0
+Equation number 82 : 0
+Equation number 83 : 0
+Equation number 84 : 0
+Equation number 85 : 0
+Equation number 86 : 0
+Equation number 87 : 0
+Equation number 88 : 0
+Equation number 89 : 0
+Equation number 90 : 0
+Equation number 91 : 0
+Equation number 92 : 0
+Equation number 93 : 0
+Equation number 94 : 0
+Equation number 95 : 0
+Equation number 96 : 0
+Equation number 97 : 0
+Equation number 98 : 0
+Equation number 99 : 0
+Equation number 100 : 0
+Equation number 101 : 0
+Equation number 102 : 0
+Equation number 103 : 0
+Equation number 104 : 0
+Equation number 105 : 0
+Equation number 106 : 0
+Equation number 107 : 0
+Equation number 108 : 0
+Equation number 109 : 0
+Equation number 110 : 0
+Equation number 111 : 0
+Equation number 112 : 0
+Equation number 113 : 0
+Equation number 114 : 0
+Equation number 115 : 0
+
+
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+       1.263e-18       -1.263e-18                0
+       1.024e-16        1.024e-16                0
+       1.141e-16       -1.141e-16                0
+       3.745e-16       -3.745e-16                0
+       6.479e-16       -6.479e-16                0
+       7.851e-16        7.851e-16                0
+       1.392e-15        1.392e-15                0
+       5.193e-15       -5.193e-15                0
+       1.917e-14       -1.917e-14                0
+       2.333e-14       -2.333e-14                0
+        5.92e-09        -5.92e-09                0
+        5.92e-09         5.92e-09                0
+          0.2568           0.2568                0
+          0.4279           0.4279                0
+          0.4505           0.4505                0
+          0.4798           0.4798                0
+          0.6158           0.6158                0
+          0.6339           0.6339                0
+          0.6545            0.649          0.08509
+          0.6545            0.649         -0.08509
+          0.6802           0.6802                0
+           0.758           0.7447           0.1417
+           0.758           0.7447          -0.1417
+          0.8089           0.8089                0
+          0.8419           0.8419                0
+          0.8448           0.8448                0
+          0.8661           0.8661                0
+          0.9129           0.9063             0.11
+          0.9129           0.9063            -0.11
+          0.9374           0.9374                0
+          0.9439           0.9397          0.08946
+          0.9439           0.9397         -0.08946
+           0.948            0.948                0
+          0.9502           0.9502                0
+          0.9645           0.9645                0
+          0.9894           0.9894                0
+           0.992            0.992                0
+          0.9929           0.9929                0
+            1.07            1.062           0.1295
+            1.07            1.062          -0.1295
+           1.078            1.065           0.1625
+           1.078            1.065          -0.1625
+           1.139            1.139                0
+           1.224            1.194           0.2725
+           1.224            1.194          -0.2725
+           1.272            1.272                0
+           1.306            1.306          0.02186
+           1.306            1.306         -0.02186
+           1.705            1.705                0
+       5.226e+16       -5.226e+16                0
+       2.019e+17       -2.019e+17                0
+       2.208e+17       -2.208e+17                0
+       3.727e+17       -3.727e+17                0
+       4.406e+17        4.406e+17                0
+       3.251e+18        3.251e+18                0
+       8.065e+18       -8.065e+18                0
+       4.592e+20        4.592e+20                0
+       4.201e+21       -4.201e+21                0
+       1.542e+22       -1.542e+22                0
+       2.872e+23        2.872e+23                0
+       1.765e+32        1.765e+32                0
+       9.142e+32        9.142e+32                0
+       3.666e+34        3.666e+34                0
+       3.745e+34       -3.745e+34                0
+       8.264e+34       -8.264e+34                0
+       5.782e+35       -5.782e+35                0
+       7.318e+35       -7.318e+35                0
+       1.921e+36        1.921e+36                0
+       2.119e+38        2.119e+38                0
+
+
+There are 31 eigenvalue(s) larger than 1 in modulus 
+for 31 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         117
+  Number of stochastic shocks: 10
+  Number of state variables:   38
+  Number of jumpers:           31
+  Number of static variables:  62
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables         e_a       e_g       e_b       e_i       e_l       e_n       e_p       e_w       e_e       e_r
+e_a          0.921600  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+e_g          0.000000  5.382400  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+e_b          0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+e_i          0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+e_l          0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+e_n          0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+e_p          0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.002500  0.000000  0.000000  0.000000
+e_w          0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+e_e          0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+e_r          0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.008100
+
+POLICY AND TRANSITION FUNCTIONS
+                               ln_yd            ln_c            ln_i           ln_pi            ln_y            ln_n            ln_v            ln_r
+r(-1)                    -147.801138     -147.910082      -80.765408       -2.995579     -147.801138               0     -364.683637     9477.337028
+n(-1)                      48.316209       58.493799       24.990573       -0.488484     -168.100247       91.813042      111.165706    -2220.832688
+p(-1)                     -25.500509      -17.078639      -33.530926       -1.582016      -25.500509               0      -61.489583     1944.905887
+c(-1)                      95.990265      111.572026        5.546367        0.934904       95.990265               0      -19.945840      861.341500
+k(-1)                       0.580176        3.505998       -5.152560       -0.135313        0.580176               0        7.573982        2.032163
+s(-1)                       4.315094       -0.346859       20.338098        0.054921        4.315094               0        1.219643       39.010582
+s_a(-1)                    25.436088       52.058453      -57.241096       -2.026973       25.436088               0       29.520896      177.026933
+s_g(-1)                    17.728727       -6.359982        2.181670        0.132594       17.728727               0       -9.549229      158.181387
+s_b(-1)                  -119.383293     -148.869562       47.575276       -2.581761     -119.383293               0     -383.405182    -1103.202406
+s_l(-1)                    -0.173667        0.022888       -0.849708       -0.002430       -0.173667               0        0.182944       -1.574977
+s_n(-1)                    27.308955      -26.080290      220.404421        0.212824       27.308955               0        0.716690      243.852402
+s_p(-1)                    -0.215214        0.600350       -2.971755        2.372666       -0.215214               0        1.200648       51.538199
+s_w(-1)                    -8.191569      -11.064459        4.218068        0.018622       -8.191569               0       14.160583      -71.289085
+s_r(-1)                  -150.718576     -147.820152      -92.615613       -3.150436     -150.718576               0     -342.459337     4559.475232
+e_p(-1)                     0.120016       -0.334791        1.657226       -1.323139        0.120016               0       -0.669553      -28.740754
+e_w(-1)                     7.261130        9.807703       -3.738959       -0.016507        7.261130               0      -12.552155       63.191722
+w(-1)                      -4.097352      -10.602381       14.236073        0.617596       -4.097352               0      -10.283156      -21.962321
+pi(-1)                     -6.002393       -2.539216      -12.812927       25.211099       -6.002393               0      -11.432652      515.100376
+ne(-1)                    105.906121      155.863029     -105.416397        1.714032     -110.510335       91.813042      187.202705    -1667.103824
+pic(-1)                    -1.041931       -2.696118        3.620143        0.157051       -1.041931               0       -2.614941       -5.584879
+y(-1)                      14.556191       14.566921        7.954179        0.295020       14.556191               0       35.915859     -933.375308
+i(-1)                     129.014524      -14.059358      626.528211        1.248414      129.014524               0      -32.889634     1157.492269
+q(-1)                       4.304293       -0.345991       20.287189        0.054783        4.304293               0        1.216590       38.912933
+rL(-1)                    -15.353146       -7.216834      -39.162689       -0.309022      -15.353146               0        1.189777     -141.358125
+l(-1)                      -1.534670        0.123361       -7.233278       -0.019533       -1.534670               0       -0.433768      -13.874177
+s_i(-1)                     2.894880       -4.549858       30.470045       -0.009495        2.894880               0       -7.944128       25.127783
+s_e(-1)                     3.744459        5.239433       -2.902750        0.063837       -2.148398        2.500000        5.859819      -37.472857
+e_a                         0.332127        0.499217       -0.569285       -0.019925        0.332127               0        0.257935        2.458799
+e_g                         0.183812       -0.065941        0.022620        0.001375        0.183812               0       -0.099007        1.640033
+e_b                        -1.378456       -1.718919        0.549327       -0.029810       -1.378456               0       -4.426979      -12.738101
+e_i                         0.029181       -0.045863        0.307142       -0.000096        0.029181               0       -0.080078        0.253292
+e_l                        -0.205583        0.027094       -1.005863       -0.002876       -0.205583               0        0.216564       -1.864418
+e_n                         0.287415       -0.274484        2.319664        0.002240        0.287415               0        0.007543        2.566444
+e_p                        -0.643715        0.210155       -3.127268        3.728625       -0.643715               0       -0.102188       78.317471
+e_w                        -1.153695       -1.826183        1.235005        0.034774       -1.153695               0        1.076474       -9.316406
+e_e                         0.056768        0.085232       -0.083749        0.001803        0.056768               0        0.066211        0.537539
+e_r                        -3.141137       -3.080731       -1.930209       -0.065658       -3.141137               0       -7.137221       95.024375
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+ln_yd          0.0000     7.7562    60.1592
+ln_c           0.0000     9.5939    92.0425
+ln_i           0.0000     6.1300    37.5773
+ln_pi          0.0000     0.2275     0.0518
+ln_y           0.0000     2.7007     7.2936
+ln_n           0.0000     3.9344    15.4798
+ln_v           0.0000     3.2687    10.6844
+ln_r           0.0000    42.2866  1788.1596
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+            e_a     e_g     e_b     e_i     e_l     e_n     e_p     e_w     e_e     e_r
+ln_yd     92.47    1.83    0.00    0.00    0.00    0.00    0.34    0.00    0.00    5.36
+ln_c      95.82    1.73    0.00    0.00    0.00    0.00    0.04    0.00    0.00    2.41
+ln_i      67.54    0.64    0.00    0.00    0.00    0.00    8.68    0.00    0.00   23.15
+ln_pi      2.71    0.06    0.00    0.00    0.00    0.00   93.86    0.00    0.00    3.37
+ln_y      51.54   22.25    0.00    0.00    0.00    0.00   13.37    0.00    0.00   12.84
+ln_n      97.48    0.27    0.00    0.00    0.00    0.00    1.09    0.00    0.00    1.16
+ln_v      72.34    5.37    0.00    0.00    0.00    0.00    0.38    0.00    0.00   21.91
+ln_r      35.41    8.12    0.00    0.00    0.00    0.00    5.88    0.00    0.00   50.58
+
+
+
+MATRIX OF CORRELATIONS
+Variables     ln_yd    ln_c    ln_i   ln_pi    ln_y    ln_n    ln_v    ln_r
+ln_yd        1.0000  0.9542 -0.1597 -0.0676 -0.4429  0.9653  0.8731 -0.6163
+ln_c         0.9542  1.0000 -0.3120 -0.0720 -0.5977  0.9721  0.9287 -0.6542
+ln_i        -0.1597 -0.3120  1.0000  0.0593  0.3052 -0.2225 -0.2144 -0.0091
+ln_pi       -0.0676 -0.0720  0.0593  1.0000  0.0101 -0.0595 -0.0374  0.0766
+ln_y        -0.4429 -0.5977  0.3052  0.0101  1.0000 -0.6616 -0.4398  0.2589
+ln_n         0.9653  0.9721 -0.2225 -0.0595 -0.6616  1.0000  0.8582 -0.5908
+ln_v         0.8731  0.9287 -0.2144 -0.0374 -0.4398  0.8582  1.0000 -0.8517
+ln_r        -0.6163 -0.6542 -0.0091  0.0766  0.2589 -0.5908 -0.8517  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order         1       2       3       4       5
+ln_yd    0.9957  0.9886  0.9795  0.9692  0.9579
+ln_c     0.9968  0.9893  0.9790  0.9670  0.9539
+ln_i     0.9826  0.9364  0.8671  0.7807  0.6826
+ln_pi    0.5569  0.3305  0.2012  0.1231  0.0752
+ln_y     0.9651  0.9116  0.8506  0.7890  0.7306
+ln_n     0.9984  0.9939  0.9868  0.9776  0.9666
+ln_v     0.9734  0.9448  0.9155  0.8858  0.8563
+ln_r     0.9592  0.8883  0.8061  0.7214  0.6390
+Total computing time : 0h00m04s
+Note: 2 warning(s) encountered in the preprocessor

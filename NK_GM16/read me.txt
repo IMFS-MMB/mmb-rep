@@ -1,0 +1,16 @@
+NK_GM16 Replication
+
++ last change: 2019-02-27
+
++ replication: IRFs to a temporary tax cut of key variables in the baseline model under two alternative monetary policy regimes
+
++ inflation targeting monetary policy vs. currency union case
+
++ replication results: NK_GM16_rep_results.pdf
+
++ file to produce replicated IRFs: run.m (which calls dynare files in NK_GM16_rep)
+
++ original results: NK_GM16_original_results.pdf or Figure 1 in Galí and Monacelli (2016)
+
++ literature:
+  Galí, Jordi, and Tommaso Monacelli (2016) “Understanding the Gains from Wage Flexibility: The Exchange Rate Connection", AMERICAN ECONOMIC REVIEW VOL. 106, NO. 12, (pp. 3829-68)

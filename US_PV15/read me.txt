@@ -1,0 +1,23 @@
+US_PV15 Replication
+
++ last change: 2019-27-02
+
++ replication: IRF to a productivity shock (one standard deviation)
+               IRF to a spending shock  (one standard deviation)
+               IRF to a price cost-push shock (one standard deviation)
+	       IRF to a monetary policy shock  (one standard deviation)
+
++ model with financial frictions
+
+
++ replicated IRFs: US_PV15_irf_a.pdf  (productivity shock)
+                   US_PV15_irf_g.pdf  (spending shock) 
+                   US_PV15_irf_p.pdf  (price cost-push shock) 
+                   US_PV15_irf_r.pdf  (monetary policy shock)
+
++ file to produce replicated IRFs: run.m (which calls US_PV15_rep.mod in folder US_PV15_rep)
+
++ original IRFs: US_PV15_original_irf.pdf
+                
++ literature:
+  Poutineau, J. C., & Vermandel, G. (2015). Financial frictions and the extensive margin of activity. Research in Economics, 69(4), 525-554.

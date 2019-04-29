@@ -95,7 +95,8 @@ L = -w + (1+1/psi)*ren + K(-1);
 pi - pibar = beta/(1+beta*gamma_p)*(pi(+1)-pibar)+gamma_p/(1+beta*gamma_p)*(pi(-1)-pibar)
 +1/(1+beta*gamma_p)*(1-beta*xi_p)*(1-xi_p)/xi_p*(alpha*ren+(1-alpha)*w-eps_A)+eta_p;
 
-K = (1-tau) * K(-1) + tau * I(-1) + tau*(1+beta)*phi* eps_I(-1);
+%K = (1-tau) * K(-1) + tau * I(-1) + tau*(1+beta)*phi* eps_I(-1);
+K = (1-tau) * K(-1) + tau * I + tau*(1+beta)*phi* eps_I;
 
 I = 1/(1+beta)*I(-1) + beta/(1+beta)*I(+1) + 1/(phi*(1+beta)) *  Q + eps_I;
 
@@ -109,8 +110,8 @@ N = gamma*Rkbar*(KbarNbar*(Rk-Rkforward(-1))+Rkforward(-1)+N(-1));
 
 Y = c_y * C + tau * k_y * I + eps_G + (Rkbar+tau-1)*1/psi*k_y*ren + (Rkbar-1/beta)*(1-1/KbarNbar)*k_y*(Rk+Q(-1)+K);
 
-Rn = rho*Rn(-1)+(1-rho)*(pibar(-1)+rpi*(pi-pibar)+ry*(Y-Yf))
-+ rdeltapi*(pi-pi(-1))+rdeltay*(Y-Yf-(Y(-1)-Yf(-1)))-eta_R; 
+%Rn = rho*Rn(-1)+(1-rho)*(pibar(-1)+rpi*(pi-pibar)+ry*(Y-Yf))+ rdeltapi*(pi-pi(-1))+rdeltay*(Y-Yf-(Y(-1)-Yf(-1)))-eta_R; 
+Rn = rho*Rn(-1)+(1-rho)*(pibar+rpi*(pi-pibar)+ry*(Y-Yf))+ rdeltapi*(pi-pi(-1))+rdeltay*(Y-Yf-(Y(-1)-Yf(-1)))-eta_R; 
 
 pibar = pibar(-1) + etapi;
 
@@ -143,7 +144,8 @@ Lf = -wf + (1+1/psi)*renf + Kf(-1);
 
 alpha * renf + (1-alpha)*wf = eps_A;
 
-Kf = (1-tau) * Kf(-1) + tau * If(-1) + tau *(1+beta)*phi * eps_I(-1);
+%Kf = (1-tau) * Kf(-1) + tau * If(-1) + tau *(1+beta)*phi * eps_I(-1);
+Kf = (1-tau) * Kf(-1) + tau * If + tau *(1+beta)*phi * eps_I;
 
 If = 1/(1+beta)*If(-1) + beta/(1+beta)*If(+1) + 1/(phi*(1+beta)) * Qf + eps_I;
 

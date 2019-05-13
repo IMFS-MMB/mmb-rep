@@ -1,0 +1,255 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 80 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+STEADY-STATE RESULTS:
+
+psi         		 0
+q           		 0
+iH          		 0
+cH          		 0
+rFI         		 0
+rEUR        		 0
+k           		 0
+wF          		 0
+y           		 0
+hF          		 0
+mcY         		 0
+pieY        		 0
+ds          		 0
+yC          		 0
+mC          		 0
+pC          		 0
+c           		 0
+pO          		 0
+iT          		 0
+yI          		 0
+mI          		 0
+pI          		 0
+rK          		 0
+yX          		 0
+mX          		 0
+mcX         		 0
+x           		 0
+pieX        		 0
+pX          		 0
+pieMC       		 0
+pieM        		 0
+tbY         		 0
+m           		 0
+pM          		 0
+ToT         		 0
+bstar       		 0
+astar       		 0
+pieC        		 0
+pieI        		 0
+rs          		 0
+trY         		 0
+w           		 0
+h           		 0
+mu          		 0
+lamK        		 0
+lamLT       		 0
+lamCY       		 0
+lamCM       		 0
+lamIY       		 0
+upsilon     		 0
+upsilonMC   		 0
+upsilonX    		 0
+zetaCH      		 0
+zetaEUR     		 0
+lamW        		 0
+iG          		 0
+hG          		 0
+cGF         		 0
+wG          		 0
+pOILS       		 0
+mW          		 0
+pieW        		 0
+pieOILS     		 0
+epsX        		 0
+pRAWS       		 0
+pieRAWS     		 0
+rb          		 0
+nwe         		 0
+btot        		 0
+epsb        		 0
+lev_e       		 0
+by          		 0
+RB          		 0
+kbank       		 0
+nuB         		 0
+epsKB       		 0
+bankprofits 		 0
+deposits    		 0
+bka         		 0
+rwage       		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0               -0                0
+               0                0                0
+       1.478e-17        1.478e-17                0
+       2.092e-16        2.092e-16                0
+       5.507e-16        5.507e-16                0
+       5.916e-16        5.916e-16                0
+       3.046e-15       -3.046e-15                0
+        1.25e-14         1.25e-14                0
+       1.951e-14       -1.951e-14                0
+          0.1079           0.1079                0
+          0.1433           0.1433                0
+          0.1499           0.1499                0
+          0.1588           0.1588                0
+          0.1794           0.1794                0
+          0.2023           0.2023                0
+          0.2026          0.09499           0.1789
+          0.2026          0.09499          -0.1789
+          0.2922           0.2922                0
+          0.3082           0.3082                0
+          0.4273           0.4273                0
+          0.4642           0.4642                0
+          0.4855           0.4855                0
+          0.5661           0.5661                0
+          0.5903           0.5903                0
+           0.626            0.626                0
+          0.7532           0.7532                0
+          0.7933           0.7933                0
+          0.8058           0.8058                0
+          0.8153           0.8153                0
+          0.8439           0.8439                0
+           0.851            0.851                0
+          0.8562           0.8089           0.2804
+          0.8562           0.8089          -0.2804
+          0.8762           0.8762                0
+          0.9035           0.9035                0
+          0.9082           0.9082                0
+          0.9226           0.9218          0.03956
+          0.9226           0.9218         -0.03956
+           0.929            0.929                0
+          0.9374           0.9374                0
+          0.9431           0.9431                0
+          0.9453           0.9453                0
+          0.9515           0.9515                0
+          0.9664           0.9664                0
+          0.9673           0.9673                0
+          0.9893           0.9893                0
+          0.9939           0.9939                0
+           1.017            1.017                0
+           1.056            1.056                0
+           1.158            1.158                0
+           1.181            1.181                0
+           1.413            1.413                0
+            2.16             2.16                0
+           2.298            2.298                0
+           8.986            8.986                0
+       4.817e+16        4.817e+16                0
+       1.998e+17       -1.998e+17                0
+       2.194e+17        2.194e+17                0
+        3.68e+17        -3.68e+17                0
+       7.045e+17        7.045e+17                0
+       7.185e+17       -7.185e+17                0
+
+
+There are 14 eigenvalue(s) larger than 1 in modulus 
+for 14 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+Equation number 10 : 0
+Equation number 11 : 0
+Equation number 12 : 0
+Equation number 13 : 0
+Equation number 14 : 0
+Equation number 15 : 0
+Equation number 16 : 0
+Equation number 17 : 0
+Equation number 18 : 0
+Equation number 19 : 0
+Equation number 20 : 0
+Equation number 21 : 0
+Equation number 22 : 0
+Equation number 23 : 0
+Equation number 24 : 0
+Equation number 25 : 0
+Equation number 26 : 0
+Equation number 27 : 0
+Equation number 28 : 0
+Equation number 29 : 0
+Equation number 30 : 0
+Equation number 31 : 0
+Equation number 32 : 0
+Equation number 33 : 0
+Equation number 34 : 0
+Equation number 35 : 0
+Equation number 36 : 0
+Equation number 37 : 0
+Equation number 38 : 0
+Equation number 39 : 0
+Equation number 40 : 0
+Equation number 41 : 0
+Equation number 42 : 0
+Equation number 43 : 0
+Equation number 44 : 0
+Equation number 45 : 0
+Equation number 46 : 0
+Equation number 47 : 0
+Equation number 48 : 0
+Equation number 49 : 0
+Equation number 50 : 0
+Equation number 51 : 0
+Equation number 52 : 0
+Equation number 53 : 0
+Equation number 54 : 0
+Equation number 55 : 0
+Equation number 56 : 0
+Equation number 57 : 0
+Equation number 58 : 0
+Equation number 59 : 0
+Equation number 60 : 0
+Equation number 61 : 0
+Equation number 62 : 0
+Equation number 63 : 0
+Equation number 64 : 0
+Equation number 65 : 0
+Equation number 66 : 0
+Equation number 67 : 0
+Equation number 68 : 0
+Equation number 69 : 0
+Equation number 70 : 0
+Equation number 71 : 0
+Equation number 72 : 0
+Equation number 73 : 0
+Equation number 74 : 0
+Equation number 75 : 0
+Equation number 76 : 0
+Equation number 77 : 0
+Equation number 78 : 0
+Equation number 79 : 0
+Equation number 80 : 0
+
+
+Total computing time : 0h00m01s

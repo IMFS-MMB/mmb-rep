@@ -1,0 +1,166 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 35 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+c_p    		 -0.0758848
+d_p    		 -0.236212
+lam_p  		 0.0758848
+l_p    		 -0.113285
+c_e    		 -3.09515
+k_e    		 0.96819
+b_ee   		 -0.141901
+lam_e  		 3.09515
+s_e    		 -1.02702
+l_pd   		 -0.113285
+y_e    		 0.10301
+r_k    		 -2.65694
+pie    		 -7.08654e-14
+mc_E   		 -0.182322
+J_R    		 -1.68875
+q_k    		 -8.59983e-17
+x      		 0.182322
+I      		 -2.02754
+C      		 -0.0282026
+Y      		 0.10301
+w_p    		 -0.18917
+B      		 -0.141901
+D      		 -0.236212
+K      		 0.96819
+r_ib   		 0.00401606
+J_B    		 -5.37042
+r_b    		 0.00901607
+spread 		 0.005
+K_b    		 -2.54985
+R_b    		 0.00401607
+lev    		 2.40794
+rr     		 -0.990984
+Y1     		 0.0988041
+mk_y   		 0.182322
+A_e    		 -5.84009e-16
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+Equation number 10 : 0
+Equation number 11 : 0
+Equation number 12 : 0
+Equation number 13 : 0
+Equation number 14 : 0
+Equation number 15 : 0
+Equation number 16 : 0
+Equation number 17 : 0
+Equation number 18 : 0
+Equation number 19 : 0
+Equation number 20 : 0
+Equation number 21 : 0
+Equation number 22 : 0
+Equation number 23 : 0
+Equation number 24 : 0
+Equation number 25 : 0
+Equation number 26 : 0
+Equation number 27 : 0
+Equation number 28 : 0
+Equation number 29 : 0
+Equation number 30 : 0
+Equation number 31 : 0
+Equation number 32 : 0
+Equation number 33 : 0
+Equation number 34 : 0
+Equation number 35 : 0
+
+
+
+MODEL SUMMARY
+
+  Number of variables:         35
+  Number of stochastic shocks: 2
+  Number of state variables:   11
+  Number of jumpers:           7
+  Number of static variables:  18
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables       e_A_e    e_mk_y
+e_A_e        1.000000  0.000000
+e_mk_y       0.000000  1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                 pie               Y               I             lev            r_ib             r_b
+Constant                           0        0.103010       -2.027542        2.407945        0.004016        0.009016
+k_e(-1)                    -0.708408       -0.618671        0.308723       -1.528845        0.966950        0.954690
+b_ee(-1)                    0.229173        0.231924       -0.107664        0.557801       -0.353085       -0.348612
+K(-1)                       0.565829        0.623518       -0.273603        1.903617       -0.654086       -0.638821
+r_ib(-1)                   -0.144467       -0.298070       -0.190603       -0.091995        0.070465        0.069727
+J_B(-1)                    -0.000594       -0.000382        0.000358       -0.058970        0.000188       -0.000285
+r_b(-1)                     0.227125        0.229852       -0.106702        0.552816       -0.349930       -0.345497
+K_b(-1)                    -0.008898       -0.002585        0.005729       -0.932242        0.003810       -0.003666
+mk_y(-1)                    0.129426       -0.037196       -0.036003       -0.018355       -0.012248       -0.012395
+A_e(-1)                    -0.383367        0.719262        0.273566        0.125512        0.069408        0.070414
+I(-1)                       0.179803        0.117665        0.819572       -0.009022       -0.042303       -0.042375
+e_A_e                      -0.403544        0.757118        0.287964        0.132118        0.073061        0.074120
+e_mk_y                      0.215711       -0.061994       -0.060004       -0.030592       -0.020413       -0.020658
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+pie               0.006001        0.668400        0.446759       -0.037480        0.000569
+Y                 0.030169        3.278707       10.749918        0.162543        0.410311
+I                -2.102162        3.732607       13.932358        0.125652        0.300408
+lev               2.389493        1.052480        1.107715        0.113390        0.221455
+r_ib              0.006259        0.131544        0.017304       -0.096987        0.145010
+r_b               0.011111        0.126247        0.015938       -0.091623        0.128681
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE       pie       Y       I     lev    r_ib     r_b
+pie         1.0000 -0.5887 -0.4326 -0.4050 -0.0635 -0.0932
+Y          -0.5887  1.0000  0.9595  0.9160 -0.6463 -0.6121
+I          -0.4326  0.9595  1.0000  0.9713 -0.7335 -0.6994
+lev        -0.4050  0.9160  0.9713  1.0000 -0.6470 -0.6073
+r_ib       -0.0635 -0.6463 -0.7335 -0.6470  1.0000  0.9987
+r_b        -0.0932 -0.6121 -0.6994 -0.6073  0.9987  1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE         1       2       3       4       5
+pie         0.7304  0.5529  0.4379  0.3459  0.2718
+Y           0.9729  0.9425  0.9111  0.8791  0.8476
+I           0.9930  0.9760  0.9511  0.9201  0.8847
+lev         0.9900  0.9755  0.9574  0.9352  0.9089
+r_ib        0.6331  0.5147  0.4867  0.4663  0.4511
+r_b         0.5970  0.4693  0.4416  0.4225  0.4093
+
+
+
+VARIANCE DECOMPOSITION SIMULATING ONE SHOCK AT A TIME (in percent)
+                   e_A_e            e_mk_y  Tot. lin. contr.
+pie                89.27             12.04            101.31
+Y                  99.88              0.08             99.95
+I                  99.75              0.19             99.94
+lev                99.75              0.17             99.92
+r_ib               97.27              3.35            100.62
+r_b                97.01              3.67            100.68
+Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
+
+Total computing time : 0h00m01s

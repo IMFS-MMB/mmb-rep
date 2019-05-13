@@ -1,0 +1,209 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Substitution of endo lags >= 2: added 2 auxiliary variables and equations.
+Found 54 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+'base',fname) ;
+} 
+dynare NK_GHP16
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Using 64-bit preprocessor
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Substitution of endo lags >= 2: added 2 auxiliary variables and equations.
+Found 54 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+STEADY-STATE RESULTS:
+
+C                 		 -1.05042
+C_m               		 -1.38676
+C_n               		 -0.738118
+K                 		 1.7212
+K_m               		 0.883919
+K_n               		 1.15401
+I                 		 -2.00434
+W                 		 0.157481
+h_m               		 -1.10866
+h_n               		 -1.66073
+r_k               		 -3.3755
+r                 		 0.0100503
+lambda            		 0.761498
+infl              		 0
+inflstar          		 0
+x_1               		 0.599718
+x_2               		 0.599718
+RMC               		 -0.0953102
+G                 		 -2.47182
+g                 		 0
+Y                 		 -0.757017
+D                 		 0
+Cf                		 -1.05042
+C_mf              		 -1.38676
+C_nf              		 -0.738118
+Kf                		 1.7212
+K_mf              		 0.883919
+K_nf              		 1.15401
+If                		 -2.00434
+Wf                		 0.157481
+h_mf              		 -1.10866
+h_nf              		 -1.66073
+r_kf              		 -3.3755
+rf                		 0.0100503
+lambdaf           		 0.761498
+inflf             		 0
+inflstarf         		 0
+x_1f              		 -0.757017
+x_2f              		 -0.757017
+RMCf              		 -0.0953102
+Gf                		 -2.47182
+gf                		 0
+Yf                		 -0.757017
+Df                		 0
+e_g               		 0
+e_gf              		 0
+interest          		 0
+inflation         		 0
+inflationq        		 0
+outputgap         		 -4.44089e-16
+output            		 -0.757017
+fispol            		 0
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+Equation number 10 : 0
+Equation number 11 : 0
+Equation number 12 : 0
+Equation number 13 : 0
+Equation number 14 : 0
+Equation number 15 : 0
+Equation number 16 : 0
+Equation number 17 : 0
+Equation number 18 : 0
+Equation number 19 : 0
+Equation number 20 : 0
+Equation number 21 : 0
+Equation number 22 : 0
+Equation number 23 : 0
+Equation number 24 : 0
+Equation number 25 : 0
+Equation number 26 : 0
+Equation number 27 : 0
+Equation number 28 : 0
+Equation number 29 : 0
+Equation number 30 : 0
+Equation number 31 : 0
+Equation number 32 : 0
+Equation number 33 : 0
+Equation number 34 : 0
+Equation number 35 : 0
+Equation number 36 : 0
+Equation number 37 : 0
+Equation number 38 : 0
+Equation number 39 : 0
+Equation number 40 : 0
+Equation number 41 : 0
+Equation number 42 : 0
+Equation number 43 : 0
+Equation number 44 : 0
+Equation number 45 : 0
+Equation number 46 : 0
+Equation number 47 : 0
+Equation number 48 : 0
+Equation number 49 : 0
+Equation number 50 : 0
+Equation number 51 : 0
+Equation number 52 : 0
+
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('print_info', 'C:\dynare\4.5.7\matlab\print_info.m', 42)" style="font-weight:bold">print_info</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\print_info.m',42,0)">line 42</a>)
+Blanchard Kahn conditions are not satisfied: no stable equilibrium
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stoch_simul', 'C:\dynare\4.5.7\matlab\stoch_simul.m', 100)" style="font-weight:bold">stoch_simul</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\stoch_simul.m',100,0)">line 100</a>)
+    print_info(info, options_.noprint, options_);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('NK_GHP16', 'C:\MMB\Models for the MMB 3\Replication_Files\NK_GHP16\NK_GHP16.m', 647)" style="font-weight:bold">NK_GHP16</a> (<a href="matlab: opentoline('C:\MMB\Models for the MMB 3\Replication_Files\NK_GHP16\NK_GHP16.m',647,0)">line 647</a>)
+info = stoch_simul(var_list_);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\4.5.7\matlab\dynare.m', 235)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare.m',235,0)">line 235</a>)
+evalin('base',fname) ;
+} 
+uiopen('C:\MMB\Models for the MMB 3\Sonstiges\FLM\flm_base_steadystate.m',1)
+[Warning: A value of class "matlab.internal.video.PluginManager" was indexed with no
+subscripts specified. Currently the result of this operation is the indexed value
+itself, but in a future release, it will be an error.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.internal.VideoReader/createChannel', 'C:\Program Files\MATLAB\R2018a\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m', 495)" style="font-weight:bold">matlab.internal.VideoReader/createChannel</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m',495,0)">line 495</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.internal.VideoReader', 'C:\Program Files\MATLAB\R2018a\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m', 192)" style="font-weight:bold">matlab.internal.VideoReader</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m',192,0)">line 192</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VideoReader/init', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m', 598)" style="font-weight:bold">VideoReader/init</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m',598,0)">line 598</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VideoReader', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m', 171)" style="font-weight:bold">VideoReader</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m',171,0)">line 171</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('finfo>getVideoInfo', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\general\finfo.m', 205)" style="font-weight:bold">finfo>getVideoInfo</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\general\finfo.m',205,0)">line 205</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('finfo>openAsMultimediaFile', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\general\finfo.m', 194)" style="font-weight:bold">finfo>openAsMultimediaFile</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\general\finfo.m',194,0)">line 194</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('finfo', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\general\finfo.m', 79)" style="font-weight:bold">finfo</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\general\finfo.m',79,0)">line 79</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('open', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\general\open.m', 115)" style="font-weight:bold">open</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\general\open.m',115,0)">line 115</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('uiopen', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\uitools\uiopen.m', 175)" style="font-weight:bold">uiopen</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\uitools\uiopen.m',175,0)">line 175</a>)] 
+dynare flm_base
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Using 64-bit preprocessor
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 81 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+

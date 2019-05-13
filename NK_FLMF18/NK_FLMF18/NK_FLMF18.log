@@ -1,0 +1,179 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 81 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+[Warning: Some of the parameters have no value (M2) when using steady. If these
+parameters are not initialized in a steadystate file or a steady_state_model-block,
+Dynare may not be able to solve the model...] 
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the default value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg('trustnleqn',1.000000e+00,true,true,'fsolve',2.763657e-08,'default',1.000000e-06,2.433633e-17,'default',1.000000e-03,2.433633e-17,'default',1.000000e-03);">stopping criteria details</a>>
+
+
+STEADY-STATE RESULTS:
+
+GG       		 0
+NGG      		 1
+Y        		 -0.398256
+C        		 -0.588994
+CY       		 -0.242473
+TY       		 -0.0906784
+PI       		 0
+PIY      		 0
+MC       		 -0.139697
+WP       		 -0.6071
+L        		 -0.0362129
+R        		 0.0100503
+O        		 -3.34767
+OC       		 -3.70769
+OY       		 -3.65664
+X        		 -4.18732
+Q        		 0.816106
+Z        		 0
+OMEGA    		 0
+A        		 0
+G        		 0
+ETA      		 -0.622574
+NY       		 0.67149
+NC       		 0.554885
+NCY      		 0.784685
+NTY      		 0.913311
+NPI      		 1
+NN       		 4.69958
+DD       		 4.69958
+NPIY     		 1
+DELTA    		 1
+NMC      		 0.869622
+NWP      		 0.544929
+NL       		 0.964435
+NR       		 1.0101
+NO       		 0.0351663
+NOC      		 0.0245343
+NOY      		 0.025819
+NX       		 0.0151869
+NQ       		 2.26168
+NZ       		 1
+NOMEGA   		 0.0067149
+NA       		 1
+NETA     		 0.536561
+NY_aux   		 0.67149
+Y_aux    		 -0.398256
+NYn      		 0.67149
+Yn       		 -0.398256
+Yn_gap   		 0
+Y_gap    		 -0.142413
+NYe      		 0.687919
+Ye       		 -0.374084
+NYfe     		 0.774264
+Yfe      		 -0.255843
+NRn      		 1.0101
+Rn       		 0.0100503
+NRe      		 1.0101
+Re       		 0.0100503
+NRfe     		 1.0101
+Rfe      		 0.0100503
+UTIL     		 -1.22041
+WELF     		 -122.041
+ERR      		 0
+Z_CB     		 0
+ETA_CB   		 0
+A_CB     		 0
+G_CB     		 0
+Yfe_CB   		 -2.30259
+Y_gap_CB 		 1.90433
+Rfe_CB   		 0.0100503
+ERR_CB   		 0
+ERR_CBS  		 0
+EYG      		 -0.142413
+EPI      		 0
+ERE      		 0.0100503
+EPIC     		 0
+R1       		 0.0100503
+R2       		 0.0100503
+ERN      		 0.0100503
+EY       		 -0.398256
+EYNG     		 0
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the default value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg('trustnleqn',1.000000e+00,true,true,'fsolve',2.763657e-08,'default',1.000000e-06,2.433633e-17,'default',1.000000e-03,2.433633e-17,'default',1.000000e-03);">stopping criteria details</a>>
+
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+       2.004e-19       -2.004e-19                0
+       3.539e-19       -3.539e-19                0
+       3.368e-18       -3.368e-18                0
+       6.318e-18        6.318e-18                0
+       1.026e-17        1.026e-17                0
+       1.038e-17        1.038e-17                0
+       5.124e-17       -5.124e-17                0
+       5.211e-17        5.211e-17                0
+       3.981e-16        3.981e-16                0
+         0.01584          0.01584                0
+             0.5              0.5                0
+             0.5              0.5                0
+             0.5              0.5                0
+             0.5              0.5                0
+             0.5              0.5                0
+            0.75             0.75                0
+            0.95             0.95                0
+            1.01             1.01                0
+            1.11             1.11                0
+           1.347            1.347                0
+           1.608            1.608                0
+        1.41e+08        -1.41e+08                0
+        1.41e+08         1.41e+08                0
+       1.773e+08        6.471e+07         1.65e+08
+       1.773e+08        6.471e+07        -1.65e+08
+       1.773e+08       -6.471e+07         1.65e+08
+       1.773e+08       -6.471e+07        -1.65e+08
+       8.421e+16       -8.421e+16                0
+       5.109e+17        5.109e+17                0
+       5.264e+17        5.264e+17                0
+       1.114e+18       -1.114e+18                0
+       1.402e+18        1.402e+18                0
+       1.635e+18        1.635e+18                0
+        2.11e+18        -2.11e+18                0
+       1.378e+19        1.378e+19                0
+       1.907e+19       -1.907e+19                0
+       1.932e+19       -1.932e+19                0
+       2.311e+19       -2.311e+19                0
+       8.922e+19       -8.922e+19                0
+        1.23e+20        -1.23e+20                0
+       2.528e+21        2.528e+21                0
+
+
+There are 24 eigenvalue(s) larger than 1 in modulus 
+for 24 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the default value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg('trustnleqn',1.000000e+00,true,true,'fsolve',2.763657e-08,'default',1.000000e-06,2.433633e-17,'default',1.000000e-03,2.433633e-17,'default',1.000000e-03);">stopping criteria details</a>>
+
+Total computing time : 0h00m02s
+Note: warning(s) encountered in MATLAB/Octave code

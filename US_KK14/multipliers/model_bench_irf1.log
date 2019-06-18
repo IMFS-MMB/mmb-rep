@@ -1,0 +1,85 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 29 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+MUL          		 0
+MRS          		 0
+chi          		 0
+w            		 0
+q            		 0
+y            		 0
+inf_p        		 0
+mc           		 0
+u            		 0
+Rb           		 0
+I            		 0
+c            		 0
+lp           		 0
+rk           		 0
+R            		 0
+k            		 0
+inf_w        		 0
+tax          		 0
+b            		 0
+tau_w        		 0
+tau_k        		 0
+cg           		 0
+eps_i        		 0
+eps_z        		 0
+eps_q        		 0
+tr           		 0
+GDP          		 0
+tax_rev_tauw 		 0
+tax_rev_tauk 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+          0.6924           0.6834           0.1113
+          0.6924           0.6834          -0.1113
+          0.7528           0.7528          0.00948
+          0.7528           0.7528         -0.00948
+            0.85             0.85                0
+            0.85             0.85                0
+            0.85             0.85                0
+            0.85             0.85                0
+            0.85             0.85                0
+          0.8602           0.8602                0
+          0.9121           0.9121                0
+          0.9609           0.9609                0
+          0.9909           0.9909                0
+           1.056            1.056          0.03058
+           1.056            1.056         -0.03058
+            1.12            1.107           0.1662
+            1.12            1.107          -0.1662
+           1.412            1.411          0.04079
+           1.412            1.411         -0.04079
+       5.377e+16        5.377e+16                0
+       2.599e+17        2.599e+17                0
+       2.404e+44        2.404e+44                0
+
+
+There are 9 eigenvalue(s) larger than 1 in modulus 
+for 9 forward-looking variable(s)
+
+The rank condition is verified.
+
+loading posterior draws baseline model...
+... done!
+calculating IRFs baseline model...
+... done!
+calculating multiplier baseline model...
+... done!
+ 
+Total computing time : 0h00m11s

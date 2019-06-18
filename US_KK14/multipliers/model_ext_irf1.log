@@ -1,0 +1,84 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 29 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+MUL          		 0
+MRS          		 0
+chi          		 0
+w            		 0
+q            		 0
+y            		 0
+inf_p        		 0
+mc           		 0
+u            		 0
+Rb           		 0
+I            		 0
+c            		 0
+lp           		 0
+rk           		 0
+R            		 0
+k            		 0
+inf_w        		 0
+tax          		 0
+b            		 0
+tau_w        		 0
+tau_k        		 0
+cg           		 0
+eps_i        		 0
+eps_z        		 0
+eps_q        		 0
+tr           		 0
+GDP          		 0
+tax_rev_tauw 		 0
+tax_rev_tauk 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+          0.5289           0.5289                0
+          0.6744           0.6731          0.04179
+          0.6744           0.6731         -0.04179
+          0.8275           0.8275                0
+            0.85             0.85                0
+            0.85             0.85                0
+            0.85             0.85                0
+            0.85             0.85                0
+            0.85             0.85                0
+          0.9212           0.9212                0
+          0.9652           0.9652          0.01165
+          0.9652           0.9652         -0.01165
+          0.9902           0.9902                0
+           1.047            1.047                0
+           1.099            1.084           0.1825
+           1.099            1.084          -0.1825
+           1.115            1.115                0
+           1.518            1.518                0
+           1.986            1.986                0
+       8.156e+16        8.156e+16                0
+             Inf              Inf                0
+             Inf              Inf                0
+
+
+There are 9 eigenvalue(s) larger than 1 in modulus 
+for 9 forward-looking variable(s)
+
+The rank condition is verified.
+
+loading posterior draws recommended model...
+... done!
+calculating IRFs recommended model...
+... done!
+calculating multiplier recommended model...
+... done!
+Total computing time : 0h00m12s

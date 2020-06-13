@@ -1,0 +1,39 @@
+In order to replicate the IRFs of the working paper version of Smets, Warne and Wouters (2014), which is the file EA_SWW14_rep,
+the following changes have to be made.
+
+1. In the log-linearized model description of the published paper, the average price markup is defined as the inverse of marginal cost.
+However, in the log-lin version the average price markup becomes minus marginal cost.
+--> use mu_{p,t}=-mc_t
+
+2. Define real wages (else 1 equation would be missing)
+
+(This change is not necessary, but it reduces the dimensionality by dropping variables, which are not of interest)
+drop average and natural price and wage markup
+
+3. It is very important to use posterior modes as estimates, which are provided by the author used for the IRFs (authors' code)
+The set of posterior modes can be found in "parameters.txt"
+
+4. Although it looks basically the same, use beta in the employment equation because the authors also do it in their code.
+
+5. some parameter definitions are missing, add them (cepsw,cky,crk)
+5.1 Therefore, other parameters (clk,cw) are needed. Add them by taking the definition as in the authors' code.
+
+6. rename flex investment from "if" to "invf". Else, it is the same as the if matlab statement "if" and an error occurs.
+
+7. nominal interest rate and inflation rate are quarterly, IRFs use annualized rates. So, define them as in the MMB
+ryearly=4*r;    
+piyear=pi+pi(-1)+pi(-2)+pi(-3);
+
+8. MC depend positively on productivity shock. Use minus sign because productivity decrease MC and then output increases.
+Do this only in the marginal cost equation, not in the production function.
+
+9. Minus sign before epsilonr in the Monetary Policy rule. Else, horizontal flip of IRF of monetary policy shock.
+
+10. Minus sign before epsilonp in the price setting equation. Else, horizontal flip of IRF of price markup shock.
+
+11. Use the equation for flex wages as it is in the authors' code. Else, the IRFs for the wage markup shock,
+the labor supply shock and the technology shock are totally different to the ones in the working paper.
+
+
+
+

@@ -1,0 +1,15 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Substitution of endo leads >= 2: added 7 auxiliary variables and equations.
+Substitution of endo lags >= 2: added 124 auxiliary variables and equations.
+Substitution of exo lags: added 18 auxiliary variables and equations.
+Found 424 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+Total computing time : 0h00m01s

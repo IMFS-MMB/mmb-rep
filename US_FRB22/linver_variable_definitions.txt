@@ -1,0 +1,347 @@
+adjlegrt    	potential government employment ratio (relative to business)
+d79a        	dummy, post-1979 indicator
+d8095       	dummy, 1980-1995 indicator
+d83         	dummy, post-1983 indicator
+d87         	dummy, post-1986 indicator
+ddockm      	dock strike dummy, import equation
+ddockx      	dock strike dummy, export equation
+delrff      	federal funds rate, first diff
+deuc        	euc switch:  1 for including euc, 0 for not including
+dfmprr      	dummy, foreign monetary policy switch:  exogenous real interest rate
+dglprd      	switch to control for long-run productivity growth in the government sector
+dpadj       	price inflation aggregation adjustment
+dpgap       	price inflation aggregation discrepancy
+drstar      	rstar updating switch: 1 is on, 0 is off
+ebfi_l      	log of business fixed investment, cw 2012$
+ebfin_l     	log of investment in equipment, current $
+ec_l        	log of consumption, cw 2012$ (frb/us definition)
+ecd_l       	log of consumer expenditures on durable goods, cw 2012$
+ech_l       	log of consumer expenditures on housing services, cw 2012$
+ecnia_l     	log of personal consumption expenditures, cw 2012$ (nipa definition)
+ecnian_l    	log of personal consumption expenditures, current $ (nipa definition)
+eco_l       	log of consumer expenditures on non-durable goods and non-housing services, cw 2012$
+egfe_l      	log of federal government expenditures, cw 2012$
+egfen_l     	log of federal government expenditures, current $
+egfet_l     	log of federal government expenditures, cw 2012$, trend
+egfl_l      	log of federal government employee compensation, cw 2012$
+egfln_l     	log of federal government employee compensation, current $
+egflt_l     	log of federal government employee compensation, cw 2012$, trend
+egse_l      	log of s&l government expenditures, cw 2012$
+egsen_l     	log of s&l government expenditures, current $
+egset_l     	log of s&l government expenditures, cw 2012$, trend
+egsl_l      	log of s&l government employee compensation, cw 2012$
+egsln_l     	log of s&l government employee compensation, current $
+egslt_l     	log of s&l government employee compensation, cw 2012$, trend
+eh_l        	log of residential investment expenditures, cw 2012$
+ehn_l       	log of residential investment expenditures
+em_l        	log of imports of goods and services, cw 2012$
+emn_l       	log of imports of goods and services, current $
+emo_l       	log of imports of goods and services ex. petroleum, cw 2012$
+emon_l      	log of imports of goods and services ex. petroleum
+emp_l       	log of petroleum imports, cw 2012$
+empn_l      	log of petroleum imports, current $
+emptrt      	oil imports to gdp ratio (trend)
+ex_l        	log of exports of goods and services, cw 2012$
+exn_l       	log of exports of goods and services, current $
+fcbn_l      	log of us current account balance, current $
+fgdp_l      	log of foreign aggregate gdp (world, bilateral export weights)
+fgdpt_l     	log of foreign aggregate gdp (world, bilateral export weights), trend
+fnicn_l     	log of gross stock of claims of us residents on the rest of the world, current $
+fniln_l     	log of gross stock of liabilities of us residents to the rest of the world, current $
+fnirn_l     	log of net stock of claims of us residents on the rest of the world, residual
+fpc_l       	log of foreign aggregate consumer price (g39, import/export trade weights)
+fpi10       	foreign consumer price inflation (g10)
+fpi10t      	foreign consumer price inflation, trend (g10)
+fpic        	foreign consumer price inflation (g39, bilateral export trade weights)
+fpitrg      	foreign target consumer price inflation (g10)
+fpx_l       	log of nominal exchange rate (g39, import/export trade weights)
+fpxr_l      	log of real exchange rate (g39, import/export trade weights)
+fpxrr_l     	log of real exchange rate residual
+fpxrrt      	real exchange rate residual, trend
+frl10       	foreign long-term interest rate (g10)
+frs10       	foreign short-term interest rate (g10)
+frstar      	equilibrium real short-term interest rate used in foreign taylor rule
+ftcin_l     	log of corporate taxes paid to rest of world, current $
+fxgap       	foreign output gap (world, bilateral export weights)
+fynicn_l    	log of gross investment income received from the rest of the world, current $
+fyniln_l    	log of gross investment income paid to the rest of the world, current $
+gfdbtn_l    	log of federal government debt stock, current $
+gfdbtnp_l   	log of federal government debt stock held by the public, current $
+gfdrt       	federal government target debt-to-gdp ratio
+gfexpn_l    	log of government payments
+gfintn_l    	log of federal government net interest payments, current $
+gfrecn_l    	log of government receipts and residual
+gfsrt       	federal government target surplus-to-gdp ratio
+gtn_l       	log of federal government net transfer payments, current $
+gtr_l       	log of government net transfer payments, deflated by pgdp
+gtrd        	deviation of ratio of government transfers to gdp from trend ratio
+gtrt        	government, trend ratio of transfer payments to gdp
+hgemp       	petroleum imports, cw 2012$, trend growth rate
+hggdp       	growth rate of gdp, cw 2012$ (annual rate)
+hggdpt      	trend growth rate of xgdp, cw 2012$ (annual rate)
+hgpbfir     	trend growth rate of price of business investment (relative to pxb)
+hgpcdr      	trend growth rate of price of consumer durable goods (relative to pcnia)
+hgpkir      	trend growth rate of pkir
+hgynid      	growth rate of real after-tax corporate profits
+hks         	growth rate of ks, cw 2012$ (compound annual rate)
+hksr        	residual growth of capital services
+hlept       	trend growth rate of lep (annual rate)
+hlprdt      	trend growth rate of output per hour
+hmfpt       	trend growth rate of multifactor productivity
+hqlfpr      	drift component of change in qlfpr
+hqlww       	trend growth rate of workweek
+huqpct      	drift term in stochastic component of trend ratio of pcnia to pxp
+huxb        	drift term in uxbt
+hxbt        	trend rate of growth of xb  , cw 2012$ (annual rate)
+hxbtr       	residual factor (trend rate of growth of xb)
+jccan_l     	log of consumption of fixed capital, current $
+jkcd_l      	log of consumption of fixed capital, consumer durables
+jrbfi       	depreciation rate, business investment
+jrcd        	depreciation rate, consumer durables
+jrh         	depreciation rate, housing
+kbfi_l      	log of capital stock - bfi, 2012$
+kcd_l       	log of stock of consumer durables, cw 2012$
+kh_l        	log of stock of residential structures, cw 2012$
+ki_l        	log of stock of private inventories, cw 2012$
+ks_l        	log of capital services, 2012$
+leg_l       	log of government civilian employment ex. gov. enterprise
+leh_l       	log of civilian employment (break adjusted)
+leo_l       	log of difference between household and business sector payroll employment, less government employment
+lep_l       	log of employment in  business sector (employee and  self-employed)
+leppot_l    	log of potential employment in  business sector
+leuc        	emergency unemployment compensation (euc)
+lf_l        	log of civilian labor force (break adjusted)
+lfpr        	labor force participation rate
+lhp_l       	log of aggregate labor hours,  business sector (employee and  self-employed)
+lprdt_l     	log of trend labor productivity
+lqualt_l    	log of labor quality, trend level
+lur         	civilian unemployment rate (break adjusted)
+lurnat      	natural rate of unemployment
+lww_l       	log of workweek,  business sector (employee and self-employed)
+mei_l       	log of multiplicative discrepancy for the difference between xgdi and xgdo
+mep_l       	log of multiplicative discrepancy for the difference between xgdp and xgdo
+mfpt_l      	log of multifactor productivity, trend level
+n16_l       	log of noninstitutional population, aged 16 and over (break adjusted)
+pbfir_l     	log of price level of bfi compared to pxp
+pcdr_l      	log of price index for consumer durables, cw (relative to to pcnia)
+pcer_l      	log of price index for personal consumption expenditures on energy (relative to pcxfe)
+pcfr_l      	log of price index for personal consumption expenditures on food (relative to pcxfe)
+pcfrt       	real pce price of food, trend
+pchr_l      	log of price index for housing services, cw (relative to to pcnia)
+pcnia_l     	log of price index for personal consumption expenditures, cw (nipa definition)
+pcor_l      	log of price index for non-durable goods and non-housing services, cw (relative to to pcnia
+pcpi_l      	log of consumer price index,total
+pcpix_l     	log of consumer price index,excluding food and energy
+pcstar      	target consumption price level (used in rffgen policy rule)
+pcxfe_l     	log of price index for personal consumption expendits ex. food and energy, cw (nipa definit
+pegfr_l     	log of price index for federal government expenditures, cw (relative to pxp)
+pegsr_l     	log of price index for s&l government expenditures, cw (relative to pxp)
+pgdp_l      	log of price index for gdp, cw
+pgfl_l      	log of price index for federal government employee compensation, cw
+pgsl_l      	log of price index for s&l government employee compensation, cw
+phouse_l    	log of loan performance house price index
+phr_l       	log of price index for residential investment, cw (relative to pxp)
+pic4        	four-quarter percent change in pce prices
+picnia      	inflation rate, personal consumption expenditures, cw
+picx4       	four-quarter percent change core in pce prices
+picxfe      	inflation rate, personal consumption expenditures, ex. food and energy, cw
+pieci       	annualized rate of growth of ei hourly compensation
+pigdp       	inflation rate, gdp, cw
+pipl        	rate of growth of pl
+pipxnc      	inflation rate, price of adjusted final sales excluding consumption (annual rate)
+pitarg      	target rate of consumption price inflation (used in policy reaction functions)
+pkbfir      	ratio of price of bfi stock (kbfi) to pxp
+pkir        	price index for stock of inventories, cw (relative to pxp)
+pl_l        	log of compensation per hour,  business
+pmo_l       	log of price index for imports ex. petroleum, cw
+pmp_l       	log of price index for petroleum imports
+poil_l      	log of price of imported oil ($ per barrel)
+poilr_l     	log of price of imported oil, relative to price index for bus. sector output
+poilrt      	price of imported oil, relative to price index for bus. sector output, trend
+ptr         	10-year expected pce price inflation (survey of professional forecasters)
+pwstar_l    	log of equilibrium business price markup
+pxb_l       	log of price index for business output
+pxnc_l      	log of price of adjusted final sales excluding consumption
+pxp_l       	log of price index for final sales plus imports less gov. labor
+pxr_l       	log of price index for exports, cw (relative to pxp)
+qebfi_l     	log of desired level of investment in business investment
+qec_l       	log of desired level of consumption (frbus definition)
+qecd_l      	log of target level of consumption of durable goods, trending component
+qeco_l      	log of desired level of consumption of nondurable goods and nonhousing services
+qeh_l       	log of target level of residential investment
+qkir_l      	log of desired inventory sales ratio
+qleor       	desired ratio of employment discrepancy to the labor force
+qlf_l       	log of desired level of civilian labor force
+qlfpr       	trend labor force participation rate
+qlhp_l      	log of desired level of  business labor hours
+qlww_l      	log of trend workweek,  business sector (employee and  self-employed)
+qpcnia_l    	log of desired level of consumption price
+qpl_l       	log of desired level of compensation per hour, trending component
+qpmo_l      	log of random walk component of non-oil import prices
+qpxb_l      	log of desired price level of private output ex. energy, housing, and farm
+qpxnc_l     	log of desired level of nonconsumption price
+qpxp_l      	log of desired price level of adjusted final sales
+qynidn_l    	log of desired level of dividends
+rbbb        	s&amp;p bbb corporate bond rate
+rbbbp       	s&amp;p bbb corporate bond rate, risk/term premium
+rbfi        	after-tax real financial cost of capital for business investment
+rcar        	new car loan rate at finance companies
+rccd        	cost of capital for consumer durables
+rcch        	cost of capital for residential investment
+rcgain      	rate of capital gain on the non-equity portion of household wealth
+req         	real expected rate of return on equity
+reqp        	real expected rate of return on equity, premium component
+rff         	federal funds rate
+rffalt      	value of eff. federal funds rate given by estimated policy rule
+rfffix      	federal funds rate given by fixed, pre-determined funds rate path
+rffgen      	value of eff. federal funds rate given by the generalized reaction function
+rffintay    	value of eff. federal funds rate given by the inertial taylor rule
+rffmin      	minimum nominal funds rate (set at 0 to impose zero lower bound)
+rffrule     	federal funds rate
+rfftay      	value of eff. federal funds rate given by the taylor rule with output gap
+rfftlr      	value of eff. federal funds rate given by the taylor rule with unemployment gap
+rfnict      	residual in fnicn equation
+rfrs10      	real foreign short-term interest rate
+rfynic      	average yield earned on gross claims of us residents on the rest of the world
+rfynil      	average yield earned on liabilities of us residents on the rest of the world
+rg10        	10-year treasury bond rate
+rg10p       	10-year treasury bond rate, term premium
+rg30        	30-year treasury bond rate
+rg30p       	30-year treasury bond rate, term premium
+rg5         	5-year treasury note rate
+rg5p        	5-year treasury note rate. term premium
+rgfint      	average rate of interest on existing federal debt
+rgw         	approximate average rate of interest on new federal debt
+rme         	interest rate on conventional mortgages
+rrff        	real federal funds rate
+rrfix       	real federal funds rate given by fixed, pre-determined real funds rate path
+rrtr        	expected long-run real federal funds rate
+rspnia      	personal saving rate
+rstar       	equilibrium real federal funds rate (for monetary policy reaction functions)
+rtb         	3-month treasury bill rate
+rtbfi_l     	log of user cost of capital for business investment
+rtinv       	user cost of capital for inventories
+rtr         	expected federal funds rate in the long run (blue chip)
+t47         	time trend, begins in 1947q1 (0 before)
+tapddp      	proportion of investment tax credit deducted from depr. base
+tcin_l      	log of government corporate income tax accruals, current $
+tdpv        	present value of depreciation allowances, bfi
+tpn_l       	log of government personal income tax and non-tax receipts, current $
+trci        	average government corporate income tax rate
+trcit       	government corporate income tax rate, trend
+trfcim      	marginal federal corporate income tax rate
+trfpm       	marginal federal personal income tax rate (at twice median family income)
+tritc       	investment tax credit for business investment
+trp         	average government tax rate for personal income tax and non-tax receipts
+trpt        	average government tax rate for personal income tax, trend
+trptd       	average government tax rate for personal income tax and non-tax receipts under deficit targeting
+trpts       	average government tax rate for personal income tax and non-tax receipts under surplus targeting
+trptx       	average tax rate for personal income tax, trend, policy setting
+trspp       	marginal s&l tax rate on personal property
+tryh        	average tax rate on household income
+uemot       	trend in ratio of emon to xgden
+ufcbr       	multiplicative factor in fcbrn identity
+ufnir       	multiplicative factor in fnirn identity
+uftcin      	multiplicative factor in ftcin identity
+ugfdbt_l    	log of multiplicative factor in gfdbtn identity
+ugfdbtp_l   	log of federal government debt ratio
+ugfsrp      	federal government budget surplus, residual
+uleg_l      	log of multiplicative factor for government civilian employment
+upcpi       	multiplicative factor in pcpi identity
+upcpix      	multiplicative factor in pcpix identity
+upgfl       	multiplicative factor in pgfl identity
+upgsl       	multiplicative factor in pgsl identity
+upkbfir     	multiplicative factor in pkbfir identity
+upmp        	multiplicative factor in pmp identity
+upxb        	multiplicative factor in pxb   identity
+uqpct_l     	log of stochastic component of trend ratio of pcnia to pxp
+uvbfi       	multiplicative factor in vbfi identity
+uxbt_l      	log of stochastic component of trend ratio of xgdpt to xbt
+uyd         	multiplicative factor in ydn identity
+uyhibn      	multiplicative factor (consumer interest payments to business)
+uyhln       	multiplicative factor in yhln identity
+uyhptn      	multiplicative factor in yhptn identity
+uyhsn       	multiplicative factor in personal saving identity (accounts for transfers to foreign
+uyhtn       	multiplicative factor in yhtn identity
+uyl         	multiplicative factor in yln identity
+uyni        	multiplicative factor in ynin identity
+uynicpnr    	corporate profits, residual
+uyp         	multiplicative factor in ypn identity
+vbfi        	desired investment-output ratio
+wpo_l       	log of household property wealth ex. stock market, real
+wpon_l      	log of household property wealth ex. stock market, current $
+wps_l       	log of household stock market wealth, real
+wpsn_l      	log of household stock market wealth, current $
+xb_l        	log of business output (bea definition), cw 2012$
+xbn_l       	log of business output (bea definition), current $
+xbo_l       	log of business output, adjusted for measurement error, cw  2012$
+xbt_l       	log of potential business output, cw 2012$
+xbtr_l      	log of residual factor (potential business output)
+xfs_l       	log of final sales of gross domestic product, cw 2012$
+xfsn_l      	log of final sales of gross domestic product, current $
+xgap        	output gap for  business plus oil imports  (100*(actual/potential -1)
+xgap2       	output gap for gdp (100*(actual/potential -1)
+xgdi_l      	log of gross domestic income, cw 2012$
+xgdin_l     	log of gross domestic income, current $
+xgdo_l      	log of gross domestic product, adjusted for measurement error, cw 2012$
+xgdp_l      	log of gdp, cw 2012$
+xgdpn_l     	log of gdp, current $
+xgdpt_l     	log of potential gdp, cw 2012$
+xgdptn_l    	log of potential gdp, current $
+xp_l        	log of final sales plus imports less government labor, cw 2012$
+xpn_l       	log of final sales plus imports less government labor, current $
+ydn_l       	log of disposable income
+yh_l        	log of income, household, total (real after-tax)
+yhgap       	income, household, total, ratio to xgdp, cyclical component (real after-tax)
+yhibn_l     	log of consumer interest payments to business
+yhl_l       	log of income, household, labor compensation (real after-tax)
+yhln_l      	log of income, household, labor compensation
+yhp_l       	log of income, household, property (real after-tax)
+yhpcd_l     	log of imputed income of the stock of consumer durables, 2012$
+yhpgap      	income, household, property, ratio to yh, cyclical component (real after-tax)
+yhpntn_l    	log of income, household, property, non-taxable component
+yhpshr_l    	log of income, household, property, ratio to yh (real after-tax)
+yhptn_l     	log of income, household, property, taxable component
+yhshr_l     	log of income, household, total, ratio to xgdp (real after-tax)
+yhsn_l      	log of personal saving
+yht_l       	log of income, household, transfer (real after-tax), net basis
+yhtgap      	income, household, transfer, ratio to yh, cyclical component (real after-tax)
+yhtn_l      	log of income, household, transfer payments. net basis
+yhtshr_l    	log of income, household, transfer, ratio to yh (real after-tax)
+ykbfin_l    	log of income from stock of bfi
+ykin_l      	log of income from stock of inventories
+ymsdn       	microsoft one-time dividend payout in 2004q4
+ynicpn_l    	log of corporate profits (national income component)
+ynidn_l     	log of dividends (national income component)
+yniln_l     	log of labor income (national income component)
+ynin_l      	log of national income
+ynirn_l     	log of net interest, rental and proprietors' incomes (national income components)
+ypn_l       	log of personal income
+zdivgr      	expected growth rate of real dividends, for wpsn eq. 
+zebfi       	expected growth rate of business output ebfi 
+zecd        	expected growth rate of target durable consumption, for ecd eq. 
+zeco        	expected growth rate of target nondurables and nonhousing services, for eco eq (var
+zeh         	expected growth rate of target residential investment, for eh eq. 
+zgap05      	expected output gap, for rg5 eq. 
+zgap10      	expected output gap, for rg10 eq. 
+zgap30      	expected output gap, for rg30 eq. 
+zgapc2      	expected output gap, for ecd eq. 
+zlhp        	expected growth rate of target aggregate hours 
+zpi10       	expected cons. price infl., for rcch, rrmet, and yhpntn eqs. (10-yr mat.) 
+zpi10f      	expected cons. price infl., for fpxr eq. (10-yr mat.) 
+zpi5        	expected cons. price infl., for rccd eq. (5-yr mat.) 
+zpib5       	expected output price infl., for rpd eq. (5-yr mat.) 
+zpic30      	expected cons. price infl., for req eq. (30-yr mat.) 
+zpic58      	expected 4-qtr consumer price inflation (8 qtrs. in the future) 
+zpicxfe     	expected value of picxfe in the next quarter 
+zpieci      	expected value of pieci in the next quarter 
+zrff10      	expected federal funds rate, for rg10 eq. (10-yr mat.) 
+zrff30      	expected federal funds rate, for rg30 eq. (30-yr mat.) 
+zrff5       	expected federal funds rate, for rg5 eq. (5-yr mat.) 
+zyh_l       	log of expected level of real after-tax household income, for qec eq. 
+zyhp_l      	log of expected level of real after-tax property income, for qec eq. 
+zyhpst_l    	log of expected trend share of property income in household income
+zyhst_l     	log of expected trend ratio of household income to gdp
+zyht_l      	log of expected level of real transfer income, for qec eq. 
+zyhtst_l    	log of expected trend share of transfer income in household income
+zynid       	expected rate of growth of target real dividends, for ynidn eq. 
